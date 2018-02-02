@@ -1,0 +1,161 @@
+body {
+	padding-top: 70px;
+}
+/*a {
+	text-decoration: none;
+}*/
+.navbar-brand img {
+	display: inline-block;
+}
+
+/*修改模态框长宽*/
+.modal-dialog{
+	width: 600px;
+}
+
+#myCarousel .carousel-inner .item {
+	height: 300px;
+	width: 765px;
+}
+
+#myCarousel .carousel-inner .item img {
+	height: 100%;
+	width: 100%;
+}
+
+
+div.col-12.title {
+	width: 100%;
+	border-bottom: 1px solid black;
+	margin-bottom: 10px;
+}
+
+div.col-12.title span {
+	background-color: black;
+	font-size: 20px;
+	color: whitesmoke;
+	padding: 3px;
+}
+
+div.col-12.title p {
+	display: inline;
+	float: right;
+}
+
+.match-list {
+	padding: 0px;
+	background-color: blanchedalmond;
+}
+.match-list a{
+	color: white;
+	text-decoration: none;
+}
+.match-list a:hover{
+	color:gray;
+}
+.match-list .match-info {
+	padding: 0px;
+	height: 150px;
+	background-color: rgb(50, 50, 50);
+
+}
+.match-list .match-info.match-info-1-bottom-border{
+	border-bottom: 2px solid black;
+}
+.match-list .match-info .match-info-item{
+	height: 150px;
+	text-align: center;
+}
+.match-list .match-info .match-info-item img {
+	margin-top: 30px;
+	width: 80px;
+	height: 80px;
+}
+.match-list .match-info .match-info-item p {
+	margin-top: 5px;
+}
+.match-list .match-info .match-info-time{
+	text-align: center;
+}
+.match-list .match-info .match-info-time h1{
+	margin-top: 0px;
+}
+.match-list .match-info .match-info-time h2{
+	padding-top: 40px;
+	font-size: 20px;
+	margin-bottom: 0px;
+}
+
+.article {
+	/*width: ;*/
+}
+
+.article-list {
+	/*padding: 0px;*/
+	margin-top: 20px;
+}
+
+.article-item {
+	width: 90%;
+	margin-top: 10px;
+	margin-left: 5px;
+	border-bottom: 3px solid grey;
+}
+.article-item a{
+	text-decoration:none;
+	color: black;
+}
+.article-item a:hover{
+	text-decoration: none;
+	color: rgb(29,118,186);
+}
+.article-item a:visited{
+	text-decoration: none;
+}
+.article-item a:link{
+	text-decoration: none;
+}
+
+.article-item .article-img {
+	padding-left: 0px;
+	/*padding-right: 10px;*/
+}
+
+.article-img img {
+	height: 100px;
+	width: 100%;
+}
+
+.article-title {
+	height: 50px;
+	width: 100%;
+}
+
+.article-title strong {
+	font-size: 18px;
+}
+
+.article-time {
+	margin-top: 30px;
+	width: 90%;
+}
+.article-pagination {
+	margin-left: 200px;
+	margin-top: 20px;
+}
+
+.pagination {
+	padding-left: 30%;
+}
+
+.bottom {
+	margin-top: 30px;
+	padding: 0px;
+	width: 100%;
+	height: 30px;
+	background-color: dimgrey;
+	text-align: center;
+}
+.bottom p{
+	margin-bottom: 0px;
+}

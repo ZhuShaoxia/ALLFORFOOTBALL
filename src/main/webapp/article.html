@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <link href="img/logo-2.png" rel="shortcut icon"/>
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar_default.css"/>
+    <link rel="stylesheet" type="text/css" href="css/article.css"/>
+    <!--<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"/>-->
+    <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/article-comment.js" type="text/javascript" charset="utf-8"></script>
+    <meta charset="utf-8"/>
+    <title>懂球儿</title>
+</head>
+<style>
+    .navbar-brand img {
+        display: inline-block;
+    }
+
+    /*.alert-well {*/
+    /*display: none;*/
+    /*}*/
+
+    .modal input {
+        width: 200px;
+    }
+
+    #activationCode {
+        display: inline-block;
+        width: 80px;
+    }
+
+
+</style>
+
+<script>
+    <!--激活提示工具-->
+    $(function () {
+
+
+        $("[data-toggle='tooltip']").tooltip();
+
+
+//      如果没登录，提示登录
+        $("#comment-textarea").focus(function () {
+
+        })
+
+
+    });
+
+
+    //		$(".alert-well").hide();提示语显示隐藏
+    //		function to_login() {}
+    //
+    //		function login() {
+    //			$('#login-modal').modal('hide')
+    //		}
+    //
+    //		function to_register() {
+    //			$('#login-modal').modal('hide')
+    //			$('#register-modal').modal('show')
+    //		}
+</script>
+
+<body>
+<!--导航栏-->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-2.png" class="img-fluid"/>懂球儿
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="index.html">首页</a>
+                </li>
+                <li>
+                    <a href="#about">比赛</a>
+                </li>
+                <li>
+                    <a href="#contact">数据</a>
+                </li>
+                <li>
+                    <a href="#contact">校园联赛</a>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="#login-modal" data-toggle="modal" onclick="to_login()">登录</a>
+                </li>
+                <li>
+                    <a href="#register-modal" data-toggle="modal">注册</a>
+                </li>
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+
+<!--登录模态框-->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel"><img src="img/logo-2.png" class="img-fluid"/>&nbsp;账号登录</h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-danger alert-well">
+                    <strong>您的信息有误,请重新输入!</strong>
+                </div>
+                <form role="form" id="login-form" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="account" class="col-sm-3 control-label">账号</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="account" name="account" placeholder="昵称/邮箱/手机号">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-3 control-label">密码</label>
+                        <div class="col-sm-6">
+                            <input type="password" class="form-control" id="password" name="password"
+                                   placeholder="请输入密码">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="login()">登录</button>
+                <button type="button" class="btn btn-primary" onclick="to_register()">注册</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal -->
+</div>
+
+<!--注册模态框-->
+<div class="modal fade" id="register-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="register-modal-label"><img src="img/logo-2.png" class="img-fluid"/>&nbsp;账号注册
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-danger alert-well">
+                    <strong>您的信息有误,请重新输入!</strong>
+                </div>
+                <form role="form" id="register-form" class="form-horizontal">
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 control-label">邮箱账号</label>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" id="email" name="email" placeholder="请输入您的邮箱账号">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-3 control-label">密码</label>
+                        <div class="col-sm-6">
+                            <input type="password" class="form-control" id="pwd1" name="pwd1" placeholder="请输入您的密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password" class="col-sm-3 control-label">确认密码</label>
+                        <div class="col-sm-6">
+                            <input type="password" class="form-control" id="pwd2" name="pwd2" placeholder="请确认您的密码">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="col-sm-3 control-label">激活码</label>
+                        <div class="col-sm-9">
+                            <button>获取邮箱激活码</button>
+                            <input type="text" class="form-control" id="activationCode" name="activationCode"
+                                   placeholder="激活码">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <!--	<button type="button" class="btn btn-primary" onclick="login()">登录</button>-->
+                <button type="button" class="btn btn-primary" onclick="register()">注册</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal -->
+</div>
+
+<!--文章-->
+<div class="container">
+    <!--<ol class="breadcrumb">-->
+        <!--<li><a href="#">首页</a></li>-->
+        <!--<li class="active">文章</li>-->
+    <!--</ol>-->
+    <div class="page-header">
+        <h1>U23国足vs乌兹别克U23：韦世豪首发，张玉宁替补</h1>
+        <strong>Author:朱晓磊</strong>
+        <small style="margin-left: 40px;">2018年01月12日14:59:09</small>
+        <div style="display: inline-block;float: right;">
+            <span class="label label-default">国足U23</span>
+            <span class="label label-primary">乌兹别克U23</span>
+            <span class="label label-success">韦世豪</span>
+            <span class="label label-info">张玉宁</span>
+            <span class="label label-warning">警告标签</span>
+            <span class="label label-danger">危险标签</span>
+        </div>
+    </div>
+    <div class="page-content" id="page-content">
+        新闻内容
+    </div>
+</div>
+<!--评论部分-->
+<div class="container page-comment">
+    <div class="comment-null">当前评论内容为空，快来评论区发表你的看法~</div>
+    <div class="page-comment-list" id="page-comment-list">
+        <!--第一个评论-->
+        <!--<div class="row page-comment-item" id="comments[0]">-->
+        <!--<div class="col-md-1 head-img" style="text-align: center;">-->
+        <!--<img id="comments[0].headImg" src="img/club/spanish/fcb_club.png" class="img-fluid"/>-->
+        <!--<p>1楼</p>-->
+        <!--</div>-->
+        <!--<div class="col-md-9">-->
+        <!--<h5>-->
+        <!--<a id="comments[0].username" href="#个人信息">朱晓磊</a>-->
+        <!--</h5>-->
+        <!--<div class="comment">-->
+        <!--<p id="comments[0].comment">(c) Copyright 2018 朱晓磊. All Rights Reserved. </p>-->
+        <!--<p>(c) Copyright 2018 朱晓磊. All Rights Reserved. </p>-->
+        <!--<p>(c) Copyright 2018 朱晓磊. All Rights Reserved. </p>-->
+        <!--</div>-->
+        <!--<h5 style="border-top: 1px dashed grey;padding: 5px;">-->
+        <!--<img class="comment-time-img" src="img/time-logo.png" class="img-fluid"/><span class="comment-time">2018年01月12日16:17:26</span>-->
+        <!--<span class="comment-reply" onclick="replay(0)">回复</span>-->
+        <!--</h5>-->
+        <!--</div>-->
+        <!--</div>-->
+
+
+        <!--第2个评论-->
+        <!--<div class="row page-comment-item" id="comments[1]">-->
+        <!--<div class="col-md-1 head-img" style="text-align: center;">-->
+        <!--<img id="comments[1].headImg" src="img/club/spanish/fcb_club.png" class="img-fluid"/>-->
+        <!--<p>1楼</p>-->
+        <!--</div>-->
+        <!--<div class="col-md-9">-->
+        <!--<blockquote>-->
+        <!--<span>回复<span class="reply-floor">1</span>楼:@<a href="">朱晓磊</a></span>-->
+        <!--<p>(c) Copyright 2018 朱晓磊. All Rights Reserved. </p>-->
+        <!--</blockquote>-->
+        <!--<h5>-->
+        <!--<a id="comments[1].username" href="#个人信息">朱晓磊</a>-->
+        <!--</h5>-->
+        <!--<div class="comment">-->
+        <!--<p id="comments[1].comment">(c) Copyright 2018 朱晓磊. All Rights Reserved.-->
+        <!--(c) Copyright 2018 朱晓磊. All Rights Reserved.-->
+        <!--(c) Copyright 2018 朱晓磊. All Rights Reserved. </p>-->
+        <!--</div>-->
+        <!--<h5 style="border-top: 1px dashed grey;padding: 5px;">-->
+        <!--<img class="comment-time-img" src="img/time-logo.png" class="img-fluid"/><span class="comment-time">2018年01月12日16:17:26</span>-->
+        <!--<span class="comment-reply" onclick="replay(1)">回复</span>-->
+        <!--</h5>-->
+        <!--</div>-->
+        <!--</div>-->
+    </div>
+
+    <!--评论内容输入区-->
+    <div class="page-comment-input">
+        <div class="container">
+            <p onclick="">加载更多评论</p>
+        </div>
+        <div class="container reply" style="width: 30%;float: left;display: none">
+            <button type="button" class="btn close" data-toggle="tooltip" title="取消回复" data-placement="right"
+                    onclick="closeReply()">&times;
+            </button>
+            <span>回复<span class="reply-floor" id="reply-floor"></span>楼:@<a href="" class="reply-username"
+                                                                            id="reply-username"></a></span>
+        </div>
+        <textarea name="page-comment-content" id="comment-textarea" placeholder="写下你的评论..."></textarea>
+        <button class="btn btn-danger pull-right" onclick="commentBtn()">评论</button>
+    </div>
+</div>
+<!--底部-->
+<div class="container-fluid bottom">
+    <p>(c) Copyright 2018 朱晓磊. All Rights Reserved. </p>
+</div>
+</body>
+</html>

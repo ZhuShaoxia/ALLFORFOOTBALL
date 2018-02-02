@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ALLFORFOOTBALL:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ALLFORFOOTBALL_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ALLFORFOOTBALL/web/Web" />
+    </root>
+  </artifact>
+</component>

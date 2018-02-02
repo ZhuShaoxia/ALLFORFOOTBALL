@@ -1,0 +1,95 @@
+a{
+	color: dodgerblue;
+	text-decoration: none;
+}
+a:hover{
+	color: red;
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+a:link{
+	color: grey;
+	text-decoration: none;
+}
+.page-content{
+	height: 800px;
+}
+.page-comment{
+	border-top: 1px solid gainsboro;
+}
+.page-comment .comment-null{
+	font-size: 30px;
+	color: red;
+}
+.page-comment .page-comment-list {
+	margin-top: 20px;
+}
+.page-comment .page-comment-list .page-comment-item{
+	/*margin: 10px;*/
+	padding-top: 5px;
+	margin-top: 5px;
+	/*border-bottom: 1px solid gray;*/
+	border-bottom: 1px solid gainsboro;
+}
+.page-comment .page-comment-list .page-comment-item h5{
+	
+}
+.page-comment .page-comment-list .page-comment-item p{
+	margin-top: 5px;
+	margin-bottom: 0px;
+}
+.page-comment .page-comment-list .page-comment-item .head-img img{
+	width: 70px;
+	height: 70px;
+}
+.page-comment .page-comment-list .page-comment-item .head-img p{
+	margin-top: 20px;
+}
+.page-comment .page-comment-list .page-comment-item .comment-time{
+	color: grey;
+}
+.page-comment .page-comment-list .page-comment-item .comment-time-img{
+	width: 13px;
+	height: 14px;
+	margin-right: 4px;
+}
+.page-comment .page-comment-list .page-comment-item .comment{
+	margin-bottom: 10px;
+}
+.page-comment .page-comment-list .page-comment-item .comment-reply{
+	/*margin-top: 5px;*/
+	font-size: 15px;
+	float: right;
+	color: gray;
+	cursor: pointer;
+}
+blockquote span{
+	font-size: 15px;
+	color: darkslateblue;
+}
+blockquote p{
+	color: grey;
+	font-size: 15px;
+}
+.page-comment .page-comment-input {
+	height: 150px;
+}
+.page-comment .page-comment-input p{
+	font-size: 20px;
+	float: right;
+	margin-right: 20px;
+	cursor: pointer;
+	color: red;
+}
+.page-comment .page-comment-input textarea{
+	margin-top: 10px;
+	font-size: 20px;
+	resize: none;
+	width: 1130px;
+	height: 150px;
+}
+.page-comment .page-comment-input button{
+	margin-right: 30px;
+}
