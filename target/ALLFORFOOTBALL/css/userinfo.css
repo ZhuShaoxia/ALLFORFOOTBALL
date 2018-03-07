@@ -1,0 +1,45 @@
+body{
+    background-color: gainsboro;
+}
+
+.userinfo{
+    padding: 50px;
+    background-color: white;
+    height:900px;
+}
+.userinfo-edit-fileds{
+    text-align: left;
+}
+.userinfo-edit-item{
+    padding-top: 30px;
+    height: 120px;
+    border-bottom: 1px solid gainsboro;
+}
+.userinfo-edit-item span{
+    padding-left:40px;
+    float: left;
+    font-size: 20px;
+}
+.userinfo-edit-item-right{
+    height: 28px;
+}
+.userinfo-edit-item-right span{
+    padding-left:0px;
+    padding-top: 0px;
+}
+/*.userinfo-edit-item input{*/
+    /*width: 200px;*/
+    /*display: inline-block;*/
+/*}*/
+.userinfo-edit-item-right .editing .editing-btn{
+    margin-top: 5px;
+}
+.userinfo-edit-item-right img{
+    width: 20px;
+    height:20px;
+}
+.userinfo-edit-item-right a{
+    font-size: 20px;
+    margin-left: 10px;
+    display: none;
+}

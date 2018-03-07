@@ -1,0 +1,44 @@
+.setting-bind {
+    padding-left: 15%;
+    padding-right: 15%;
+    width: 100%;
+}
+
+.setting-bind p {
+    font-size: 15px;
+    color: RGB(166, 166, 166);
+}
+
+.setting-bind .item {
+    padding-top: 10px;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid RGB(242, 242, 242);
+}
+
+.setting-bind .item span {
+    font-size: 30px;
+}
+
+.setting-bind .item .name {
+    padding-right: 50px;
+}
+
+.setting-bind .item .content {
+    margin-left: 26px;
+}
+
+.setting-bind .item .changeBtn {
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+.setting-bind .item .change {
+    display: inline-block;
+}
+.setting-bind .item .change input{
+    width: 200px;
+    height: 30px;
+    margin-right: 10px;
+}
