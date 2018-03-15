@@ -26,10 +26,13 @@
                     <a href="index.jsp">首页</a>
                 </li>
                 <li>
+                    <a href="#">文章</a>
+                </li>
+                <li>
                     <a href="#about">比赛</a>
                 </li>
                 <li>
-                    <a href="#contact">数据</a>
+                    <a href="data.jsp">数据</a>
                 </li>
                 <%--<li>--%>
                 <%--<a href="#contact">校园联赛</a>--%>

@@ -52,6 +52,7 @@ $("#registerModal").on('hide.bs.modal', function () {
     removeSth("获取验证码")
 })
 
+
 /**
  * 移除倒计时
  * @param text

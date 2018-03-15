@@ -2,6 +2,26 @@ body {
     padding-top: 70px;
 }
 
+/* 未访问的链接 */
+a:link {
+    color: black
+}
+
+/* 已访问的链接 */
+a:visited {
+    color: black
+}
+
+/* 当有鼠标悬停在链接上 */
+a:hover {
+    color: red
+}
+
+/* 被选择的链接 */
+a:active {
+    color: black
+}
+
 /*a {
 	text-decoration: none;
 }*/
