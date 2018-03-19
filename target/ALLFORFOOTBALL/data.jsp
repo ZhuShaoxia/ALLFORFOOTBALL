@@ -70,7 +70,7 @@
                     <%--assistBoard--%>
                     <li><a data-toggle="tab" id="assistBoardA" href="#assistBoardDiv">助攻榜</a></li>
                     <%--scheduleBoard--%>
-                    <li><a data-toggle="tab" id="scheduleBoardA" href="#scheduleBoardDiv">赛程榜</a></li>
+                    <li><a data-toggle="tab" id="scheduleBoardA" href="#scheduleBoardDiv">赛程表</a></li>
                 </ul>
             </div>
             <div class="tab-content">
@@ -153,9 +153,12 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="shooterBoardDiv" class="row tab-pane fade data-right">
+                <div id="shooterBoardDiv" class="row tab-pane data-right fade">
                     <table class="table table-hover">
                         <thead>
+                        <tr class="data-table-profile">
+                            <td colspan="10">射手榜</td>
+                        </tr>
                         <tr class="data-table-head">
                             <th>排名</th>
                             <th>球员</th>
@@ -176,9 +179,12 @@
                         </tbody>
                     </table>
                 </div>
-                <div id="assistBoardDiv" class="row tab-pane fade data-right ">
+                <div id="assistBoardDiv" class="row tab-pane  data-right fade">
                     <table class="table table-hover">
                         <thead>
+                        <tr class="data-table-profile">
+                            <td colspan="10">助攻榜</td>
+                        </tr>
                         <tr class="data-table-head">
                             <th>排名</th>
                             <th>球员</th>
@@ -199,8 +205,87 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="row tap-pane fade data-right">
-
+                <div id="scheduleBoardDiv" class="row tap-pane data-right fade">
+                    <table class="table table-hover">
+                        <thead>
+                        <tr class="data-table-profile">
+                            <td colspan="10">赛程表</td>
+                        </tr>
+                        <tr class="data-table-head">
+                            <th style="width: 30%;text-align: left;padding-left: 20px"><a href="#">&lt;&nbsp;上一轮</a>
+                            </th>
+                            <th style="width: 40%;font-size:15px" colspan="2">第2轮</th>
+                            <th style="width: 40%;text-align: right;padding-right: 20px"><a href="#">&gt;&nbsp;下一轮</a>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="success">
+                            <td>2018年03月16日09:31:18</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                            <td>1:5</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                        </tr>
+                        <tr class="success">
+                            <td>2018年03月16日09:31:18</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                            <td>:</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                        </tr>
+                        <tr class="success">
+                            <td>2018年03月16日09:31:18</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                            <td>:</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                        </tr>
+                        <tr class="success">
+                            <td>2018年03月16日09:31:18</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                            <td>:</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                        </tr>
+                        <tr class="success">
+                            <td>2018年03月16日09:31:18</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                            <td>:</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                        </tr>
+                        <tr class="success">
+                            <td>2018年03月16日09:31:18</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                            <td>:</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                        </tr>
+                        <tr class="success">
+                            <td>2018年03月16日09:31:18</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                            <td>:</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                        </tr>
+                        <tr class="success">
+                            <td>2018年03月16日09:31:18</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                            <td>:</td>
+                            <td><a href="#"><img class="data-table-clubImg"
+                                                 src="img/club/china/zc_shanggang.png">上海上港</a></td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>

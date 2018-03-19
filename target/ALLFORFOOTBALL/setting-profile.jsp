@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/navbar_default.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <link rel="stylesheet" type="text/css" href="css/userinfo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/user-info.css"/>
     <link rel="stylesheet" type="text/css" href="css/ImgCropping.css">
     <link rel="stylesheet" type="text/css" href="css/cropper.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
@@ -93,7 +93,7 @@
         <div class="col-md-2">
             <!--头像-->
             <div style="width: 150px;height: 150px;border: solid 1px beige">
-                <img id="finalImg" alt="请上传头像" src="img/icon.png" style="width: 150px;height: 150px">
+                <img id="finalImg" alt="请上传头像" src="img/head-img-icon.png" style="width: 150px;height: 150px">
             </div>
             <div class="editing">
                 <button class="l-btn" style="margin-left: 33px;margin-top: 5px" id="replaceImg">更换头像</button>

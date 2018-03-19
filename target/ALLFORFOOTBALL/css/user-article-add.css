@@ -1,0 +1,46 @@
+.article-add-head {
+    overflow: hidden;
+    width: 100%;
+    background-color: #e8ffd1;
+    text-align: center;
+    padding: 10px;
+    border: 0px;
+}
+
+.article-add-head table {
+    text-align: left;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    border: 1px solid #11d195;
+}
+
+.article-add-head caption {
+    font-size: 17px;
+}
+
+.article-add-head input {
+    width: 100%;
+}
+
+.article-add-head select {
+    width: 100%;
+}
+
+.article-add-body {
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+}
+.article-add-bottom{
+    overflow: hidden;
+    width: 100%;
+    background-color: #e8ffd1;
+    text-align: center;
+    padding: 10px;
+}

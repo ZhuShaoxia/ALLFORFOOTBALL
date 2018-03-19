@@ -13,7 +13,7 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="css/navbar_default.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
-    <link rel="stylesheet" type="text/css" href="css/userinfo.css"/>
+    <link rel="stylesheet" type="text/css" href="css/user-info.css"/>
     <link rel="stylesheet" type="text/css" href="css/verify.css"/>
 
     <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>

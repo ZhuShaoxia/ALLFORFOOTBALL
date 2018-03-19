@@ -24,22 +24,6 @@
     <meta charset="utf-8"/>
     <title>懂球儿</title>
 </head>
-<script>
-    <!--激活提示工具-->
-    $(function () {
-
-        $("[data-toggle='tooltip']").tooltip();
-
-
-//      如果没登录，提示登录
-        $("#comment-textarea").focus(function () {
-
-        })
-
-
-    });
-
-</script>
 
 <body>
 <!--导航栏-->
@@ -128,7 +112,8 @@
             <p onclick="">加载更多评论</p>
         </div>
         <div class="container reply" style="width: 30%;float: left;display: none">
-            <button type="button" class="btn close" data-toggle="tooltip" title="取消回复" data-placement="right"
+            <button type="button" class="btn close" data-toggle="popover" data-trigger="hover" data-content="取消回复"
+                    data-placement="right"
                     onclick="closeReply()">&times;
             </button>
             <span>回复<span class="reply-floor" id="reply-floor"></span>楼:@<a href="" class="reply-username"
@@ -143,4 +128,8 @@
 </body>
 </html>
 <script type="text/javascript" src="js/head.js"></script>
-
+<script>
+    $(function () {
+        $("[data-toggle='popover']").popover();
+    });
+</script>

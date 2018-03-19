@@ -1,0 +1,73 @@
+/**
+    用户评论
+ */
+.article-head {
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    background-color: gainsboro;
+    text-align: right;
+    padding: 10px;
+    border: 0px;
+}
+
+.article-head span {
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 16px;
+    float: left;
+}
+
+.article-head button {
+    margin-left: 4px;
+    margin-bottom: 2px;
+    float: left;
+}
+
+.article-head img {
+    width: 30px;
+    height: 30px;
+}
+
+.article-head select {
+    vertical-align: middle;
+    font-size: 16px;
+    height: 26px;
+}
+
+.article-body {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.article-body .item {
+    width: 100%;
+    /*上右下左*/
+    margin: 0px 0px 10px 0px;
+    background-color: #e8ffd1;
+    overflow: hidden;
+    padding: 10px 10px 0px 10px;
+}
+
+.article-body .item .item-bottom {
+    padding-top: 2px;
+}
+
+.article-body .item .item-bottom strong {
+    font-size: 16px;
+    color:#25d123;
+}
+.article-body .item .title{
+    text-decoration: none;
+}
+
+.article-body .item .item-bottom span {
+    padding-left: 20px;
+    color: grey;
+}
+
+.article-body .item .count {
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+

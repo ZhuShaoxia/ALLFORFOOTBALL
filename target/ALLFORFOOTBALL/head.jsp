@@ -22,15 +22,15 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active">
+                <li>
                     <a href="index.jsp">首页</a>
                 </li>
                 <li>
-                    <a href="#">文章</a>
+                    <a href="articleList.jsp">文章</a>
                 </li>
-                <li>
-                    <a href="#about">比赛</a>
-                </li>
+                <%--<li>--%>
+                    <%--<a href="#about">比赛</a>--%>
+                <%--</li>--%>
                 <li>
                     <a href="data.jsp">数据</a>
                 </li>
@@ -38,12 +38,12 @@
                 <%--<a href="#contact">校园联赛</a>--%>
                 <%--</li>--%>
             </ul>
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default">搜索</button>
-            </form>
+            <%--<form class="navbar-form navbar-left" role="search">--%>
+                <%--<div class="form-group">--%>
+                    <%--<input type="text" class="form-control" placeholder="Search">--%>
+                <%--</div>--%>
+                <%--<button type="submit" class="btn btn-default">搜索</button>--%>
+            <%--</form>--%>
             <ul class="nav navbar-nav navbar-right">
                 <li class="active">
                     <a href="#login-modal" data-toggle="modal">登录</a>
