@@ -11,7 +11,7 @@
 <head>
     <link href="img/logo-2.png" rel="shortcut icon"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/navbar_default.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar-default.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="css/article.css"/>
     <!--<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"/>-->
@@ -31,11 +31,16 @@
 
 <!--文章-->
 <div class="container">
-    <!--<ol class="breadcrumb">-->
-    <!--<li><a href="#">首页</a></li>-->
-    <!--<li class="active">文章</li>-->
-    <!--</ol>-->
-    <div class="page-header">
+    <div class="row">
+        <ol class="breadcrumb" style="margin-bottom: 0px">
+            <li><a href="index.jsp">首页</a></li>
+            <li><a href="articleList.jsp">文章列表</a></li>
+            <li class="active">U23国足vs乌兹别克U23：韦世豪首发，张玉宁替补</li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+    <div class="row page-header" style="margin-top: 0px">
         <h1>U23国足vs乌兹别克U23：韦世豪首发，张玉宁替补</h1>
         <strong>Author:朱晓磊</strong>
         <small style="margin-left: 40px;">2018年01月12日14:59:09</small>
@@ -48,7 +53,7 @@
             <span class="label label-danger">危险标签</span>
         </div>
     </div>
-    <div class="page-content" id="page-content">
+    <div class="row page-content" id="page-content">
         新闻内容
     </div>
 </div>

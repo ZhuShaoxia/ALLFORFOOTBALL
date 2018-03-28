@@ -3,23 +3,34 @@ body {
 }
 
 /* 未访问的链接 */
+a {
+    text-decoration: none;
+}
+
 a:link {
-    color: black
+    color: black;
+    text-decoration: none;
+
 }
 
 /* 已访问的链接 */
 a:visited {
-    color: black
+    color: black;
+    text-decoration: none;
+
 }
 
 /* 当有鼠标悬停在链接上 */
 a:hover {
-    color: red
+    color: red;
+    text-decoration: none;
+
 }
 
 /* 被选择的链接 */
 a:active {
-    color: black
+    color: black;
+    text-decoration: none;
 }
 
 /*a {
@@ -116,20 +127,15 @@ div.col-12.title p {
     margin-bottom: 0px;
 }
 
-.article {
-    /*width: ;*/
-}
-
 .article-list {
-    /*padding: 0px;*/
     margin-top: 20px;
 }
 
-.article-item {
-    width: 90%;
+.article-list .article-item {
+    width: 100%;
     margin-top: 10px;
     margin-left: 5px;
-    border-bottom: 3px solid grey;
+    border-bottom: 2px solid #bebeb8;
 }
 
 .article-item a {
@@ -242,4 +248,29 @@ div.col-12.title p {
 
 .row.step-2, .row.step-3 {
     display: none;
+}
+/*小图标*/
+.td-icon-img {
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+}
+.td-index-img{
+    width: 80px;
+    height: 80px;
+}
+/**/
+/*右侧近期比赛*/
+.recent-game-head {
+    border-bottom: 1px solid chartreuse;
+}
+
+.recent-game-head span {
+    padding: 6px 10px 2px 10px;
+    background-color: chartreuse;
+    color: white;
+}
+.td-club-img{
+    width: 50px;
+    height: 50px;
 }

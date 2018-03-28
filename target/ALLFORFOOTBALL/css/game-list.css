@@ -1,0 +1,40 @@
+.game-head {
+    width: 100%;
+    height: 80px;
+    padding: 18px;
+    background-color: #d1d1ca;
+}
+
+.game-head span {
+    font-size: 26px;
+}
+
+.game-head input {
+    margin-top: 6px;
+    float: right;
+    padding-right: 20px;
+}
+
+.game-list {
+    margin-top: 10px;
+    /*background-color: #d1d1ca*/
+}
+
+.game-list .game-item {
+    margin-bottom: 5px;
+}
+
+.game-list .loading,
+.game-list .list-null {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(252, 252, 252);
+}
+
+.game-list .game-item .game-item-head {
+    font-size: 15px;
+    height: 40px;
+    background-color: #d1d1ca;
+    width: 100%;
+    padding: 10px;
+}

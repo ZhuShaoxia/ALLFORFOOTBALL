@@ -11,13 +11,13 @@
 <head>
     <link href="img/logo-2.png" rel="shortcut icon"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/navbar_default.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar-default.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="css/user-info.css"/>
-    <link rel="stylesheet" type="text/css" href="css/user-article-add.css"/>
-
     <%--多选框插件--%>
     <link rel="stylesheet" href="css/chosen.css">
+    <link rel="stylesheet" type="text/css" href="css/user-article-add.css"/>
+
 
     <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
@@ -48,8 +48,15 @@
 <script>
     $(function () {
         $(".chosen-select").chosen()
+        $(".chosen-select").chosen({
+            max_selected_options: 3
+        })
+//        $(".chosen-select").bind("chosen:maxselected", function () {
+//            console.log('123')
+//        })
         var ue = UE.getEditor('ueditor')
     })
+
 </script>
 <body>
 <%@include file="head2.jsp" %>
@@ -78,16 +85,21 @@
                         <td><input id="subhead" type="text"></td>
                     </tr>
                     <tr>
+                        <td><strong>文章展示图片</strong></td>
+                        <td><input type="file"><span style="color: red">****仅限上传.jpg/png图片****</span></td>
+                    </tr>
+                    <tr>
                         <td><strong>标签</strong></td>
                         <td>
-                            <select multiple class="chosen-select chosen-rtl" tabindex="14" data-placeholder="请输入适当的标签">
+                            <select multiple class="chosen-select chzn-search chosen-rtl" tabindex="14"
+                                    data-placeholder="请为文章添加至多六个标签">
                                 <option value=""></option>
-                                <option>American Black Bear</option>
-                                <option>Asiatic Black Bear</option>
+                                <option selected value="0">American Black Bear</option>
+                                <option value="1">Asiatic Black Bear</option>
                                 <option>Brown Bear</option>
                                 <option>Giant Panda</option>
-                                <option selected>Sloth Bear</option>
-                                <option selected>Polar Bear</option>
+                                <option>Sloth Bear</option>
+                                <option>Polar Bear</option>
                             </select>
                         </td>
                     </tr>
@@ -132,3 +144,10 @@
 <script src="ueditor/lang/zh-cn/zh-cn.js" type="text/javascript"
         charset="utf-8"></script>
 <script type="text/javascript" charset="UTF-8" src="ueditor/ueditor.parse.min.js"></script>
+<script>
+    $(function () {
+//        var lis = $("ul[class='chzn-choices'] span")
+        var lis = $("ul[class='chzn-choices']")
+        console.log(lis)
+    })
+</script>

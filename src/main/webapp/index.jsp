@@ -11,17 +11,24 @@
 <head>
     <link href="img/logo-2.png" rel="shortcut icon"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/navbar_default.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar-default.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
 
     <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <%--倒计时--%>
+    <script src="js/countDown.js" type="text/javascript" charset="utf-8"></script>
+    <%--时间格式化--%>
+    <script src="js/dateFormat.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
 
     <meta charset="utf-8"/>
     <title>懂球儿</title>
 </head>
+<script type="text/javascript">
 
+</script>
 <body>
 
 <%@include file="head2.jsp" %>
@@ -66,7 +73,17 @@
                     </div>
                     <div class="col-md-4 match-info-time">
                         <h2>西甲</h2>
-                        <h1>--</h1>
+                        <span>
+                            <div class="count_down">
+                                <span class="day_num"></span>
+                                <span class="hour_num"></span>
+                                <span class="min_num"></span>
+                                <span class="sec_num"></span>
+                            </div>
+                            <div class="game-time" style="display: none;padding: 10px">
+                                <span class="game-start">123</span>
+                            </div>
+                        </span>
                     </div>
                     <div class="col-md-4 match-info-item">
                         <img src="img/club/spanish/laiwante-club.png" class="img-fluid"/>
@@ -76,7 +93,7 @@
             </div>
             <!--比赛2-->
             <div class="row match-info">
-                <a href="#">
+                <a href="#" onclick="pauseGame()">
                     <div class="col-md-4 match-info-item">
                         <img src="img/club/spanish/fcb_club.png"/>
                         <p>巴塞罗那</p>
@@ -100,146 +117,280 @@
             <div class="row">
                 <ul class="nav nav-tabs">
                     <li class="active">
-                        <a href="#">头条</a>
+                        <a href="#type1" data-toggle="tab">头条</a>
                     </li>
                     <li>
-                        <a href="#">转会</a>
+                        <a href="#type2" data-toggle="tab">转会</a>
                     </li>
                     <li>
-                        <a href="#">闲情</a>
+                        <a href="#type3" data-toggle="tab">闲情</a>
                     </li>
                     <li>
-                        <a href="#">中超</a>
+                        <a href="#type4" data-toggle="tab">中超</a>
                     </li>
                     <li>
-                        <a href="#">英超</a>
+                        <a href="#type5" data-toggle="tab">英超</a>
                     </li>
                     <li>
-                        <a href="#">西甲</a>
+                        <a href="#type6" data-toggle="tab">西甲</a>
                     </li>
                     <li>
-                        <a href="#">意甲</a>
+                        <a href="#type7" data-toggle="tab">意甲</a>
                     </li>
                     <li>
-                        <a href="#">德甲</a>
+                        <a href="#type8" data-toggle="tab">德甲</a>
                     </li>
                 </ul>
             </div>
             <!--文章列表-->
-            <div class="row article-list" style="margin-left: 0px">
-                <!--文章1-->
-                <div class="row article-item">
-                    <div class="col-md-3 article-img">
-                        <img src="img/1.jpg" class="img-rounded"/>
-                    </div>
-                    <div class="col-md-9">
-                        <a href="article.jsp">
-                            <div class="row article-title">
-                                <strong style="color: #333;">每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
-                                <p class="text-muted">转会费1.2亿加4000万浮动</p>
+            <div class="tab-content row article-list ">
+                <div id="type1" class="tab-pane fade in active ">
+                    <!--文章1-->
+                    <div class="row article-item">
+                        <div class="col-md-3 article-img">
+                            <img src="img/1.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="article.jsp">
+                                <div class="row article-title">
+                                    <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
+                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                                </div>
+                            </a>
+                            <div class="row  article-time">
+                                <small>2018年01月06日23:25:46</small>
+                                <a href="article.jsp" style="float: right;"><img src="img/article-comment.png"></a>
                             </div>
-                        </a>
-                        <div class="row  article-time">
-                            <small>2018年01月06日23:25:46</small>
-                            <a href="article.jsp" style="float: right;"><img src="img/article-comment.png"></a>
+                        </div>
+                    </div>
+                    <!--文章2-->
+                    <div class="row article-item">
+                        <div class="col-md-3 article-img">
+                            <img src="img/1.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="#">
+                                <div class="row article-title">
+                                    <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
+                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                                </div>
+                            </a>
+                            <div class="row  article-time">
+                                <small>2018年01月06日23:25:46</small>
+                                <a href="#" style="float: right;"><img src="img/article-comment.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row article-item">
+                        <div class="col-md-3 article-img">
+                            <img src="img/1.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="#">
+                                <div class="row article-title">
+                                    <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
+                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                                </div>
+                            </a>
+                            <div class="row  article-time">
+                                <small>2018年01月06日23:25:46</small>
+                                <a href="#" style="float: right;"><img src="img/article-comment.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row article-item">
+                        <div class="col-md-3 article-img ">
+                            <img src="img/1.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="#">
+                                <div class="row article-title">
+                                    <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
+                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                                </div>
+                            </a>
+                            <div class="row  article-time">
+                                <small>2018年01月06日23:25:46</small>
+                                <a href="#" style="float: right;"><img src="img/article-comment.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row article-item">
+                        <div class="col-md-3 article-img">
+                            <img src="img/1.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="#">
+                                <div class="row article-title">
+                                    <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
+                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                                </div>
+                            </a>
+                            <div class="row  article-time">
+                                <small>2018年01月06日23:25:46</small>
+                                <a href="#" style="float: right;"><img src="img/article-comment.png"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!--文章2-->
-                <div class="row article-item">
-                    <div class="col-md-3 article-img">
-                        <img src="img/1.jpg" class="img-rounded"/>
-                    </div>
-                    <div class="col-md-9">
-                        <a href="#">
-                            <div class="row article-title">
-                                <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
-                                <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                <div id="type2" class="tab-pane fade">
+                    <!--文章1-->
+                    <div class="row article-item">
+                        <div class="col-md-3 article-img">
+                            <img src="img/1.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="article.jsp">
+                                <div class="row article-title">
+                                    <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
+                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                                </div>
+                            </a>
+                            <div class="row  article-time">
+                                <small>2018年01月06日23:25:46</small>
+                                <a href="article.jsp" style="float: right;"><img src="img/article-comment.png"></a>
                             </div>
-                        </a>
-                        <div class="row  article-time">
-                            <small>2018年01月06日23:25:46</small>
-                            <a href="#" style="float: right;"><img src="img/article-comment.png"></a>
+                        </div>
+                    </div>
+                    <!--文章2-->
+                    <div class="row article-item">
+                        <div class="col-md-3 article-img">
+                            <img src="img/1.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="#">
+                                <div class="row article-title">
+                                    <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
+                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                                </div>
+                            </a>
+                            <div class="row  article-time">
+                                <small>2018年01月06日23:25:46</small>
+                                <a href="#" style="float: right;"><img src="img/article-comment.png"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row article-item">
-                    <div class="col-md-3 article-img">
-                        <img src="img/1.jpg" class="img-rounded"/>
-                    </div>
-                    <div class="col-md-9">
-                        <a href="#">
-                            <div class="row article-title">
-                                <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
-                                <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                <div id="type3" class="tab-pane fade">
+                    <!--文章1-->
+                    <div class="row article-item">
+                        <div class="col-md-3 article-img">
+                            <img src="img/1.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="article.jsp">
+                                <div class="row article-title">
+                                    <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
+                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                                </div>
+                            </a>
+                            <div class="row  article-time">
+                                <small>2018年01月06日23:25:46</small>
+                                <a href="article.jsp" style="float: right;"><img src="img/article-comment.png"></a>
                             </div>
-                        </a>
-                        <div class="row  article-time">
-                            <small>2018年01月06日23:25:46</small>
-                            <a href="#" style="float: right;"><img src="img/article-comment.png"></a>
                         </div>
                     </div>
                 </div>
-                <div class="row article-item">
-                    <div class="col-md-3 article-img ">
-                        <img src="img/1.jpg" class="img-rounded"/>
-                    </div>
-                    <div class="col-md-9">
-                        <a href="#">
-                            <div class="row article-title">
-                                <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
-                                <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                <div id="type4" class="tab-pane fade">
+                    <!--文章1-->
+                    <div class="row article-item">
+                        <div class="col-md-3 article-img">
+                            <img src="img/1.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="article.jsp">
+                                <div class="row article-title">
+                                    <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
+                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                                </div>
+                            </a>
+                            <div class="row  article-time">
+                                <small>2018年01月06日23:25:46</small>
+                                <a href="article.jsp" style="float: right;"><img src="img/article-comment.png"></a>
                             </div>
-                        </a>
-                        <div class="row  article-time">
-                            <small>2018年01月06日23:25:46</small>
-                            <a href="#" style="float: right;"><img src="img/article-comment.png"></a>
                         </div>
                     </div>
                 </div>
-                <div class="row article-item">
-                    <div class="col-md-3 article-img">
-                        <img src="img/1.jpg" class="img-rounded"/>
-                    </div>
-                    <div class="col-md-9">
-                        <a href="#">
-                            <div class="row article-title">
-                                <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
-                                <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                <div id="type5" class="tab-pane fade">
+                    <!--文章1-->
+                    <div class="row article-item">
+                        <div class="col-md-3 article-img">
+                            <img src="img/1.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="article.jsp">
+                                <div class="row article-title">
+                                    <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
+                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                                </div>
+                            </a>
+                            <div class="row  article-time">
+                                <small>2018年01月06日23:25:46</small>
+                                <a href="article.jsp" style="float: right;"><img src="img/article-comment.png"></a>
                             </div>
-                        </a>
-                        <div class="row  article-time">
-                            <small>2018年01月06日23:25:46</small>
-                            <a href="#" style="float: right;"><img src="img/article-comment.png"></a>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--分页-->
-            <div class="article-pagination">
-                <ul class="pagination">
-                    <li>
-                        <a href="#">&laquo;</a>
-                    </li>
-                    <li>
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#">&raquo;</a>
-                    </li>
-                </ul>
+                <div id="type6" class="tab-pane fade">
+                    <!--文章1-->
+                    <div class="row article-item">
+                        <div class="col-md-3 article-img">
+                            <img src="img/1.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="article.jsp">
+                                <div class="row article-title">
+                                    <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
+                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                                </div>
+                            </a>
+                            <div class="row  article-time">
+                                <small>2018年01月06日23:25:46</small>
+                                <a href="article.jsp" style="float: right;"><img src="img/article-comment.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="type7" class="tab-pane fade">
+                    <!--文章1-->
+                    <div class="row article-item">
+                        <div class="col-md-3 article-img">
+                            <img src="img/1.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="article.jsp">
+                                <div class="row article-title">
+                                    <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
+                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                                </div>
+                            </a>
+                            <div class="row  article-time">
+                                <small>2018年01月06日23:25:46</small>
+                                <a href="article.jsp" style="float: right;"><img src="img/article-comment.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="type8" class="tab-pane fade">
+                    <!--文章1-->
+                    <div class="row article-item">
+                        <div class="col-md-3 article-img">
+                            <img src="img/1.jpg" class="img-rounded"/>
+                        </div>
+                        <div class="col-md-9">
+                            <a href="article.jsp">
+                                <div class="row article-title">
+                                    <strong>每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
+                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                                </div>
+                            </a>
+                            <div class="row  article-time">
+                                <small>2018年01月06日23:25:46</small>
+                                <a href="article.jsp" style="float: right;"><img src="img/article-comment.png"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!--各球队积分-->
@@ -247,72 +398,265 @@
             <div class="col-12 title">
                 <span>积分榜</span>
                 <p class="text-right">
-                    <a href="#">更多</a>
+                    <a href="data.jsp">更多</a>
                 </p>
             </div>
             <div class="col-12">
                 <div>
                     <ul class="nav nav-tabs">
                         <li class="active">
-                            <a href="#">中超</a>
+                            <a href="#score-zc" data-toggle="tab">中超</a>
                         </li>
                         <li>
-                            <a href="#">英超</a>
+                            <a href="#score-yc" data-toggle="tab">英超</a>
                         </li>
                         <li>
-                            <a href="#">西甲</a>
+                            <a href="#score-xj" data-toggle="tab">西甲</a>
                         </li>
                         <li>
-                            <a href="#">意甲</a>
+                            <a href="#score-yj" data-toggle="tab">意甲</a>
                         </li>
                         <li>
-                            <a href="#">德甲</a>
+                            <a href="#score-dj" data-toggle="tab">德甲</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th>排名</th>
-                            <th>球队</th>
-                            <th>胜/平/负</th>
-                            <th>积分</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <th>1</th>
-                            <th>巴塞罗那</th>
-                            <th>1/1/1</th>
-                            <th>36</th>
-                        </tr>
-                        <tr>
-                            <th>1</th>
-                            <th>巴塞罗那</th>
-                            <th>1/1/1</th>
-                            <th>36</th>
-                        </tr>
-                        <tr>
-                            <th>1</th>
-                            <th>巴塞罗那</th>
-                            <th>1/1/1</th>
-                            <th>36</th>
-                        </tr>
-                        <tr>
-                            <th>1</th>
-                            <th>巴塞罗那</th>
-                            <th>1/1/1</th>
-                            <th>36</th>
-                        </tr>
-                        <tr>
-                            <th>1</th>
-                            <th>巴塞罗那</th>
-                            <th>1/1/1</th>
-                            <th>36</th>
-                        </tr>
-                        </tbody>
-                    </table>
+
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="score-zc">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>排名</th>
+                                    <th>球队</th>
+                                    <th>胜/平/负</th>
+                                    <th>积分</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="active">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="score-yc">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>排名</th>
+                                    <th>球队</th>
+                                    <th>胜/平/负</th>
+                                    <th>积分</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="active">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="score-xj">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>排名</th>
+                                    <th>球队</th>
+                                    <th>胜/平/负</th>
+                                    <th>积分</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <tr class="active">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="score-yj">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>排名</th>
+                                    <th>球队</th>
+                                    <th>胜/平/负</th>
+                                    <th>积分</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="active">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="score-dj">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>排名</th>
+                                    <th>球队</th>
+                                    <th>胜/平/负</th>
+                                    <th>积分</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="active">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="success">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="warning">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                <tr class="">
+                                    <td>1</td>
+                                    <td><a href="club.jsp"><img class="td-icon-img"
+                                                                src="img/club/china/zc_shanggang.png">上海上港</a>
+                                    </td>
+                                    <td>2/2/2</td>
+                                    <td>6</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>

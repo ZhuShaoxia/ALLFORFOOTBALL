@@ -1,5 +1,5 @@
 .article-add-head {
-    overflow: hidden;
+    /*overflow: visible;*/
     width: 100%;
     background-color: #e8ffd1;
     text-align: center;
@@ -43,4 +43,7 @@
     background-color: #e8ffd1;
     text-align: center;
     padding: 10px;
+}
+.chzn-container .chzn-drop{
+    z-index: 1000;
 }

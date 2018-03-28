@@ -28,9 +28,9 @@
                 <li>
                     <a href="articleList.jsp">文章</a>
                 </li>
-                <%--<li>--%>
-                <%--<a href="#about">比赛</a>--%>
-                <%--</li>--%>
+                <li>
+                    <a href="game-list.jsp">比赛</a>
+                </li>
                 <li>
                     <a href="data.jsp">数据</a>
                 </li>

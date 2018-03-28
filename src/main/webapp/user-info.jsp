@@ -11,7 +11,7 @@
 <head>
     <link href="img/logo-2.png" rel="shortcut icon"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="css/navbar_default.css"/>
+    <link rel="stylesheet" type="text/css" href="css/navbar-default.css"/>
     <link rel="stylesheet" type="text/css" href="css/main.css"/>
     <link rel="stylesheet" type="text/css" href="css/user-info.css"/>
 

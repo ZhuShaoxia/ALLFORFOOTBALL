@@ -1,0 +1,80 @@
+.article-list-head {
+    width: 100%;
+    height: 80px;
+    /*background-color: #e8ffd1;*/
+    border-bottom: 1px dashed cadetblue;
+}
+
+.article-list-head-nav {
+    padding: 20px 0px;
+}
+
+.article-list-head .article-li-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+}
+
+.article-list-head-search {
+    height: 40px;
+}
+
+.article-list-head-search .article-list-head-search-bottom {
+    padding: 10px 0px;
+}
+
+.article-list-head-search .article-list-head-search-bottom button {
+    padding: 5px 8px;
+}
+
+.article-list-head-search .search-text-input {
+    /*margin-top: 4px;*/
+    height: 30px;
+    width: 85%;
+}
+
+.article-list-head-search .search-date-input {
+    width: 140px;
+}
+
+/*body*/
+.article-list-body {
+    margin-top: 20px;
+}
+
+.article-list-body .article-list-body-right {
+
+}
+
+.article-list-body .article-list-body-right .hot-comment-title {
+    background-color: chartreuse;
+    color: white;
+    padding: 5px 5px 3px 5px;
+}
+
+.article-list-body .article-list-body-right .hot-comment-list {
+    border-top: 1px solid chartreuse;
+    width: 100%;
+    height: 200px;
+}
+
+.article-list-body .article-list-body-right .hot-comment-list .hot-comment-item {
+    padding: 5px;
+    background-color: #c4fec2;
+    height: 40px;
+    margin-bottom: 3px;
+}
+
+.article-list-body .article-list-body-right .hot-comment-list .hot-comment-item .hot-comment-item-img span{
+    padding-right: 3px;
+}
+
+.article-list-body .article-list-body-right .hot-comment-list .hot-comment-item .hot-comment-item-img img {
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+}
+
+.article-list-body .article-list-body-right .hot-comment-list .hot-comment-item .hot-comment-item-content {
+    padding: 5px;
+}
