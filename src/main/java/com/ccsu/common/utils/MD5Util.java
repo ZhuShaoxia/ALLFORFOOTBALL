@@ -1,4 +1,4 @@
-package com.ccsu.utils;
+package com.ccsu.common.utils;
 
 import sun.misc.BASE64Encoder;
 
@@ -12,7 +12,7 @@ import java.security.NoSuchAlgorithmException;
  * @author: Xiaolei Zhu
  * @Date: 2018/3/1
  * @Time: 11:13
- * Description:
+ * Description:MD5加密
  */
 public class MD5Util {
     public static void main(String[] args) throws Exception {

@@ -29,7 +29,7 @@
             <form action="" class="layui-form" method="post">
                 <div class="layui-form-item">
                     <div class="layui-inline">
-                        <label for="uploadBtn" class="layui-form-label">球员长相</label>
+                        <label for="uploadBtn" class="layui-form-label">用户头像</label>
                         <div class="layui-input-block">
                             <div class="layui-upload">
                                 <button type="button" class="layui-btn" id="uploadBtn">上传头像</button>
@@ -42,6 +42,28 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label for="nickname" class="layui-form-label">账号</label>
+                        <div class="layui-input-block">
+                            <input id="account" type="text" name="nickname" lay-verify="required" placeholder="请输入"
+                                   autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="layui-form-item">
+                    <div class="layui-inline">
+                        <label for="password" class="layui-form-label">密码</label>
+                        <div class="layui-input-block">
+                            <input id="password" type="password" name="nickname" lay-verify="required" placeholder="请输入"
+                                   autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                    </div>
+                </div>
+
                 <div class="layui-form-item">
                     <div class="layui-inline">
                         <label for="nickname" class="layui-form-label">昵称</label>
@@ -127,7 +149,7 @@
                     </div>
                 </div>
                 <%--按钮--%>
-                <div class="layui-form-item">
+                <div class="layui-form-item" style="padding: 20px;text-align: center">
                     <div class="layui-input-block">
                         <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
                         <button type="reset" class="layui-btn layui-btn-primary">重置</button>

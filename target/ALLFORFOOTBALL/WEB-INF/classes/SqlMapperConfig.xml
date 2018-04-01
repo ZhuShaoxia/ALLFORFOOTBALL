@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--
+        lazyLoadingEnabled：设置懒加载，默认为false。如果为false：则所有相关联的都会被初始化加载。
+        aggressiveLazyLoading：默认为true。当设置为true时，懒加载的对象可能被任何懒属性全部加载；
+        否则，每个属性按需加载。
+     -->
+    <settings>
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias type="com.ccsu.website.type.domain.Type"/>
+        <typeAlias type="com.ccsu.website.examplecourse.domain.ExampleCourse"/>
+        <typeAlias type="com.ccsu.website.expandknowledge.domain.ExpandKnowledge"/>
+        <typeAlias type="com.ccsu.website.knowledgepoint.domain.KnowledgePoint"/>
+        <typeAlias type="com.ccsu.website.option.domain.Option"/>
+        <typeAlias type="com.ccsu.website.question.domain.Question"/>
+        <typeAlias type="com.ccsu.website.otherresource.domain.OtherResource"/>
+        <typeAlias type="com.ccsu.website.studentwork.domain.StudentWork"/>
+        <typeAlias type="com.ccsu.website.teachingresourcesdocument.domain.TeachingResDoc"/>
+        <typeAlias type="com.ccsu.website.user.domain.User"/>
+
+        <typeAlias type="com.ccsu.website.examplecourse.domain.ExampleCourseQueryVo"/>
+        <typeAlias type="com.ccsu.website.expandknowledge.domain.ExpandKnowledgeQueryVo"/>
+        <typeAlias type="com.ccsu.website.studentwork.domain.StudentWorkQueryVo"/>
+        <typeAlias type="com.ccsu.website.knowledgepoint.domain.KnowledgePointQueryVo"/>
+        <typeAlias type="com.ccsu.website.user.domain.UserQueryVo"/>
+
+        <typeAlias type="com.ccsu.website.question.domain.OnlineQuestion"/>
+    </typeAliases>
+    
+</configuration>

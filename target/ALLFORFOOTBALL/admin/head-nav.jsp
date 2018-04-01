@@ -33,21 +33,23 @@
         <!-- 左侧导航区域（可配合layui已有的垂直导航） -->
         <ul class="layui-nav layui-nav-tree">
             <%--layui-nav-itemed--%>
-            <li class="layui-nav-item layui-nav-itemed">
-                <a class="" href="javascript:;">用户管理</a>
+            <li class="layui-nav-item">
+                <a href="javascript:;">首页管理</a>
                 <dl class="layui-nav-child">
-                    <dd><a href="user-list.jsp">用户信息查询</a></dd>
-                    <dd><a href="user-insert.jsp">用户信息录入</a></dd>
+                    <dd><a href="index-focus-game.jsp">焦点比赛</a></dd>
+                    <dd><a href="index-carousel.jsp">轮播图管理</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item layui-nav-itemed">
                 <a href="javascript:;">比赛管理</a>
                 <dl class="layui-nav-child">
                     <dd><a href="match-list.jsp">比赛信息查询</a></dd>
-                    <dd><a href="match-add.jsp">比赛信息录入</a></dd>
-                    <dd><a href="match-lineUp.jsp">比赛阵容录入</a></dd>
+                    <dd><a href="match-info-add.jsp">比赛信息录入</a></dd>
+                    <dd><a href="match-lineUp-add.jsp">比赛阵容录入</a></dd>
+                    <dd><a href="match-state.jsp">比赛状态修改</a></dd>
                     <dd><a href="match-technology.jsp">比赛技术统计</a></dd>
                     <dd><a href="match-process.jsp">比赛过程录入</a></dd>
+                    <dd><a href="match-event.jsp">比赛事件录入</a></dd>
                 </dl>
             </li>
             <li class="layui-nav-item">
@@ -57,13 +59,13 @@
                     <dd><a href="article-add.jsp">文章录入</a></dd>
                 </dl>
             </li>
-            <li class="layui-nav-item">
-                <a href="javascript:;">国家队管理</a>
-                <dl class="layui-nav-child">
-                    <dd><a href="country-list.jsp">国家队信息查询</a></dd>
-                    <dd><a href="club-add.jsp">国家队信息录入</a></dd>
-                </dl>
-            </li>
+            <%--<li class="layui-nav-item">--%>
+                <%--<a href="javascript:;">国家队管理</a>--%>
+                <%--<dl class="layui-nav-child">--%>
+                    <%--<dd><a href="country-list.jsp">国家队信息查询</a></dd>--%>
+                    <%--<dd><a href="country-add.jsp">国家队信息录入</a></dd>--%>
+                <%--</dl>--%>
+            <%--</li>--%>
             <li class="layui-nav-item">
                 <a href="javascript:;">俱乐部管理</a>
                 <dl class="layui-nav-child">
@@ -77,6 +79,13 @@
                     <dd><a href="player-list.jsp">球员信息查询</a></dd>
                     <dd><a href="player-add.jsp">球员基本信息录入</a></dd>
                     <dd><a href="player-add-other.jsp">球员其它信息录入</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item layui-nav-itemed">
+                <a class="" href="javascript:;">用户管理</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="user-list.jsp">用户信息查询</a></dd>
+                    <dd><a href="user-add.jsp">用户信息录入</a></dd>
                 </dl>
             </li>
         </ul>

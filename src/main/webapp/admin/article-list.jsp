@@ -1,6 +1,6 @@
 <%--
   Created by IntelliJ IDEA.
-  User: zhuxiaolei
+  article: zhuxiaolei
   Date: 2018/3/27
   Time: 12:42
 --%>
@@ -22,9 +22,25 @@
         <!-- 内容主体区域 -->
         <div style="padding: 15px">
             <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-                <legend>用户信息查询</legend>
+                <legend>文章信息查询</legend>
             </fieldset>
-
+            <div class="">
+                <div class="layui-inline">
+                    <input class="layui-input" placeholder="请输入搜索内容" name="article-list-bale-reload"
+                           id="article-list-bale-reload" autocomplete="off">
+                </div>
+                <button class="layui-btn" data-type="reload">搜索</button>
+                <div class="layui-inline">
+                    <label class="layui-form-label">发表日期</label>
+                    <div class="layui-input-inline">
+                        <input type="text" class="layui-input" id="article-list-date" placeholder=" - ">
+                    </div>
+                </div>
+            </div>
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+                <legend>信息查询结果</legend>
+            </fieldset>
+            <table class="layui-hide" id="article-list-table" lay-filter="article-list-table"></table>
         </div>
     </div>
 

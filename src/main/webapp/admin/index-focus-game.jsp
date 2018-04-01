@@ -1,10 +1,11 @@
 <%--
   Created by IntelliJ IDEA.
   User: zhuxiaolei
-  Date: 2018/3/27
-  Time: 12:42
+  Date: 2018/3/26
+  Time: 13:08
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
 <head>
     <link href="../img/logo-2.png" rel="shortcut icon"/>
@@ -22,14 +23,25 @@
         <!-- 内容主体区域 -->
         <div style="padding: 15px">
             <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
-                <legend>用户信息查询</legend>
+                <legend>当前焦点比赛</legend>
             </fieldset>
+            <div class="">
 
+            </div>
+            <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+                <legend>最近比赛</legend>
+            </fieldset>
+            <table class="layui-hide" id="focus-game-list-table" lay-filter="focus-game-list-table"></table>
         </div>
     </div>
+    <script type="text/html" id="focus-game-list-table-bar">
+        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+        <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
+        <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+    </script>
 
     <%@include file="../admin/bottom.jsp" %>
 </div>
-<script src="../js/admin/match.js"></script>
+<script src="../js/admin/index.js"></script>
 </body>
 </html>

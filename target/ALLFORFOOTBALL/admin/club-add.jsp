@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>懂球儿-后台管理</title>
     <link rel="stylesheet" href="../layui/css/layui.css">
+    <script src="../js/jquery.min.js"></script>
     <script src="../layui/layui.all.js"></script>
 </head>
 <body class="layui-layout-body">
@@ -74,6 +75,14 @@
                         <label class="layui-form-label">国家和地区</label>
                         <div class="layui-input-inline">
                             <%--TODO:下拉框--%>
+                            <select name="" id="">
+                                <option value="">中华人民共和国</option>
+                                <option value="">西班牙王国</option>
+                                <option value="">大不列颠及北爱尔兰联合王国</option>
+                                <option value="">法兰西共和国</option>
+                                <option value="">德意志联邦共和国</option>
+                                <option value="">意大利共和国</option>
+                            </select>
                         </div>
                     </div>
 

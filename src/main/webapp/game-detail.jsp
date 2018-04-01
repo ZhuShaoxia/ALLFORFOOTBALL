@@ -236,7 +236,7 @@
                         <div class="match-item-head">
                             <span>相关新闻</span>
                         </div>
-                        <div class="left-article-list">
+                        <div class="left-article-list" style="margin-left: 15px">
                             <div class="row article-item">
                                 <div class="col-md-3 article-img">
                                     <img src="img/1.jpg" class="img-rounded"/>
