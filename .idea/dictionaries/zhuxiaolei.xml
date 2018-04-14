@@ -2,8 +2,13 @@
   <dictionary name="zhuxiaolei">
     <words>
       <w>intelli</w>
+      <w>keyup</w>
+      <w>laydate</w>
+      <w>laypage</w>
+      <w>laytpl</w>
       <w>layui</w>
       <w>navbar</w>
+      <w>templet</w>
     </words>
   </dictionary>
 </component>

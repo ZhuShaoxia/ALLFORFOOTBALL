@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.player.dao.PlayerMapper">
+    <resultMap id="PlayerMap" type="com.ccsu.core.player.domain.Player">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="otherName" property="otherName" jdbcType="VARCHAR"/>
+        <result column="imgUrl" property="imgUrl" jdbcType="VARCHAR"/>
+        <result column="country" property="country" jdbcType="INTEGER"/>
+        <result column="number" property="number" jdbcType="INTEGER"/>
+        <result column="birthday" property="birthday" jdbcType="VARCHAR"/>
+        <result column="age" property="age" jdbcType="INTEGER"/>
+        <result column="height" property="height" jdbcType="INTEGER"/>
+        <result column="weight" property="weight" jdbcType="INTEGER"/>
+        <result column="usualFoot" property="usualFoot" jdbcType="INTEGER"/>
+        <result column="power" property="power" jdbcType="INTEGER"/>
+        <result column="speed" property="speed" jdbcType="INTEGER"/>
+        <result column="shooting" property="shooting" jdbcType="INTEGER"/>
+        <result column="pass" property="pass" jdbcType="INTEGER"/>
+        <result column="dribbling" property="dribbling" jdbcType="INTEGER"/>
+        <result column="defensive" property="defensive" jdbcType="INTEGER"/>
+        <result column="gmt_create" property="createTime" jdbcType="VARCHAR"/>
+        <result column="gmt_modified" property="modifiedTime" jdbcType="VARCHAR"/>
+
+
+        <result column="position" property="playerPosition.position" jdbcType="VARCHAR"/>
+        <result column="clubId" property="club.id" jdbcType="INTEGER"/>
+        <result column="clubName" property="club.name" jdbcType="VARCHAR"/>
+        <result column="countryId" property="club.country.id" jdbcType="VARCHAR"/>
+
+
+    </resultMap>
+
+    <!--添加球员-->
+    <insert id="save" parameterType="Player">
+        insert into tb_player ( name, otherName,
+        imgUrl, country,clubId,
+        positionId, number, birthday,
+        age, height, weight, usualFoot,
+        power, speed, shooting,
+        pass, dribbling, defensive,
+        gmt_create, gmt_modified)
+        values (#{name,jdbcType=VARCHAR}, #{otherName,jdbcType=VARCHAR},
+        #{imgUrl,jdbcType=VARCHAR}, #{country,jdbcType=VARCHAR},#{club.id,jdbcType=INTEGER},
+        #{playerPosition.id,jdbcType=INTEGER}, #{number,jdbcType=INTEGER}, #{birthday,jdbcType=VARCHAR},
+        #{age,jdbcType=INTEGER}, #{height,jdbcType=INTEGER}, #{weight,jdbcType=INTEGER}, #{usualFoot,jdbcType=INTEGER},
+        #{power,jdbcType=INTEGER}, #{speed,jdbcType=INTEGER}, #{shooting,jdbcType=INTEGER},
+        #{pass,jdbcType=INTEGER}, #{dribbling,jdbcType=INTEGER}, #{defensive,jdbcType=INTEGER},
+        #{createTime,jdbcType=VARCHAR}, #{modifiedTime,jdbcType=VARCHAR})
+    </insert>
+
+    <!--删除球员-->
+    <delete id="delete" parameterType="Integer">
+        delete from tb_player
+        where id = #{id}
+    </delete>
+
+    <!--修改球员信息-->
+    <update id="update" parameterType="Player">
+        update tb_player
+        set
+        name = #{name,jdbcType=VARCHAR},
+        otherName = #{otherName,jdbcType=VARCHAR},
+        imgUrl = #{imgUrl,jdbcType=VARCHAR},
+        clubId = #{club.id,jdbcType=INTEGER},
+        country = #{country,jdbcType=INTEGER},
+        positionId = #{playerPosition.id,jdbcType=INTEGER},
+        number = #{number,jdbcType=INTEGER},
+        birthday = #{birthday,jdbcType=VARCHAR},
+        age = #{age,jdbcType=INTEGER},
+        height = #{height,jdbcType=REAL},
+        weight = #{weight,jdbcType=REAL},
+        usualFoot = #{usualFoot,jdbcType=INTEGER},
+        power = #{power,jdbcType=INTEGER},
+        speed = #{speed,jdbcType=INTEGER},
+        shooting = #{shooting,jdbcType=INTEGER},
+        pass = #{pass,jdbcType=INTEGER},
+        dribbling = #{dribbling,jdbcType=INTEGER},
+        defensive = #{defensive,jdbcType=INTEGER},
+        gmt_modified = #{modifiedTime,jdbcType=VARCHAR}
+        where id = #{id}
+    </update>
+
+
+    <!--根据id查询运动员-->
+    <select id="findById" parameterType="Integer" resultMap="PlayerMap">
+        select A.id, A.name, A.otherName, A.imgUrl,c.id clubId, c.name clubName,c.countryId countryId
+        ,A.country,B.position position,
+        A.number,
+        A.birthday, A.age,
+        A.height, A.weight, A.usualFoot, A.power, A.speed, A.shooting, A.pass, A.dribbling, A.defensive, A.gmt_create,
+        A.gmt_modified
+        from tb_player A, tb_player_position B,tb_club C
+        where A.positionId = B.id AND A.clubId = C.id AND A.id = #{id}
+    </select>
+
+    <!--查询所有运动员-->
+    <select id="findAll" parameterType="String" resultMap="PlayerMap">
+        select A.id, A.name, A.otherName, A.imgUrl, c.id clubId,c.name clubName,c.countryId countryId
+        ,A.country,B.position, A.number,
+        A.birthday, A.age,
+        A.height, A.weight, A.usualFoot, A.power, A.speed, A.shooting, A.pass, A.dribbling, A.defensive, A.gmt_create,
+        A.gmt_modified
+        from tb_player A, tb_player_position B,tb_club C
+        <where>
+            A.positionId = B.id AND A.clubId = C.id
+            <if test="_parameter!=null">
+                and (A.name LIKE "%"#{_parameter}"%" or A.otherName LIKE "%"#{_parameter}"%" or A.country LIKE
+                "%"#{_parameter}"%"
+                or B.position LIKE "%"#{_parameter}"%" or C.name LIKE "%"#{_parameter}"%")
+            </if>
+        </where>
+    </select>
+
+
+</mapper>

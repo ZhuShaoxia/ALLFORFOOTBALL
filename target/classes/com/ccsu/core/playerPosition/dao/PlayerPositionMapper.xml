@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.playerPosition.dao.PlayerPositionMapper">
+    <resultMap id="PlayerPositionMap" type="com.ccsu.core.playerPosition.domain.PlayerPosition">
+        <id column="id" property="id" jdbcType="INTEGER" />
+        <result column="position" property="position" jdbcType="VARCHAR" />
+    </resultMap>
+
+    <!--根据id查询位置-->
+    <select id="findById" parameterType="Integer" resultMap="PlayerPositionMap">
+        select id ,position from tb_player_position
+    </select>
+
+    <!--查询所有的位置-->
+    <select id="findAll" parameterType="String" resultMap="PlayerPositionMap">
+        select id ,position from tb_player_position
+    </select>
+
+</mapper>

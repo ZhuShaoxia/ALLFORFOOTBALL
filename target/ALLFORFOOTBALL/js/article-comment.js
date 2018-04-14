@@ -11,7 +11,7 @@ function commentBtn() {
     var commentTime = new Date().Format("yyyy-MM-dd HH:mm:ss")
     var commentHtml = "<div class=\"row page-comment-item\" id=\"comments[" + commentNum + "]\">\n" +
         "            <div class=\"col-md-1 head-img\" style=\"text-align: center;\">\n" +
-        "                <img id=\"comments[" + commentNum + "].headImg\" src=\"img/club/spanish/fcb_club.png\" class=\"img-fluid\"/>\n" +
+        "                <img id=\"comments[" + commentNum + "].headImg\" src=\"/img/club/spanish/fcb_club.png\" class=\"img-fluid\"/>\n" +
         "                <p>" + (commentNum + 1) + "楼</p>\n" +
         "            </div>\n" +
         "            <div class=\"col-md-9\">\n"

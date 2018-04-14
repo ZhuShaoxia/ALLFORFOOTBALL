@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.country.dao.CountryMapper">
+    <resultMap id="CountryMap" type="com.ccsu.core.country.domain.Country">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="otherName" property="otherName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--根据id查询国家-->
+    <select id="findById" parameterType="Integer" resultMap="CountryMap">
+        select id ,name , otherName from tb_country
+        where id = #{id}
+    </select>
+
+    <!--查询所有国家-->
+    <select id="findAll" parameterType="String" resultMap="CountryMap">
+        select id ,name , otherName from tb_country
+    </select>
+
+</mapper>

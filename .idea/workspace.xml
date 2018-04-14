@@ -7,59 +7,253 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a840ee2-1358-4619-8878-95773affa77b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/Comment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/SqlMapperConfig.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext-dao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext-service.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/admin/match-info-add.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/admin/match-lineUp-add.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/index.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/match-add.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/utils/MD5Util.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/match-add.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/match-lineUp.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/user-insert.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/utils/MD5Util.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/utils/MD5Util.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/MD5Util.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/match-lineUp.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/index-focus-game.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/user-insert.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/user-add.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/libs/aliyun-java-sdk-core-3.3.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/libs/aliyun-java-sdk-dysmsapi-1.0.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/base/BaseController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/base/BaseDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/base/BaseService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/utils/CommonUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/utils/MessageCode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/domain/Article.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/articleType/domain/ArticleType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/club/domain/Club.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/comment/domain/Comment.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/honer/domain/Honer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchEvent/domain/MatchEvent.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchHighlights/domain/MatchHighlights.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchInfo/domain/MatchInfo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchLineUp/domain/MatchLineUp.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchProcess/domain/MatchProcess.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchState/domain/MatchState.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStastistics.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchType/domain/MatchType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/player/domain/Player.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/playerPosition/domain/PlayerPosition.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/controller/UserController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/dao/UserMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/domain/User.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/service/UserService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/service/impl/UserServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/common/base/BaseController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/common/base/BaseDao.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/common/base/BaseService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/common/utils/AaliSMSUtil.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/common/utils/CommonUtils.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/common/utils/MessageCode.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/domain/Article.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/articleType/domain/ArticleType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/club/domain/Club.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/comment/domain/Comment.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/honer/domain/Honer.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchEvent/domain/MatchEvent.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchHighlights/domain/MatchHighlights.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchInfo/domain/MatchInfo.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchLineUp/domain/MatchLineUp.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchProcess/domain/MatchProcess.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchState/domain/MatchState.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStastistics.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchType/domain/MatchType.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/player/domain/Player.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/playerPosition/domain/PlayerPosition.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/controller/UserController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/dao/UserMapper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/domain/User.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/service/UserService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/service/impl/UserServiceImpl.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/289b638d-f9ef-413b-a158-2779b20d7251.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_dysmsapi_1_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/base/BaseController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/base/BaseDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/base/BaseService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/base/PageDomain.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/filter/EncodingFilter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/filter/EncodingRequest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/AaliSMSUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/CommonUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/MessageCode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/domain/Article.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/articleType/domain/ArticleType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/controller/ClubController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/domain/Club.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/ClubService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/impl/ClubServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/domain/Comment.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/controller/CommonController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/PageRequestDto.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/PageResponseDto.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/ResponseDto.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/country/dao/CountryMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/country/dao/CountryMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/country/domain/Country.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/country/service/CountryService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/country/service/impl/CountryServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/honer/domain/Honer.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchEvent/domain/MatchEvent.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchHighlights/domain/MatchHighlights.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/domain/MatchInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/domain/MatchLineUp.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/domain/MatchProcess.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchState/domain/MatchState.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStastistics.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchType/domain/MatchType.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/controller/PlayerController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao/PlayerMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao/PlayerMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/domain/Player.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/service/PlayerService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/service/impl/PlayerServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/playerPosition/dao/PlayerPositionMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/playerPosition/dao/PlayerPositionMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/playerPosition/domain/PlayerPosition.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/playerPosition/service/PlayerPositionService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/playerPosition/service/impl/PlayerPositionServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/ranking/domain/Ranking.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/UserController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/domain/User.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/domain/UserQueryVo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/UserService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/impl/UserServiceImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/club-update.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/player-update.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/user-update.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/dao/UserMapper.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/dao/UserMapper.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/MD5Util.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/Comment.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/utils/MD5Util.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/comment/Comment.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/article-add.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/article-list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/bottom.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/club-add.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/club-list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/country-add.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/country-list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/head-nav.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/index-focus-game.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/match-info-add.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/match-lineUp-add.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/match-list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/match-process.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/match-technology.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/player-add-other.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/player-add.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/player-list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/user-add.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/jsp/admin/user-list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/article.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/articleList.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/bottom.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/club.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/data-compare.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/data.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/forgetPwd.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/game-detail.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/game-list.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/head.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/head2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/index2.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/player.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/register.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/setting-bind.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/setting-changePwd.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/setting-profile.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180319/1521440110365087222.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180319/1521470953626079631.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180328/1522244609730017635.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/user-article-add.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/user-article.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/user-center.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/user-comment.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/user-info.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/common/utils/MD5Util.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/comment/Comment.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/article-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/article-add.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/article-list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/article-list.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/bottom.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/bottom.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/club-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/club-add.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/club-list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/club-list.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/country-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/country-add.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/country-list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/country-list.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/index-focus-game.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/index-focus-game.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/index.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/match-info-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-info-add.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/match-lineUp-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-lineUp-add.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/match-list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-list.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/match-process.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-process.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/player-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/player-add.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/player-list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/player-list.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/user-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/user-add.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/admin/user-list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/user-list.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/article.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/article.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/articleList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/articleList.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/bottom.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/bottom.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/club.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/club.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/data-compare.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/data-compare.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/data.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/data.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/forgetPwd.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/forgetPwd.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/game-detail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/game-detail.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/game-list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/game-list.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/head.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/head.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/head2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/head2.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/index.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/index2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/index2.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/player.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/player.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/register.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/setting-bind.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/setting-bind.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/setting-changePwd.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/setting-changePwd.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/setting-profile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/setting-profile.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/user-article-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/user-article-add.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/user-article.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/user-article.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/user-center.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/user-center.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/user-comment.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/user-comment.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/user-info.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/user-info.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/head-nav.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/head-nav.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/match-technology.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-technology.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/player-add-other.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/player-add-other.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ALLFORFOOTBALL_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ALLFORFOOTBALL_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/zhuxiaolei.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/zhuxiaolei.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webContexts.xml" afterPath="$PROJECT_DIR$/.idea/webContexts.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ALLFORFOOTBALL.iml" afterPath="$PROJECT_DIR$/ALLFORFOOTBALL.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/SqlMapperConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/SqlMapperConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/applicationContext-dao.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext-dao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/applicationContext-service.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext-service.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/springMVC.xml" afterPath="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/article-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/article-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/article-list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/article-list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/club-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/club-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/country-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/country-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/head-nav.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/head-nav.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/match-list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/match-list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/match-process.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/match-process.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/match-technology.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/match-technology.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/player-add-other.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/player-add-other.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/admin/player-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/admin/player-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/game-detail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/game-detail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/admin/article.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/article.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/admin/club.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/club.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/admin/country.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/country.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/admin/match.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/match.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/admin/player.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/admin/user.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/article-comment.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/article-comment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/SqlMapperConfig.xml" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/SqlMapperConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/applicationContext-dao.xml" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/applicationContext-dao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/applicationContext-service.xml" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/applicationContext-service.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/springMVC.xml" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/springMVC.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/article-add.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/article-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/article-list.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/article-list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/club-add.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/club-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/country-add.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/country-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/head-nav.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/head-nav.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/match-list.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/match-list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/match-process.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/match-process.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/match-technology.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/match-technology.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/player-add-other.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/player-add-other.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/player-add.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/admin/player-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/game-detail.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/game-detail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/article.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/article.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/club.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/club.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/country.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/country.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/match.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/match.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/player.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/player.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/user.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/user.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/article-comment.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/article-comment.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/SqlMapperConfig.xml" afterPath="$PROJECT_DIR$/target/classes/SqlMapperConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/applicationContext-dao.xml" afterPath="$PROJECT_DIR$/target/classes/applicationContext-dao.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/applicationContext-service.xml" afterPath="$PROJECT_DIR$/target/classes/applicationContext-service.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/jdbc.properties" afterPath="$PROJECT_DIR$/target/classes/jdbc.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/springMVC.xml" afterPath="$PROJECT_DIR$/target/classes/springMVC.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -110,6 +304,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
@@ -118,7 +315,17 @@
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand />
+    <expand>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="ALLFORFOOTBALL@localhost" type="e3449647:DbNodeDescriptor" />
+      </path>
+      <path>
+        <item name="" type="eadb38e5:DatabaseStructure$Root" />
+        <item name="ALLFORFOOTBALL@localhost" type="e3449647:DbNodeDescriptor" />
+        <item name="ALLFORFOOTBALL" type="e3449647:DbNodeDescriptor" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FavoritesManager">
@@ -126,43 +333,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="match-info-add.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/match-info-add.jsp">
+      <file leaf-file-name="ClubMapper.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-              <folding>
-                <marker date="1522572633833" expanded="false" signature="1675:1692" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="country-add.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/country-add.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="country-list.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/country-list.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
-              <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="club-add.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/club-add.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="79" column="50" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+            <state relative-caret-position="447">
+              <caret line="126" column="46" lean-forward="false" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -174,79 +349,83 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="JavaScript File" />
+        <option value="Enum" />
         <option value="Jsp File" />
+        <option value="Interface" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.club-info-right-1</find>
-      <find>table</find>
-      <find>club-info-head</find>
-      <find>data-table-clubImg</find>
-      <find>巴塞罗那</find>
-      <find>&lt;a href=&quot;#&quot;&gt;&lt;img class=&quot;td-icon-img&quot; src=&quot;img/club/china/zc_shanggang.png&quot;&gt;上海上港&lt;/a&gt;</find>
-      <find>&lt;table class=&quot;tabl</find>
-      <find>活动</find>
-      <find>&lt;ul</find>
-      <find>class=&quot;tabl</find>
-      <find>both</find>
-      <find>lass=&quot;table</find>
-      <find>active</find>
-      <find>top: 18px</find>
-      <find>row article-item</find>
-      <find>row  article-time</find>
-      <find>row article-title</find>
-      <find>ayui</find>
-      <find>,type:'month'</find>
-      <find>,type:</find>
-      <find>ueditor</find>
-      <find>overflow: hidden</find>
-      <find>text</find>
-      <find>uploadBtn</find>
-      <find>article</find>
-      <find>俱乐部</find>
-      <find>user</find>
-      <find>match-list-table</find>
-      <find>积分</find>
-      <find>积分榜</find>
+      <find>var imgUrl = $(&quot;#uploadImg&quot;).attr(&quot;src&quot;);</find>
+      <find>var imgUrl = $(&quot;#uploadImg&quot;).attr(&quot;src&quot;)</find>
+      <find>(typeof imgUrl)</find>
+      <find>if (res.code == -1) {</find>
+      <find>success\: function \(res\) \{\n                    if \(res\.code \=\= \-1\) \{\n                        layer\.close\(index\)\n                    \}\n                    layer\.msg\(\'数据修改成功\,页面即将跳转\'\)\n                    setTimeout\(function \(\) \{\n                        window\.location\.href \= \&quot;\/admin\/user\/list\&quot;\n                    \}\, 2000\)\n                \}\,</find>
+      <find>success: function (res) {</find>
+      <find>emailIsExist</find>
+      <find>/club/forSelect</find>
+      <find>append</find>
+      <find>input</find>
+      <find>&lt;where&gt;</find>
+      <find>clubId</find>
+      <find>ver</find>
+      <find>http://localhost:8080/admin/user/list?page=1&amp;limit=10</find>
+      <find>list</find>
+      <find>edit</find>
+      <find>findby</find>
+      <find>countries</find>
+      <find>user/add</find>
+      <find>add</find>
+      <find>otherClubName</find>
+      <find>findB</find>
+      <find>clu</find>
+      <find>insert</find>
+      <find>weizhi</find>
+      <find>位置</find>
+      <find>UserMap</find>
+      <find>PlayerMap</find>
+      <find>entity</find>
+      <find>countryId</find>
     </findStrings>
     <replaceStrings>
-      <replace>.jsp</replace>
-      <replace>setting-changePwd-newPwd</replace>
-      <replace>setting-changePwd-newPwd2</replace>
-      <replace>setting-changePwd-oldPwd</replace>
-      <replace>register-pwd2</replace>
-      <replace>show()</replace>
-      <replace>bind('click',loadData(1,2)))</replace>
-      <replace>bind('click',loadData(1,3)))</replace>
-      <replace>bind('click',loadData(1,4)))</replace>
-      <replace>on</replace>
-      <replace>comment-item-right</replace>
-      <replace>./img/chosen-sprite.png</replace>
-      <replace>height: 20px</replace>
-      <replace>.club-info-head</replace>
-      <replace>club-info-right-head</replace>
-      <replace>td-icon-img</replace>
-      <replace>$(function () {</replace>
-      <replace>&lt;a href=&quot;club.jsp&quot;&gt;巴塞罗那&lt;/a&gt;</replace>
-      <replace>top: 20px</replace>
-      <replace>article-item</replace>
-      <replace>article-time</replace>
-      <replace>article-title</replace>
-      <replace>layui</replace>
-      <replace>player</replace>
-      <replace>number</replace>
-      <replace>club</replace>
-      <replace>article</replace>
-      <replace>国家队</replace>
-      <replace>focus-game</replace>
       <replace>focus-game-list-table</replace>
+      <replace>$PROJECT_DIR$/src/main/java/com/ccsu/test</replace>
+      <replace>$PROJECT_DIR$/src/main/resources</replace>
+      <replace>core</replace>
+      <replace>modifiedTime</replace>
+      <replace>LOGGER.debug(</replace>
+      <replace>${pageContext.request.contextPath}</replace>
+      <replace>private String</replace>
+      <replace>Strk g</replace>
+      <replace>String</replace>
+      <replace>public String</replace>
+      <replace>../</replace>
+      <replace />
+      <replace>${pageContext.request.contextPath}/</replace>
+      <replace>file</replace>
+      <replace>count&gt;=1</replace>
+      <replace>&quot;%&quot;#{condition}&quot;%&quot;</replace>
+      <replace>_parameter</replace>
+      <replace>Club</replace>
+      <replace>imgUrl</replace>
+      <replace>number</replace>
+      <replace>球员</replace>
+      <replace>playerService</replace>
+      <replace>Player</replace>
+      <replace>otherName</replace>
+      <replace>/club</replace>
+      <replace>typeof imgUrl</replace>
+      <replace>/club/search/condition/string</replace>
+      <replace>user</replace>
+      <replace>player</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/webapp/css</dir>
+      <dir>$PROJECT_DIR$/src/main/java/</dir>
+      <dir>$PROJECT_DIR$/src/main/webapp/jsp/admin</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -260,60 +439,64 @@
       <projects_view />
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/player-add.jsp" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" root2="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/webapp/js/admin/user.js" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/css/player.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/player.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/gameDetail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/game-list.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/data-compare.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/main.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/game-detail.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/club.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/articleList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/layui.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/bottom.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/user-find.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/country-list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/user-list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/player-list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/admin/player.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/admin/user.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/club-list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/match-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/match-list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/match-lineUp.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/match-process.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/user-insert.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/player-add-other.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/player-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/match-lineUp-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/match-technology.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/article-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/article-list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/admin/article.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/user-info.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/controller/CommonController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/289b638d-f9ef-413b-a158-2779b20d7251/console_1.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/289b638d-f9ef-413b-a158-2779b20d7251/console_3.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/country/domain/Country.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/domain/Club.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/289b638d-f9ef-413b-a158-2779b20d7251/console_4.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/country/service/CountryService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/country/service/impl/CountryServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/playerPosition/service/PlayerPositionService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/playerPosition/dao/PlayerPositionMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/playerPosition/service/impl/PlayerPositionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/service/PlayerService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao/PlayerMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/country/dao/CountryMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/playerPosition/dao/PlayerPositionMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/common/base/BaseDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/country/dao/CountryMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/club-update.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/admin/commonUploadImg.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/head-nav.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/club-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/club-list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/player-list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/domain/Player.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/testThread.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/admin/club.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/admin/country.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/country-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/index-foucs-game.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/index-focus-game.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/admin/index.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/user-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/utils/MD5Util.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/admin/match.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/applicationContext-service.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/game-detail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/do/comment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/Comment.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/head-nav.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/match-info-add.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/club-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/controller/ClubController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/user-list.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/admin/user.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/ClubService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/impl/ClubServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/common/base/BaseService.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/user-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/impl/UserServiceImpl.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/289b638d-f9ef-413b-a158-2779b20d7251/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/CommonUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/user-update.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/service/impl/PlayerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/controller/PlayerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao/PlayerMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/player-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/player-update.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/admin/player.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.xml" />
       </list>
     </option>
   </component>
@@ -358,7 +541,7 @@
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="ALLFORFOOTBALL Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-          <item name="surefire" type="36feed69:MavenProjectsStructure$PluginNode" />
+          <item name="mybatis-generator" type="36feed69:MavenProjectsStructure$PluginNode" />
         </path>
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
@@ -387,98 +570,30 @@
             <id />
           </State>
           <State>
-            <id>Code style issuesJava</id>
-          </State>
-          <State>
-            <id>Cucumber</id>
+            <id>GSPGrailsGroovy</id>
           </State>
           <State>
             <id>General</id>
           </State>
           <State>
-            <id>GeneralJavaScript</id>
+            <id>GrailsGroovy</id>
           </State>
           <State>
-            <id>Hibernate Issues</id>
+            <id>Groovy</id>
           </State>
           <State>
-            <id>ImportsJava</id>
+            <id>Kotlin</id>
           </State>
           <State>
-            <id>Inheritance issuesJava</id>
+            <id>Maven</id>
           </State>
           <State>
-            <id>JBoss Seam issues</id>
-          </State>
-          <State>
-            <id>JPA issues</id>
-          </State>
-          <State>
-            <id>JUnit issuesJava</id>
-          </State>
-          <State>
-            <id>Java</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>Javadoc issuesJava</id>
-          </State>
-          <State>
-            <id>Logging issuesJava</id>
-          </State>
-          <State>
-            <id>Numeric issuesJava</id>
-          </State>
-          <State>
-            <id>Performance issuesJava</id>
-          </State>
-          <State>
-            <id>Probable bugsJava</id>
-          </State>
-          <State>
-            <id>Properties Files</id>
-          </State>
-          <State>
-            <id>RELAX NG</id>
-          </State>
-          <State>
-            <id>RegExp</id>
-          </State>
-          <State>
-            <id>Resource management issuesJava</id>
-          </State>
-          <State>
-            <id>SQL</id>
-          </State>
-          <State>
-            <id>Serialization issuesJava</id>
-          </State>
-          <State>
-            <id>Spring</id>
-          </State>
-          <State>
-            <id>Spring DataSpring</id>
-          </State>
-          <State>
-            <id>Threading issuesJava</id>
-          </State>
-          <State>
-            <id>TypeScript</id>
+            <id>Plugin DevKit</id>
           </State>
           <State>
             <id>XPath</id>
           </State>
-          <State>
-            <id>XSLT</id>
-          </State>
         </expanded-state>
-        <selected-state>
-          <State>
-            <id>Ali-Check</id>
-          </State>
-        </selected-state>
       </profile-state>
     </entry>
   </component>
@@ -498,8 +613,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -560,8 +675,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="ccsu" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
@@ -572,6 +686,38 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="ccsu" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="club" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccsu" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="club" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccsu" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="club" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
@@ -586,17 +732,43 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3322949" />
@@ -604,18 +776,33 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/jsp/admin" />
+    <property name="SearchEverywhereHistoryKey" value="player-&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/player-add.jsp&#10;player.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/player.js&#10;player-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/player-add.jsp&#10;userma&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/dao/UserMapper.xml&#10;user-u&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/user-update.jsp&#10;playe.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/player.js&#10;playerma&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/player/dao/PlayerMapper.xml&#10;usercon&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/controller/UserController.java&#10;playercon&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/player/controller/PlayerController.java&#10;player-up&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/player-update.jsp&#10;players&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/player/service/impl/PlayerServiceImpl.java&#10;user.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/user.js&#10;user-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/user-add.jsp&#10;Club&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/club/domain/Club.java&#10;users&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/service/impl/UserServiceImpl.java&#10;userc&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/controller/UserController.java&#10;user-up&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/user-update.jsp&#10;userimp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/service/impl/UserServiceImpl.java&#10;User&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/domain/User.java&#10;user&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/domain/User.java&#10;user-li&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/user-list.jsp&#10;countrmapp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/country/dao/CountryMapper.xml&#10;coun&#9;PSI&#9;JAVA://com.ccsu.core.country.dao.CountryMapper&#10;user-&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/user-update.jsp&#10;useru&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/user-update.jsp&#10;userse&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/service/impl/UserServiceImpl.java&#10;clubMa&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/club/dao/ClubMapper.java&#10;clubC&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/club/controller/ClubController.java&#10;user-ad&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/user-add.jsp&#10;player-a&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/player-add.jsp&#10;clubma&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/club/dao/ClubMapper.xml&#10;clubCo&#9;PSI&#9;JAVA://com.ccsu.core.club.controller.ClubController&#10;club-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/club-add.jsp&#10;player&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/player.js&#10;club&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/club.js&#10;clubmapper&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/club/dao/ClubMapper.xml&#10;usermapp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/dao/UserMapper.xml" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.ccsu.core.country.domain" />
+      <recent name="com.ccsu.core.playerPosition.domain" />
+      <recent name="com.ccsu.core.matchType.domain" />
+      <recent name="com.ccsu.core.articleType.domain" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/js/admin" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/admin" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/jsp/admin" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/ccsu/core/country/dao" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/ccsu/core/playerPosition/dao" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao" />
+      <recent name="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ccsu.core.playerPosition.dao" />
+      <recent name="com.ccsu.core.user" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/jsp" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/js" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp" />
+      <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -631,6 +818,25 @@
     </option>
   </component>
   <component name="RunManager" selected="Tomcat Server.tomcat">
+    <configuration name="CommonUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ccsu.common.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.ccsu.common.utils.CommonUtils" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ALLFORFOOTBALL" />
+      <envs />
+    </configuration>
     <configuration name="MD5Util" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -639,6 +845,25 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.ccsu.common.utils.MD5Util" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ALLFORFOOTBALL" />
+      <envs />
+    </configuration>
+    <configuration name="UserServiceImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ccsu.core.user.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.ccsu.core.user.service.impl.UserServiceImpl" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -730,6 +955,25 @@
       <properties />
       <listeners />
     </configuration>
+    <configuration name="testThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.ccsu.common.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.ccsu.common.utils.testThread" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="ALLFORFOOTBALL" />
+      <envs />
+    </configuration>
     <configuration name="tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.11" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATE_ON_FRAME_DEACTIVATION" value="true" />
       <option name="UPDATE_CLASSES_ON_FRAME_DEACTIVATION" value="true" />
@@ -739,6 +983,11 @@
             <option name="CONTEXT_PATH" value="/" />
           </settings>
         </artifact>
+        <file path="$PROJECT_DIR$/../ALLFORFOOTBALLUPLOAD">
+          <settings>
+            <option name="CONTEXT_PATH" value="/uploadImg" />
+          </settings>
+        </file>
       </deployment>
       <server-settings>
         <option name="BASE_DIRECTORY_NAME" value="Unnamed_ALLFORFOOTBALL" />
@@ -803,13 +1052,19 @@
         </option>
       </method>
     </configuration>
-    <list size="2">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
       <item index="1" class="java.lang.String" itemvalue="Application.MD5Util" />
+      <item index="2" class="java.lang.String" itemvalue="Application.UserServiceImpl" />
+      <item index="3" class="java.lang.String" itemvalue="Application.CommonUtils" />
+      <item index="4" class="java.lang.String" itemvalue="Application.testThread" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.MD5Util" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.testThread" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CommonUtils" />
+        <item index="2" class="java.lang.String" itemvalue="Application.UserServiceImpl" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MD5Util" />
       </list>
     </recent_temporary>
   </component>
@@ -854,7 +1109,15 @@
       <workItem from="1522212048855" duration="3047000" />
       <workItem from="1522228558729" duration="9631000" />
       <workItem from="1522415564874" duration="8217000" />
-      <workItem from="1522572237645" duration="673000" />
+      <workItem from="1522572237645" duration="1834000" />
+      <workItem from="1522645265927" duration="5029000" />
+      <workItem from="1522671964206" duration="11172000" />
+      <workItem from="1522717470014" duration="6107000" />
+      <workItem from="1522726280659" duration="11195000" />
+      <workItem from="1522806109618" duration="11831000" />
+      <workItem from="1522834706706" duration="31453000" />
+      <workItem from="1523326748301" duration="70314000" />
+      <workItem from="1523675570050" duration="8405000" />
     </task>
     <task id="LOCAL-00001" summary="更新iml">
       <created>1517580900056</created>
@@ -930,7 +1193,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240606000" />
+    <option name="totallyTimeSpent" value="397273000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -946,33 +1209,34 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711443" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17661692" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3420398" sideWeight="0.49570817" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.51502144" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30972818" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57587063" sideWeight="0.4892704" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3420398" sideWeight="0.50429183" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57587063" sideWeight="0.48640916" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14800996" sideWeight="0.48497853" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31094527" sideWeight="0.49713877" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14179105" sideWeight="0.4914163" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5" sideWeight="0.48855507" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2238806" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2360515" sideWeight="0.49253732" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19170243" sideWeight="0.49253732" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22532189" sideWeight="0.5074627" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22532189" sideWeight="0.5074627" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35820895" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4170243" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1006,7 +1270,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="31" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1015,410 +1282,384 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/bottom.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/green.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/head-notification.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/head-userinfo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/logo.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/logo-2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/loading.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/club/china/p_alan.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/club/china/zc_shanggang.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/club/spanish/fcb_club.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/img/club/spanish/laiwante-club.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/honer/domain/Honer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="56" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="56" />
-          <folding />
+        <state relative-caret-position="276">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="64" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/bottom.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/MessageCode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/third-party/highcharts/highcharts.src.js">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="6025" column="4" lean-forward="false" selection-start-line="6025" selection-start-column="4" selection-end-line="6025" selection-end-column="4" />
+        <state relative-caret-position="-870">
+          <caret line="140" column="6" lean-forward="false" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/player-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/admin/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="46" column="21" lean-forward="false" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/club-list.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/testThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
-          <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/ResponseDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" column="23" lean-forward="false" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="23" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user-article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/head.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/chosen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="50" column="20" lean-forward="true" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/user-article-add.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/user-article-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1574">
-          <caret line="38" column="21" lean-forward="true" selection-start-line="38" selection-start-column="21" selection-end-line="38" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/user-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/match-technology.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1142">
-          <caret line="209" column="34" lean-forward="true" selection-start-line="209" selection-start-column="34" selection-end-line="209" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/match-process.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/player-add-other.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="128" column="26" lean-forward="true" selection-start-line="120" selection-start-column="20" selection-end-line="128" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/article-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="77" column="85" lean-forward="false" selection-start-line="77" selection-start-column="76" selection-end-line="77" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/user-insert.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/match-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="42" column="96" lean-forward="true" selection-start-line="26" selection-start-column="12" selection-end-line="42" selection-end-column="96" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/article-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="20" column="27" lean-forward="true" selection-start-line="20" selection-start-column="27" selection-end-line="20" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/admin/article.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="80" column="20" lean-forward="true" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="20" />
-          <folding>
-            <marker date="1522459912659" expanded="true" signature="1008:1023" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/admin/club.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="42" column="7" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="42" selection-end-column="7" />
+        <state relative-caret-position="297">
+          <caret line="48" column="25" lean-forward="false" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
           <folding>
-            <marker date="1522461729386" expanded="true" signature="1088:1103" ph="..." />
+            <marker date="1523625703548" expanded="true" signature="6324:6339" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/admin/country.js">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/club-add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="38" column="7" lean-forward="false" selection-start-line="38" selection-start-column="7" selection-end-line="38" selection-end-column="7" />
-          <folding>
-            <marker date="1522461736617" expanded="true" signature="962:977" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/player-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="27" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/admin/player.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="987">
-          <caret line="78" column="7" lean-forward="true" selection-start-line="54" selection-start-column="4" selection-end-line="78" selection-end-column="7" />
-          <folding>
-            <marker date="1522213540641" expanded="true" signature="2387:2402" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/index-focus-game.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="33" column="63" lean-forward="true" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/admin/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
-          <folding>
-            <marker date="1522463380968" expanded="true" signature="2421:2436" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/user-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="47" column="73" lean-forward="false" selection-start-line="47" selection-start-column="73" selection-end-line="47" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/match-lineUp-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="111" column="22" lean-forward="true" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/admin/match.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="31" column="16" lean-forward="true" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/SqlMapperConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/alibaba/druid/1.0.10/druid-1.0.10-sources.jar!/com/alibaba/druid/pool/DruidDataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="99" column="13" lean-forward="false" selection-start-line="99" selection-start-column="13" selection-end-line="99" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.1.3.RELEASE/spring-beans-4.1.3.RELEASE.jar!/org/springframework/beans/factory/xml/spring-beans-3.0.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1490">
-          <caret line="1022" column="8" lean-forward="false" selection-start-line="1022" selection-start-column="8" selection-end-line="1022" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/MD5Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="32" column="40" lean-forward="false" selection-start-line="32" selection-start-column="40" selection-end-line="32" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-dao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="11" lean-forward="false" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding>
-            <element signature="e#760#776#0" expanded="true" />
-            <element signature="e#814#827#0" expanded="true" />
-            <element signature="e#870#884#0" expanded="true" />
-            <element signature="e#927#945#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
+        <state relative-caret-position="-889">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_club">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="19" column="21" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/controller/ClubController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="198" column="30" lean-forward="false" selection-start-line="198" selection-start-column="30" selection-end-line="198" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#4740#4746#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/ClubService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="24" column="43" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/impl/ClubServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="83" column="25" lean-forward="false" selection-start-line="83" selection-start-column="15" selection-end-line="83" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/country/dao/CountryMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/country/dao/CountryMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/springMVC.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="38" column="22" lean-forward="false" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        <state relative-caret-position="173">
+          <caret line="16" column="34" lean-forward="true" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/do/comment.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/game-detail.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/user-list.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="238" column="31" lean-forward="false" selection-start-line="238" selection-start-column="31" selection-end-line="238" selection-end-column="31" />
+        <state relative-caret-position="326">
+          <caret line="59" column="33" lean-forward="false" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="61" column="15" lean-forward="false" selection-start-line="61" selection-start-column="15" selection-end-line="61" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/common/base/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="41" column="6" lean-forward="false" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/common/base/BaseDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="34" column="6" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="77" column="30" lean-forward="false" selection-start-line="77" selection-start-column="30" selection-end-line="77" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/domain/Club.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-165">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/289b638d-f9ef-413b-a158-2779b20d7251/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/user-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="155" column="38" lean-forward="true" selection-start-line="155" selection-start-column="38" selection-end-line="155" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="146" column="64" lean-forward="true" selection-start-line="146" selection-start-column="64" selection-end-line="146" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/user-update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="535">
+          <caret line="156" column="44" lean-forward="true" selection-start-line="154" selection-start-column="32" selection-end-line="156" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="41" column="44" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/PageResponseDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/player/controller/PlayerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="195" column="7" lean-forward="true" selection-start-line="195" selection-start-column="7" selection-end-line="195" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="235" column="9" lean-forward="true" selection-start-line="235" selection-start-column="9" selection-end-line="235" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/player/service/impl/PlayerServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/player/domain/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="30" column="19" lean-forward="false" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/playerPosition/domain/PlayerPosition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_player">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao/PlayerMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-278">
+          <caret line="76" column="34" lean-forward="false" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/admin/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="505">
+          <caret line="95" column="10" lean-forward="true" selection-start-line="89" selection-start-column="4" selection-end-line="95" selection-end-column="10" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1523635621429" expanded="true" signature="7908:7932" ph="..." />
+            <marker date="1523635621429" expanded="true" signature="10398:10413" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/Comment.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/player-add.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="23" lean-forward="true" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+        <state relative-caret-position="2060">
+          <caret line="135" column="95" lean-forward="false" selection-start-line="135" selection-start-column="95" selection-end-line="135" selection-end-column="95" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/head-nav.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/player-update.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="57" column="46" lean-forward="false" selection-start-line="57" selection-start-column="46" selection-end-line="57" selection-end-column="46" />
+        <state relative-caret-position="3519">
+          <caret line="153" column="44" lean-forward="false" selection-start-line="153" selection-start-column="44" selection-end-line="153" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/club.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/admin/player.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="302" column="32" lean-forward="false" selection-start-line="302" selection-start-column="32" selection-end-line="302" selection-end-column="32" />
+        <state relative-caret-position="529">
+          <caret line="23" column="41" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#td#0;n#tr#0;n#thead#0;n#table#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1523727055350" expanded="true" signature="6825:6840" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/match-info-add.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="38" column="42" lean-forward="false" selection-start-line="38" selection-start-column="42" selection-end-line="38" selection-end-column="42" />
-          <folding>
-            <marker date="1522572633833" expanded="false" signature="1675:1692" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/country-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/country-list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="32" column="32" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/club-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="79" column="50" lean-forward="false" selection-start-line="79" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="447">
+          <caret line="126" column="46" lean-forward="false" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -1502,6 +1743,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

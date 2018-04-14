@@ -12,24 +12,31 @@
     </settings>
 
     <typeAliases>
-        <typeAlias type="com.ccsu.website.type.domain.Type"/>
-        <typeAlias type="com.ccsu.website.examplecourse.domain.ExampleCourse"/>
-        <typeAlias type="com.ccsu.website.expandknowledge.domain.ExpandKnowledge"/>
-        <typeAlias type="com.ccsu.website.knowledgepoint.domain.KnowledgePoint"/>
-        <typeAlias type="com.ccsu.website.option.domain.Option"/>
-        <typeAlias type="com.ccsu.website.question.domain.Question"/>
-        <typeAlias type="com.ccsu.website.otherresource.domain.OtherResource"/>
-        <typeAlias type="com.ccsu.website.studentwork.domain.StudentWork"/>
-        <typeAlias type="com.ccsu.website.teachingresourcesdocument.domain.TeachingResDoc"/>
-        <typeAlias type="com.ccsu.website.user.domain.User"/>
-
-        <typeAlias type="com.ccsu.website.examplecourse.domain.ExampleCourseQueryVo"/>
-        <typeAlias type="com.ccsu.website.expandknowledge.domain.ExpandKnowledgeQueryVo"/>
-        <typeAlias type="com.ccsu.website.studentwork.domain.StudentWorkQueryVo"/>
-        <typeAlias type="com.ccsu.website.knowledgepoint.domain.KnowledgePointQueryVo"/>
-        <typeAlias type="com.ccsu.website.user.domain.UserQueryVo"/>
-
-        <typeAlias type="com.ccsu.website.question.domain.OnlineQuestion"/>
+        <typeAlias type="com.ccsu.core.article.domain.Article"/>
+        <typeAlias type="com.ccsu.core.articleType.domain.ArticleType"/>
+        <typeAlias type="com.ccsu.core.club.domain.Club"/>
+        <typeAlias type="com.ccsu.core.comment.domain.Comment"/>
+        <typeAlias type="com.ccsu.core.honer.domain.Honer"/>
+        <typeAlias type="com.ccsu.core.matchEvent.domain.MatchEvent"/>
+        <typeAlias type="com.ccsu.core.matchHighlights.domain.MatchHighlights"/>
+        <typeAlias type="com.ccsu.core.matchInfo.domain.MatchInfo"/>
+        <typeAlias type="com.ccsu.core.matchLineUp.domain.MatchLineUp"/>
+        <typeAlias type="com.ccsu.core.matchProcess.domain.MatchProcess"/>
+        <typeAlias type="com.ccsu.core.matchState.domain.MatchState"/>
+        <typeAlias type="com.ccsu.core.matchTechnologyStatistics.domain.MatchTechnologyStastistics"/>
+        <typeAlias type="com.ccsu.core.matchType.domain.MatchType"/>
+        <typeAlias type="com.ccsu.core.player.domain.Player"/>
+        <typeAlias type="com.ccsu.core.playerPosition.domain.PlayerPosition"/>
+        <typeAlias type="com.ccsu.core.player.domain.Player"/>
+        <typeAlias type="com.ccsu.core.ranking.domain.Ranking"/>
+        <typeAlias type="com.ccsu.core.user.domain.User"/>
     </typeAliases>
     
+    <!--<plugins>-->
+        <!--&lt;!&ndash;mybatis 分页插件&ndash;&gt;-->
+        <!--<plugin interceptor="com.github.pagehelper.PageInterceptor">-->
+            <!--<property name="helperDialect" value="mysql"/>-->
+        <!--</plugin>-->
+    <!--</plugins>-->
+
 </configuration>

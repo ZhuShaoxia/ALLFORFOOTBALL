@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.club.dao.ClubMapper">
+    <resultMap id="ClubMap" type="com.ccsu.core.club.domain.Club">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="otherName" property="otherName" jdbcType="VARCHAR"/>
+        <result column="imgUrl" property="imgUrl" jdbcType="VARCHAR"/>
+        <result column="established" property="established" jdbcType="VARCHAR"/>
+        <result column="city" property="city" jdbcType="VARCHAR"/>
+        <result column="phone" property="phone" jdbcType="VARCHAR"/>
+        <result column="email" property="email" jdbcType="VARCHAR"/>
+        <result column="homeField" property="homeField" jdbcType="VARCHAR"/>
+        <result column="address" property="address" jdbcType="VARCHAR"/>
+        <result column="gmt_create" property="createTime" jdbcType="VARCHAR"/>
+        <result column="gmt_modified" property="modifiedTime" jdbcType="VARCHAR"/>
+        <result column="countryId" property="country.id" jdbcType="INTEGER"/>
+        <result column="countryName" property="country.name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <resultMap id="ClubInfoMap" type="com.ccsu.core.club.domain.Club">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="otherName" property="otherName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <resultMap id="ClubCountryInfoMap" type="com.ccsu.core.club.domain.Club">
+        <id column="clubId" property="id" jdbcType="INTEGER"/>
+        <result column="clubName" property="name" jdbcType="VARCHAR"/>
+        <result column="clubOtherName" property="otherName" jdbcType="VARCHAR"/>
+        <result column="countryId" property="country.id" jdbcType="INTEGER"/>
+        <result column="countryName" property="country.name" jdbcType="VARCHAR"/>
+        <result column="countryOtherName" property="country.otherName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--添加俱乐部-->
+    <select id="save" resultMap="ClubMap">
+        INSERT INTO tb_club (name, otherName,
+        imgUrl, established, countryId,
+        city, phone, email,
+        homeField, address, gmt_create,
+        gmt_modified)
+        VALUES (#{name,jdbcType=VARCHAR},
+        #{otherName,jdbcType=VARCHAR},
+        #{imgUrl,jdbcType=VARCHAR},
+        #{established,jdbcType=VARCHAR},
+        #{country.id,jdbcType=INTEGER},
+        #{city,jdbcType=VARCHAR},
+        #{phone,jdbcType=VARCHAR},
+        #{email,jdbcType=VARCHAR},
+        #{homeField,jdbcType=VARCHAR},
+        #{address,jdbcType=VARCHAR},
+        #{createTime,jdbcType=VARCHAR},
+        #{modifiedTime,jdbcType=VARCHAR})
+    </select>
+
+    <!--俱乐部信息删除-->
+    <delete id="delete" parameterType="Integer">
+        DELETE FROM tb_club
+        WHERE id = #{id}
+    </delete>
+
+    <!--俱乐部信息更新-->
+    <update id="update" parameterType="Club">
+        UPDATE tb_club
+        SET
+        name = #{name,jdbcType=VARCHAR},
+        otherName = #{otherName,jdbcType=VARCHAR},
+        imgUrl = #{imgUrl,jdbcType=VARCHAR},
+        established = #{established,jdbcType=VARCHAR},
+        countryId = #{country.id,jdbcType=INTEGER},
+        city = #{city,jdbcType=VARCHAR},
+        phone = #{phone,jdbcType=VARCHAR},
+        email = #{email,jdbcType=VARCHAR},
+        homeField = #{homeField,jdbcType=VARCHAR},
+        address = #{address,jdbcType=VARCHAR},
+        gmt_modified = #{modifiedTime,jdbcType=TIMESTAMP}
+        WHERE id = #{id}
+    </update>
+
+    <!--根据编号查询俱乐部信息-->
+    <select id="findById" parameterType="Integer" resultMap="ClubMap">
+        SELECT
+        A.id id,
+        A.name name,
+        A.otherName otherName,
+        A.imgUrl imgUrl,
+        A.established established,
+        B.id countryId,
+        B.name countryName,
+        A.city city,
+        A.phone phone,
+        A.email email,
+        A.homeField homeField,
+        A.address address,
+        A.gmt_create createTime,
+        A.gmt_modified modifiedTime
+        FROM tb_club A, tb_country B
+        WHERE A.countryId = B.id AND A.id = #{A.id}
+    </select>
+
+    <!--查询符合条件的俱乐部:多搜索条件-->
+    <select id="findAll" parameterType="String" resultMap="ClubMap">
+        SELECT
+        A.id id,
+        A.name name ,
+        A.otherName otherName,
+        A.imgUrl imgUrl,
+        A.established established,
+        B.name countryName,
+        A.city city,
+        A.phone phone,
+        A.email email,
+        A.homeField homeField,
+        A.address address,
+        A.gmt_create createTime,
+        A.gmt_modified modifiedTime
+        FROM tb_club A, tb_country B
+        <where>
+            A.countryId = B.id
+            <if test="_parameter!=null">
+                AND (A.name LIKE "%"#{_parameter}"%" or
+                A.otherName LIKE "%"#{_parameter}"%" or
+                B.name LIKE "%"#{_parameter}"%" or
+                A.city LIKE "%"#{_parameter}"%" or
+                A.homeField LIKE "%"#{_parameter}"%" or
+                A.address LIKE "%"#{_parameter}"%" )
+            </if>
+        </where>
+    </select>
+
+    <!--验证俱乐部名字是否唯一-->
+    <select id="verifyClubName" resultType="Integer" parameterType="String">
+        select count(name)
+        from tb_club
+        where name = #{name}
+    </select>
+
+    <!--下拉框动态搜索-->
+    <select id="searchClubForSelect" parameterType="String" resultMap="ClubInfoMap">
+        select id,name,otherName
+        from tb_club
+        <where>
+            <if test="_parameter!=null">
+                name LIKE "%"#{_parameter}"%" or otherName LIKE "%"#{_parameter}"%"
+            </if>
+        </where>
+        limit 5
+    </select>
+
+    <!--根据国家Id搜索俱乐部-->
+    <select id="searchClubByCountryId" parameterType="Integer" resultMap="ClubInfoMap">
+        select id,name,otherName
+        from tb_club
+        where countryId = #{countryId}
+    </select>
+
+    <!--根据俱乐部Id查询所有当前国-->
+    <select id="searchClubAndCountryByClubId" parameterType="Integer" resultMap="ClubCountryInfoMap">
+        SELECT
+        a.id clubId,
+        a.name clubName,
+        a.otherName clubOtherName,
+        b.id countryId,
+        b.name countryName,
+        b.otherName countryOtherName
+        FROM tb_club a, tb_country b
+        WHERE a.countryId = b.id and a.countryId = (SELECT c.countryId
+        FROM tb_club c
+        WHERE c.id = #{id})
+    </select>
+</mapper>
