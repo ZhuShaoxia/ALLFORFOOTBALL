@@ -3,8 +3,6 @@ package com.ccsu.core.comment.domain;
 import com.ccsu.core.article.domain.Article;
 import com.ccsu.core.user.domain.User;
 
-import java.util.Date;
-
 /**
  * Created by IntelliJ IDEA.
  *
@@ -27,6 +25,11 @@ public class Comment {
     private User user;
 
     /**
+     * 被回复用户
+     */
+    private User replyUser;
+
+    /**
      * 评论楼层
      */
     private Integer floor;
@@ -40,6 +43,11 @@ public class Comment {
      * 回复楼层
      */
     private Integer replyFloor;
+
+    /**
+     * 回复楼层内容
+     */
+    private String replyContent;
 
     private String createTime;
     private String modifiedTime;
@@ -96,7 +104,7 @@ public class Comment {
         return createTime;
     }
 
-    public void setCreateTime(String gcreateTime) {
+    public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
 
@@ -104,7 +112,24 @@ public class Comment {
         return modifiedTime;
     }
 
-    public void setModifiedTime(String gmodifiedTime) {
+    public void setModifiedTime(String modifiedTime) {
         this.modifiedTime = modifiedTime;
     }
+
+    public User getReplyUser() {
+        return replyUser;
+    }
+
+    public void setReplyUser(User replyUser) {
+        this.replyUser = replyUser;
+    }
+
+    public String getReplyContent() {
+        return replyContent;
+    }
+
+    public void setReplyContent(String replyContent) {
+        this.replyContent = replyContent;
+    }
+
 }

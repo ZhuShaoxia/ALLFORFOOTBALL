@@ -19,16 +19,18 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/bootstrap-select.min.css">
 
     <script src="${pageContext.request.contextPath}/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript"
+            charset="utf-8"></script>
     <script src="${pageContext.request.contextPath}/js/cropper.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="${pageContext.request.contextPath}/js/bootstrap-select.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap-select.min.js" type="text/javascript"
+            charset="utf-8"></script>
 
     <%--select2插件CDN--%>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <link href="${pageContext.request.contextPath}/css/select2.min.css" rel="stylesheet"/>
+    <script src="${pageContext.request.contextPath}/js/select2.min.js"></script>
 
     <%--表单验证--%>
-    <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
 
 
     <meta charset="utf-8"/>
@@ -50,15 +52,30 @@
 </style>
 <script>
     $(function () {
-        $(".js-data-example-ajax").select2()
         //    select2配置
         $(".js-data-example-ajax").select2({
-            placeholder: '俱乐部/国家',
-
+            placeholder: '俱乐部选择',
+//            data: [{id: 0, text: 'story'},{id: 1, text: 'bug'},{id: 2, text: 'task'}],
 //          参考地址：https://select2.org/data-sources/ajax
             ajax: {
-                url: 'https://api.github.com/search/repositories',
-                dataType: 'json'
+                url: '/club/searchSelect2Club',
+                dataType: 'json',
+                data: function (params) {
+                    return {
+                        search: params.term, // search term 请求参数 ， 请求框中输入的参数
+                        page: params.page
+                    };
+                },
+                delay:400,
+                processResults: function (data, params) {
+                    //返回的选项必须处理成以下格式
+                    //var results =  [{ id: 0, text: 'enhancement' }, { id: 1, text: 'bug' }, { id: 2, text: 'duplicate' }, { id: 3, text: 'invalid' }, { id: 4, text: 'wontfix' }];
+                    var results = data
+                    return {
+                        results: results  //必须赋值给results并且必须返回一个obj
+                    };
+                },
+                cache: true
                 // Additional AJAX parameters go here; see the end of this chapter for the full code of this example
             }
         });
@@ -79,21 +96,21 @@
 </script>
 
 <body>
-<%@include file="head2.jsp" %>
+<%@include file="head.jsp" %>
 <!--主体-->
 <div class="container userinfo">
     <div class="row" style="margin-bottom: 30px">
         <ul class="nav nav-tabs nav-justified" style="background-color:rgb(220,220,220)">
-            <li class="active"><a href="#">基本资料</a></li>
-            <li><a href="setting-bind.jsp">账号绑定</a></li>
-            <li><a href="setting-changePwd.jsp">密码修改</a></li>
+            <li class="active"><a href="/user/setting/info">基本资料</a></li>
+            <li><a href="/user/setting/bind">账号绑定</a></li>
+            <li><a href="/user/setting/modifyPwd">密码修改</a></li>
         </ul>
     </div>
     <div class="row">
         <div class="col-md-2">
             <!--头像-->
             <div style="width: 150px;height: 150px;border: solid 1px beige">
-                <img id="finalImg" alt="请上传头像" src="${pageContext.request.contextPath}/img/head-img-icon.png" style="width: 150px;height: 150px">
+                <img id="finalImg" alt="请上传头像" src="${user.imgUrl}" style="width: 150px;height: 150px">
             </div>
             <div class="editing">
                 <button class="l-btn" style="margin-left: 33px;margin-top: 5px" id="replaceImg">更换头像</button>
@@ -102,68 +119,69 @@
         <div class="col-md-10">
             <div class="userinfo-head">
                 <!--昵称-->
-                <h1>少侠我姓朱</h1>
+                <h1>${user.nickname}</h1>
             </div>
             <div class="userinfo-edit-fileds">
                 <div class="userinfo-edit-item">
                     <span class="col-md-2">姓名</span>
                     <div class="col-md-8 userinfo-edit-item-right">
                         <!--姓名-->
-                        <span>朱晓磊</span>
+                        <span>${user.name}</span>
                         <div class="editing">
                             <input type="text" class="form-control" id="" placeholder="请输入姓名"
-                                   value="朱晓磊">
+                                   value="${user.name}">
                         </div>
                     </div>
                 </div>
                 <div class="userinfo-edit-item">
                     <span class="col-md-2">性别</span>
                     <div class="col-md-8 userinfo-edit-item-right">
+                        <%
+                            if (user.getSex() == 1) {
+                        %>
                         <span>男</span>
+                        <%
+                        } else if (user.getSex() == 2) {
+                        %>
+                        <span>女</span>
+                        <%
+                            }
+                        %>
                         <div class="editing">
+                            <%
+                                if (user.getSex() == 1) {
+                            %>
                             <label class="radio-inline">
-                                <input type="radio" name="sex" id="" value="" checked><span>男</span>
+                                <input type="radio" name="sex" value="1" checked><span>男</span>
                             </label>
                             <label class="radio-inline">
-                                <input type="radio" name="sex" id="" value=""><span>女</span>
+                                <input type="radio" name="sex" value="2"><span>女</span>
                             </label>
+                            <%
+                            } else if (user.getSex() == 2) {
+                            %>
+                            <label class="radio-inline">
+                                <input type="radio" name="sex" value="1"><span>男</span>
+                            </label>
+                            <label class="radio-inline">
+                                <input type="radio" name="sex" value="2" checked><span>女</span>
+                            </label>
+                            <%
+                                }
+                            %>
+
                         </div>
                     </div>
                 </div>
 
-                <%--<div class="userinfo-edit-item">--%>
-                    <%--<!--邮箱-->--%>
-                    <%--<span class="col-md-2">邮箱</span>--%>
-                    <%--<div class="col-md-8 userinfo-edit-item-right">--%>
-                        <%--<span>zhu_xl@hisuntech.com</span>--%>
-                        <%--<div class="editing">--%>
-                            <%--<input type="text" class="form-control" id="firstname" placeholder="请输入邮箱"--%>
-                                   <%--value="zhu_xl@hisuntech.com">--%>
-                        <%--</div>--%>
-                    <%--</div>--%>
-                <%--</div>--%>
-
                 <div class="userinfo-edit-item">
                     <span class="col-md-2">主队</span>
                     <div class="col-md-8 userinfo-edit-item-right">
-                        <span><img src="${pageContext.request.contextPath}/img/club/spanish/fcb_club.png" style="margin-bottom: 3px">&nbsp;巴塞罗那</span>
+                        <span><img src="${user.club.imgUrl}"
+                                   style="margin-bottom: 3px">&nbsp;${user.club.name}</span>
                         <div class="editing">
-                            <%--<select class="form-control" style="width: 100px;display: inline-block">--%>
-                            <%--<option>俱乐部</option>--%>
-                            <%--<option>国家队</option>--%>
-                            <%--</select>--%>
-                            <%--<select class="selectpicker" data-live-search="true" title="选择下列一种"--%>
-                            <%--style="width: 100px;display: inline-block">--%>
-                            <%--<option title="aaa">123123</option>--%>
-                            <%--<option title="bbb">俱1乐部</option>--%>
-                            <%--</select>--%>
-                            <!--<select class="selectpicker" data-live-search="true" style="width: 100px;display: inline-block">-->
-                            <!--&lt;!&ndash;<option data-tokens="ketchup mustard">查询设备</option>&ndash;&gt;-->
-                            <!--<option>俱乐部</option>-->
-                            <!--<option>国家队</option>-->
-                            <!--</select>-->
                             <select class="js-data-example-ajax">
-                                <option value="">123</option>
+                                <option value="">${user.club.name}</option>
                             </select>
                         </div>
                     </div>
@@ -171,9 +189,10 @@
                 <div class="userinfo-edit-item">
                     <span class="col-md-2">简介</span>
                     <div class="col-md-8 userinfo-edit-item-right">
-                        <span>It's My Life  </span>
+                        <span>${user.profile}</span>
                         <div class="editing">
-                            <textarea name="" cols="30" rows="3" class="form-control" style="resize: none;">It's My Life</textarea>
+                            <textarea name="" cols="30" rows="3" class="form-control"
+                                      style="resize: none;">${user.profile}</textarea>
                         </div>
 
                     </div>
@@ -181,10 +200,9 @@
                 <div class="userinfo-edit-item">
                     <span class="col-md-2">注册时间</span>
                     <div class="col-md-8 userinfo-edit-item-right">
-                        <p style="font-size: 18px;color: #ff3b59;">2018年02月01日21:43:40</p>
+                        <p style="font-size: 18px;color: #ff3b59;">${user.createTime}</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>

@@ -17,7 +17,7 @@
 
     <script src="${pageContext.request.contextPath}/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
 
     <meta charset="utf-8"/>
     <title>懂球儿</title>
@@ -33,7 +33,7 @@
 
 </style>
 <body>
-<%@include file="head2.jsp" %>
+<%@include file="head.jsp" %>
 <!--主体-->
 <div class="container userinfo">
     <div class="row">
@@ -53,13 +53,13 @@
                     <span class="col-md-2">姓名</span>
                     <div class="col-md-8 userinfo-edit-item-right">
                         <!--姓名-->
-                        <span>朱晓磊</span>
+                        <span>${userInfo.name}</span>
                     </div>
                 </div>
                 <div class="userinfo-edit-item">
                     <span class="col-md-2">性别</span>
                     <div class="col-md-8 userinfo-edit-item-right">
-                        <span>男</span>
+                        <span>${userInfo.sex}</span>
                     </div>
                 </div>
 
@@ -67,26 +67,26 @@
                     <!--邮箱-->
                     <span class="col-md-2">邮箱</span>
                     <div class="col-md-8 userinfo-edit-item-right">
-                        <span>zhu_xl@hisuntech.com</span>
+                        <span>${userInfo.email}</span>
                     </div>
                 </div>
 
                 <div class="userinfo-edit-item">
                     <span class="col-md-2">主队</span>
                     <div class="col-md-8 userinfo-edit-item-right">
-                        <span><img src="${pageContext.request.contextPath}/img/club/spanish/fcb_club.png" style="margin-bottom: 3px">&nbsp;巴塞罗那</span>
+                        <span><img src="${userInfo.club.imgUrl}" style="margin-bottom: 3px">&nbsp;${userInfo.club.name}</span>
                     </div>
                 </div>
                 <div class="userinfo-edit-item">
                     <span class="col-md-2">简介</span>
                     <div class="col-md-8 userinfo-edit-item-right">
-                        <span>It's My Life  </span>
+                        <span>${userInfo.profile}</span>
                     </div>
                 </div>
                 <div class="userinfo-edit-item">
                     <span class="col-md-2">注册时间</span>
                     <div class="col-md-8 userinfo-edit-item-right">
-                        <p style="font-size: 18px;color: #ff3b59;">2018年02月01日21:43:40</p>
+                        <p style="font-size: 18px;color: #ff3b59;">${userInfo.createTime}</p>
                     </div>
                 </div>
 

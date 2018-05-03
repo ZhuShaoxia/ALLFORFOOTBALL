@@ -2,6 +2,7 @@ package com.ccsu.core.club.dao;
 
 import com.ccsu.common.base.BaseDao;
 import com.ccsu.core.club.domain.Club;
+import com.ccsu.core.common.domain.Select2ResponseDto;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -24,4 +25,5 @@ public interface ClubMapper extends BaseDao<Club> {
 
     List<Club> searchClubAndCountryByClubId(Integer clubId) throws Exception;
 
+    List<Select2ResponseDto> searchSelect2Club(String term);
 }

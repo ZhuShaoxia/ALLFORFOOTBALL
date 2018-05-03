@@ -1,5 +1,9 @@
 package com.ccsu.core.honer.domain;
 
+import com.ccsu.core.club.domain.Club;
+import com.ccsu.core.country.domain.Country;
+import com.ccsu.core.player.domain.Player;
+
 /**
  * Created by IntelliJ IDEA.
  *
@@ -10,12 +14,28 @@ package com.ccsu.core.honer.domain;
  */
 public class Honer {
     private Integer id;
+
+    /**
+     * 国家
+     */
+    private Country country;
+    /**
+     * 俱乐部
+     */
+    private Club club;
+    /**
+     * 球员
+     */
+    private Player player;
+
     /**
      * 荣誉名称
      */
     private String honerName;
     /**
      * 荣誉类型
+     * 1 俱乐部
+     * 2 球员
      */
     private String honerType;
 
@@ -54,7 +74,7 @@ public class Honer {
         return createTime;
     }
 
-    public void setCreateTime(String gcreateTime) {
+    public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
 
@@ -62,7 +82,7 @@ public class Honer {
         return modifiedTime;
     }
 
-    public void setModifiedTime(String gmodifiedTime) {
+    public void setModifiedTime(String modifiedTime) {
         this.modifiedTime = modifiedTime;
     }
 
@@ -72,5 +92,29 @@ public class Honer {
 
     public void setHonerTime(String honerTime) {
         this.honerTime = honerTime;
+    }
+
+    public Country getCountry() {
+        return country;
+    }
+
+    public void setCountry(Country country) {
+        this.country = country;
+    }
+
+    public Club getClub() {
+        return club;
+    }
+
+    public void setClub(Club club) {
+        this.club = club;
+    }
+
+    public Player getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(Player player) {
+        this.player = player;
     }
 }

@@ -7,8 +7,9 @@
         否则，每个属性按需加载。
      -->
     <settings>
-        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="lazyLoadingEnabled" value="false"/>
         <setting name="aggressiveLazyLoading" value="false"/>
+        <setting name="localCacheScope" value="SESSION"/>
     </settings>
 
     <typeAliases>
@@ -23,13 +24,16 @@
         <typeAlias type="com.ccsu.core.matchLineUp.domain.MatchLineUp"/>
         <typeAlias type="com.ccsu.core.matchProcess.domain.MatchProcess"/>
         <typeAlias type="com.ccsu.core.matchState.domain.MatchState"/>
-        <typeAlias type="com.ccsu.core.matchTechnologyStatistics.domain.MatchTechnologyStastistics"/>
+        <typeAlias type="com.ccsu.core.matchTechnologyStatistics.domain.MatchTechnologyStatistics"/>
         <typeAlias type="com.ccsu.core.matchType.domain.MatchType"/>
         <typeAlias type="com.ccsu.core.player.domain.Player"/>
         <typeAlias type="com.ccsu.core.playerPosition.domain.PlayerPosition"/>
         <typeAlias type="com.ccsu.core.player.domain.Player"/>
         <typeAlias type="com.ccsu.core.ranking.domain.Ranking"/>
         <typeAlias type="com.ccsu.core.user.domain.User"/>
+
+        <typeAlias type="com.ccsu.core.common.domain.RequestDto"/>
+        <typeAlias type="com.ccsu.core.matchInfo.domain.RequestMatchInfo"/>
     </typeAliases>
     
     <!--<plugins>-->

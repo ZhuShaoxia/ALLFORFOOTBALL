@@ -11,6 +11,7 @@ package com.ccsu.core.matchEvent.domain;
 public class MatchEvent {
     private Integer id;
     private String event;
+    private String imgUrl;
 
     public Integer getId() {
         return id;
@@ -28,4 +29,11 @@ public class MatchEvent {
         this.event = event;
     }
 
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
 }

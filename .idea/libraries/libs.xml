@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="libs">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/libs" />
+      <root url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

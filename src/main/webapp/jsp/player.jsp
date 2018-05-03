@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zhuxiaolei
@@ -17,9 +18,10 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/editor.css"/>
 
     <script src="${pageContext.request.contextPath}/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript"
+            charset="utf-8"></script>
     <script src="${pageContext.request.contextPath}/js/head.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
     <script src="${pageContext.request.contextPath}/js/flotr2.min.js" type="text/javascript" charset="utf-8"></script>
 
     <meta charset="utf-8"/>
@@ -31,9 +33,8 @@
     })
 
     function basic_radar(container) {
-        // Fill series s1 and s2.
         var
-            s1 = {label: '阿兰', data: [[0, 93], [1, 98], [2, 95], [3, 95], [4, 93], [5, 99]]},
+            s1 = {label: '${player.name}', data: [[0, ${player.speed}], [1, ${player.shooting}], [2, ${player.pass}], [3, ${player.dribbling}], [4, ${player.defensive}], [5, ${player.power}]]},
             graph, ticks;
 
         // Radar Labels
@@ -48,12 +49,12 @@
 
         // Draw the graph.
         graph = Flotr.draw(container, [s1], {
-            title:'综合能力',
-            fontSize:'15',
+            title: '综合能力',
+            fontSize: '15',
             radar: {show: true},
             grid: {circular: true, minorHorizontalLines: true},
             yaxis: {min: 0, max: 100, minorTickFreq: null},
-            xaxis: {ticks: ticks,showLabels:true},
+            xaxis: {ticks: ticks, showLabels: true},
             mouse: {track: true}
         });
     }
@@ -68,43 +69,47 @@
             <div class="col-md-9 player-info-head-left">
                 <div class="info-name">
                     <div style="height: 30px;">
-                        <span>阿兰</span>
-                        <img class="info-img" src="${pageContext.request.contextPath}/img/country/china.png" alt="">
-                        <img class="info-img" src="${pageContext.request.contextPath}/img/club/china/zc_shanggang.png" alt="">
+                        <span>${player.name}</span>
+                        <img class="info-img" src="${player.club.imgUrl}" alt="${player.club.name}">
                     </div>
-                    <span>Alan</span>
+                    <span>${player.otherName}</span>
                 </div>
                 <div class="info-detail">
                     <table class="table table-striped">
                         <tr>
                             <td>俱乐部:</td>
-                            <td>广州恒大淘宝</td>
+                            <td>${player.club.name}</td>
                             <td>位置:</td>
-                            <td>前锋</td>
+                            <td>${player.playerPosition.position}</td>
                             <td>号码:</td>
-                            <td>7</td>
+                            <td>${player.number}</td>
                         </tr>
                         <tr>
                             <td>国籍:</td>
-                            <td>巴西</td>
+                            <td>${player.country}</td>
                             <td>年龄:</td>
-                            <td>28</td>
+                            <td>${player.age}</td>
                             <td>生日:</td>
-                            <td>1989-07-10</td>
+                            <td>${player.birthday}</td>
                         </tr>
                         <tr>
                             <td>身高:</td>
-                            <td>182CM</td>
+                            <td>${player.height}CM</td>
                             <td>体重:</td>
-                            <td>75KG</td>
+                            <td>${player.weight}KG</td>
                             <td>惯用脚:</td>
-                            <td>右脚</td>
+                            <c:if test="${player.usualFoot==1}">
+                                <td>左脚</td>
+                            </c:if>
+                            <c:if test="${player.usualFoot==2}">
+                                <td>右脚</td>
+                            </c:if>
                         </tr>
                     </table>
                 </div>
             </div>
             <div class="col-md-3 player-info-head-right">
-                <img src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">
+                <img style="width: 130px;height:160px;" src="${player.imgUrl}" alt="${player.name}">
             </div>
         </div>
         <%--比赛数据--%>
@@ -146,23 +151,13 @@
             </div>
             <div class="payer-honer-body">
                 <table class="table" style="text-align: center">
-                    <tr class="">
-                        <td style="width: 20%">中国足球甲级联赛</td>
-                        <td style="width: 10%">2012</td>
-                        <td style="width: 70%"></td>
-                    </tr>
-                    <tr class="">
-                        <td style="width: 30%">中国足球甲级联赛</td>
-                        <td style="width: 10%">2012</td>
-                        <td style="width: 70%"></td>
-
-                    </tr>
-                    <tr class="">
-                        <td style="width: 30%">中国足球甲级联赛</td>
-                        <td style="width: 10%">2012</td>
-                        <td style="width: 70%"></td>
-
-                    </tr>
+                    <c:forEach items="${honers}" var="honer">
+                        <tr class="">
+                            <td style="width: 20%">${honer.honerName}</td>
+                            <td style="width: 10%">${honer.honerTime}</td>
+                            <td style="width: 70%"></td>
+                        </tr>
+                    </c:forEach>
                 </table>
             </div>
         </div>
@@ -173,57 +168,26 @@
             </div>
             <div class="player-article-body">
                 <div class="left-article-list">
-                    <div class="row article-item">
-                        <div class="col-md-3 article-img">
-                            <img src="${pageContext.request.contextPath}/img/1.jpg" class="img-rounded"/>
-                        </div>
-                        <div class="col-md-9">
-                            <a href="article.jsp">
-                                <div class="row article-title">
-                                    <strong style="color: #333;">每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
-                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
+                    <c:forEach items="${articles}" var="article">
+                        <div class="article-item">
+                            <div class="col-md-3 article-img">
+                                <img src="${article.imgUrl}" class="img-rounded"/>
+                            </div>
+                            <div class="col-md-9">
+                                <a href="/article/info/${article.id}">
+                                    <div class="row article-title">
+                                        <strong style="color: #333;">${article.title}</strong>
+                                        <p class="text-muted">${article.subtitle}</p>
+                                    </div>
+                                </a>
+                                <div class="row  article-time">
+                                    <small>${article.createTime}</small>
+                                    <a href="/article/info/${article.id}" style="float: right;"><img
+                                            src="${pageContext.request.contextPath}/img/article-comment.png"></a>
                                 </div>
-                            </a>
-                            <div class="row  article-time">
-                                <small>2018年01月06日23:25:46</small>
-                                <a href="article.jsp" style="float: right;"><img src="${pageContext.request.contextPath}/img/article-comment.png"></a>
                             </div>
                         </div>
-                    </div>
-                    <div class="row article-item">
-                        <div class="col-md-3 article-img">
-                            <img src="${pageContext.request.contextPath}/img/1.jpg" class="img-rounded"/>
-                        </div>
-                        <div class="col-md-9">
-                            <a href="article.jsp">
-                                <div class="row article-title">
-                                    <strong style="color: #333;">每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
-                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
-                                </div>
-                            </a>
-                            <div class="row  article-time">
-                                <small>2018年01月06日23:25:46</small>
-                                <a href="article.jsp" style="float: right;"><img src="${pageContext.request.contextPath}/img/article-comment.png"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row article-item">
-                        <div class="col-md-3 article-img">
-                            <img src="${pageContext.request.contextPath}/img/1.jpg" class="img-rounded"/>
-                        </div>
-                        <div class="col-md-9">
-                            <a href="article.jsp">
-                                <div class="row article-title">
-                                    <strong style="color: #333;">每体：库鸟转会三方达成初步协议，转会费1.2亿加4000万浮动</strong>
-                                    <p class="text-muted">转会费1.2亿加4000万浮动</p>
-                                </div>
-                            </a>
-                            <div class="row  article-time">
-                                <small>2018年01月06日23:25:46</small>
-                                <a href="article.jsp" style="float: right;"><img src="${pageContext.request.contextPath}/img/article-comment.png"></a>
-                            </div>
-                        </div>
-                    </div>
+                    </c:forEach>
                 </div>
             </div>
         </div>
@@ -249,24 +213,36 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰</td>
+                            <td><img class="td-icon-img"
+                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
+                            </td>
                             <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png" alt=""></td>
+                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
+                                     alt=""></td>
                         </tr>
                         <tr>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰</td>
+                            <td><img class="td-icon-img"
+                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
+                            </td>
                             <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png" alt=""></td>
+                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
+                                     alt=""></td>
                         </tr>
                         <tr>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰</td>
+                            <td><img class="td-icon-img"
+                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
+                            </td>
                             <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png" alt=""></td>
+                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
+                                     alt=""></td>
                         </tr>
                         <tr>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰</td>
+                            <td><img class="td-icon-img"
+                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
+                            </td>
                             <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png" alt=""></td>
+                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
+                                     alt=""></td>
                         </tr>
                         </tbody>
                         <thead>
@@ -278,9 +254,12 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰</td>
+                            <td><img class="td-icon-img"
+                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
+                            </td>
                             <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png" alt=""></td>
+                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
+                                     alt=""></td>
                         </tr>
                         </tbody>
                         <thead class="success">
@@ -292,19 +271,28 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰</td>
+                            <td><img class="td-icon-img"
+                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
+                            </td>
                             <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png" alt=""></td>
+                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
+                                     alt=""></td>
                         </tr>
                         <tr>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰</td>
+                            <td><img class="td-icon-img"
+                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
+                            </td>
                             <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png" alt=""></td>
+                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
+                                     alt=""></td>
                         </tr>
                         <tr>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰</td>
+                            <td><img class="td-icon-img"
+                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
+                            </td>
                             <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png" alt=""></td>
+                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
+                                     alt=""></td>
                         </tr>
                         </tbody>
                         <thead>
@@ -316,19 +304,28 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰</td>
+                            <td><img class="td-icon-img"
+                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
+                            </td>
                             <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png" alt=""></td>
+                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
+                                     alt=""></td>
                         </tr>
                         <tr>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰</td>
+                            <td><img class="td-icon-img"
+                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
+                            </td>
                             <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png" alt=""></td>
+                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
+                                     alt=""></td>
                         </tr>
                         <tr>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰</td>
+                            <td><img class="td-icon-img"
+                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
+                            </td>
                             <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png" alt=""></td>
+                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
+                                     alt=""></td>
                         </tr>
                         </tbody>
                     </table>

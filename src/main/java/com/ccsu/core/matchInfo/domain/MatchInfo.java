@@ -58,13 +58,24 @@ public class MatchInfo {
 
     /**
      * 比赛结果
+     * 1 平局
+     * 2 主胜
+     * 3 客胜
      */
     private Integer matchResult;
 
     /**
-     * 比赛比分(格式:   3:2)
+     * 比赛比分(format[3:2])
      */
     private String matchScore;
+
+    /**
+     * 是否为焦点比赛
+     * 0 非焦点比赛
+     * 1 焦点比赛
+     */
+    private Integer isFocus;
+
     private String createTime;
     private String modifiedTime;
 
@@ -152,7 +163,7 @@ public class MatchInfo {
         return createTime;
     }
 
-    public void setCreateTime(String gcreateTime) {
+    public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
 
@@ -160,7 +171,15 @@ public class MatchInfo {
         return modifiedTime;
     }
 
-    public void setModifiedTime(String gmodifiedTime) {
+    public void setModifiedTime(String modifiedTime) {
         this.modifiedTime = modifiedTime;
+    }
+
+    public Integer getIsFocus() {
+        return isFocus;
+    }
+
+    public void setIsFocus(Integer isFocus) {
+        this.isFocus = isFocus;
     }
 }

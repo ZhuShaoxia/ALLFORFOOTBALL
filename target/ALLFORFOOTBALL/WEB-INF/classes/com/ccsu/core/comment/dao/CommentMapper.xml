@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.comment.dao.CommentMapper">
+    <resultMap id="CommentMap" type="com.ccsu.core.comment.domain.Comment">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="articleId" property="article.id" jdbcType="VARCHAR"/>
+        <result column="authorId" property="article.user.id" jdbcType="INTEGER"/>
+        <result column="author" property="article.user.nickname" jdbcType="VARCHAR"/>
+        <result column="articleTitle" property="article.title" jdbcType="VARCHAR"/>
+        <result column="userId" property="user.id" jdbcType="INTEGER"/>
+        <result column="nickname" property="user.nickname" jdbcType="VARCHAR"/>
+        <result column="imgUrl" property="user.imgUrl" jdbcType="VARCHAR"/>
+        <result column="floor" property="floor" jdbcType="INTEGER"/>
+        <result column="content" property="content" jdbcType="VARCHAR"/>
+        <result column="replyUserId" property="replyUser.id" jdbcType="INTEGER"/>
+        <result column="replyNickname" property="replyUser.nickname" jdbcType="VARCHAR"/>
+        <result column="replyFloor" property="replyFloor" jdbcType="INTEGER"/>
+        <result column="replyContent" property="replyContent" jdbcType="VARCHAR"/>
+        <result column="createTime" property="createTime" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <insert id="save" parameterType="Comment">
+        insert into tb_comment (articleId, userId,
+        floor, content, replyFloor,
+        gmt_create, gmt_modified)
+        values (#{article.id}, #{user.id},
+        #{floor}, #{content}, #{replyFloor},
+        #{createTime}, #{modifiedTime})
+    </insert>
+
+    <delete id="delete" parameterType="Integer">
+        delete from tb_comment where id = #{id}
+    </delete>
+
+    <select id="update" parameterType="Comment">
+
+    </select>
+
+    <select id="findById" parameterType="Integer" resultMap="CommentMap">
+
+    </select>
+
+    <select id="findAll" parameterType="String" resultMap="CommentMap">
+
+
+    </select>
+
+    <!--查询回复评论-->
+    <select id="findAllByUserId" resultMap="CommentMap">
+        SELECT
+        a.id id,
+        a.articleId articleId,
+        c.title title,
+        c.userId authorId,
+        f.nickname author,
+        c.title articleTitle,
+        a.userId userId,
+        d.nickname nickname,
+        d.imgUrl imgUrl,
+        a.floor floor,
+        a.content content,
+        e.id replyUserId,
+        e.nickname replyNickname,
+        a.replyFloor replyFloor,
+        b.content replyContent,
+        a.gmt_create createTime
+        FROM tb_comment a
+        LEFT JOIN tb_comment b
+        ON a.replyFloor = b.floor
+        LEFT JOIN tb_article c
+        ON a.articleId = c.id
+        LEFT JOIN tb_user d
+        ON a.userId = d.id
+        LEFT JOIN tb_user e
+        ON b.userId = e.id
+        LEFT JOIN tb_user f
+        ON c.userId = f.id
+        <where>
+            a.userId = #{0}
+            <if test="param2!=null">
+                AND (d.nickname LIKE "%"#{1}"%" or a.content LIKE "%"#{1}"%" or e.nickname LIKE "%"#{1}"%" or b.content
+                LIKE "%"#{1}"%")
+            </if>
+        </where>
+        ORDER BY a.id desc
+    </select>
+
+    <!--查询被回复评论-->
+    <select id="findAllByReplyUserId" resultMap="CommentMap">
+        SELECT
+        a.id id,
+        a.articleId articleId,
+        c.title title,
+        c.userId authorId,
+        f.nickname author,
+        a.userId userId,
+        d.nickname nickname,
+        d.imgUrl imgUrl,
+        a.floor floor,
+        a.content content,
+        e.id replyUserId,
+        e.nickname replyNickname,
+        a.replyFloor replyFloor,
+        b.content replyContent,
+        a.gmt_create createTime
+        FROM tb_comment a
+        LEFT JOIN tb_comment b
+        ON a.replyFloor = b.floor
+        LEFT JOIN tb_article c
+        ON a.articleId = c.id
+        LEFT JOIN tb_user d
+        ON a.userId = d.id
+        LEFT JOIN tb_user e
+        ON b.userId = e.id
+        LEFT JOIN tb_user f
+        ON c.userId = f.id
+        <where>
+            e.id = #{0}
+            <if test="param2!=null">
+                AND (d.nickname LIKE "%"#{1}"%" or a.content LIKE "%"#{1}"%" or e.nickname LIKE "%"#{1}"%" or b.content
+                LIKE "%"#{1}"%")
+            </if>
+        </where>
+        ORDER BY a.id desc
+
+    </select>
+
+    <select id="findAllByArticleId" parameterType="Integer" resultMap="CommentMap">
+        SELECT
+        a.id id,
+        a.articleId articleId,
+        a.userId userId,
+        d.nickname nickname,
+        d.imgUrl imgUrl,
+        a.floor floor,
+        a.content content,
+        e.id replyUserId,
+        e.nickname replyNickname,
+        a.replyFloor replyFloor,
+        b.content replyContent,
+        a.gmt_create createTime
+        FROM tb_comment a
+        LEFT JOIN tb_comment b
+        ON a.replyFloor = b.floor
+        LEFT JOIN tb_article c
+        ON a.articleId = c.id
+        LEFT JOIN tb_user d
+        ON a.userId = d.id
+        LEFT JOIN tb_user e
+        ON b.userId = e.id
+        WHERE a.articleId = #{id}
+        ORDER BY a.id
+        LIMIT 10
+    </select>
+    
+    <select id="searchHotComment" resultMap="CommentMap">
+        SELECT
+        a.id id,
+        a.articleId articleId,
+        a.userId userId,
+        d.nickname nickname,
+        d.imgUrl imgUrl,
+        a.floor floor,
+        a.content content,
+        e.id replyUserId,
+        e.nickname replyNickname,
+        a.replyFloor replyFloor,
+        b.content replyContent,
+        a.gmt_create createTime
+        FROM tb_comment a
+        LEFT JOIN tb_comment b
+        ON a.replyFloor = b.floor
+        LEFT JOIN tb_article c
+        ON a.articleId = c.id
+        LEFT JOIN tb_user d
+        ON a.userId = d.id
+        LEFT JOIN tb_user e
+        ON b.userId = e.id
+        ORDER BY a.id desc
+        LIMIT 8
+    </select>
+
+</mapper>

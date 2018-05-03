@@ -2,7 +2,11 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
     var element = layui.element;
     var form = layui.form;
     var laydate = layui.laydate;
-    //club-add.jsp 监听提交
+
+
+    /**
+     * 俱乐部信息增加 提交表单
+     */
     form.on('submit(club-add-submit)', function (data) {
         var imgUrl = $("#uploadImg").attr("src")
         if (typeof imgUrl == 'undefined') {
@@ -39,8 +43,9 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
         return false;
     });
 
-    //club_update.jsp
-    //监听提交
+    /**
+     * 俱乐部更新 提交表单
+     */
     form.on('submit(club-update-submit)', function (data) {
         var imgUrl = $("#uploadImg").attr("src")
         if (typeof imgUrl == 'undefined') {
@@ -77,7 +82,40 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
         return false;
     })
 
+    /**
+     * 俱乐部荣誉信息添加 添加表单 club-honer-add
+     */
+    form.on('submit(club-honer-add)', function (data) {
+        layer.confirm('请确认数据无误', {
+            btn: ['确定', '取消'],
+        }, function (index) {
+            $.ajax({
+                data: data.field,
+                url: '/honer/add?honerType=1',
+                success: function (res) {
+                    if (res.code == -1) {
+                        layer.close(index)
+                        layer.msg('后台请求出错,请联系系统管理员')
+                        return false;
+                    } else {
+                        location.reload()
+                    }
+                },
+                error: function () {
+                    layer.msg('信息添加失败,请重新添加')
+                    return false;
+                }
+            })
+        }, function (index) {
+            layer.close(index)
+        })
+        return false;
+    });
 
+
+    /**
+     * 表单验证
+     */
     var name = $("#name").val()
     form.verify({
         verifyNameIsExist: function (value, item) {
@@ -98,15 +136,78 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
         }
     })
 
+    /**
+     * 国家选择 下拉框联动
+     */
+    form.on('select(countrySelect)', function (data) {
+        var selectVal = data.value;
+        $("#clubId").empty()
+        $("#playerID").empty()
+        var html = "<option value=''></option>"
+        $.ajax({
+            data: {countryId: selectVal},
+            url: '/club/search/condition/countryId',
+            success: function (data) {
+                var length = data.length
+                for (var i = 0; i < length; i++) {
+                    html += "<option value=\"" + data[i].id + "\">" + data[i].name + "</option>"
+                }
+                $('#clubId').append(html)
+                form.render('select')
+            }
+        })
+    })
+    /**
+     * 俱乐部选择 下拉框联动
+     */
+    form.on('select(clubSelect)', function (data) {
+        var selectVal = data.value;
+        $("#club-honer-tbody").empty()
+        var html = ''
+        $.ajax({
+            data: {clubId: selectVal},
+            url: '/honer/findHonerByClubId',
+            success: function (data) {
+                var length = data.length
+                for (var i = 0; i < length; i++) {
+                    html += "<tr>\n" +
+                        "                            <td>" + data[i].club.name + "</td>\n" +
+                        "                            <td>" + data[i].honerName + "</td>\n" +
+                        "                            <td>" + data[i].honerTime + "</td>\n" +
+                        "                            <td>" + data[i].country.name + "</td>\n" +
+                        "                            <td align=\"center\">\n" +
+                        "                                <button id='delTd[" + data[i].id + "]' onclick=\"delTd(this,'" + data[i].id + "')\" class=\"layui-btn layui-btn-danger layui-btn-xs\"\n" +
+                        "                                        lay-event=\"del\">删除\n" +
+                        "                                </button>\n" +
+                        "                            </td>\n" +
+                        "                        </tr>"
+                }
+                $('#club-honer-tbody').append(html)
+                form.render('select')
+            }
+        })
+    })
+
 
     element.init()
     form.render()
+    /**
+     * 俱乐部成立时间
+     */
     laydate.render({
         elem: '#established', //指定元素
         type: 'month',
         max: 0
     })
 
+    /**
+     * 荣誉获得时间
+     */
+    laydate.render({
+        elem: '#honerTime', //指定元素
+        type: 'month',
+        max: 0
+    })
 
     //club-list.jsp
     var table = layui.table;
@@ -141,7 +242,24 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
         var data = obj.data //获得当前行数据
             , layEvent = obj.event; //获得 lay-event 对应的值
         if (layEvent === 'detail') {
-            layer.msg('查看操作');
+            console.log(data)
+            layer.open({
+                title: '球员详细信息-查看',
+                // btn: ['确定修改', '取消'],
+                btnAlign: 'c',
+                content: "<div><label>队徽:</label><img src='" + data.imgUrl + "' style='width: 40px;height: 40px'></div>\n" +
+                "<div><label>俱乐部名称:</label><span>" + data.name + "</span></div>\n" +
+                "<div><label>俱乐部外文名:</label><span>" + data.otherName + "</span></div>\n" +
+                "<div><label>国家和地区:</label><span>" + data.country.name + "</span></div>\n" +
+                "<div><label>城市:</label><span>" + data.city + "</span></div>\n" +
+                "<div><label>地址:</label><span>" + data.address + "</span></div>\n" +
+                "<div><label>主场:</label><span>" + data.homeField + "</span></div>\n" +
+                "<div><label>成立时间:</label><span>" + data.established + "</span></div>\n" +
+                "<div><label>国籍:</label><span>" + data.country.name + "</span></div>\n",
+                yes: function (index, layero) {
+                    layer.close(index)
+                }
+            })
         } else if (layEvent === 'del') {
             layer.confirm('真的删除行么', function (index) {
                 obj.del(); //删除对应行（tr）的DOM结构
@@ -160,6 +278,9 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
         }
     });
 
+    /**
+     * 俱乐部信息 模糊搜索 点击事件
+     */
     $("#club-list-search-btn").on('click', function () {
         var condition = $("#club-list-bale-reload").val()
         //搜索 表格重载
@@ -171,7 +292,9 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
 
     var upload = layui.upload;
 
-    //图片上传
+    /**
+     * 俱乐部队徽图片上传
+     */
     var uploadInst = upload.render({
         elem: '#uploadBtn'
         , url: '/upload/img'
@@ -200,5 +323,20 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
         }
     });
 
-
 });
+
+function delTd(obj, id) {
+    var $tr = $(obj).parent().parent();
+    if (confirm('荣誉信息确认删除嘛?')) {
+        $.ajax({
+            data: {id: id},
+            url: '/honer/delete',
+            success: function (data) {
+                $tr.remove()
+            },
+            error: function (data) {
+                alert('后台请求出错,删除失败')
+            }
+        })
+    }
+}

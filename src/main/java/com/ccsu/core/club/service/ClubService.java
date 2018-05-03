@@ -2,6 +2,7 @@ package com.ccsu.core.club.service;
 
 import com.ccsu.common.base.BaseService;
 import com.ccsu.core.club.domain.Club;
+import com.ccsu.core.common.domain.Select2ResponseDto;
 
 import java.util.List;
 
@@ -22,4 +23,7 @@ public interface ClubService extends BaseService<Club> {
     List<Club> searchClubByCountryId(Integer countryId) throws Exception;
 
     List<Club> searchClubAndCountryByClubId(Integer clubId) throws Exception;
+
+    List<Select2ResponseDto> searchSelect2Club(String term);
+
 }

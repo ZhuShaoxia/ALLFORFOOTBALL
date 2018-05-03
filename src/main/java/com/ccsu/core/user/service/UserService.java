@@ -20,4 +20,11 @@ public interface UserService extends BaseService<User> {
     Boolean verifyPhone(String phone);
 
     Boolean verifyEmail(String email);
+
+    Boolean verifyPassword(Integer id , String password);
+
+    User userLogin(User user) throws Exception;
+    void updateUserPwd(User user) throws Exception;
+
+    void updateUserPhone(User user);
 }

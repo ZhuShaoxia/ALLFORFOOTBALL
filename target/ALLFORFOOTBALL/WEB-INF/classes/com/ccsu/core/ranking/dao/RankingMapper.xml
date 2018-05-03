@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.ranking.dao.RankingMapper">
+    <resultMap id="RankingMap" type="com.ccsu.core.ranking.domain.Ranking">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="matchTypeId" jdbcType="INTEGER" property="matchType.id"/>
+        <result column="clubId" jdbcType="INTEGER" property="club.id"/>
+        <result column="clubName" jdbcType="VARCHAR" property="club.name"/>
+        <result column="clubImgUrl" jdbcType="VARCHAR" property="club.imgUrl"/>
+        <result column="matchTimes" jdbcType="INTEGER" property="matchTimes"/>
+        <result column="victory" jdbcType="INTEGER" property="victory"/>
+        <result column="draw" jdbcType="INTEGER" property="draw"/>
+        <result column="negative" jdbcType="INTEGER" property="negative"/>
+        <result column="goals" jdbcType="INTEGER" property="goals"/>
+        <result column="conceded" jdbcType="INTEGER" property="conceded"/>
+        <result column="goalDifference" jdbcType="INTEGER" property="goalDifference"/>
+        <result column="score" jdbcType="INTEGER" property="score"/>
+        <result column="season" jdbcType="INTEGER" property="season"/>
+        <result column="gmt_create" jdbcType="VARCHAR" property="createTime"/>
+        <result column="gmt_modified" jdbcType="VARCHAR" property="modifiedTime"/>
+    </resultMap>
+
+    <insert id="save" parameterType="Ranking">
+        INSERT INTO tb_ranking (id,matchTypeId,clubId, matchTimes,
+        victory, draw, negative,
+        goals, conceded, goalDifference,
+        score, season, gmt_create,
+        gmt_modified)
+        VALUES (#{id}, #{matchType.id},#{club.id},
+        #{matchTimes},
+        #{victory}, #{draw}, #{negative},
+        #{goals}, #{conceded},
+        #{goalDifference},
+        #{score}, #{season}, #{gmtCreate},
+        #{gmtModified})
+    </insert>
+
+    <!--根据id查询比赛类型信息-->
+    <select id="findById" parameterType="Integer" resultMap="RankingMap">
+        SELECT
+        id,
+        matchTypeId,
+        clubId,
+        matchTimes,
+        victory,
+        draw,
+        negative,
+        goals,
+        conceded,
+        goalDifference,
+        score,
+        season,
+        gmt_create createTime,
+        gmt_modified modifiedTime
+        FROM tb_ranking
+        WHERE id = ${id}
+    </select>
+
+    <!--判断当前俱乐部信息是否存在 TODO:赛季的处理-->
+    <select id="countClubId" parameterType="Ranking" resultType="Integer">
+        select count(*) from tb_ranking where clubId = #{club.id} AND season = #{season}
+    </select>
+
+
+    <select id="findAll" parameterType="String" resultMap="RankingMap">
+        SELECT
+        id,
+        matchTypeId,
+        clubId,
+        matchTimes,
+        victory,
+        draw,
+        negative,
+        goals,
+        conceded,
+        goalDifference,
+        score,
+        season,
+        gmt_create createTime,
+        gmt_modified modifiedTime
+        FROM tb_ranking
+    </select>
+
+    <!--查询各种比赛类型下 数据积分 TODO:赛季-->
+    <select id="findAllByMatchTypeId" parameterType="Integer" resultMap="RankingMap">
+        SELECT
+        a.id,
+        a.matchTypeId,
+        a.clubId,
+        b.name clubName,
+        b.imgUrl clubImgUrl,
+        a.matchTimes,
+        a.victory,
+        a.draw,
+        a.negative,
+        a.goals,
+        a.conceded,
+        a.goalDifference,
+        a.score,
+        a.season
+        FROM tb_ranking a
+        LEFT JOIN tb_club b
+        ON a.clubId = b.id
+        WHERE matchTypeId = #{matchTypeId}
+    </select>
+
+    <!--胜:修改积分榜-->
+    <update id="updateRankingByVictory" parameterType="Ranking">
+        update tb_ranking
+        set victory = (victory + 1),
+        goals = #{goals},
+        conceded = #{conceded},
+        score = (score + 3)
+        where matchTypeId = #{matchType.id} AND clubId = #{club.id} AND season = #{season}
+    </update>
+
+    <!--平:修改积分榜-->
+    <update id="updateRankingByDraw" parameterType="Ranking">
+        update tb_ranking
+        set draw = (draw + 1),
+        goals = #{goals},
+        conceded = #{conceded},
+        score = (score + 1)
+        where matchTypeId = #{matchType.id} AND clubId = #{club.id} AND season = #{season}
+    </update>
+
+    <!--负：修改积分榜-->
+    <update id="updateRankingByNegative" parameterType="Ranking">
+        update tb_ranking
+        set negative = (negative + 1),
+        goals = #{goals},
+        conceded = #{conceded}
+        where matchTypeId = #{matchType.id} AND clubId = #{club.id} AND season = #{season}
+    </update>
+</mapper>
+

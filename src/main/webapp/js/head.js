@@ -22,14 +22,30 @@ $(function () {
 
 //登录验证
 $("#loginBtn").on('click', function () {
-    //TODO:登录验证
-    $("#loginForm").submit()
-    console.log("123")
+    var account = $("#login-account").val()
+    var password = $("#login-password").val()
+    $.ajax({
+        data: {
+            account: account,
+            password: password
+        },
+        url: '/user/login',
+        success: function (res) {
+            if (res.code == '-1') {
+                alert('后台请求出错,请联系系统管理员')
+                return false;
+            } else if (res.code == '-2') {
+                alert('账号不存在或密码输入错误,请重新输入')
+                return false;
+            }
+            window.location.href = "/"
+        }
+    })
 })
 
 
 //忘记密码 跳转页面
 $("#forgetBtn").on('click', function () {
-    window.location.href = "forgetPwd.jsp"
+    window.location.href = "/forgetPwd"
 })
 

@@ -16,7 +16,7 @@
 
     <script src="${pageContext.request.contextPath}/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
     <%--倒计时--%>
     <script src="${pageContext.request.contextPath}/js/countDown.js" type="text/javascript" charset="utf-8"></script>
     <%--时间格式化--%>
@@ -31,9 +31,9 @@
 </script>
 <body>
 
-<%@include file="head2.jsp" %>
+<%@include file="head.jsp" %>
 <!--主体-->
-<div class="container">
+<div class="container" style="min-height: 650px;width:100%">
     <div class="row">
         <!--轮播图-->
         <div class="col-md-8 " style="padding-right: 0px;">
@@ -422,7 +422,6 @@
                     </ul>
                 </div>
                 <div>
-
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="score-zc">
                             <table class="table table-striped">

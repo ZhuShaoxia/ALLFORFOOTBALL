@@ -1,11 +1,12 @@
 body{
     background-color: gainsboro;
+    width: 100%;
 }
 
 .userinfo{
     padding: 50px;
     background-color: white;
-    height:900px;
+    min-height:800px;
 }
 .userinfo-edit-fileds{
     text-align: left;

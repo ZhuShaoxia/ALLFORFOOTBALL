@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.articleType.dao.ArticleTypeMapper">
+    <resultMap id="ArticleTypeMap" type="com.ccsu.core.articleType.domain.ArticleType">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="type" property="type" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <!--查询所有文章类型-->
+    <select id="findAll" resultMap="ArticleTypeMap">
+        select id ,type from tb_article_type
+    </select>
+
+</mapper>

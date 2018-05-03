@@ -4,14 +4,16 @@ layui.use(['element', 'upload', 'form', 'table', 'layer'], function () {
     var layer = layui.layer;
     element.init()
     form.render()
+
     //user-insert.jsp 监听提交
     form.on('submit(user-add-submit)', function (data) {
         var imgUrl = $("#uploadImg").attr("src");
         if (typeof imgUrl == 'undefined') {
             // imgUrl = '/uploadImg/defaultImg.png'
-            layer.msg('请上传头像...')
+            layer.msg('请上传图片...')
             return false;
         }
+
         layer.confirm('请确认数据无误', {
             btn: ['确定', '取消'],
         }, function (index) {
@@ -161,7 +163,7 @@ layui.use(['element', 'upload', 'form', 'table', 'layer'], function () {
                 }
             }
         }
-        //    TODO :验证俱乐部名字是否存在
+        //
     })
 
     //user-add.jsp 俱乐部联动
@@ -182,7 +184,6 @@ layui.use(['element', 'upload', 'form', 'table', 'layer'], function () {
             }
         })
     })
-
 
     //user-list.jsp
     var table = layui.table;

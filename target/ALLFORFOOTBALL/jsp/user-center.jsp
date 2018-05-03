@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zhuxiaolei
@@ -17,7 +18,7 @@
 
     <script src="${pageContext.request.contextPath}/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
 
     <meta charset="utf-8"/>
     <title>懂球儿</title>
@@ -38,38 +39,40 @@
 
 </style>
 <body>
-<%@include file="head2.jsp" %>
+<%@include file="head.jsp" %>
 <!--主体-->
 <div class="container userinfo">
     <div class="row">
         <div class="col-md-2">
             <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125"
                 style="border: 1px solid #8bfdff">
-                <li class="active"><a href="user-center.jsp">个人信息</a></li>
-                <li><a href="user-comment.jsp">评论</a></li>
-                <li><a href="user-article.jsp">我发表的文章</a></li>
-                <li><a href="setting-profile.jsp">账号设置</a></li>
+                <li class="active"><a href="${pageContext.request.contextPath}/user/center">个人信息</a></li>
+                <c:if test="${user.role==2}">
+                    <li><a href="${pageContext.request.contextPath}/user/article">我发表的文章</a></li>
+                </c:if>
+                <li><a href="${pageContext.request.contextPath}/user/comment">评论</a></li>
+                <li><a href="${pageContext.request.contextPath}/user/setting/info">账号设置</a></li>
             </ul>
         </div>
         <div class="col-md-10">
             <div class="col-md-10">
                 <div class="userinfo-head" style="padding-left: 30px">
-                    <img src="${pageContext.request.contextPath}/img/head-img-icon.png" alt="" style="width: 50px;height: 50px;margin-bottom: 13px">
+                    <img src="${user.imgUrl}" alt="" style="width: 50px;height: 50px;margin-bottom: 13px">
                     <!--昵称-->
-                    <h1 style="display: inline-block">少侠我姓朱</h1>
+                    <h1 style="display: inline-block">${user.nickname}</h1>
                 </div>
                 <div class="userinfo-edit-fileds">
                     <div class="userinfo-edit-item">
                         <span class="col-md-2">姓名</span>
                         <div class="col-md-8 userinfo-edit-item-right">
                             <!--姓名-->
-                            <span>朱晓磊</span>
+                            <span>${user.name}</span>
                         </div>
                     </div>
                     <div class="userinfo-edit-item">
                         <span class="col-md-2">性别</span>
                         <div class="col-md-8 userinfo-edit-item-right">
-                            <span>男</span>
+                            <span>${user.sex}</span>
                         </div>
                     </div>
 
@@ -77,26 +80,26 @@
                         <!--邮箱-->
                         <span class="col-md-2">邮箱</span>
                         <div class="col-md-8 userinfo-edit-item-right">
-                            <span>zhu_xl@hisuntech.com</span>
+                            <span>${user.email}</span>
                         </div>
                     </div>
 
                     <div class="userinfo-edit-item">
                         <span class="col-md-2">主队</span>
                         <div class="col-md-8 userinfo-edit-item-right">
-                            <span><img src="${pageContext.request.contextPath}/img/club/spanish/fcb_club.png" style="margin-bottom: 3px">&nbsp;巴塞罗那</span>
+                            <span><img src="${user.club.imgUrl}" style="margin-bottom: 3px">&nbsp;${user.club.name}</span>
                         </div>
                     </div>
                     <div class="userinfo-edit-item">
                         <span class="col-md-2">简介</span>
                         <div class="col-md-8 userinfo-edit-item-right">
-                            <span>It's My Life  </span>
+                            <span>${user.profile}</span>
                         </div>
                     </div>
                     <div class="userinfo-edit-item">
                         <span class="col-md-2" style="font-size: 15px">注册时间</span>
                         <div class="col-md-8 userinfo-edit-item-right">
-                            <p style="font-size: 18px;color: #ff3b59;">2018年02月01日21:43:40</p>
+                            <p style="font-size: 18px;color: #ff3b59;">${user.createTime}</p>
                         </div>
                     </div>
 

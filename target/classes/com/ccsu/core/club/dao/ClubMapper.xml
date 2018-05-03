@@ -33,8 +33,13 @@
         <result column="countryOtherName" property="country.otherName" jdbcType="VARCHAR"/>
     </resultMap>
 
+    <resultMap id="ClubMap1" type="com.ccsu.core.common.domain.Select2ResponseDto">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="text" property="text" jdbcType="VARCHAR"/>
+    </resultMap>
+
     <!--添加俱乐部-->
-    <select id="save" resultMap="ClubMap">
+    <insert id="save" parameterType="Club">
         INSERT INTO tb_club (name, otherName,
         imgUrl, established, countryId,
         city, phone, email,
@@ -52,7 +57,7 @@
         #{address,jdbcType=VARCHAR},
         #{createTime,jdbcType=VARCHAR},
         #{modifiedTime,jdbcType=VARCHAR})
-    </select>
+    </insert>
 
     <!--俱乐部信息删除-->
     <delete id="delete" parameterType="Integer">
@@ -168,5 +173,15 @@
         WHERE a.countryId = b.id and a.countryId = (SELECT c.countryId
         FROM tb_club c
         WHERE c.id = #{id})
+    </select>
+
+    <select id="searchSelect2Club" resultMap="ClubMap1" parameterType="String">
+        select id , name text
+        from tb_club
+        <where>
+            <if test="_parameter!=null">
+                name like "%"#{_parameter}"%"
+            </if>
+        </where>
     </select>
 </mapper>

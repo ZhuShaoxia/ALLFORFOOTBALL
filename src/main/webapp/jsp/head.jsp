@@ -1,4 +1,4 @@
-<%--
+<%@ page import="com.ccsu.core.user.domain.User" %><%--
   Created by IntelliJ IDEA.
   User: zhuxiaolei
   Date: 2018/2/27
@@ -16,42 +16,71 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.jsp">
+            <a class="navbar-brand" href="/">
                 <img src="${pageContext.request.contextPath}/img/logo-2.png" class="img-fluid"/>懂球儿
             </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="index.jsp">首页</a>
+                    <a href="${pageContext.request.contextPath}/">首页</a>
                 </li>
                 <li>
-                    <a href="articleList.jsp">文章</a>
+                    <a href="${pageContext.request.contextPath}/articles">文章</a>
                 </li>
                 <li>
-                    <a href="game-list.jsp">比赛</a>
+                    <a href="${pageContext.request.contextPath}/matches">比赛</a>
                 </li>
                 <li>
-                    <a href="data.jsp">数据</a>
+                    <a href="${pageContext.request.contextPath}/data">数据</a>
                 </li>
-                <%--<li>--%>
-                <%--<a href="#contact">校园联赛</a>--%>
-                <%--</li>--%>
+                <li>
+                    <a href="${pageContext.request.contextPath}/compare">球员对比</a>
+                </li>
             </ul>
-            <%--<form class="navbar-form navbar-left" role="search">--%>
-                <%--<div class="form-group">--%>
-                    <%--<input type="text" class="form-control" placeholder="Search">--%>
-                <%--</div>--%>
-                <%--<button type="submit" class="btn btn-default">搜索</button>--%>
-            <%--</form>--%>
+            <%
+                User user = (User) session.getAttribute("user");
+                if (user == null) {
+            %>
+            <%--未登录状态--%>
             <ul class="nav navbar-nav navbar-right">
                 <li class="active">
                     <a href="#login-modal" data-toggle="modal">登录</a>
                 </li>
                 <li>
-                    <a href="register.jsp" target="_blank">注册</a>
+                    <a href="${pageContext.request.contextPath}/register" target="_blank">注册</a>
                 </li>
             </ul>
+            <%
+            } else {
+            %>
+            <%--登录状态--%>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <img src="${user.imgUrl}"
+                             style="width:25px;height: 25px">
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="${pageContext.request.contextPath}/user/center"><img class="tou-img"
+                                                           src="${pageContext.request.contextPath}/img/head-userinfo.png">我的主页</a>
+                        </li>
+                        <%--<li><a href="#"><img class="tou-img" src="img/head-notification.png">通知</a></li>--%>
+                        <li><a href="${pageContext.request.contextPath}/user/setting/info"><img class="tou-img"
+                                                               src="${pageContext.request.contextPath}/img/head-setting.png">设置</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#" id="user-logout"><img class="tou-img"
+                                             src="${pageContext.request.contextPath}/img/nav-head-out.png">退出</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <%
+                }
+            %>
+
+
         </div>
         <!--/.nav-collapse -->
     </div>
@@ -63,7 +92,8 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel"><img src="${pageContext.request.contextPath}/img/logo-2.png" class="img-fluid"/>&nbsp;账号登录</h4>
+                <h4 class="modal-title" id="myModalLabel"><img src="${pageContext.request.contextPath}/img/logo-2.png"
+                                                               class="img-fluid"/>&nbsp;账号登录</h4>
             </div>
             <div class="modal-body">
                 <div class="alert alert-danger alert-well">
@@ -71,15 +101,16 @@
                 </div>
                 <form role="form" id="loginForm" class="form-horizontal">
                     <div class="form-group">
-                        <label for="account" class="col-sm-3 control-label">账号</label>
+                        <label for="login-account" class="col-sm-3 control-label">账号</label>
                         <div class="col-sm-6">
-                            <input type="text" class="form-control" id="account" name="login_account" placeholder="昵称/邮箱/手机号">
+                            <input type="text" class="form-control" id="login-account" name="login_account"
+                                   placeholder="账号/邮箱/手机号">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="password" class="col-sm-3 control-label">密码</label>
+                        <label for="login-password" class="col-sm-3 control-label">密码</label>
                         <div class="col-sm-6">
-                            <input type="password" class="form-control" id="password" name="login_pwd"
+                            <input type="password" class="form-control" id="login-password" name="login_pwd"
                                    placeholder="请输入密码">
                         </div>
                     </div>
@@ -94,3 +125,25 @@
     </div>
     <!-- /.modal -->
 </div>
+<script>
+    $("#user-logout").on('click',function () {
+        $.ajax({
+            url: '/user/logout',
+            success: function (res) {
+                if (res.code == '-1') {
+                    alert('后台请求出错,请联系系统管理员')
+                    return false;
+                } else {
+                    alert('登出...页面即将跳转...')
+                    setTimeout(function () {
+                        window.location.href = "/"
+                    }, 1500)
+                }
+            },
+            error: function () {
+                alert('后台请求出错,请联系系统管理员')
+                return false;
+            }
+        })
+    })
+</script>

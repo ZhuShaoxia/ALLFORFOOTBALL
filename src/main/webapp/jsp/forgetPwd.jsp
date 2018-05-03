@@ -17,12 +17,14 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/verify.css"/>
 
     <script src="${pageContext.request.contextPath}/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript"
+            charset="utf-8"></script>
     <script src="${pageContext.request.contextPath}/js/verify.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
     <script src="${pageContext.request.contextPath}/js/head.js" type="text/javascript" charset="utf-8"></script>
 
-    <script src="${pageContext.request.contextPath}/js/sendCheckCode.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="${pageContext.request.contextPath}/js/sendCheckCode.js" type="text/javascript"
+            charset="UTF-8"></script>
 
     <meta charset="utf-8"/>
     <title>懂球儿</title>
@@ -59,7 +61,7 @@
                 <div class="form-group item">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-6">
-                        <button onclick="step1Btn()" type="button" class="btn btn-info btn-lg btn-block">下一步</button>
+                        <button id="step1Btn" type="button" class="btn btn-info btn-lg btn-block">下一步</button>
                     </div>
                 </div>
             </form>
@@ -87,8 +89,8 @@
                 <div class="form-group item">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-6">
-                        <input name="step2Code" type="text" style="width: 335px;height:34px;" placeholder="请输入6位验证码">
-                        <button id="btnSendCode" onclick="sendMessage()" class="btn btn-default"
+                        <input id="step2Code" name="step2Code" type="text" style="width: 335px;height:34px;" placeholder="请输入6位验证码">
+                        <button id="btnSendCode" class="btn btn-default"
                                 style="margin-bottom: 4px">
                             获取验证码
                         </button>
@@ -97,7 +99,7 @@
                 <div class="form-group item">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-6">
-                        <button type="button" onclick="step2Btn()" class="btn btn-info btn-lg btn-block">下一步</button>
+                        <button id="step2Btn" type="button" class="btn btn-info btn-lg btn-block">下一步</button>
                     </div>
                 </div>
             </form>
@@ -124,13 +126,14 @@
                 <div class="form-group item">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-6">
-                        <input id="step3Pwd2" name="step3Pwd2" type="password" class="form-control" placeholder="再次输入新密码">
+                        <input id="step3Pwd2" name="step3Pwd2" type="password" class="form-control"
+                               placeholder="再次输入新密码">
                     </div>
                 </div>
                 <div class="form-group item">
                     <div class="col-sm-3"></div>
                     <div class="col-sm-6">
-                        <button type="button" onclick="step3Btn()" class="btn btn-info btn-lg btn-block">重置密码</button>
+                        <button id="step3Btn" type="button" class="btn btn-info btn-lg btn-block">重置密码</button>
                     </div>
                 </div>
             </form>

@@ -4,6 +4,7 @@ import com.ccsu.common.utils.CommonUtils;
 import com.ccsu.core.club.dao.ClubMapper;
 import com.ccsu.core.club.domain.Club;
 import com.ccsu.core.club.service.ClubService;
+import com.ccsu.core.common.domain.Select2ResponseDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -82,5 +83,10 @@ public class ClubServiceImpl implements ClubService {
     @Override
     public List<Club> searchClubAndCountryByClubId(Integer clubId) throws Exception {
         return clubMapper.searchClubAndCountryByClubId(clubId);
+    }
+
+    @Override
+    public List<Select2ResponseDto> searchSelect2Club(String term) {
+        return clubMapper.searchSelect2Club(term);
     }
 }

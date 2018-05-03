@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.matchProcess.dao.MatchProcessMapper">
+    <resultMap id="MatchProcessMap" type="com.ccsu.core.matchProcess.domain.MatchProcess">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="clubId" property="club.id" jdbcType="INTEGER"/>
+        <result column="clubImgUrl" property="club.imgUrl" jdbcType="VARCHAR"/>
+        <result column="clubName" property="club.name" jdbcType="VARCHAR"/>
+        <result column="matchInfoId" property="matchInfo.id" jdbcType="VARCHAR"/>
+        <result column="event" property="matchEvent.event" jdbcType="VARCHAR"/>
+        <result column="eventImgUrl" property="matchEvent.imgUrl" jdbcType="VARCHAR"/>
+        <result column="playerId" property="player.id" jdbcType="INTEGER"/>
+        <result column="playerName" property="player.name" jdbcType="VARCHAR"/>
+        <result column="playerImgUrl" property="player.imgUrl" jdbcType="VARCHAR"/>
+        <result column="createTime" property="createTime" jdbcType="VARCHAR"/>
+        <result column="modifiedTime" property="modifiedTime" jdbcType="VARCHAR"/>
+        <result column="count" property="count" jdbcType="INTEGER"/>
+    </resultMap>
+
+
+    <select id="findAllByMatchInfoId" parameterType="INTEGER" resultMap="MatchProcessMap">
+        SELECT
+        a.time     time,
+        a.clubId   clubId,
+        a.playerId playerId,
+        c.name     playerName,
+        b.event    event,
+        b.imgUrl   eventImgUrl
+        FROM tb_match_process a
+        LEFT JOIN tb_match_event b
+        ON a.matchEventId = b.id
+        LEFT JOIN tb_player c
+        ON a.playerId = c.id
+        WHERE a.matchInfoId = #{matchInfoId}
+        GROUP BY a.time, a.clubId, a.playerId, a.matchEventId
+        ORDER BY a.time
+    </select>
+
+    <select id="findAllTimeByMatchInfoId" parameterType="String" resultType="INTEGER">
+        select DISTINCT `time` time from tb_match_process where matchInfoId = ${_parameter} order by time
+    </select>
+
+    <select id="findAllMatchProcessByInfoIdAndTime" parameterType="MatchProcess" resultMap="MatchProcessMap">
+        SELECT
+        a.clubId clubId,
+        d.imgUrl clubImgUrl,
+        c.name   playerName,
+        b.event  event,
+        b.imgUrl eventImgUrl
+        FROM tb_match_process a, tb_match_event b, tb_player c,tb_club d
+        WHERE  a.matchEventId = b.id AND a.playerId = c.id
+        AND a.clubId = d.id AND
+        matchInfoId = ${matchInfo.id} AND time = ${time}
+        GROUP BY a.clubId, c.id, b.id, a.time
+    </select>
+
+    <insert id="insertMatchProcess"  parameterType="java.util.ArrayList">
+        INSERT INTO tb_match_process (matchInfoId,clubId,playerId,matchEventId,time)
+        VALUES
+        <foreach collection="list" item="matchProcess" separator=",">
+            (
+                #{matchProcess.matchInfo.id},
+                #{matchProcess.club.id},
+                #{matchProcess.player.id},
+                #{matchProcess.matchEvent.id},
+                #{matchProcess.time}
+            )
+        </foreach>
+    </insert>
+
+    <!--射手榜 助攻榜-->
+    <select id="searchPlayerEvent" resultMap="MatchProcessMap">
+        SELECT
+        a.playerId            playerId,
+        c.name                playerName,
+        c.imgUrl              playerImgUrl,
+        b.name                clubName,
+        b.imgUrl              clubImgUrl,
+        count(a.matchEventId) count
+        FROM tb_match_process a LEFT JOIN tb_club b
+        ON a.clubId = b.id
+        LEFT JOIN tb_player c
+        ON a.playerId = c.id
+        WHERE b.countryId = #{0}
+        AND a.matchEventId = #{1}
+        GROUP BY a.playerId, c.name, c.imgUrl, b.name, b.imgUrl
+        ORDER BY count DESC
+    </select>
+
+</mapper>

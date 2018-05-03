@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zhuxiaolei
@@ -11,16 +12,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>懂球儿-后台管理</title>
-    
+
     <link rel="stylesheet" href="${pageContext.request.contextPath}/layui/css/layui.css">
     <script src="${pageContext.request.contextPath}/js/jquery.min.js"></script>
-
     <script src="${pageContext.request.contextPath}/layui/layui.all.js"></script>
-    <script>
-        $(function () {
-            var ue = UE.getEditor('ueditor')
-        })
-    </script>
+
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
@@ -39,12 +35,12 @@
                 展示图片
                 文章内容
             --%>
-            <form action="" class="layui-form" method="post">
+            <form id="article-add-from" action="" class="layui-form" method="post">
                 <div class="layui-form-item">
                     <div class="layui-inline">
-                        <label for="" class="layui-form-label">文章标题</label>
+                        <label for="title" class="layui-form-label">文章标题</label>
                         <div class="layui-input-block">
-                            <input id="" type="text" name="" lay-verify="required" placeholder="请输入"
+                            <input id="title" type="text" name="title" lay-verify="111111111" placeholder="请输入"
                                    autocomplete="off"
                                    class="layui-input">
                         </div>
@@ -52,9 +48,9 @@
                 </div>
                 <div class="layui-form-item">
                     <div class="layui-inline">
-                        <label for="" class="layui-form-label">文章副标题</label>
+                        <label for="subtitle" class="layui-form-label">文章副标题</label>
                         <div class="layui-input-block">
-                            <input id="" type="text" name="" lay-verify="required" placeholder="请输入"
+                            <input id="subtitle" type="text" name="subtitle" lay-verify="111111111" placeholder="请输入"
                                    autocomplete="off"
                                    class="layui-input">
                         </div>
@@ -64,9 +60,10 @@
                     <div class="layui-inline">
                         <label class="layui-form-label">文章类型</label>
                         <div class="layui-input-inline">
-                            <select>
-                                <option>闲情</option>
-                                <option>中超</option>
+                            <select name="articleType.id" lay-search>
+                                <c:forEach items="${articleTypes}" var="articleType">
+                                    <option value="${articleType.id}">${articleType.type}</option>
+                                </c:forEach>
                             </select>
                         </div>
                     </div>
@@ -96,7 +93,7 @@
                 <%--按钮--%>
                 <div class="layui-form-item" style="padding: 20px;text-align: center">
                     <div class="layui-input-block">
-                        <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                        <button class="layui-btn" lay-submit lay-filter="article-add-submit">立即提交</button>
                         <button type="reset" class="layui-btn layui-btn-primary">重置</button>
                     </div>
                 </div>
@@ -115,4 +112,58 @@
         charset="utf-8"></script>
 <script src="${pageContext.request.contextPath}/ueditor/lang/zh-cn/zh-cn.js" type="text/javascript"
         charset="utf-8"></script>
-<script type="text/javascript" charset="UTF-8" src="${pageContext.request.contextPath}/ueditor/ueditor.parse.min.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="${pageContext.request.contextPath}/ueditor/ueditor.parse.min.js"></script>
+
+<script>
+    $(function () {
+        var ue = UE.getEditor('ueditor')
+        layui.use('form', function () {
+            var form = layui.form;
+            //article-insert.jsp 监听提交
+            form.on('submit(article-add-submit)', function (data) {
+                var imgUrl = $("#uploadImg").attr("src");
+                if (typeof imgUrl == 'undefined') {
+                    layer.msg('请上传轮播图片...')
+                    return false;
+                }
+
+                var editorValue = ue.hasContents()
+                if (!editorValue) {
+                    layer.msg('编辑框内容为空，请输入')
+                    ue.focus();
+                    return false;
+                }
+
+                layer.confirm('请确认数据无误', {
+                    btn: ['确定', '取消'],
+                }, function (index) {
+                    $.ajax({
+                        data: data.field,
+                        url: "/article/add?imgUrl=" + imgUrl,
+                        success: function (res) {
+                            if (res.code == -1) {
+                                layer.close(index)
+                                layer.msg('后台请求出错,请联系系统管理员')
+                                return false;
+                            } else {
+                                layer.msg('数据添加成功,页面即将跳转')
+                                setTimeout(function () {
+                                    window.location.href = "/admin/article/list"
+                                }, 2000)
+                            }
+                        },
+                        error: function () {
+                            layer.msg('文章数据添加失败,请重新添加')
+                            return false;
+                        }
+                    })
+                }, function (index) {
+                    layer.close(index)
+                })
+                return false;
+            });
+        })
+    })
+</script>
+

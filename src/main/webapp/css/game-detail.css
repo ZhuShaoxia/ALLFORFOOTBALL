@@ -71,14 +71,15 @@
 
 .time-line .time-line-left,
 .time-line .time-line-right {
-    padding: 5px;
+    /*padding: 5px;*/
     width: 43%;
     background-color: white;
-    border: 1px solid #bebeb8;
+    /*border: solid #bebeb8;*/
 }
 
 .time-line .time-line-left {
     text-align: right;
+    padding-right: 5px;
 }
 
 .time-line .time-line-left p {
@@ -94,6 +95,7 @@
 .time-line .time-line-right {
     float: right;
     margin-right: 5%;
+    padding-left: 5px;
 }
 
 /*开始图标*/

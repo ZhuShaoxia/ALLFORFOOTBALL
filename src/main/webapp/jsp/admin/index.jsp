@@ -18,7 +18,7 @@
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
-    <%@include file="${pageContext.request.contextPath}/admin/head-nav.jsp" %>
+    <%@include file="head-nav.jsp" %>
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
@@ -28,7 +28,7 @@
     </div>
 
 
-    <%@include file="${pageContext.request.contextPath}/admin/bottom.jsp" %>
+    <%@include file="bottom.jsp" %>
 </div>
 <script>
     //JavaScript代码区域

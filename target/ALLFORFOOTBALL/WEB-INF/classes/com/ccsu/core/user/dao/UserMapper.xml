@@ -33,10 +33,10 @@
     </insert>
 
     <!--删除用户-->
-    <update id="delete" parameterType="Integer">
+    <delete id="delete" parameterType="Integer">
         delete from tb_user
         where id = #{id}
-    </update>
+    </delete>
 
     <!--根据用户编号查询用户基本信息-->
     <select id="findById" resultMap="UserMap" parameterType="Integer">
@@ -135,11 +135,76 @@
         where phone = #{phone}
     </select>
 
+    <!--验证邮箱是否存在-->
     <select id="verifyEmail" resultType="Integer" parameterType="String">
         SELECT count(email)
         FROM tb_user
         where email = #{email}
     </select>
 
+    <!--验证密码是否正确-->
+    <select id="verifyPassword" resultType="Integer">
+        SELECT count(password)
+        FROM tb_user
+        where id = #{0} AND password = #{1}
+    </select>
+
+    <!--验证用户登录-->
+    <select id="userLogin" resultMap="UserMap" parameterType="User">
+        SELECT
+        a.id id,
+        a.name name,
+        a.nickname nickname,
+        a.account account,
+        a.password password,
+        a.role role,
+        a.imgUrl imgUrl,
+        a.sex sex,
+        a.email email,
+        a.phone phone,
+        b.id clubId,
+        b.name clubName,
+        b.countryId countryId,
+        a.otherClubName otherClubName,
+        a.profile profile,
+        a.gmt_create gmt_create,
+        a.gmt_modified gmt_modified
+        FROM tb_user a
+        left join tb_club b
+        on a.clubId = b.id
+        <where>
+            a.password =#{password} AND (a.account = #{account} or a.phone =#{account} or
+            a.email=#{account} )
+            <if test="role!=null">
+                AND a.role = #{role}
+            </if>
+        </where>
+
+    </select>
+
+
+    <!--修改用户密码-->
+    <update id="updateUserPwd" parameterType="User">
+        update tb_user
+        set password = #{password},
+        gmt_modified = #{modifiedTime}
+        <where>
+            <if test="id!=null">
+                AND id = ${id}
+            </if>
+            <if test="account!=null">
+                OR (account = #{account} or phone =#{account} or
+                email=#{account})
+            </if>
+        </where>
+    </update>
+
+
+    <update id="updateUserPhone" parameterType="User">
+        update tb_user
+        set phone = #{phone},
+        gmt_modified = #{modifiedTime}
+        where id = #{id}
+    </update>
 
 </mapper>

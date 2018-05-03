@@ -4,14 +4,15 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
     var laydate = layui.laydate;
     element.init()
 
-    //player-insert.jsp 监听提交
+    /**
+     * 球员信息添加 提交表单
+     */
     form.on('submit(player-add-submit)', function (data) {
         var imgUrl = $("#uploadImg").attr("src")
         if (typeof imgUrl == 'undefined') {
             layer.msg('请上传球员照片...')
             return false
         }
-        //TODO:判断俱乐部是否被选中
         layer.confirm('请确认数据无误', {
             btn: ['确定', '取消'],
         }, function (index) {
@@ -41,7 +42,9 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
         return false;
     });
 
-    //player-update.jsp 监听提交
+    /**
+     * 球员信息更新 提交表单
+     */
     form.on('submit(player-update-submit)', function (data) {
         var imgUrl = $("#uploadImg").attr("src")
         if (typeof imgUrl == 'undefined') {
@@ -78,6 +81,36 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
         return false;
     })
 
+    /**
+     * 球员荣誉信息添加 player-honer-add
+     */
+    form.on('submit(player-honer-add)', function (data) {
+        layer.confirm('请确认数据无误', {
+            btn: ['确定', '取消'],
+        }, function (index) {
+            $.ajax({
+                data: data.field,
+                url: '/honer/add?honerType=2',
+                success: function (res) {
+                    if (res.code == -1) {
+                        layer.close(index)
+                        layer.msg('后台请求出错,请联系系统管理员')
+                        return false;
+                    } else {
+                        location.reload()
+                    }
+                },
+                error: function () {
+                    layer.msg('信息添加失败,请重新添加')
+                    return false;
+                }
+            })
+        }, function (index) {
+            layer.close(index)
+        })
+        return false;
+    });
+
     form.render()
     //表单验证
     form.verify({
@@ -102,11 +135,21 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
         }
     })
 
-    //-add.jsp 俱乐部联动
+    laydate.render({
+        elem: '#honerTime', //指定元素
+        type: 'month',
+        max: 0
+
+    })
+
+    /**
+     * 国家选择下拉框 联动
+     */
     form.on('select(countrySelect)', function (data) {
         var selectVal = data.value;
         $("#clubId").empty()
-        var html = "<option value=\"0\"></option>"
+        $("#playerID").empty()
+        var html = "<option value=''></option>"
         $.ajax({
             data: {countryId: selectVal},
             url: '/club/search/condition/countryId',
@@ -116,6 +159,57 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
                     html += "<option value=\"" + data[i].id + "\">" + data[i].name + "</option>"
                 }
                 $('#clubId').append(html)
+                form.render('select')
+            }
+        })
+    })
+    /**
+     * 俱乐部选择下拉框 联动
+     */
+    form.on('select(clubSelect)', function (data) {
+        var selectVal = data.value;
+        $("#playerId").empty()
+        var html = "<option value=''></option>"
+        $.ajax({
+            data: {clubId: selectVal},
+            url: '/admin/player/searchPlayerByClubId',
+            success: function (data) {
+                var length = data.length
+                for (var i = 0; i < length; i++) {
+                    html += "<option value=\"" + data[i].id + "\">" + data[i].name + "</option>"
+                }
+                $('#playerId').append(html)
+                form.render('select')
+            }
+        })
+    })
+    /**
+     * 球员选择下拉框 获得所获得荣誉
+     */
+    form.on('select(playerSelect)', function (data) {
+        var selectVal = data.value;
+        $("#player-honer-tbody").empty()
+        var html = ''
+        $.ajax({
+            data: {playerId: selectVal},
+            url: '/honer/findHonerByPlayerId',
+            success: function (data) {
+                var length = data.length
+                for (var i = 0; i < length; i++) {
+                    html += "<tr>\n" +
+                        "                            <td>" + data[i].player.name + "</td>\n" +
+                        "                            <td>" + data[i].honerName + "</td>\n" +
+                        "                            <td>" + data[i].honerTime + "</td>\n" +
+                        "                            <td>" + data[i].club.name + "</td>\n" +
+                        "                            <td>" + data[i].country.name + "</td>\n" +
+                        "                            <td align=\"center\">\n" +
+                        "                                <button id='delTd[" + data[i].id + "]' onclick=\"delTd(this,'" + data[i].id + "')\" class=\"layui-btn layui-btn-danger layui-btn-xs\"\n" +
+                        "                                        lay-event=\"del\">删除\n" +
+                        "                                </button>\n" +
+                        "                            </td>\n" +
+                        "                        </tr>"
+                }
+                $('#player-honer-tbody').append(html)
                 form.render('select')
             }
         })
@@ -153,7 +247,25 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
         var data = obj.data //获得当前行数据
             , layEvent = obj.event; //获得 lay-event 对应的值
         if (layEvent === 'detail') {
-            layer.msg('查看操作');
+            console.log(data)
+            layer.open({
+                title: '球员详细信息-查看',
+                // btn: ['确定修改', '取消'],
+                btnAlign: 'c',
+                content: "<div><label>球员头像</label><img src='" + data.imgUrl + "' style='width: 40px;height: 40px'></div>\n" +
+                "<div><label>球员姓名:</label><span>" + data.name + "</span></div>\n" +
+                "<div><label>外文名:</label><span>" + data.otherName + "</span></div>\n" +
+                "<div><label>俱乐部:</label><span>" + data.club.name + "</span></div>\n" +
+                "<div><label>位置:</label><span>" + data.playerPosition.position + "</span></div>\n" +
+                "<div><label>号码:</label><span>" + data.number + "</span></div>\n" +
+                "<div><label>国籍:</label><span>" + data.country + "</span></div>\n" +
+                "<div><label>身高:</label><span>" + data.height + "</span></div>\n" +
+                "<div><label>年龄:</label><span>" + data.age + "</span></div>\n" +
+                "<div><label>体重:</label><span>" + data.weight + "</span></div>",
+                yes: function (index, layero) {
+                    layer.close(index)
+                }
+            })
         } else if (layEvent === 'del') {
             layer.confirm('真的删除行么', function (index) {
                 obj.del(); //删除对应行（tr）的DOM结构
@@ -163,7 +275,9 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
                     data: {id: data.id},
                     url: '/player/delete',
                     success: function (res) {
-
+                        if (res.code != '-1') {
+                            layer.msg('球员已删除')
+                        }
                     }
                 })
             });
@@ -214,3 +328,19 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
     });
 
 });
+
+function delTd(obj, id) {
+    var $tr = $(obj).parent().parent();
+    if(confirm('荣誉信息确认删除嘛?')){
+        $.ajax({
+            data: {id: id},
+            url: '/honer/delete',
+            success: function (data) {
+                $tr.remove()
+            },
+            error: function (data) {
+                alert('后台请求出错,删除失败')
+            }
+        })
+    }
+}

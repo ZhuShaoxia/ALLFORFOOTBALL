@@ -22,4 +22,12 @@ public interface UserMapper extends BaseDao<User> {
     Integer verifyPhone(String phone);
 
     Integer verifyEmail(String email);
+
+    Integer verifyPassword(Integer id, String password);
+
+    User userLogin(User user) throws Exception;
+    void updateUserPwd(User user) throws Exception;
+
+
+    void updateUserPhone(User user);
 }

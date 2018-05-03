@@ -67,7 +67,7 @@ public class CommonUtils {
      * @return
      */
     public static String getCurrentDateTime() {
-        return LocalDateTime.now().format(DEFAULT_DATETIME_FORMATTER).toString();
+        return LocalDateTime.now().format(DEFAULT_DATETIME_FORMATTER);
     }
 
     /**
@@ -76,7 +76,16 @@ public class CommonUtils {
      * @return
      */
     public static String getCurrentDate() {
-        return LocalDateTime.now().format(DEFAULT_DATE_FORMATTER).toString();
+        return LocalDateTime.now().format(DEFAULT_DATE_FORMATTER);
+    }
+
+    /**
+     * 获取当期系统日期指定+day
+     * @param day
+     * @return
+     */
+    public static String getCurrentDatePlusDay(Long day) {
+        return LocalDateTime.now().plusDays(day).format(DEFAULT_DATE_FORMATTER);
     }
 
     /**
@@ -85,7 +94,7 @@ public class CommonUtils {
      * @return
      */
     public static String getCurrentTime() {
-        return LocalDateTime.now().format(DEFAULT_TIME_FORMATTER).toString();
+        return LocalDateTime.now().format(DEFAULT_TIME_FORMATTER);
     }
 
 
@@ -140,11 +149,5 @@ public class CommonUtils {
         int year = Integer.parseInt(birthday.substring(0, 4));
         age = currentYear - year + 1;
         return age;
-    }
-
-
-    public static void main(String[] args) {
-        String a = CommonUtils.getCurrentDate().substring(0, 4);
-        System.out.println(a);
     }
 }

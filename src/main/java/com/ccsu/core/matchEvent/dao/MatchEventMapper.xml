@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.matchEvent.dao.MatchEventMapper">
+    <resultMap id="MatchEventMap" type="com.ccsu.core.matchEvent.domain.MatchEvent">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="event" property="event" jdbcType="VARCHAR"/>
+        <result column="imgUrl" property="imgUrl" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="findAll" parameterType="String" resultMap="MatchEventMap">
+        select id,event,imgUrl
+        from tb_match_event
+    </select>
+
+</mapper>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.matchHighlights.dao.MatchHighlightsMapper">
+    <resultMap id="MatchHighlightsMap" type="com.ccsu.core.matchHighlights.domain.MatchHighlights">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="editorValue" property="editorValue" jdbcType="VARCHAR"/>
+        <result column="matchInfoId" property="matchInfo.id" jdbcType="VARCHAR"/>
+        <result column="createTime" property="createTime" jdbcType="VARCHAR"/>
+        <result column="modifiedTime" property="modifiedTime" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <insert id="save" parameterType="MatchHighlights">
+        insert into tb_match_highlignts (matchInfoId, editorValue,gmt_create,
+        gmt_modified)
+        values (#{matchInfo.id}, #{editorValue},#{createTime}, #{modifiedTime})
+    </insert>
+
+    <delete id="delete" parameterType="Integer">
+        delete from tb_match_highlignts where id = #{id}
+    </delete>
+
+    <select id="update" parameterType="MatchHighlights">
+        update tb_match_highlignts
+        set
+        editorValue = #{editorValue,jdbcType=VARCHAR},
+        gmt_modified = #{modifiedTime,jdbcType=VARCHAR}
+        where id = #{id}
+    </select>
+
+    <select id="findById" parameterType="Integer" resultMap="MatchHighlightsMap">
+        select id,matchInfoId,editorValue,gmt_create createTime,gmt_modified modifiedTime
+        from tb_match_highlignts
+        where id = #{id}
+    </select>
+
+    <select id="findByMatchInfoId" parameterType="Integer" resultMap="MatchHighlightsMap">
+        select id,matchInfoId,editorValue,gmt_create createTime,gmt_modified modifiedTime
+        from tb_match_highlignts
+        where matchInfoId = #{matchInfoId}
+    </select>
+
+    <!--查询所有集锦-->
+    <select id="findAll" parameterType="String" resultMap="MatchHighlightsMap">
+        select id,matchInfoId,editorValue,gmt_create createTime,gmt_modified modifiedTime
+        from tb_match_highlignts
+    </select>
+
+</mapper>

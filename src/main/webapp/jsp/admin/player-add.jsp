@@ -62,10 +62,10 @@
 
                 <div class="layui-form-item">
                     <div class="layui-inline">
-                        <label for="clubId" class="layui-form-label">主队</label>
+                        <label for="clubId" class="layui-form-label">球队</label>
                         <div class="layui-input-inline">
                             <select id="countryId" name="club.country.id" lay-search lay-filter="countrySelect">
-                                <option value="0"></option>
+                                <option value=""></option>
                                 <c:forEach items="${countries}" var="country">
                                     <option value="${country.id}">${country.name}</option>
                                 </c:forEach>
@@ -83,7 +83,7 @@
                         <label for="playerPosition.id" class="layui-form-label">位置</label>
                         <div class="layui-input-inline">
                             <select id="playerPosition.id" name="playerPosition.id" lay-verify="required">
-                                <option value="0"></option>
+                                <option value=""></option>
                                 <c:forEach items="${playerPositions}" var="playerPosition">
                                     <option value="${playerPosition.id}">${playerPosition.position}</option>
                                 </c:forEach>
@@ -151,7 +151,8 @@
                     <div class="layui-inline">
                         <label for="power" class="layui-form-label">力量</label>
                         <div class="layui-input-inline">
-                            <input id="power" type="number" name="power" lay-verify="required|maxLength" autocomplete="off"
+                            <input id="power" type="number" name="power" lay-verify="required|maxLength"
+                                   autocomplete="off"
                                    class="layui-input" placeholder="请输入(最大100)">
                         </div>
 
@@ -159,14 +160,16 @@
                     <div class="layui-inline">
                         <label for="speed" class="layui-form-label">速度</label>
                         <div class="layui-input-inline">
-                            <input id="speed" type="number" name="speed" lay-verify="required|maxLength" autocomplete="off"
+                            <input id="speed" type="number" name="speed" lay-verify="required|maxLength"
+                                   autocomplete="off"
                                    class="layui-input" placeholder="请输入(最大100)">
                         </div>
                     </div>
                     <div class="layui-inline">
                         <label for="shooting" class="layui-form-label">射门</label>
                         <div class="layui-input-inline">
-                            <input id="shooting" type="number" name="shooting" lay-verify="required|maxLength" autocomplete="off"
+                            <input id="shooting" type="number" name="shooting" lay-verify="required|maxLength"
+                                   autocomplete="off"
                                    class="layui-input" placeholder="请输入(最大100)">
                         </div>
                     </div>
@@ -175,7 +178,8 @@
                     <div class="layui-inline">
                         <label for="pass" class="layui-form-label">传球</label>
                         <div class="layui-input-inline">
-                            <input id="pass" type="number" name="pass" lay-verify="required|maxLength" autocomplete="off"
+                            <input id="pass" type="number" name="pass" lay-verify="required|maxLength"
+                                   autocomplete="off"
                                    class="layui-input" placeholder="请输入(最大100)">
                         </div>
 
@@ -212,47 +216,3 @@
 <script src="${pageContext.request.contextPath}/js/admin/player.js"></script>
 </body>
 </html>
-<script>
-    $(function () {
-//        layui.use('form', function () {
-//            var form = layui.form
-//            var $select = $("select[name='club.id']")
-//            var $input = $select.next().find("input");
-//            var $dl = $select.next().find("dl");
-//            var count = 1;
-//            $input.on('keyup', function () {
-//                $dl.children().removeAttr('class')
-//                var condition = $input.val()
-//                $select.empty()
-//                $dl.empty()
-//                var selectHtml = "<option value='0'></option>"
-//                var dlHtml = "<dd lay-value='0' class></dd>"
-//                $.ajax({
-//                    url: '/club/search/condition/string',
-//                    data: {condition: condition},
-//                    async: false,
-//                    success: function (data) {
-//                        console.log(data)
-//                        for (var i = 0; i < data.length; i++) {
-//                            selectHtml += "<option value='" + data[i].id + "'>" + data[i].name + "</option>"
-//                            dlHtml += "<dd lay-value='" + data[i].id + "'>" + data[i].name + "</dd>"
-//                        }
-//                        $select.append(selectHtml)
-//                        $dl.append(dlHtml)
-//                        //form.render('select')
-//                    }
-//                })
-//                $dl.find("dd").on('click', function () {
-//                    $dl.children().removeAttr('class')
-//                    $(this).attr('class', 'layui-this')
-//                    var value = $(this).attr('lay-value')
-//                    $select.children("option[value=" + value + "]").attr("selected", true);
-//                    var clubName = $(this).text()
-//                    $input.removeAttr('placeHolder')
-//                    $input.attr('placeHolder', clubName)
-//                })
-//            })
-//
-//        })
-    })
-</script>

@@ -22,6 +22,24 @@ public class PageRequestDto {
      */
     private String condition;
 
+    /**
+     * 开始时间
+     */
+    private String startTime;
+    /**
+     * 结束时间
+     */
+    private String endTime;
+
+    /**
+     * 文章类型
+     */
+    private Integer articleTypeId;
+    /**
+     * 比赛类型
+     */
+    private Integer matchTypeId;
+
     public Integer getPage() {
         return page;
     }
@@ -45,4 +63,37 @@ public class PageRequestDto {
     public void setCondition(String condition) {
         this.condition = condition;
     }
+
+    public String getStartTime() {
+        return startTime;
+    }
+
+    public void setStartTime(String startTime) {
+        this.startTime = startTime;
+    }
+
+    public String getEndTime() {
+        return endTime;
+    }
+
+    public void setEndTime(String endTime) {
+        this.endTime = endTime;
+    }
+
+    public Integer getArticleTypeId() {
+        return articleTypeId;
+    }
+
+    public void setArticleTypeId(Integer articleTypeId) {
+        this.articleTypeId = articleTypeId;
+    }
+
+    public Integer getMatchTypeId() {
+        return matchTypeId;
+    }
+
+    public void setMatchTypeId(Integer matchTypeId) {
+        this.matchTypeId = matchTypeId;
+    }
+
 }

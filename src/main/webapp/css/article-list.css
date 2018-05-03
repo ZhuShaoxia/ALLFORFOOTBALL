@@ -40,6 +40,7 @@
 /*body*/
 .article-list-body {
     margin-top: 20px;
+    min-height: 520px;
 }
 
 .article-list-body .article-list-body-right {

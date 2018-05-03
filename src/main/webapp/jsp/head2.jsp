@@ -23,20 +23,20 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="index.jsp">首页</a>
+                    <a href="${pageContext.request.contextPath}/">首页</a>
                 </li>
                 <li>
-                    <a href="articleList.jsp">文章</a>
+                    <a href="${pageContext.request.contextPath}/articles">文章</a>
                 </li>
                 <li>
-                    <a href="game-list.jsp">比赛</a>
+                    <a href="${pageContext.request.contextPath}/matches">比赛</a>
                 </li>
                 <li>
-                    <a href="data.jsp">数据</a>
+                    <a href="${pageContext.request.contextPath}/data">数据统计</a>
                 </li>
-                <%--<li>--%>
-                <%--<a href="#contact">校园联赛</a>--%>
-                <%--</li>--%>
+                <li>
+                    <a href="${pageContext.request.contextPath}/compare">球员对比</a>
+                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li>
@@ -45,11 +45,11 @@
                         <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="user-center.jsp"><img class="tou-img" src="${pageContext.request.contextPath}/img/head-userinfo.png">我的主页</a></li>
+                        <li><a href="/user/center"><img class="tou-img" src="${pageContext.request.contextPath}/img/head-userinfo.png">我的主页</a></li>
                         <%--<li><a href="#"><img class="tou-img" src="img/head-notification.png">通知</a></li>--%>
-                        <li><a href="setting-profile.jsp"><img class="tou-img" src="${pageContext.request.contextPath}/img/head-setting.png">设置</a></li>
+                        <li><a href=""><img class="tou-img" src="${pageContext.request.contextPath}/img/head-setting.png">设置</a></li>
                         <li class="divider"></li>
-                        <li><a href="#"><img class="tou-img" src="${pageContext.request.contextPath}/img/nav-head-out.png">退出</a></li>
+                        <li><a href=""><img class="tou-img" src="${pageContext.request.contextPath}/img/nav-head-out.png">退出</a></li>
                     </ul>
                 </li>
             </ul>

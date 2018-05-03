@@ -18,13 +18,13 @@
 
 
     <script src="${pageContext.request.contextPath}/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript"
+            charset="utf-8"></script>
     <script src="${pageContext.request.contextPath}/js/verify.min.js" type="text/javascript" charset="utf-8"></script>
     <%--校验码--%>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/sendCheckCode.js"></script>
     <%--验证--%>
-    <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
-
+    <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
 
     <meta charset="utf-8"/>
     <title>懂球儿</title>
@@ -49,27 +49,36 @@
 <%@include file="head.jsp" %>
 <!--主体-->
 <div class="container userinfo" style="text-align: center">
-    <div class="registerInfo">
-        <form class="form-horizontal" role="form" id="registerForm">
+    <form class="form-horizontal" role="form" id="registerForm">
+
+        <div class="registerInfo">
             <div class="form-group" style="margin-bottom: 20px">
                 <h1>欢迎注册懂球儿</h1>
             </div>
             <div class="form-group item">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6">
-                    <input name="username" type="text" class="form-control" placeholder="请输入用户名">
+                    <input id="register-account" name="account" type="text" class="form-control" placeholder="请输入账号">
                 </div>
             </div>
             <div class="form-group item">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6">
-                    <input id="register-pwd1" name="register-pwd1" type="password" class="form-control" placeholder="请输入密码">
+                    <input id="register-nickname" name="nickname" type="text" class="form-control" placeholder="请输入一个好听昵称">
                 </div>
             </div>
             <div class="form-group item">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6">
-                    <input id="register-pwd2" name="register-pwd2" type="password" class="form-control" placeholder="请再次输入密码">
+                    <input id="register-pwd1" name="register-pwd1" type="password" class="form-control"
+                           placeholder="请输入密码">
+                </div>
+            </div>
+            <div class="form-group item">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    <input id="register-pwd2" name="register-pwd2" type="password" class="form-control"
+                           placeholder="请再次输入密码">
                 </div>
             </div>
             <div class="form-group item">
@@ -77,7 +86,7 @@
                 <div class="col-sm-6">
                     <div class="input-group">
                         <span class="input-group-addon" style="">+86</span>
-                        <input name="mobileNumber" type="text" class="form-control" placeholder="请输入手机号">
+                        <input id="register-mobileNumber" name="mobileNumber" type="text" class="form-control" placeholder="请输入手机号">
                     </div>
                 </div>
             </div>
@@ -90,12 +99,13 @@
             <div class="form-group item">
                 <div class="col-sm-3"></div>
                 <div class="col-sm-6">
-                    <input id="registerBtn" type="button" class="btn btn-success btn-lg btn-block" value="注册">
+                    <input id="registerBtn" name="registerBtn" type="button" class="btn btn-success btn-lg btn-block"
+                           value="注册">
                 </div>
             </div>
-        </form>
+        </div>
+    </form>
 
-    </div>
 </div>
 
 <!-- 模态框（Modal） -->
@@ -119,7 +129,7 @@
                 <div class="item">
                     <span style="color:red;">*</span>
                     <label>&nbsp;校验码:</label>
-                    <input type="text" style="width: 165px;height:34px;" placeholder="请输入验证码">
+                    <input id="register-sms-code" type="text" style="width: 165px;height:34px;" placeholder="请输入验证码">
                     <button id="btnSendCode" class="btn btn-default"
                             style="margin-bottom: 4px">
                         获取验证码
@@ -130,9 +140,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <input type="button" class="btn btn-default" data-dismiss="modal" value="关闭">
-                </input>
-                <input id="checkCodeBtn" type="button" class="btn btn-primary" value="提交"></input>
+                <input type="button" class="btn btn-default" data-dismiss="modal" value="关闭"/>
+                <input id="checkCodeBtn" type="button" class="btn btn-primary" value="提交"/>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
@@ -142,14 +151,6 @@
 </body>
 </html>
 <script src="${pageContext.request.contextPath}/js/register.js" type="text/javascript" charset="UTF-8"></script>
-<script>
-    $("#checkCodeBtn").on('click', function () {
-//        TODO:注册提交
-        alert("提交")
-        $("#registerForm").submit()
-    })
-
-</script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/head.js"></script>
 
 

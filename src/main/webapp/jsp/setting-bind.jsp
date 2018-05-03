@@ -20,16 +20,18 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/setting-bind.css">
 
     <script src="${pageContext.request.contextPath}/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript"
+            charset="utf-8"></script>
     <script src="${pageContext.request.contextPath}/js/cropper.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="${pageContext.request.contextPath}/js/bootstrap-select.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap-select.min.js" type="text/javascript"
+            charset="utf-8"></script>
 
     <%--select2插件CDN--%>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 
     <%--表单验证--%>
-    <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
     <%--校验码--%>
     <script type="text/javascript" src="${pageContext.request.contextPath}/js/sendCheckCode.js"></script>
 
@@ -38,28 +40,41 @@
 </head>
 
 <body>
-<%@include file="head2.jsp" %>
+<%@include file="head.jsp" %>
 <!--主体-->
 <div class="container userinfo">
     <div class="row" style="margin-bottom: 30px">
         <ul class="nav nav-tabs nav-justified" style="background-color:rgb(220,220,220)">
-            <li><a href="setting-profile.jsp">基本资料</a></li>
-            <li class="active"><a href="#">账号绑定</a></li>
-            <li><a href="setting-changePwd.jsp">密码修改</a></li>
+            <li><a href="/user/setting/info">基本资料</a></li>
+            <li class="active"><a href="/user/setting/bind">账号绑定</a></li>
+            <li><a href="/user/setting/modifyPwd">密码修改</a></li>
         </ul>
     </div>
 
+    <input type="hidden"  id="userId" value="${user.id}">
     <div class="row">
         <div class="setting-bind">
             <p>绑定邮箱和手机。账号更安全。</p>
             <div class="item">
                 <span class="name">邮箱</span>
+                <%
+                    String email = user.getEmail();
+                    if (email == null) {
+                %>
                 <a class="changeBtn" id="bindEmailBtn" onclick="bindAccount('email')">绑定邮箱</a>
+                <%
+                } else {
+                %>
+                <span class="content">${user.email}</span>
+                <a class="changeBtn" onclick="bindAccount('email')">修改</a>
+                <%
+                    }
+                %>
             </div>
             <div class="item">
                 <div>
                     <span class="name">手机</span>
-                    <span class="content">152****4977</span>
+                    <span class="content">${user.phone}</span>
                     <a class="changeBtn" id="bindMobilBtn" onclick="bindAccount('phone')">修改</a>
                 </div>
             </div>
@@ -118,7 +133,7 @@
                     <label>校验码:</label>
                     <input id="bindCode" type="text" style="width: 165px;height:34px;" placeholder="请输入验证码">
                     <button id="btnSendCode" class="btn btn-default"
-                            style="margin-bottom: 4px" onclick="getCheckCode()">
+                            style="margin-bottom: 4px">
                         获取验证码
                     </button>
                 </div>
@@ -129,7 +144,7 @@
             <div class="modal-footer">
                 <input type="button" class="btn btn-default" data-dismiss="modal" value="关闭">
                 </input>
-                <input id="checkCodeBtn" type="button" class="btn btn-primary" value="提交"></input>
+                <input id="checkCodeBtn2" type="button" class="btn btn-primary" value="提交"/>
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
@@ -154,25 +169,100 @@
         }
     }
 
-    //获取验证码
-    function getCheckCode() {
-        var dealTypeStr = $("#bindInput").attr("placeholder").substring(3, 4)
-        if (dealTypeStr == null | dealTypeStr == "") {
-            return
-        }
-        var account = $("#bindInput").val()
-        var dealType = ''
-        if (dealTypeStr == '手') {
-            dealType = 'phone'
-        } else if (dealTypeStr == '邮') {
-            dealType = 'email'
-        } else {
-            return
-        }
-        sendMessage(account, dealType)
-    }
+    //    获取验证码
+    //        function getCheckCode() {
+    //            var dealTypeStr = $("#bindInput").attr("placeholder").substring(3, 4)
+    //            if (dealTypeStr == null | dealTypeStr == "") {
+    //                return
+    //            }
+    //            var account = $("#bindInput").val()
+    //            var dealType = ''
+    //            if (dealTypeStr == '手') {
+    //                dealType = 'phone'
+    //            } else if (dealTypeStr == '邮') {
+    //                dealType = 'email'
+    //            } else {
+    //                return
+    //            }
+    //            sendMessage(account, dealType)
+    //        }
 
-    $("#bindModal").on('hide.bs.modal', function () {
-        removeSth("获取验证码")
+
+    $(function () {
+
+        $("#bindModal").on('hide.bs.modal', function () {
+            removeSth("获取验证码")
+        })
+
+        var SMSCode = ""
+
+        $("#btnSendCode").on('click', function () {
+            var dealTypeStr = $("#bindInput").attr("placeholder").substring(3, 4)
+            if (dealTypeStr == null | dealTypeStr == "") {
+                return
+            }
+            var account = $("#bindInput").val()
+            if (account == "") {
+                alert('输入不能为空 请输入')
+                return
+            }else if(account=='${user.phone}'){
+                alert('请输入非当前手机号')
+                return
+            }else {
+                var code =''
+                $.ajax({
+                    data:{phone:account},
+                    url:'/user/verify/phone',
+                    async:false,
+                    success:function (res) {
+                        code = res.code
+                    }
+                })
+                if(code=='-1'){
+                    alert('当前手机号已存在')
+                    return
+                }
+            }
+            var dealType = ''
+            if (dealTypeStr == '手') {
+                dealType = 'phone'
+            } else if (dealTypeStr == '邮') {
+                dealType = 'email'
+            } else {
+                return
+            }
+            SMSCode = sendMessage(account, dealType)
+        })
+
+        $("#checkCodeBtn2").on('click', function () {
+            var account = $("#bindInput").val()
+            if (account == "") {
+                alert('输入不能为空 请输入')
+                return
+            }else if(account=='${user.phone}'){
+                alert('请输入非当前手机号')
+                return
+            }
+            console.log('SMSCode=' + SMSCode)
+            var textCode = $("#bindCode").val()
+            if (textCode == "" || textCode == null || textCode.length != 6) {
+                alert('请输入六位短信验证码')
+                return
+            } else if (SMSCode == textCode) {
+                var userId = $("#userId").val()
+                $.ajax({
+                    data:{
+                        id:userId,
+                        phone:account
+                    },
+                    url:'/user/changePhone',
+                    success:function (res) {
+                        alert('修改成功')
+                        location.href="/user/setting/bind"
+                    }
+                })
+            }
+        })
+
     })
 </script>

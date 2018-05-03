@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.honer.dao.HonerMapper">
+    <resultMap id="HonerMap" type="com.ccsu.core.honer.domain.Honer">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="countryId" property="country.id" jdbcType="INTEGER"/>
+        <result column="countryName" property="country.name" jdbcType="VARCHAR"/>
+        <result column="clubId" property="club.id" jdbcType="INTEGER"/>
+        <result column="clubName" property="club.name" jdbcType="VARCHAR"/>
+        <result column="playerId" property="player.id" jdbcType="INTEGER"/>
+        <result column="playerName" property="player.name" jdbcType="VARCHAR"/>
+        <result column="honerName" property="honerName" jdbcType="VARCHAR"/>
+        <result column="honerType" property="honerType" jdbcType="INTEGER"/>
+        <result column="honerTime" property="honerTime" jdbcType="VARCHAR"/>
+        <result column="createTime" property="createTime" jdbcType="VARCHAR"/>
+        <result column="modifiedTime" property="modifiedTime" jdbcType="VARCHAR"/>
+    </resultMap>
+
+
+    <insert id="save" parameterType="Honer">
+        insert into tb_honer(countryId,clubId,playerId,honerTime,honerName,honerType,gmt_create,gmt_modified)
+        values(#{country.id},#{club.id},#{player.id},#{honerTime},#{honerName},#{honerType},#{createTime},#{modifiedTime})
+    </insert>
+
+    <delete id="delete" parameterType="Integer">
+        delete from tb_honer
+        where id = #{id}
+    </delete>
+
+    <select id="findAllByTypeId" parameterType="Integer" resultMap="HonerMap">
+        SELECT
+        a.id           id,
+        a.countryId    countryId,
+        b.name         countryName,
+        a.clubId       clubId,
+        c.name         clubName,
+        a.playerId     playerId,
+        d.name         playerName,
+        a.honerName    honerName,
+        a.honerTime    honerTime,
+        a.honerType    honerType,
+        a.gmt_create   createTIme,
+        a.gmt_modified modiyfiedTime
+        FROM tb_honer a
+        LEFT JOIN tb_country b
+        ON a.countryId = b.id
+        LEFT JOIN tb_club c
+        ON a.clubId = c.id
+        LEFT JOIN tb_player d
+        ON a.playerId = d.id
+        WHERE a.honerType = #{id}
+        ORDER BY a.id
+        LIMIT 10
+    </select>
+
+    <select id="findHonerByPlayerId" parameterType="Integer" resultMap="HonerMap">
+        SELECT
+        a.id           id,
+        a.countryId    countryId,
+        b.name         countryName,
+        a.clubId       clubId,
+        c.name         clubName,
+        a.playerId     playerId,
+        d.name         playerName,
+        a.honerName    honerName,
+        a.honerTime    honerTime,
+        a.honerType    honerType,
+        a.gmt_create   createTIme,
+        a.gmt_modified modifiedTime
+        FROM tb_honer a, tb_country b, tb_club c, tb_player d
+        WHERE a.playerId = #{playerId} AND a.honerType = 2 AND a.countryId = b.id AND a.clubId = c.id AND a.playerId = d.id
+        ORDER BY a.id
+    </select>
+
+    <select id="findHonerByClubId" parameterType="Integer" resultMap="HonerMap">
+        SELECT
+        a.id           id,
+        a.countryId    countryId,
+        b.name         countryName,
+        a.clubId       clubId,
+        c.name         clubName,
+        a.honerName    honerName,
+        a.honerTime    honerTime,
+        a.honerType    honerType,
+        a.gmt_create   createTIme,
+        a.gmt_modified modifiedTime
+        FROM tb_honer a, tb_country b, tb_club c
+        WHERE a.clubId = #{clubId} AND a.honerType = 1 AND a.countryId = b.id AND a.clubId = c.id
+        ORDER BY a.id
+    </select>
+
+
+
+</mapper>

@@ -1,13 +1,18 @@
 package com.ccsu.core.player.controller;
 
 import com.ccsu.common.utils.MessageCode;
+import com.ccsu.core.article.domain.Article;
+import com.ccsu.core.article.service.ArticleService;
 import com.ccsu.core.club.domain.Club;
 import com.ccsu.core.club.service.ClubService;
 import com.ccsu.core.common.domain.PageRequestDto;
 import com.ccsu.core.common.domain.PageResponseDto;
 import com.ccsu.core.common.domain.ResponseDto;
+import com.ccsu.core.common.domain.Select2ResponseDto;
 import com.ccsu.core.country.domain.Country;
 import com.ccsu.core.country.service.CountryService;
+import com.ccsu.core.honer.domain.Honer;
+import com.ccsu.core.honer.service.HonerService;
 import com.ccsu.core.player.domain.Player;
 import com.ccsu.core.player.service.PlayerService;
 import com.ccsu.core.playerPosition.domain.PlayerPosition;
@@ -43,7 +48,10 @@ public class PlayerController {
     private ClubService clubService;
     @Autowired
     private CountryService countryService;
-
+    @Autowired
+    private HonerService honerService;
+    @Autowired
+    private ArticleService articleService;
     private ResponseDto responseDto;
 
     /**
@@ -76,6 +84,50 @@ public class PlayerController {
         model.addAttribute("playerPositions", playerPositions);
         model.addAttribute("countries", countries);
         return "/admin/player-add";
+    }
+
+    @RequestMapping("/compare")
+    public String playerCompare(Integer playerLeftId, Integer playerRightId, Model model) {
+        if (playerLeftId == null) {
+            playerLeftId = 1;
+        }
+        if (playerRightId == null) {
+            playerRightId = 2;
+        }
+        Player playerLeft = null;
+        Player playerRight = null;
+        try {
+            playerLeft = playerService.load(playerLeftId);
+            playerRight = playerService.load(playerRightId);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        model.addAttribute("playerLeft", playerLeft);
+        model.addAttribute("playerRight", playerRight);
+        return "data-compare";
+    }
+
+    /**
+     * 球员荣誉信息添加
+     *
+     * @param model
+     * @return
+     */
+    @RequestMapping("/admin/player/honer/add")
+    public String adminPlayerHonerAdd(Model model) {
+        List<Country> countries = null;
+        List<Honer> honers = null;
+        try {
+            countries = countryService.findAll(null);
+            honers = honerService.findAllByTypeId(2);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        model.addAttribute("countries", countries);
+        model.addAttribute("honers", honers);
+        return "/admin/player-honer-add";
     }
 
     /**
@@ -127,15 +179,27 @@ public class PlayerController {
      * @return
      */
     @RequestMapping("/player/info/{id}")
-    public @ResponseBody
-    Player searchPlayer(@PathVariable Integer id) {
+    public String searchPlayer(@PathVariable Integer id, Model model) {
         Player player = null;
+        List<Honer> honers = null;
+        List<Article> articles = null;
         try {
             player = playerService.load(id);
+            honers = honerService.findHonerByPlayerId(id);
+            articles = articleService.findAll(player.getName());
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return player;
+        //球员信息
+        model.addAttribute("player", player);
+        //比赛数据
+
+        //荣誉记录
+        model.addAttribute("honers", honers);
+        //相关新闻
+        model.addAttribute("articles", articles);
+        //其他成员进球信息
+        return "player";
     }
 
     /**
@@ -216,6 +280,39 @@ public class PlayerController {
         }
 
         return pageResponseDto;
+    }
+
+    /**
+     * 根据比赛Id查询球员信息
+     *
+     * @param matchInfoId
+     * @return
+     */
+    @RequestMapping("/admin/player/searchByMatchInfoId")
+    public @ResponseBody
+    List<Player>
+    getPlayerByMatchInfoId(Integer matchInfoId) {
+        List<Player> players = playerService.getPlayerByMatchInfoId(matchInfoId);
+        return players;
+    }
+
+    /**
+     * 根据所属俱乐部全部球员
+     *
+     * @param clubId
+     * @return
+     */
+    @RequestMapping("/admin/player/searchPlayerByClubId")
+    public @ResponseBody
+    List<Player> searchPlayerByClubId(Integer clubId) {
+        List<Player> players = playerService.searchPlayerByClubId(clubId);
+        return players;
+    }
+
+    @RequestMapping("/player/searchSelect2Player")
+    public @ResponseBody
+    List<Select2ResponseDto> searchSelect2Player(String search) {
+        return playerService.searchSelect2Player(search);
     }
 
 

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.article.dao.ArticleMapper">
+    <resultMap id="ArticleMap" type="com.ccsu.core.article.domain.Article">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="title" property="title" jdbcType="VARCHAR"/>
+        <result column="subtitle" property="subtitle" jdbcType="VARCHAR"/>
+        <result column="imgUrl" property="imgUrl" jdbcType="VARCHAR"/>
+        <result column="userId" property="user.id" jdbcType="INTEGER"/>
+        <result column="userName" property="user.name" jdbcType="VARCHAR"/>
+        <result column="userNickName" property="user.nickname" jdbcType="VARCHAR"/>
+        <result column="editorValue" property="editorValue" jdbcType="VARCHAR"/>
+        <result column="articleTypeId" property="articleType.id" jdbcType="INTEGER"/>
+        <result column="articleTypeName" property="articleType.type" jdbcType="INTEGER"/>
+        <result column="createTime" property="createTime" jdbcType="VARCHAR"/>
+        <result column="modifiedTime" property="modifiedTime" jdbcType="VARCHAR"/>
+        <collection property="commentList"
+                    ofType="comment"
+                    column="id"
+                    select="com.ccsu.core.comment.dao.CommentMapper.findAllByArticleId"
+        />
+    </resultMap>
+
+    <insert id="save" parameterType="Article">
+        INSERT INTO tb_article (title, subtitle,
+        userId, imgUrl, articleTypeId, editorValue,
+        gmt_create, gmt_modified)
+        VALUES (#{title,jdbcType=VARCHAR}, #{subtitle,jdbcType=VARCHAR},
+        #{user.id,jdbcType=INTEGER}, #{imgUrl,jdbcType=VARCHAR}, #{articleType.id,jdbcType=INTEGER},
+        #{editorValue},#{createTime}, #{modifiedTime})
+    </insert>
+
+    <delete id="delete" parameterType="Integer">
+        delete from tb_article where id = #{id}
+    </delete>
+
+    <select id="update" parameterType="Article">
+        update tb_article
+        set
+        title = #{title,jdbcType=VARCHAR},
+        subtitle = #{subtitle,jdbcType=VARCHAR},
+        imgUrl = #{imgUrl,jdbcType=VARCHAR},
+        articleTypeId = #{articleType.id,jdbcType=INTEGER},
+        editorValue = #{editorValue,jdbcType=VARCHAR},
+        gmt_modified = #{modifiedTime,jdbcType=VARCHAR}
+        where id = #{id}
+    </select>
+
+    <select id="findById" parameterType="Integer" resultMap="ArticleMap">
+        SELECT
+        a.id id,
+        a.title title,
+        a.subtitle subtitle,
+        a.imgUrl imgUrl,
+        b.id userId,
+        b.name userName,
+        b.nickname userNickName,
+        a.editorValue editorValue,
+        c.id articleTypeId,
+        c.type articleTypeName,
+        a.gmt_create createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_article a, tb_user b, tb_article_type c
+        WHERE a.userId = b.id AND a.articleTypeId = c.id AND a.id = #{id}
+    </select>
+
+    <!--查询所有评论-->
+    <select id="findAll" parameterType="String" resultMap="ArticleMap">
+        SELECT
+        a.id id,
+        a.title title,
+        a.imgUrl imgUrl,
+        a.subtitle subtitle,
+        b.id userId,
+        b.name userName,
+        b.nickname userNickName,
+        a.editorValue editorValue,
+        c.id articleTypeId,
+        c.type articleTypeName,
+        a.gmt_create createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_article a, tb_user b, tb_article_type c
+        <where>
+            a.userId = b.id AND a.articleTypeId = c.id
+            <if test="_parameter">
+                AND ( a.title LIKE "%"#{_parameter}"%" or a.subtitle LIKE "%"#{_parameter}"%" or b.name LIKE
+                "%"#{_parameter}"%" or c.type LIKE "%"#{_parameter}"%" )
+            </if>
+        </where>
+    </select>
+
+
+    <select id="findAllByRequestDto" parameterType="com.ccsu.core.common.domain.PageRequestDto" resultMap="ArticleMap">
+        SELECT
+        a.id id,
+        a.title title,
+        a.imgUrl imgUrl,
+        a.subtitle subtitle,
+        b.id userId,
+        b.name userName,
+        b.nickname userNickName,
+        a.editorValue editorValue,
+        c.id articleTypeId,
+        c.type articleTypeName,
+        a.gmt_create createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_article a, tb_user b, tb_article_type c
+        <where>
+            a.userId = b.id AND a.articleTypeId = c.id
+            <if test="condition">
+                AND ( a.title LIKE "%"#{condition}"%" or a.subtitle LIKE "%"#{condition}"%" or b.name LIKE
+                "%"#{condition}"%" or c.type LIKE "%"#{condition}"%" )
+            </if>
+            <if test="articleTypeId!=null">
+                AND a.articleTypeId = #{articleTypeId}
+            </if>
+            <if test="startTime!= null">
+                AND str_to_date(a.gmt_create, '%Y-%m-%d') <![CDATA[ >= ]]> str_to_date(#{startTime}, '%Y-%m-%d')
+            </if>
+            <if test="endTime!= null">
+                AND str_to_date(a.gmt_create, '%Y-%m-%d') <![CDATA[ <= ]]> str_to_date(#{startTime}, '%Y-%m-%d')
+            </if>
+        </where>
+    </select>
+
+    <!--查询用户发表的文章-->
+    <select id="findAllByUserId" parameterType="Integer" resultMap="ArticleMap">
+        SELECT
+        a.id id,
+        a.title title,
+        a.subtitle subtitle,
+        b.id userId,
+        b.name userName,
+        a.editorValue editorValue,
+        c.id articleTypeId,
+        c.type articleTypeName,
+        a.gmt_create createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_article a, tb_user b, tb_article_type c
+        WHERE a.userId = b.id AND a.articleTypeId = c.id AND a.userId = #{id}
+    </select>
+
+    <!--所有的轮播文章-->
+    <select id="searchAllCarousel" resultMap="ArticleMap">
+        SELECT
+        a.id id,
+        a.title title,
+        a.subtitle subtitle,
+        a.imgUrl imgUrl,
+        b.id userId,
+        b.name userName,
+        b.nickname userNickName,
+        a.editorValue editorValue,
+        c.id articleTypeId,
+        c.type articleTypeName,
+        a.gmt_create createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_article a, tb_user b, tb_article_type c
+        where a.userId = b.id AND a.articleTypeId = c.id AND isCarousel = 1
+    </select>
+
+    <update id="updateCarouselState" parameterType="Article">
+        update tb_article
+        set isCarousel = #{isCarousel}
+        where id = #{id}
+    </update>
+
+    <select id="searchArticleForCarousel" resultMap="ArticleMap">
+        SELECT
+        a.id id,
+        a.title title,
+        a.subtitle subtitle,
+        a.imgUrl,
+        b.id userId,
+        b.name userName,
+        b.nickname userNickName,
+        a.editorValue editorValue,
+        c.id articleTypeId,
+        c.type articleTypeName,
+        a.gmt_create createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_article a, tb_user b, tb_article_type c
+        where a.userId = b.id AND a.articleTypeId = c.id AND isCarousel = 0
+        AND str_to_date(a.gmt_create, '%Y-%m-%d')
+        BETWEEN date_sub(curdate(), INTERVAL 2 DAY) AND curdate()
+    </select>
+
+    <select id="searchArticleForIndex" parameterType="Integer" resultMap="ArticleMap">
+        SELECT id,title,subtitle,gmt_create createTime,imgUrl
+        FROM tb_article
+        WHERE articleTypeId = #{articleTypeId}  ORDER BY id DESC LIMIT 5
+    </select>
+
+
+</mapper>

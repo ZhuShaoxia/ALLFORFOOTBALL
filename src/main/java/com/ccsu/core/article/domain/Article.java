@@ -43,6 +43,19 @@ public class Article {
      */
     private ArticleType articleType;
 
+    /**
+     * 文章内容
+     */
+    private String editorValue;
+
+
+    /**
+     * 是否轮播
+     * 0 非
+     * 1 轮播
+     */
+    private Integer isCarousel;
+
     private String createTime;
     private String modifiedTime;
 
@@ -107,11 +120,19 @@ public class Article {
         this.articleType = articleType;
     }
 
+    public String getEditorValue() {
+        return editorValue;
+    }
+
+    public void setEditorValue(String editorValue) {
+        this.editorValue = editorValue;
+    }
+
     public String getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(String gcreateTime) {
+    public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
 
@@ -119,7 +140,15 @@ public class Article {
         return modifiedTime;
     }
 
-    public void setModifiedTime(String gmodifiedTime) {
+    public void setModifiedTime(String modifiedTime) {
         this.modifiedTime = modifiedTime;
+    }
+
+    public Integer getIsCarousel() {
+        return isCarousel;
+    }
+
+    public void setIsCarousel(Integer isCarousel) {
+        this.isCarousel = isCarousel;
     }
 }

@@ -1,6 +1,8 @@
 package com.ccsu.core.player.service.impl;
 
 import com.ccsu.common.utils.CommonUtils;
+import com.ccsu.core.common.domain.Select2ResponseDto;
+import com.ccsu.core.matchLineUp.service.MatchLineUpService;
 import com.ccsu.core.player.dao.PlayerMapper;
 import com.ccsu.core.player.domain.Player;
 import com.ccsu.core.player.service.PlayerService;
@@ -22,6 +24,8 @@ public class PlayerServiceImpl implements PlayerService {
 
     @Autowired
     private PlayerMapper playerMapper;
+    @Autowired
+    private MatchLineUpService matchLineUpService;
 
     @Override
     public void add(Player player) throws Exception {
@@ -56,4 +60,39 @@ public class PlayerServiceImpl implements PlayerService {
     public List<Player> findAll(String condition) throws Exception {
         return playerMapper.findAll(condition);
     }
+
+    @Override
+    public List<Player> getPlayerByMatchInfoId(Integer matchInfoId) {
+        return playerMapper.getPlayerByMatchInfoId(matchInfoId);
+    }
+
+    @Override
+    public List<Player> searchPlayerByClubId(Integer clubId) {
+        return playerMapper.searchPlayerByClubId(clubId);
+    }
+
+    @Override
+    public List<Select2ResponseDto> searchSelect2Player(String term) {
+        return playerMapper.searchSelect2Player(term);
+    }
+
+    @Override
+    public List<Player> searchMatchLineUp(Integer matchInfoId, Integer clubId, Integer playerType) {
+        String[] strings = searchMatchLineUpPlayers(matchInfoId, clubId, playerType);
+        if (strings != null) {
+            List<Player> players = playerMapper.searchMatchLineUp(strings);
+            return players;
+        }
+        return null;
+    }
+
+    private String[] searchMatchLineUpPlayers(Integer matchInfoId, Integer clubId, Integer playerType) {
+        String s = matchLineUpService.searchMatchLineUpPlayers(matchInfoId, clubId, playerType);
+        if (s != null) {
+            String[] split = s.split(",");
+            return split;
+        }
+        return null;
+    }
+
 }

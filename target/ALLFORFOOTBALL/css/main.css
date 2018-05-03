@@ -2,6 +2,7 @@ body {
     padding-top: 70px;
 }
 
+
 /* 未访问的链接 */
 a {
     text-decoration: none;
@@ -196,6 +197,9 @@ div.col-12.title p {
     height: 30px;
     background-color: dimgray;
     text-align: center;
+    /*position: absolute;*/
+    bottom:0;
+    z-index: 1000;
 }
 
 .bottom p {

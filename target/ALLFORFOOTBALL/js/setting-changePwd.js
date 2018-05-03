@@ -3,8 +3,8 @@ $(function () {
         rules: {
             "setting-changePwd-oldPwd": {
                 required: true,
-                rangelength: [8, 8]
-                //TODO:添加原有密码验证
+                rangelength: [8, 8],
+                verifyPwd: true
             },
             "setting-changePwd-newPwd": {
                 required: true,
@@ -19,7 +19,8 @@ $(function () {
         messages: {
             "setting-changePwd-oldPwd": {
                 required: "请输入原密码",
-                rangelength: "请输入八位密码"
+                rangelength: "请输入八位密码",
+                verifyPwd: "原始密码输入错误"
             },
             "setting-changePwd-newPwd": {
                 required: "请输入新密码",
@@ -35,16 +36,51 @@ $(function () {
 
     })
 
-    $("#setting-changePwd-Btn").on('click', function () {
-        if ($("#setting-changePwd-form").valid()) {
-            $("#setting-changePwd-form").submit()
-        }
 
-    })
 
     //TODO:添加验证方法 验证原有密码是否输入正确
+    $.validator.addMethod("verifyPwd", function (value, element) {
+        var userId = $("#userId").val()
+        var password = value;
+        var flag = true;
+        var resp = '';
+        var phone = value;
+        $.ajax({
+            data: {id: userId, password: password},
+            url: '/user/verify/password',
+            async: false,
+            success: function (res) {
+                resp = res;
+            }
+        })
+        if (resp.code == '-1') {
+            flag = false
+        }
+        return this.optional(element) || flag
+    }, "原始密码错误");
 
-    //TODO:ajax修改数据库中密码
-
+    $("#setting-changePwd-Btn").on('click', function () {
+        if ($("#setting-changePwd-form").valid()) {
+            var userId = $("#userId").val()
+            var password = $("#setting-changePwd-newPwd").val()
+            $.ajax({
+                data:{
+                    id:userId,
+                    password:password
+                },
+                url:'/user/changePwd',
+                success: function (res) {
+                    if (res.code == '-1') {
+                        alert('后台请求出错 请联系系统管理员')
+                        return false;
+                    }
+                    alert('修改成功')
+                    $("#setting-changePwd-oldPwd").val('')
+                    $("#setting-changePwd-newPwd").val('')
+                    $("#setting-changePwd-newPwd2").val('')
+                }
+            })
+        }
+    })
 
 })

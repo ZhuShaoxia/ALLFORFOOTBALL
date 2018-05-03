@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zhuxiaolei
@@ -17,8 +18,9 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/game-list.css"/>
 
     <script src="${pageContext.request.contextPath}/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript"
+            charset="utf-8"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
 
     <meta charset="utf-8"/>
     <title>懂球儿</title>
@@ -46,145 +48,114 @@
 
 <body>
 <%@include file="head.jsp" %>
-<div class="container">
+<div class="container" style="min-height: 668px">
     <div class="row">
         <div class="col-md-2">
             <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
-                <li class="active"><a>中超</a></li>
-                <li><a href="#">西甲</a></li>
-                <li><a href="#">英超</a></li>
-                <li><a href="#">意甲</a></li>
-                <li><a href="#">法甲</a></li>
-                <li><a href="#">德甲</a></li>
+                <li class="active"><a href="/matches?matchTypeId=1">中超</a></li>
+                <li><a href="/matches?matchTypeId=2">西甲</a></li>
+                <li><a href="/matches?matchTypeId=3">意甲</a></li>
+                <li><a href="/matches?matchTypeId=4">英超</a></li>
+                <li><a href="/matches?matchTypeId=5">德甲</a></li>
+                <li><a href="/matches?matchTypeId=6">法甲</a></li>
             </ul>
         </div>
         <div class="col-md-9">
             <div class="game-head">
                 <span>比赛列表</span>
-                <input type="date" placeholder="选择比赛日">
+                <input id="matchDateInput" type="date" placeholder="选择比赛日">
             </div>
-            <div class="game-list">
+            <div class="game-list" id="game-list">
                 <%--数据加载动图--%>
                 <%--<div id="loading-img" class="loading">--%>
                 <%--<img src="img/loading.gif" alt="">--%>
                 <%--</div>--%>
                 <%--数据为空--%>
                 <%--<div class="list-null">--%>
-                    <%--<img src="img/data-null.png" alt="">--%>
+                <%--<img src="img/data-null.png" alt="">--%>
                 <%--</div>--%>
-                <div class="game-item">
-                    <div class="game-item-head">
-                        <strong>2018-03-21 周三</strong>
-                    </div>
-                    <div>
-                        <table class="table table-hover">
-                            <tr>
-                                <%--TODO:注意比赛状态--%>
-                                <td>完结</td>
-                                <td>中超</td>
-                                <td><a href="">上海上港</a></td>
-                                <td>4:5</td>
-                                <td><a href="">重庆思维</a></td>
-                                <td><a href="">比赛集锦</a></td>
-                            </tr>
-                            <tr>
-                                <td>21:54</td>
-                                <td>中超</td>
-                                <td>上海上港</td>
-                                <td>VS</td>
-                                <td>重庆思维</td>
-                                <td>比赛集锦</td>
-                            </tr>
-                            <tr>
-                                <td>21:54</td>
-                                <td>中超</td>
-                                <td>上海上港</td>
-                                <td>VS</td>
-                                <td>重庆思维</td>
-                                <td>比赛集锦</td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
+                <c:forEach items="${matchInfos}" var="map">
                     <div class="game-item">
-                        <div class="game-item-head">
-                            <strong>2018-03-21 周三</strong>
-                        </div>
+                        <c:if test="${map.value.size()!=0}">
+                            <div class="game-item-head">
+                                <strong>${map.key}</strong>
+                            </div>
+                        </c:if>
                         <div>
                             <table class="table table-hover">
-                                <tr>
-                                    <%--TODO:注意比赛状态--%>
-                                    <td>完结</td>
-                                    <td>中超</td>
-                                    <td><a href="">上海上港</a></td>
-                                    <td>4:5</td>
-                                    <td><a href="">重庆思维</a></td>
-                                    <td><a href="">比赛集锦</a></td>
-                                </tr>
-                                <tr>
-                                    <td>21:54</td>
-                                    <td>中超</td>
-                                    <td>上海上港</td>
-                                    <td>VS</td>
-                                    <td>重庆思维</td>
-                                    <td>比赛集锦</td>
-                                </tr>
-                                <tr>
-                                    <td>21:54</td>
-                                    <td>中超</td>
-                                    <td>上海上港</td>
-                                    <td>VS</td>
-                                    <td>重庆思维</td>
-                                    <td>比赛集锦</td>
-                                </tr>
+                                <c:forEach items="${map.value}" var="item">
+                                    <tr style="text-align: center ">
+                                        <td>${item.matchState.state}</td>
+                                        <td>${item.matchType.type}</td>
+                                        <td><a href="/club/info/${item.homeClub.id}">${item.homeClub.name}</a></td>
+                                        <td>${item.matchScore}</td>
+                                        <td><a href="/club/info/${item.awayClub.id}">${item.awayClub.name}</a></td>
+                                        <td><a href="/match/info/${item.id}">比赛信息</a></td>
+                                    </tr>
+                                </c:forEach>
                             </table>
                         </div>
                     </div>
-
-                    <div class="game-item">
-                        <div class="game-item-head">
-                            <strong>2018-03-21 周三</strong>
-                        </div>
-                        <div>
-                            <table class="table table-hover">
-                                <tr>
-                                    <%--TODO:注意比赛状态--%>
-                                    <td>完结</td>
-                                    <td>中超</td>
-                                    <td><a href="">上海上港</a></td>
-                                    <td>4:5</td>
-                                    <td><a href="">重庆思维</a></td>
-                                    <td><a href="">比赛集锦</a></td>
-                                </tr>
-                                <tr>
-                                    <td>21:54</td>
-                                    <td>中超</td>
-                                    <td>上海上港</td>
-                                    <td>VS</td>
-                                    <td>重庆思维</td>
-                                    <td>比赛集锦</td>
-                                </tr>
-                                <tr>
-                                    <td>21:54</td>
-                                    <td>中超</td>
-                                    <td>上海上港</td>
-                                    <td>VS</td>
-                                    <td>重庆思维</td>
-                                    <td>比赛集锦</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
+                </c:forEach>
             </div>
         </div>
     </div>
 </div>
+
 
 <%@include file="bottom.jsp" %>
 </body>
 </html>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/head.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/data.js"></script>
+<script>
+    $(function () {
+        $("#matchDateInput").on('change', function () {
+            var matchTypeId = '${pageContext.request.queryString}';
+            if (matchTypeId != '') {
+                matchTypeId = matchTypeId.substr(12)
+            } else {
+                matchTypeId = 1
+            }
+            var matchDate = $("#matchDateInput").val()
 
+            if (matchDate != '') {
+                var html = "<div class=\"game-item\">\n" +
+                    "    <div class=\"game-item-head\">\n" +
+                    "        <strong>" + matchDate + "</strong>\n" +
+                    "    </div>\n" +
+                    "    <div>\n" +
+                    "        <table class=\"table table-hover\">"
+                $("#game-list").empty()
+                $.ajax({
+                    data: {
+                        matchDate: matchDate,
+                        matchTypeId: matchTypeId
+                    },
+                    url: '/match/searchMatchForList',
+                    success: function (data) {
+                        for (var i = 0; i < data.length; i++) {
+                            var matchScore = data[i].matchScore
+                            if (matchScore == null) {
+                                matchScore = ''
+                            }
+                            html += "<tr style=\"text-align: center \">\n" +
+                                "                                        <td>" + data[i].matchState.state + "</td>\n" +
+                                "                                        <td>" + data[i].matchType.type + "</td>\n" +
+                                "                                        <td><a href=\"/club/info/" + data[i].homeClub.id + "\">" + data[i].homeClub.name + "</a></td>\n" +
+                                "                                        <td>" + matchScore + "</td>\n" +
+                                "                                        <td><a href=\"/club/info/" + data[i].awayClub.id + "\">" + data[i].awayClub.name + "</a></td>\n" +
+                                "                                        <td><a href=\"/match/info/" + data[i].id + "\">比赛信息</a></td>\n" +
+                                "                                    </tr>"
+                        }
+                        html += "        </table>\n" +
+                            "    </div>\n" +
+                            "</div>"
+                        $("#game-list").append(html)
+                    }
+                })
+            }
+        })
+    })
+</script>
 

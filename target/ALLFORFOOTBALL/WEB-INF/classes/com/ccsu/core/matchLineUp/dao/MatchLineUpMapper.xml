@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.matchLineUp.dao.MatchLineUpMapper">
+    <resultMap id="MatchLineUpMap" type="com.ccsu.core.matchLineUp.domain.MatchLineUp">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="matchInfoId" property="matchInfo.id" jdbcType="INTEGER"/>
+        <result column="clubId" property="club.id" jdbcType="INTEGER"/>
+        <result column="playerType" property="playerType" jdbcType="INTEGER"/>
+        <result column="players" property="players" jdbcType="VARCHAR"/>
+        <result column="createTime" property="createTime" jdbcType="VARCHAR"/>
+        <result column="modifiedTime" property="modifiedTime" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <insert id="save" parameterType="MatchLineUp">
+        insert into tb_match_lineup (matchInfoId,clubId,playerType,players,gmt_create,gmt_modified)
+        values(#{matchInfo.id},#{club.id},#{playerType},#{players},#{createTime},#{modifiedTime})
+    </insert>
+
+    <select id="searchMatchLineUpPlayers" resultType="String">
+        SELECT players
+        FROM tb_match_lineup
+        WHERE matchInfoId = #{0} AND clubId = #{1} AND playerType = #{2}
+    </select>
+</mapper>

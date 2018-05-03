@@ -15,26 +15,44 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
         elem: '#birthday' //指定元素
     })
 
-
     var table = layui.table;
-    //执行一个 table 实例
+
+    /**
+     * 当前焦点比赛
+     */
+
+
+
+
+    /**
+     * 焦点比赛选择
+     */
     table.render({
-        elem: '#focus-game-list-table'
-        , height: 500
-        , url: '' //数据接口
+        // elem: '#focus-game-list-table',
+         height: 400
+        , url: '/admin/index/match/focus/select' //数据接口
         , page: true //开启分页
         , cols: [[ //表头
             {type: 'checkbox'},
-            {field: 'id', title: 'ID', width: 80, sort: true, fixed: 'left'},
-            {field: '', title: '主场', width: 100}
-            , {field: '', title: '客场', width: 100}
-            , {field: '', title: '日期', width: 100}
-            , {field: '', title: '时间', width: 130}
-            , {field: '', title: '比赛性质', width: 100}
-            , {field: '', title: '比赛状态', width: 100}
-            , {fixed: 'right', width: 178, align: 'center', toolbar: '#user-list-table-bar'}
-        ]]
+            // {field: 'id', title: 'ID', sort: true, fixed: 'left'},
+            // {field: 'matchTimes', title: '场次'},
+            {field: 'homeClub.name', title: '比赛主场',templet: '#homeClubTpl'},
+            {field: 'awayClub.name', title: '比赛客场', templet: '#awayClubTpl'},
+            {field: 'matchDate', title: '比赛日期', sort: true},
+            {field: 'matchTime', title: '比赛时间'},
+            {field: 'matchType.type', title: '比赛性质', templet: '#matchTypeTpl'},
+            {field: 'matchState.state', title: '比赛状态', width: 150, templet: '#matchStateTpl'},
+            {fixed: 'right', align: 'center', toolbar: '#focus-game-list-table-bar'}
+        ]],
+        response: {
+            statusName: 'code',
+            statusCode: '200',
+            countName: 'count',
+            dataName: 'data'
+        }
     });
+
+
 
     //监听工具条
     table.on('tool(focus-game-list-table)', function (obj) { //注：tool是工具条事件名，test是table原始容器的属性 lay-filter="对应的值"
@@ -52,31 +70,30 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
             layer.msg('编辑操作');
         }
     });
-    //头像上传
-    var uploadInst = upload.render({
-        elem: '#uploadBtn'
-        , url: '/upload/'
-        , before: function (obj) {
-            //预读本地文件示例，不支持ie8
-            obj.preview(function (index, file, result) {
-                $('#uploadImg').attr('src', result); //图片链接（base64）
-            });
+    table.on('checkbox(focus-game-list-table)', function(obj){
+        console.log(obj)
+    });
+
+    var $ = layui.$, active = {
+        getCheckData: function(){ //获取选中数据
+            var checkStatus = table.checkStatus('focus-game-list-table')
+                ,data = checkStatus.data;
+            layer.alert(JSON.stringify(data));
         }
-        , done: function (res) {
-            //如果上传失败
-            if (res.code > 0) {
-                return layer.msg('上传失败');
-            }
-            //上传成功
+        ,getCheckLength: function(){ //获取选中数目
+            var checkStatus = table.checkStatus('focus-game-list-table')
+                ,data = checkStatus.data;
+            layer.msg('选中了：'+ data.length + ' 个');
         }
-        , error: function () {
-            //演示失败状态，并实现重传
-            var demoText = $('#imgText');
-            demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
-            demoText.find('.demo-reload').on('click', function () {
-                uploadInst.upload();
-            });
+        ,isAll: function(){ //验证是否全选
+            var checkStatus = table.checkStatus('focus-game-list-table');
+            layer.msg(checkStatus.isAll ? '全选': '未全选')
         }
+    };
+
+    $('.demoTable .layui-btn').on('click', function(){
+        var type = $(this).data('type');
+        active[type] ? active[type].call(this) : '';
     });
 
 });

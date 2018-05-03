@@ -20,6 +20,15 @@ public class ResponseDto {
     private String msg;
     private String url;
     private Boolean isSuc = true;
+    private String SMSCode;
+
+    public String getSMSCode() {
+        return SMSCode;
+    }
+
+    public void setSMSCode(String SMSCode) {
+        this.SMSCode = SMSCode;
+    }
 
     public String getCode() {
         return code;

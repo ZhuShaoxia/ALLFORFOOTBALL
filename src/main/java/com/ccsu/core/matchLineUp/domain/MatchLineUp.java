@@ -2,9 +2,6 @@ package com.ccsu.core.matchLineUp.domain;
 
 import com.ccsu.core.club.domain.Club;
 import com.ccsu.core.matchInfo.domain.MatchInfo;
-import com.ccsu.core.player.domain.Player;
-
-import java.util.Date;
 
 /**
  * Created by IntelliJ IDEA.
@@ -31,19 +28,29 @@ public class MatchLineUp {
      */
     private Integer playerType;
 
-    private Player p1;
-    private Player p2;
-    private Player p3;
-    private Player p4;
-    private Player p5;
-    private Player p6;
-    private Player p7;
-    private Player p8;
-    private Player p9;
-    private Player p10;
-    private Player p11;
-    private Player p12;
+    /**
+     * 数据库中以字符串的形式存入
+     */
+    private String players;
 
+    public MatchLineUp() {
+    }
+
+    public MatchLineUp(MatchInfo matchInfo, Club club, Integer playerType, String players) {
+        this.matchInfo = matchInfo;
+        this.club = club;
+        this.playerType = playerType;
+        this.players = players;
+    }
+
+    public MatchLineUp(MatchInfo matchInfo, Club club, Integer playerType, String players, String createTime, String modifiedTime) {
+        this.matchInfo = matchInfo;
+        this.club = club;
+        this.playerType = playerType;
+        this.players = players;
+        this.createTime = createTime;
+        this.modifiedTime = modifiedTime;
+    }
 
     private String createTime;
     private String modifiedTime;
@@ -80,107 +87,11 @@ public class MatchLineUp {
         this.playerType = playerType;
     }
 
-    public Player getP1() {
-        return p1;
-    }
-
-    public void setP1(Player p1) {
-        this.p1 = p1;
-    }
-
-    public Player getP2() {
-        return p2;
-    }
-
-    public void setP2(Player p2) {
-        this.p2 = p2;
-    }
-
-    public Player getP3() {
-        return p3;
-    }
-
-    public void setP3(Player p3) {
-        this.p3 = p3;
-    }
-
-    public Player getP4() {
-        return p4;
-    }
-
-    public void setP4(Player p4) {
-        this.p4 = p4;
-    }
-
-    public Player getP5() {
-        return p5;
-    }
-
-    public void setP5(Player p5) {
-        this.p5 = p5;
-    }
-
-    public Player getP6() {
-        return p6;
-    }
-
-    public void setP6(Player p6) {
-        this.p6 = p6;
-    }
-
-    public Player getP7() {
-        return p7;
-    }
-
-    public void setP7(Player p7) {
-        this.p7 = p7;
-    }
-
-    public Player getP8() {
-        return p8;
-    }
-
-    public void setP8(Player p8) {
-        this.p8 = p8;
-    }
-
-    public Player getP9() {
-        return p9;
-    }
-
-    public void setP9(Player p9) {
-        this.p9 = p9;
-    }
-
-    public Player getP10() {
-        return p10;
-    }
-
-    public void setP10(Player p10) {
-        this.p10 = p10;
-    }
-
-    public Player getP11() {
-        return p11;
-    }
-
-    public void setP11(Player p11) {
-        this.p11 = p11;
-    }
-
-    public Player getP12() {
-        return p12;
-    }
-
-    public void setP12(Player p12) {
-        this.p12 = p12;
-    }
-
     public String getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(String gcreateTime) {
+    public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
 
@@ -188,7 +99,15 @@ public class MatchLineUp {
         return modifiedTime;
     }
 
-    public void setModifiedTime(String gmodifiedTime) {
+    public void setModifiedTime(String modifiedTime) {
         this.modifiedTime = modifiedTime;
+    }
+
+    public String getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(String players) {
+        this.players = players;
     }
 }

@@ -1,8 +1,7 @@
 package com.ccsu.core.ranking.domain;
 
 import com.ccsu.core.club.domain.Club;
-
-import java.util.Date;
+import com.ccsu.core.matchType.domain.MatchType;
 
 /**
  * Created by IntelliJ IDEA.
@@ -14,8 +13,8 @@ import java.util.Date;
  */
 public class Ranking {
     private Integer id;
+    private MatchType matchType;
     private Club club;
-
     /**
      * 比赛轮次
      */
@@ -60,7 +59,6 @@ public class Ranking {
      * 赛季
      */
     private Integer season;
-
     private String createTime;
     private String modifiedTime;
 
@@ -70,6 +68,14 @@ public class Ranking {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public MatchType getMatchType() {
+        return matchType;
+    }
+
+    public void setMatchType(MatchType matchType) {
+        this.matchType = matchType;
     }
 
     public Club getClub() {
@@ -160,11 +166,11 @@ public class Ranking {
         this.createTime = createTime;
     }
 
-    public String getmodifiedTime() {
+    public String getModifiedTime() {
         return modifiedTime;
     }
 
-    public void setmodifiedTime(String modifiedTime) {
+    public void setModifiedTime(String modifiedTime) {
         this.modifiedTime = modifiedTime;
     }
 }

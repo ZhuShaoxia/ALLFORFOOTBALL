@@ -28,7 +28,6 @@
             <fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
                 <legend>用户信息录入</legend>
             </fieldset>
-
             <form id="user-add-form" class="layui-form" method="post">
                 <%--用户头像--%>
                 <div class="layui-form-item">
@@ -146,7 +145,7 @@
                         <label for="clubId" class="layui-form-label">主队</label>
                         <div class="layui-input-inline">
                             <select id="club.country.id" name="club.country.id" lay-search lay-filter="countrySelect">
-                                <option value="0"></option>
+                                <option value=""></option>
                                 <c:forEach items="${countries}" var="country">
                                     <option value="${country.id}">${country.name}</option>
                                 </c:forEach>

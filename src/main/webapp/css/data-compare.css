@@ -152,10 +152,10 @@
     margin: 0px auto;
 }
 
-#container {
-    height: 10px;
-    position: relative;
-}
+/*container {*/
+    /*height: 10px;*/
+    /*position: relative;*/
+/*}*/
 
 .line {
     height: 10px;
@@ -215,4 +215,16 @@
 
 #bb2 {
     float: right
+}
+
+/*myself*/
+.comp-item {
+    background-color: rgb(250, 250, 250);
+    margin-bottom: 20px;
+}
+
+.comp-item .comp-item-left,
+.comp-item .comp-item-center,
+.comp-item .comp-item-right {
+    padding: 20px;
 }

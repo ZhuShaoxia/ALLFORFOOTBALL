@@ -2,8 +2,6 @@ package com.ccsu.core.matchHighlights.domain;
 
 import com.ccsu.core.matchInfo.domain.MatchInfo;
 
-import java.util.Date;
-
 /**
  * Created by IntelliJ IDEA.
  *
@@ -19,7 +17,7 @@ public class MatchHighlights {
     /**
      * 集锦内容
      */
-    private String content;
+    private String editorValue;
     private String createTime;
     private String modifiedTime;
 
@@ -39,19 +37,19 @@ public class MatchHighlights {
         this.matchInfo = matchInfo;
     }
 
-    public String getContent() {
-        return content;
+    public String getEditorValue() {
+        return editorValue;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setEditorValue(String editorValue) {
+        this.editorValue = editorValue;
     }
 
     public String getCreateTime() {
         return createTime;
     }
 
-    public void setCreateTime(String gcreateTime) {
+    public void setCreateTime(String createTime) {
         this.createTime = createTime;
     }
 
@@ -59,7 +57,7 @@ public class MatchHighlights {
         return modifiedTime;
     }
 
-    public void setModifiedTime(String gmodifiedTime) {
+    public void setModifiedTime(String modifiedTime) {
         this.modifiedTime = modifiedTime;
     }
 }

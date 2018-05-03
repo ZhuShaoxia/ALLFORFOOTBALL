@@ -1,13 +1,24 @@
 package com.ccsu.core.club.controller;
 
 import com.ccsu.common.utils.MessageCode;
+import com.ccsu.core.article.domain.Article;
+import com.ccsu.core.article.service.ArticleService;
 import com.ccsu.core.club.domain.Club;
 import com.ccsu.core.club.service.ClubService;
 import com.ccsu.core.common.domain.PageRequestDto;
 import com.ccsu.core.common.domain.PageResponseDto;
 import com.ccsu.core.common.domain.ResponseDto;
+import com.ccsu.core.common.domain.Select2ResponseDto;
 import com.ccsu.core.country.domain.Country;
 import com.ccsu.core.country.service.CountryService;
+import com.ccsu.core.honer.domain.Honer;
+import com.ccsu.core.honer.service.HonerService;
+import com.ccsu.core.matchInfo.domain.MatchInfo;
+import com.ccsu.core.matchInfo.service.MatchInfoService;
+import com.ccsu.core.player.domain.Player;
+import com.ccsu.core.player.service.PlayerService;
+import com.ccsu.core.ranking.domain.Ranking;
+import com.ccsu.core.ranking.service.RankingService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.apache.commons.logging.Log;
@@ -39,13 +50,23 @@ public class ClubController {
     @Autowired
     private CountryService countryService;
 
+    @Autowired
+    private PlayerService playerService;
+    @Autowired
+    private HonerService honerService;
+    @Autowired
+    private MatchInfoService matchInfoService;
+    @Autowired
+    private ArticleService articleService;
+    @Autowired
+    private RankingService rankingService;
 
     private static final Log LOGGER = LogFactory.getLog(ClubController.class);
 
     private ResponseDto responseDto;
 
     /**
-     * 重定向:后台界面-俱乐部列表
+     * 页面:后台界面-俱乐部列表
      *
      * @return
      */
@@ -56,7 +77,7 @@ public class ClubController {
     }
 
     /**
-     * 重定向:后台界面-俱乐部添加-
+     * 页面:后台界面-俱乐部添加
      *
      * @return
      */
@@ -70,6 +91,27 @@ public class ClubController {
         }
         model.addAttribute("countries", countries);
         return "/admin/club-add";
+    }
+
+    /**
+     * 页面:俱乐部荣誉 添加
+     *
+     * @param model
+     * @return
+     */
+    @RequestMapping("/admin/club/honer/add")
+    public String adminClubHonerAdd(Model model) {
+        List<Country> countries = null;
+        List<Honer> honers = null;
+        try {
+            countries = countryService.findAll(null);
+            honers = honerService.findAllByTypeId(1);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        model.addAttribute("countries", countries);
+        model.addAttribute("honers", honers);
+        return "/admin/club-honer-add";
     }
 
 
@@ -118,15 +160,36 @@ public class ClubController {
      * @return
      */
     @RequestMapping("/club/info/{id}")
-    public @ResponseBody
-    Club searchClub(@PathVariable Integer id) {
+    public String searchClub(@PathVariable Integer id, Model model) {
         Club club = null;
+        List<Honer> honers = null;
+        List<Player> players = null;
+        List<MatchInfo> matchInfos = null;
+        List<Article> articles = null;
+        List<Ranking> rankings = null;
         try {
             club = clubService.load(id);
+            honers = honerService.findHonerByClubId(id);
+            players = playerService.searchPlayerByClubId(id);
+            matchInfos = matchInfoService.searchMatchInfoForClub(id);
+            articles = articleService.findAll(club.getName());
+            rankings = rankingService.findAllByMatchTypeId(club.getCountry().getId());
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return club;
+        //基本信息
+        model.addAttribute("club", club);
+        //赛程
+        model.addAttribute("matchInfos", matchInfos);
+        //队员
+        model.addAttribute("players", players);
+        //荣誉记录
+        model.addAttribute("honers", honers);
+        //相关新闻
+        model.addAttribute("articles", articles);
+        //积分榜
+        model.addAttribute("rankings", rankings);
+        return "club";
     }
 
     /**
@@ -244,6 +307,13 @@ public class ClubController {
             e.printStackTrace();
         }
         return clubs;
+    }
+
+    @RequestMapping("/club/searchSelect2Club")
+    public @ResponseBody
+    List<Select2ResponseDto> searchSelect2Club(String search) {
+
+        return clubService.searchSelect2Club(search);
     }
 
 

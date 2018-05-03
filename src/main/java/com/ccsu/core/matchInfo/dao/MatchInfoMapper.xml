@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "mybatis-3-mapper.dtd" >
+<mapper namespace="com.ccsu.core.matchInfo.dao.MatchInfoMapper">
+    <resultMap id="MatchInfoMap" type="com.ccsu.core.matchInfo.domain.MatchInfo">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="homeClubId" property="homeClub.id" jdbcType="INTEGER"/>
+        <result column="homeClub" property="homeClub.name" jdbcType="VARCHAR"/>
+        <result column="homeClubImgUrl" property="homeClub.imgUrl" jdbcType="VARCHAR"/>
+        <result column="awayClubId" property="awayClub.id" jdbcType="INTEGER"/>
+        <result column="awayClub" property="awayClub.name" jdbcType="VARCHAR"/>
+        <result column="awayClubImgUrl" property="awayClub.imgUrl" jdbcType="VARCHAR"/>
+        <result column="matchDate" property="matchDate" jdbcType="VARCHAR"/>
+        <result column="matchTime" property="matchTime" jdbcType="VARCHAR"/>
+        <result column="matchTypeId" property="matchType.id" jdbcType="INTEGER"/>
+        <result column="matchType" property="matchType.type" jdbcType="VARCHAR"/>
+        <result column="matchTimes" property="matchTimes" jdbcType="INTEGER"/>
+        <result column="matchStateId" property="matchState.id" jdbcType="INTEGER"/>
+        <result column="matchState" property="matchState.state" jdbcType="INTEGER"/>
+        <result column="matchResult" property="matchResult" jdbcType="INTEGER"/>
+        <result column="matchScore" property="matchScore" jdbcType="INTEGER"/>
+        <result column="gmt_create" property="createTime" jdbcType="VARCHAR"/>
+        <result column="gmt_modified" property="modifiedTime" jdbcType="VARCHAR"/>
+    </resultMap>
+
+
+    <!--添加比赛基本信息-->
+    <insert id="save" parameterType="MatchInfo">
+        insert into tb_match_info (homeClubId, awayClubId,
+        matchDate, matchTime, matchTypeId,
+        matchTimes, matchStateId, matchResult,
+        gmt_create, gmt_modified)
+        values ( #{homeClub.id,jdbcType=INTEGER}, #{awayClub.id,jdbcType=INTEGER},
+        #{matchDate,jdbcType=VARCHAR}, #{matchTime,jdbcType=VARCHAR}, #{matchType.id,jdbcType=INTEGER},
+        #{matchTimes,jdbcType=INTEGER}, #{matchState.id,jdbcType=INTEGER}, #{matchResult,jdbcType=INTEGER},
+        #{createTime,jdbcType=VARCHAR}, #{modifiedTime,jdbcType=VARCHAR})
+    </insert>
+
+    <!--比赛基本信息信息删除-->
+    <delete id="delete" parameterType="Integer">
+        delete from tb_match_info
+        where id = #{id,jdbcType=INTEGER}
+    </delete>
+
+    <!--比赛基本信息信息更新-->
+    <update id="update" parameterType="MatchInfo">
+        update tb_match_info
+        set
+        homeClubId = #{homeClub.id,jdbcType=INTEGER},
+        awayClubId = #{awayClub.id,jdbcType=INTEGER},
+        matchDate = #{matchDate,jdbcType=VARCHAR},
+        matchTime = #{matchTime,jdbcType=VARCHAR},
+        matchTypeId = #{matchType.id,jdbcType=VARCHAR},
+        matchTimes = #{matchTimes,jdbcType=INTEGER},
+        matchStateId = #{matchState.id,jdbcType=INTEGER},
+        matchResult = #{matchResult,jdbcType=INTEGER},
+        matchScore = #{matchScore,jdbcType=VARCHAR},
+        gmt_modified = #{modifiedTime,jdbcType=VARCHAR}
+    </update>
+
+    <!--根据编号查询比赛基本信息-->
+    <select id="findById" parameterType="Integer" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        b.imgUrl homeClubImgUrl,
+        e.id awayClubId,
+        e.name awayClub,
+        e.imgUrl awayClubImgUrl,
+        a.matchDate matchDate,
+        a.matchTime matchTime,
+        a.matchTypeId matchTypeId,
+        c.type matchType,
+        a.matchTimes matchTimes,
+        a.matchStateId matchStateId,
+        d.state matchState,
+        a.matchResult matchResult,
+        a.matchScore matchScore,
+        a.gmt_create createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_match_info a, tb_club b,tb_club e, tb_match_type c, tb_match_state d
+        WHERE a.homeClubId = b.id
+        AND a.awayClubId = e.id
+        AND a.matchTypeId = c.id
+        AND a.matchStateId = d.id
+        AND a.id = #{id}
+    </select>
+
+    <!--查询符合条件的比赛基本信息:多搜索条件-->
+    <select id="findAll" parameterType="String" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        e.id awayClubId,
+        e.name awayClub,
+        a.matchDate matchDate,
+        a.matchTime matchTime,
+        a.matchTypeId matchTypeId,
+        c.type matchType,
+        a.matchTimes matchTimes,
+        a.matchStateId matchStateId,
+        d.state matchState,
+        a.matchResult matchResult,
+        a.matchScore matchScore,
+        a.gmt_create createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_match_info a, tb_club b,tb_club e, tb_match_type c, tb_match_state d
+        <where>
+            a.homeClubId = b.id
+            AND a.awayClubId = e.id
+            AND a.matchTypeId = c.id
+            AND a.matchStateId = d.id
+            <if test="_parameter!=null">
+                AND ( b.name LIKE "%"#{_parameter}"%"
+                or e.name LIKE "%"#{_parameter}"%"
+                or c.type LIKE "%"#{_parameter}"%"
+                or d.state LIKE "%"#{_parameter}"%")
+            </if>
+        </where>
+    </select>
+
+    <select id="findAllByRequestDto" parameterType="RequestDto" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        e.id awayClubId,
+        e.name awayClub,
+        a.matchDate matchDate,
+        a.matchTime matchTime,
+        a.matchTypeId matchTypeId,
+        c.type matchType,
+        a.matchTimes matchTimes,
+        a.matchStateId matchStateId,
+        d.state matchState,
+        a.matchResult matchResult,
+        a.matchScore matchScore,
+        a.gmt_create createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_match_info a, tb_club b,tb_club e, tb_match_type c, tb_match_state d
+        <where>
+            a.homeClubId = b.id
+            AND a.awayClubId = e.id
+            AND a.matchTypeId = c.id
+            AND a.matchStateId = d.id
+            <if test="condition!=null">
+                AND ( b.name LIKE "%"#{condition}"%"
+                or e.name LIKE "%"#{condition}"%"
+                or c.type LIKE "%"#{condition}"%"
+                or d.state LIKE "%"#{condition}"%")
+            </if>
+            <if test="startTime!= null and endTime !=null">
+                AND a.matchDate between #{startTime} and #{endTime}
+            </if>
+            <if test="matchTypeId!=null">
+                AND a.matchTypeId = #{matchTypeId}
+            </if>
+        </where>
+    </select>
+
+
+    <!--根据比赛场次 -->
+    <select id="searchMatchInfoByTypeAndTime" parameterType="MatchInfo" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        e.id awayClubId,
+        e.name awayClub,
+        a.matchDate matchDate,
+        a.matchTime matchTime,
+        a.matchStateId matchStateId,
+        d.state matchState
+        FROM tb_match_info a, tb_club b,tb_club e, tb_match_type c, tb_match_state d
+        WHERE a.homeClubId = b.id
+        AND a.awayClubId = e.id
+        AND a.matchTypeId = c.id
+        AND a.matchStateId = d.id
+        AND c.id = #{matchType.id}
+        AND a.matchTimes = #{matchTimes}
+    </select>
+
+    <!--模糊查询单条matchInfo信息                            用于比赛列表模糊搜索-->
+    <select id="searchMatchInfo" parameterType="MatchInfo" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        e.id awayClubId,
+        e.name awayClub,
+        a.matchDate matchDate,
+        a.matchTime matchTime,
+        a.matchTypeId matchTypeId,
+        c.type matchType,
+        a.matchTimes matchTimes,
+        a.matchStateId matchStateId,
+        d.state matchState,
+        a.matchResult matchResult,
+        a.matchScore matchScore,
+        a.gmt_create createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_match_info a, tb_club b, tb_club e, tb_match_type c, tb_match_state d
+        <where>
+            a.homeClubId = b.id
+            AND a.awayClubId = e.id
+            AND a.matchTypeId = c.id
+            AND a.matchStateId = d.id
+            AND a.matchTimes = #{matchTimes}
+            <if test="homeClub.id!=null">
+                AND #{homeClub.id} IN (SELECT homeClubId clubId
+                FROM tb_match_info
+                WHERE matchTimes = #{matchTimes}
+                UNION
+                SELECT awayClubId clubId
+                FROM tb_match_info
+                WHERE matchTimes = #{matchTimes})
+            </if>
+            <if test="awayClub.id!=null">
+                AND #{awayClub.id} IN (SELECT homeClubId clubId
+                FROM tb_match_info
+                WHERE matchTimes = #{matchTimes}
+                UNION
+                SELECT awayClubId clubId
+                FROM tb_match_info
+                WHERE matchTimes = #{matchTimes})
+            </if>
+        </where>
+    </select>
+
+    <!--根据日期 查找已结束的比赛信息 且未录入过比赛集锦的比赛信息   用于比赛集锦日期选择-->
+    <select id="searchMatchInfoByMatchDateForHighlignts" parameterType="MatchInfo" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        e.id awayClubId,
+        e.name awayClub
+        FROM tb_match_info a, tb_club b, tb_club e
+        WHERE a.homeClubId = b.id
+        AND a.awayClubId = e.id
+        AND a.matchDate = #{matchDate}
+        AND a.matchStateId =#{matchState.id}
+        AND A.id not in (select matchInfoId from tb_match_highlignts )
+    </select>
+
+    <!--根据日期 未录入过比赛阵容的比赛信息                      用于比赛阵容日期选择-->
+    <select id="searchMatchInfoByMatchDateForLineUp" parameterType="MatchInfo" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        e.id awayClubId,
+        e.name awayClub
+        FROM tb_match_info a, tb_club b, tb_club e
+        WHERE a.homeClubId = b.id
+        AND a.awayClubId = e.id
+        AND a.matchDate = #{matchDate}
+        AND A.id not in (select matchInfoId from tb_match_lineUp )
+    </select>
+
+    <!--根据日期 查找已结束的比赛信息 且未录入过比赛统计的比赛双方信息 用于比赛统计日期选择-->
+    <select id="searchMatchInfoByMatchDateForTec" parameterType="MatchInfo" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        e.id awayClubId,
+        e.name awayClub
+        FROM tb_match_info a, tb_club b, tb_club e
+        WHERE a.homeClubId = b.id
+        AND a.awayClubId = e.id
+        AND a.matchDate = #{matchDate}
+        AND a.matchStateId =#{matchState.id}
+        AND A.id not in (select matchInfoId from tb_match_technical_statistics )
+    </select>
+
+    <!--根据日期 未录入过比赛过程的比赛信息                       用于比赛过程日期选择-->
+    <select id="searchMatchInfoByMatchDateForProcess" parameterType="MatchInfo" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        e.id awayClubId,
+        e.name awayClub
+        FROM tb_match_info a, tb_club b, tb_club e
+        WHERE a.homeClubId = b.id
+        AND a.awayClubId = e.id
+        AND a.matchDate = #{matchDate}
+        AND A.id not in (select matchInfoId from tb_match_process )
+    </select>
+
+    <!--根据日期 比赛状态 查找比赛信息-->
+    <select id="searchMatchInfoByMatchDateAndMatchState" parameterType="MatchInfo" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        e.id awayClubId,
+        e.name awayClub
+        FROM tb_match_info a, tb_club b, tb_club e
+        WHERE a.homeClubId = b.id
+        AND a.awayClubId = e.id
+        AND a.matchDate = #{matchDate}
+        AND a.matchStateId <![CDATA[ <> ]]> 5
+    </select>
+
+    <!--查询比赛焦点信息  用于焦点比赛管理-->
+    <select id="searchMatchInfoForIndex" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        b.imgUrl homeClubImgUrl,
+        e.id awayClubId,
+        e.name awayClub,
+        e.imgUrl awayClubImgUrl,
+        a.matchDate matchDate,
+        a.matchTime matchTime,
+        a.matchTypeId matchTypeId,
+        c.type matchType,
+        a.matchTimes matchTimes,
+        a.matchStateId matchStateId,
+        d.state matchState,
+        a.matchResult matchResult,
+        a.matchScore matchScore,
+        a.gmt_create createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_match_info a, tb_club b,tb_club e, tb_match_type c, tb_match_state d
+        where
+        a.homeClubId = b.id
+        AND a.awayClubId = e.id
+        AND a.matchTypeId = c.id
+        AND a.matchStateId = d.id
+        AND a.isFocus = 1
+        AND str_to_date(a.matchDate, '%Y-%m-%d')
+        BETWEEN curdate()
+        AND date_add(str_to_date(a.matchDate, '%Y-%m-%d'), INTERVAL 2 DAY)
+        limit 2
+    </select>
+
+    <!--取消 焦点比赛 用于后台焦点比赛管理-->
+    <update id="updateMatchInfoFocus" parameterType="MatchInfo">
+        update tb_match_info
+        set isFocus = #{isFocus}
+        where id = #{id}
+    </update>
+
+    <!--焦点比赛选择 用于后台焦点比赛选择-->
+    <select id="searchMatchInfoForIndexSelect" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        e.id awayClubId,
+        e.name awayClub,
+        a.matchDate matchDate,
+        a.matchTime matchTime,
+        a.matchTypeId matchTypeId,
+        c.type matchType,
+        a.matchTimes matchTimes,
+        a.matchStateId matchStateId,
+        d.state matchState,
+        a.matchResult matchResult,
+        a.matchScore matchScore,
+        a.gmt_create createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_match_info a, tb_club b,tb_club e, tb_match_type c, tb_match_state d
+        where
+        a.homeClubId = b.id
+        AND a.awayClubId = e.id
+        AND a.matchTypeId = c.id
+        AND a.matchStateId = d.id
+        AND a.isFocus = 0
+        AND str_to_date(a.matchDate, '%Y-%m-%d')
+        BETWEEN curdate()
+        AND date_add(str_to_date(a.matchDate, '%Y-%m-%d'), INTERVAL 2 DAY)
+    </select>
+
+    <!--更新比赛结果-->
+    <update id="updateMatchResult" parameterType="RequestMatchInfo">
+        update tb_match_info
+        set matchResult = #{requestMatchInfo.matchInfo.matchResult},
+        matchScore = #{requestMatchInfo.matchInfo.matchScore},
+        matchStateId = 5
+        where id = #{requestMatchInfo.matchInfo.id}
+    </update>
+
+    <select id="searchMatchInfoByClubIdAndMatchTimes" parameterType="MatchInfo" resultType="INTEGER">
+        SELECT count(*)
+        FROM tb_match_info
+        WHERE
+        matchTypeID = #{matchType.id}
+        AND matchTimes = #{matchTimes}
+        AND (#{homeClub.id} = homeClubId OR #{homeClub.id} = awayClubId)
+    </select>
+
+    <update id="updateMatchState">
+        update tb_match_info
+        set matchStateId = #{1}
+        where id = #{0}
+    </update>
+
+    <!--查询俱乐部未来两周的赛程信息-->
+    <select id="searchMatchInfoForClub" resultMap="MatchInfoMap" parameterType="Integer">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        b.imgUrl homeClubImgUrl,
+        e.id awayClubId,
+        e.name awayClub,
+        e.imgUrl awayClubImgUrl,
+        a.matchDate matchDate,
+        a.matchTime matchTime,
+        a.matchTypeId matchTypeId,
+        c.type matchType,
+        a.matchTimes matchTimes,
+        a.matchStateId matchStateId,
+        d.state matchState,
+        a.matchResult matchResult,
+        a.matchScore matchScore,
+        a.gmt_create createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_match_info a, tb_club b, tb_club e, tb_match_type c, tb_match_state d
+        WHERE
+        a.homeClubId = b.id
+        AND a.awayClubId = e.id
+        AND a.matchTypeId = c.id
+        AND a.matchStateId = d.id
+        AND str_to_date(a.matchDate, '%Y-%m-%d')
+        BETWEEN curdate()
+        AND date_add(str_to_date(a.matchDate, '%Y-%m-%d'), INTERVAL 14 DAY)
+        AND (#{id} = homeClubId OR #{id} = awayClubId)
+    </select>
+
+    <!--查询最近五场比赛-->
+    <select id="searchRecentMatchInfo" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        b.id homeClubId,
+        b.name homeClub,
+        b.imgUrl homeClubImgUrl,
+        e.id awayClubId,
+        e.name awayClub,
+        e.imgUrl awayClubImgUrl,
+        a.matchDate matchDate,
+        a.matchTime matchTime,
+        a.matchTypeId matchTypeId,
+        c.type matchType
+        FROM tb_match_info a, tb_club b, tb_club e, tb_match_type c
+        WHERE
+        a.homeClubId = b.id
+        AND a.awayClubId = e.id
+        AND a.matchTypeId = c.id
+        AND str_to_date(a.matchDate, '%Y-%m-%d')
+        BETWEEN curdate()
+        AND date_add(str_to_date(a.matchDate, '%Y-%m-%d'), INTERVAL 14 DAY)
+        limit 5
+    </select>
+
+    <!--前台 比赛列表页面 查询从即日起两周不同类型的比赛-->
+    <select id="searchMatchForList" resultMap="MatchInfoMap">
+        SELECT
+        a.id id,
+        a.matchStateId matchStateId,
+        d.state matchState,
+        a.matchScore matchScore,
+        b.id homeClubId,
+        b.name homeClub,
+        b.imgUrl homeClubImgUrl,
+        e.id awayClubId,
+        e.name awayClub,
+        e.imgUrl awayClubImgUrl,
+        a.matchDate matchDate,
+        a.matchTime matchTime,
+        a.matchTypeId matchTypeId,
+        c.type matchType
+        FROM tb_match_info a, tb_club b, tb_club e, tb_match_type c, tb_match_state d
+        WHERE
+        a.homeClubId = b.id
+        AND a.awayClubId = e.id
+        AND a.matchTypeId = c.id
+        AND a.matchStateId = d.id
+        AND a.matchDate = #{0}
+        AND a.matchTypeId = #{1}
+    </select>
+
+    <select id="searchMatchInfoByMatchTypeAndMatchTimes" resultMap="MatchInfoMap">
+        SELECT
+        a.id           id,
+        b.id           homeClubId,
+        b.name         homeClub,
+        b.imgUrl       homeClubImgUrl,
+        e.id           awayClubId,
+        e.name         awayClub,
+        e.imgUrl       awayClubImgUrl,
+        a.matchDate    matchDate,
+        a.matchTime    matchTime,
+        a.matchTypeId  matchTypeId,
+        c.type         matchType,
+        a.matchTimes   matchTimes,
+        a.matchStateId matchStateId,
+        d.state        matchState,
+        a.matchResult  matchResult,
+        a.matchScore   matchScore,
+        a.gmt_create   createTime,
+        a.gmt_modified modifiedTime
+        FROM tb_match_info a, tb_club b, tb_club e, tb_match_type c, tb_match_state d
+        WHERE
+        a.homeClubId = b.id
+        AND a.awayClubId = e.id
+        AND a.matchTypeId = c.id
+        AND a.matchStateId = d.id
+        AND a.matchTypeId = #{0}
+        AND a.matchTimes = #{1}
+    </select>
+</mapper>

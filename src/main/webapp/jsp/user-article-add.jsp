@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zhuxiaolei
@@ -20,11 +21,13 @@
 
 
     <script src="${pageContext.request.contextPath}/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdn.bootcss.com/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript"
+            charset="utf-8"></script>
+    <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
     <script src="${pageContext.request.contextPath}/js/user-article.js" type="text/javascript" charset="utf-8"></script>
     <%--多选框js--%>
-    <script src="${pageContext.request.contextPath}/js/chosen.jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="${pageContext.request.contextPath}/js/chosen.jquery.js" type="text/javascript"
+            charset="utf-8"></script>
 
 
     <meta charset="utf-8"/>
@@ -45,88 +48,63 @@
     }
 
 </style>
-<script>
-    $(function () {
-        $(".chosen-select").chosen()
-        $(".chosen-select").chosen({
-            max_selected_options: 3
-        })
-//        $(".chosen-select").bind("chosen:maxselected", function () {
-//            console.log('123')
-//        })
-        var ue = UE.getEditor('ueditor')
-    })
-
-</script>
 <body>
-<%@include file="head2.jsp" %>
+<%@include file="head.jsp" %>
 <!--主体-->
 <div class="container userinfo">
     <div class="row">
         <div class="col-md-2">
             <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125"
                 style="border: 1px solid #8bfdff">
-                <li><a href="user-center.jsp">个人信息</a></li>
-                <li><a href="user-comment.jsp">评论</a></li>
-                <li class="active" style="cursor: pointer"><a href="user-article.jsp">我发表的文章</a></li>
-                <li><a href="setting-profile.jsp">账号设置</a></li>
+                <li><a href="${pageContext.request.contextPath}/user/center">个人信息</a></li>
+                <c:if test="${user.role==2}">
+                    <li class="active"><a href="${pageContext.request.contextPath}/user/article">我发表的文章</a></li>
+                </c:if>
+                <li><a href="${pageContext.request.contextPath}/user/comment">评论</a></li>
+                <li><a href="${pageContext.request.contextPath}/user/setting/info">账号设置</a></li>
             </ul>
         </div>
         <div class="col-md-10">
-            <div class="row article-add-head">
-                <h3>添加新文章</h3>
-                <table class="table table-bordered">
-                    <tr>
-                        <td><strong>文章标题：</strong></td>
-                        <td><input id="head" type="text"></td>
-                    </tr>
-                    <tr>
-                        <td><strong>文章副标题</strong></td>
-                        <td><input id="subhead" type="text"></td>
-                    </tr>
-                    <tr>
-                        <td><strong>文章展示图片</strong></td>
-                        <td><input type="file"><span style="color: red">****仅限上传.jpg/png图片****</span></td>
-                    </tr>
-                    <tr>
-                        <td><strong>标签</strong></td>
-                        <td>
-                            <select multiple class="chosen-select chzn-search chosen-rtl" tabindex="14"
-                                    data-placeholder="请为文章添加至多六个标签">
-                                <option value=""></option>
-                                <option selected value="0">American Black Bear</option>
-                                <option value="1">Asiatic Black Bear</option>
-                                <option>Brown Bear</option>
-                                <option>Giant Panda</option>
-                                <option>Sloth Bear</option>
-                                <option>Polar Bear</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><strong>文章类型</strong></td>
-                        <td>
-                            <select name="" id="" class="chosen-select">
-                                <option value="0">全部</option>
-                                <option value="1">头条</option>
-                                <option value="2">转会</option>
-                                <option value="3">中超</option>
-                                <option value="4">西甲</option>
-                                <option value="5">英超</option>
-                            </select>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div id="ueditor" class="row article-add-body">
+            <form id="user-article-add-form" action="/article/userAdd" method="post" enctype="multipart/form-data">
+                <div class="row article-add-head">
+                    <h3>添加新文章</h3>
+                    <table class="table table-bordered">
+                        <tr>
+                            <td><strong>文章标题：</strong></td>
+                            <td><input name="title" id="title" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>文章副标题</strong></td>
+                            <td><input name="subtitle" id="subtitle" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><strong>文章展示图片</strong></td>
+                            <td><input id="imgUrl" name="file" multiple="multiple" type="file"></td>
+                        </tr>
 
-            </div>
-            <div class="row article-add-bottom">
-                <button class="btn btn-success">提交</button>
-                <button class="btn btn-success">提交</button>
-            </div>
+                        <tr>
+                            <td><strong>文章类型</strong></td>
+                            <td>
+                                <select name="articleType.id" id="articleTypeId" class="chosen-select">
+                                    <c:forEach items="${articleTypes}" var="articleType">
+                                        <option value="${articleType.id}">${articleType.type}</option>
+                                    </c:forEach>
+                                </select>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="ueditor" class="row article-add-body">
 
+                </div>
+                <div class="row article-add-bottom">
+                    <button id="user-article-add-btn" type="submit" class="btn btn-success">
+                        提交
+                    </button>
+                    <button type="reset" class="btn btn-default">重置</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -143,11 +121,116 @@
         charset="utf-8"></script>
 <script src="${pageContext.request.contextPath}/ueditor/lang/zh-cn/zh-cn.js" type="text/javascript"
         charset="utf-8"></script>
-<script type="text/javascript" charset="UTF-8" src="${pageContext.request.contextPath}/ueditor/ueditor.parse.min.js"></script>
+<script type="text/javascript" charset="UTF-8"
+        src="${pageContext.request.contextPath}/ueditor/ueditor.parse.min.js"></script>
 <script>
     $(function () {
 //        var lis = $("ul[class='chzn-choices'] span")
         var lis = $("ul[class='chzn-choices']")
-        console.log(lis)
+
+        $(".chosen-select").chosen()
+        $(".chosen-select").chosen({
+            max_selected_options: 3
+        })
+
+
+        /**
+         * 表单验证
+         */
+        $("#user-article-add-form").validate({
+            rules: {
+                title: {
+                    required: true
+                },
+                subtitle: {
+                    required: true
+                },
+                imgUrl: {
+                    required: true
+                }
+            },
+            messages: {
+                title: {
+                    required: "文章标题不能为空"
+                },
+                subtitle: {
+                    required: "该项为必输项"
+                },
+                imgUrl: {
+                    required: "请上传轮播图片"
+                }
+            }
+        })
+
+        /**
+         * 编辑框初始化
+         */
+        var ue = UE.getEditor('ueditor')
+
+        /**
+         * 图片上传
+         */
+        $("#file").on('change', function () {
+            var imgUrl = $("#imgUrl").val()
+            checkImg(imgUrl)
+        })
+
+        /**
+         *表单数据提交
+         */
+        $("#user-article-add-btn").on('click', function () {
+            var imgUrl = $("#imgUrl").val()
+            if (!checkImg(imgUrl)) {
+                return false;
+            }
+
+            if (!ue.hasContents()) {
+                alert('请输入文章内容后提交');
+                ue.focus()
+                return false;
+            }
+            if ($("#user-article-add-form").valid()) {
+                $("#user-article-add-form").submit()
+
+//                var formObject = {};
+//                var formArray = $("#user-article-add-form").serializeArray();
+//                $.each(formArray, function (i, item) {
+//                    formObject[item.name] = item.value;
+//                });
+//                var formJson = JSON.stringify(formObject);
+//                console.log(formJson)
+//                $.ajax({
+//                    type: 'POST',
+//                    data: formJson,
+//                    url: '/article/userAdd',
+//                    success: function (res) {
+//                        if (res.code == '-1') {
+//                            alert('后台请求出错,请求出错')
+//                        } else {
+//                            alert('文章添加成功 请返回查看')
+//                            window.location.href = '/user/article'
+//                        }
+//                    }
+//                })
+            }
+
+        })
     })
+
+    /**
+     * 检查是否为图片
+     * @param file
+     * @returns {boolean}
+     */
+    function checkImg(imgUrl) {
+        if (imgUrl == null) {
+            return false;
+        }
+        if (!/.(gif|jpg|jpeg|png|gif|jpg|png)$/.test(imgUrl)) {
+            alert("图片类型必须是.gif,jpeg,jpg,png中的一种")
+            return false
+        }
+        return true;
+    }
+
 </script>
