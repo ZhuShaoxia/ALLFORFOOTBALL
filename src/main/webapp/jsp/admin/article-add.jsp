@@ -141,6 +141,7 @@
                     $.ajax({
                         data: data.field,
                         url: "/article/add?imgUrl=" + imgUrl,
+                        type:"POST",
                         success: function (res) {
                             if (res.code == -1) {
                                 layer.close(index)

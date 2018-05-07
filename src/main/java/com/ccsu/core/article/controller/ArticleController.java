@@ -167,7 +167,7 @@ public class ArticleController {
      * @return
      */
     @RequestMapping("/article/info/{id}")
-    public String searchUser(@PathVariable Integer id, Model model) {
+    public String searchArticle(@PathVariable Integer id, Model model) {
         Article article = null;
         try {
             article = articleService.load(id);
@@ -208,7 +208,7 @@ public class ArticleController {
      */
     @RequestMapping("/article/update")
     public @ResponseBody
-    ResponseDto updateUser(Article article, HttpSession session) {
+    ResponseDto updateArticle(Article article, HttpSession session) {
         responseDto = new ResponseDto();
         if (article.getId() == null) {
             responseDto.setCode(MessageCode.ERROR);

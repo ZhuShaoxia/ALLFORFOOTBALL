@@ -143,6 +143,7 @@ public class UserController {
 
     /**
      * 页面:账号绑定
+     *
      * @param session
      * @return
      */
@@ -154,12 +155,13 @@ public class UserController {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        session.setAttribute("user",user);
+        session.setAttribute("user", user);
         return "setting-bind";
     }
 
     /**
      * 账号绑定之修改绑定手机号
+     *
      * @param user
      * @return
      */

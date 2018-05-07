@@ -38,7 +38,7 @@
     <div class="row">
         <ol class="breadcrumb" style="margin-bottom: 0px">
             <li><a href="/">首页</a></li>
-            <li><a href="/article/list">文章列表</a></li>
+            <li><a href="/articles">文章列表</a></li>
             <li class="active">${article.subtitle}</li>
         </ol>
     </div>

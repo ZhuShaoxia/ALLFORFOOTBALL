@@ -364,7 +364,7 @@ public class MatchInfoController {
             responseDto.setCode("-1");
             e.printStackTrace();
         }
-        if (matchInfos != null) {
+        if (!matchInfos.isEmpty()) {
             responseDto.setCode("-2");
             return responseDto;
         }

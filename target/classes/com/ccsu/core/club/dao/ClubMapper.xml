@@ -16,6 +16,7 @@
         <result column="gmt_modified" property="modifiedTime" jdbcType="VARCHAR"/>
         <result column="countryId" property="country.id" jdbcType="INTEGER"/>
         <result column="countryName" property="country.name" jdbcType="VARCHAR"/>
+        <result column="countryImgUrl" property="country.imgUrl" jdbcType="VARCHAR"/>
     </resultMap>
 
     <resultMap id="ClubInfoMap" type="com.ccsu.core.club.domain.Club">
@@ -93,6 +94,7 @@
         A.established established,
         B.id countryId,
         B.name countryName,
+        b.imgUrl countryImgUrl,
         A.city city,
         A.phone phone,
         A.email email,

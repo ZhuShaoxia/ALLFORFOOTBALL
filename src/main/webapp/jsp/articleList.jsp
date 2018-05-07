@@ -334,13 +334,19 @@
         })
     })
 
-    function addHtml(currentPage,isBool) {
+    function addHtml(currentPage, isBool) {
         var startTime = $("#startTimeInput").val()
         var endTime = $("#endTimeInput").val()
         var condition = $("#conditionInput").val()
         var articleTypeId = '${articleTypeId}'
         if (articleTypeId == '') {
             articleTypeId = 1
+        }
+        if (startTime == '') {
+            startTime = null
+        }
+        if (endTime == '') {
+            endTime = null
         }
         var html = ''
         $.ajax({

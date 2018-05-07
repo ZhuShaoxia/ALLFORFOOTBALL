@@ -7,438 +7,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a840ee2-1358-4619-8878-95773affa77b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/redCard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/yellow-redCard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/img/yellowCard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/filter/CommonHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/controller/ArticleController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/dao/ArticleMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/service/ArticleService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/service/impl/ArticleServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/articleType/dao/ArticleTypeMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/articleType/service/ArticleTypeService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/articleType/service/impl/ArticlTypeServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/comment/controller/CommentController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/comment/dao/CommentMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/comment/service/CommentService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/comment/service/impl/CommentServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/common/domain/RequestDto.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchHighlights/controller/MatchHighlightsController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchHighlights/dao/MatchHighlightsMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchHighlights/service/MatchHighlightsService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchHighlights/service/impl/MatchHighlightsServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchInfo/controller/IndexManageController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchInfo/controller/MatchInfoController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchInfo/controller/MatchResultController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchInfo/dao/MatchInfoMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchInfo/domain/RequestMatchInfo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchInfo/service/MatchInfoService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchInfo/service/impl/MatchInfoServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchLineUp/controller/matchLineUpController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchLineUp/dao/MatchLineUpMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchLineUp/domain/RequestMatchLineUp.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchLineUp/service/MatchLineUpService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchLineUp/service/impl/MatchLineUpServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchProcess/controller/MatchProcessController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchProcess/dao/MatchProcessMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchProcess/service/MatchProcessService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchProcess/service/impl/MatchProcessServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchTechnologyStatistics/controller/MatchTechnologyStatisticsController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchTechnologyStatistics/dao/MatchTechnologyMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStatistics.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchTechnologyStatistics/domain/RequestMatchTechnologyStatistics.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchTechnologyStatistics/service/MatchTechnologyService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchTechnologyStatistics/service/impl/MatchTechnologyServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchType/dao/MatchTypeMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchType/service/MatchTypeService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchType/service/impl/MatchTypeServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/ranking/dao/RankingMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/ranking/service/RankingService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/ranking/service/impl/RankingServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/controller/AdminUserController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/img/redCard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/img/yellow-redCard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/img/yellowCard.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/common/filter/CommonHandler.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/controller/ArticleController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/dao/ArticleMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/service/ArticleService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/service/impl/ArticleServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/articleType/dao/ArticleTypeMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/articleType/service/ArticleTypeService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/articleType/service/impl/ArticlTypeServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/comment/controller/CommentController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/comment/dao/CommentMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/comment/service/CommentService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/comment/service/impl/CommentServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/common/domain/RequestDto.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchHighlights/controller/MatchHighlightsController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchHighlights/dao/MatchHighlightsMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchHighlights/service/MatchHighlightsService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchHighlights/service/impl/MatchHighlightsServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchInfo/controller/IndexManageController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchInfo/controller/MatchInfoController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchInfo/controller/MatchResultController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchInfo/dao/MatchInfoMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchInfo/domain/RequestMatchInfo.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchInfo/service/MatchInfoService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchInfo/service/impl/MatchInfoServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchLineUp/controller/matchLineUpController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchLineUp/dao/MatchLineUpMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchLineUp/domain/RequestMatchLineUp.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchLineUp/service/MatchLineUpService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchLineUp/service/impl/MatchLineUpServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchProcess/controller/MatchProcessController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchProcess/dao/MatchProcessMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchProcess/service/MatchProcessService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchProcess/service/impl/MatchProcessServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchTechnologyStatistics/controller/MatchTechnologyStatisticsController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchTechnologyStatistics/dao/MatchTechnologyMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStatistics.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchTechnologyStatistics/domain/RequestMatchTechnologyStatistics.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchTechnologyStatistics/service/MatchTechnologyService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchTechnologyStatistics/service/impl/MatchTechnologyServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchType/dao/MatchTypeMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchType/service/MatchTypeService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchType/service/impl/MatchTypeServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/ranking/dao/RankingMapper.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/ranking/service/RankingService.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/ranking/service/impl/RankingServiceImpl.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/controller/AdminUserController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/aliyun_java_sdk_core_3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/base/RedisCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/filter/CommonHandler.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/controller/ArticleController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/dao/ArticleMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/dao/ArticleMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/service/ArticleService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/service/impl/ArticleServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/articleType/dao/ArticleTypeMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/articleType/dao/ArticleTypeMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/articleType/service/ArticleTypeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/articleType/service/impl/ArticlTypeServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/controller/CommentController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/dao/CommentMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/dao/CommentMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/service/CommentService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/service/impl/CommentServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/RequestDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/Select2ResponseDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/honer/controller/HonerController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/honer/dao/HonerMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/honer/dao/HonerMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/honer/service/HonerService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/honer/service/impl/HonerServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchEvent/dao/MatchEventMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchEvent/dao/MatchEventMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchEvent/service/MatchEventService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchEvent/service/impl/MatchEventServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchHighlights/controller/MatchHighlightsController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchHighlights/dao/MatchHighlightsMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchHighlights/dao/MatchHighlightsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchHighlights/service/MatchHighlightsService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchHighlights/service/impl/MatchHighlightsServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/controller/IndexManageController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/controller/MatchInfoController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/controller/MatchResultController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/dao/MatchInfoMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/dao/MatchInfoMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/domain/RequestMatchInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/service/MatchInfoService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/service/impl/MatchInfoServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/controller/MatchLineUpController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/dao/MatchLineUpMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/dao/MatchLineUpMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/domain/RequestMatchLineUp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/service/MatchLineUpService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/service/impl/MatchLineUpServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/controller/MatchProcessController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/dao/MatchProcessMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/dao/MatchProcessMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/domain/RequestMatchProcessDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/service/MatchProcessService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/service/impl/MatchProcessServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/controller/MatchTechnologyStatisticsController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/dao/MatchTechnologyMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/dao/MatchTechnologyMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/domain/RequestMatchTechnologyStatistics.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/service/MatchTechnologyService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/service/impl/MatchTechnologyServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchType/dao/MatchTypeMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchType/dao/MatchTypeMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchType/service/MatchTypeService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchType/service/impl/MatchTypeServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/domain/PlayerVo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/ranking/dao/RankingMapper.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/ranking/dao/RankingMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/ranking/service/RankingService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/ranking/service/impl/RankingServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/AdminUserController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/select2.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/jquery.validate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/select2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/article-update.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/club-honer-add.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/index-carousel-article.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-highlights.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-info-update.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-result.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/player-detail.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/layui/formSelects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/dao/ArticleMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/articleType/dao/ArticleTypeMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/comment/dao/CommentMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchHighlights/dao/MatchHighlightsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchInfo/dao/MatchInfoMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchLineUp/dao/MatchLineUpMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchProcess/dao/MatchProcessMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchTechnologyStatistics/dao/MatchTechnologyMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchType/dao/MatchTypeMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/ranking/dao/RankingMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/select2.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/styles.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/jquery.validate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/select2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/article-update.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/index-carousel-article.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/match-highlights.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/match-info-update.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/match-result.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/layui/formSelects.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/dao/ArticleMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/articleType/dao/ArticleTypeMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/comment/dao/CommentMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchHighlights/dao/MatchHighlightsMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchInfo/dao/MatchInfoMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchLineUp/dao/MatchLineUpMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchProcess/dao/MatchProcessMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchTechnologyStatistics/dao/MatchTechnologyMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchType/dao/MatchTypeMapper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/ranking/dao/RankingMapper.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStastistics.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/libs/aliyun-java-sdk-dysmsapi-1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/player-add-other.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStastistics.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStastistics.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStatistics.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/libs/aliyun-java-sdk-core-3.3.1.jar" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/aliyun-java-sdk-core-3.3.1.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/libs/aliyun-java-sdk-dysmsapi-1.0.0.jar" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/aliyun-java-sdk-dysmsapi-1.0.0.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/player-add-other.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/player-honer-add.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/libs/aliyun-java-sdk-core-3.3.1.jar" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/lib/aliyun-java-sdk-core-3.3.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/utils/AaliSMSUtil.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/utils/AaliSMSUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/utils/CommonUtils.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/utils/CommonUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/domain/Article.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/domain/Article.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180501/1525136644642011194.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180501/1525136649954090105.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180501/1525136677904042408.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180501/1525137013247087435.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/controller/ArticleController.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/controller/ArticleController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/service/impl/ArticleServiceImpl.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/service/impl/ArticleServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/club/controller/ClubController.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/club/controller/ClubController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/club/dao/ClubMapper.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/club/dao/ClubMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/club/service/ClubService.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/club/service/ClubService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/club/service/impl/ClubServiceImpl.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/club/service/impl/ClubServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/comment/domain/Comment.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/comment/domain/Comment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/common/controller/CommonController.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/common/controller/CommonController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/common/domain/PageRequestDto.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/common/domain/PageRequestDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/common/domain/ResponseDto.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/common/domain/ResponseDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/honer/domain/Honer.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/honer/domain/Honer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchEvent/domain/MatchEvent.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchEvent/domain/MatchEvent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchHighlights/domain/MatchHighlights.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchHighlights/domain/MatchHighlights.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchInfo/domain/MatchInfo.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchInfo/domain/MatchInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchLineUp/domain/MatchLineUp.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchLineUp/domain/MatchLineUp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchProcess/domain/MatchProcess.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchProcess/domain/MatchProcess.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchType/domain/MatchType.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchType/domain/MatchType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchInfo/controller/MatchInfoController.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchInfo/controller/MatchInfoController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStatistics.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStatistics.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchTechnologyStatistics/service/impl/MatchTechnologyServiceImpl.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/matchTechnologyStatistics/service/impl/MatchTechnologyServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/player/controller/PlayerController.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/player/controller/PlayerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/player/dao/PlayerMapper.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/player/dao/PlayerMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/player/service/PlayerService.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/player/service/PlayerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/player/service/impl/PlayerServiceImpl.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/player/service/impl/PlayerServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/ranking/domain/Ranking.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/ranking/domain/Ranking.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/controller/AdminUserController.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/controller/AdminUserController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/controller/UserController.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/dao/UserMapper.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/dao/UserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/service/UserService.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/common/utils/AaliSMSUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/common/utils/AaliSMSUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/common/utils/CommonUtils.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/common/utils/CommonUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/domain/Article.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/domain/Article.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/controller/ArticleController.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/controller/ArticleController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/service/impl/ArticleServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/service/impl/ArticleServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/club/controller/ClubController.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/club/controller/ClubController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/club/dao/ClubMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/club/dao/ClubMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/club/service/ClubService.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/club/service/ClubService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/club/service/impl/ClubServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/club/service/impl/ClubServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/comment/domain/Comment.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/comment/domain/Comment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/common/controller/CommonController.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/common/controller/CommonController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/common/domain/PageRequestDto.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/common/domain/PageRequestDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/common/domain/ResponseDto.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/common/domain/ResponseDto.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/honer/domain/Honer.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/honer/domain/Honer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchEvent/domain/MatchEvent.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchEvent/domain/MatchEvent.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchHighlights/domain/MatchHighlights.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchHighlights/domain/MatchHighlights.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchInfo/domain/MatchInfo.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchInfo/domain/MatchInfo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchLineUp/domain/MatchLineUp.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchLineUp/domain/MatchLineUp.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchProcess/domain/MatchProcess.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchProcess/domain/MatchProcess.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchType/domain/MatchType.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchType/domain/MatchType.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchInfo/controller/MatchInfoController.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchInfo/controller/MatchInfoController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStatistics.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStatistics.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchTechnologyStatistics/service/impl/MatchTechnologyServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/matchTechnologyStatistics/service/impl/MatchTechnologyServiceImpl.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/player/controller/PlayerController.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/player/controller/PlayerController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/player/dao/PlayerMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/player/dao/PlayerMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/player/service/PlayerService.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/player/service/PlayerService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/player/service/impl/PlayerServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/player/service/impl/PlayerServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/ranking/domain/Ranking.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/ranking/domain/Ranking.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/controller/AdminUserController.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/controller/AdminUserController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/controller/UserController.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/controller/UserController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/dao/UserMapper.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/dao/UserMapper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/service/UserService.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/service/UserService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/service/impl/UserServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/service/impl/UserServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/289b638d-f9ef-413b-a158-2779b20d7251.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/289b638d-f9ef-413b-a158-2779b20d7251.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/zhuxiaolei.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/zhuxiaolei.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ALLFORFOOTBALL.iml" afterPath="$PROJECT_DIR$/ALLFORFOOTBALL.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/AaliSMSUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/AaliSMSUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/CommonUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/CommonUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/domain/Article.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/domain/Article.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/controller/ArticleController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/controller/ArticleController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/dao/ArticleMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/dao/ArticleMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/service/impl/ArticleServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/service/impl/ArticleServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/controller/ClubController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/controller/ClubController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/ClubService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/ClubService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/impl/ClubServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/impl/ClubServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/domain/Comment.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/domain/Comment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/controller/CommonController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/controller/CommonController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/PageRequestDto.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/PageRequestDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/ResponseDto.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/ResponseDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/honer/domain/Honer.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/honer/domain/Honer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchEvent/domain/MatchEvent.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchEvent/domain/MatchEvent.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchHighlights/domain/MatchHighlights.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchHighlights/domain/MatchHighlights.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/domain/MatchInfo.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/domain/MatchInfo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/domain/MatchLineUp.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/domain/MatchLineUp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/domain/MatchProcess.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/domain/MatchProcess.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchType/domain/MatchType.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchType/domain/MatchType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/controller/MatchInfoController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/controller/MatchInfoController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStatistics.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStatistics.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/service/impl/MatchTechnologyServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/service/impl/MatchTechnologyServiceImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/controller/PlayerController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/controller/PlayerController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao/PlayerMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao/PlayerMapper.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao/PlayerMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao/PlayerMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/service/PlayerService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/service/PlayerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/service/impl/PlayerServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/service/impl/PlayerServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/ranking/domain/Ranking.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/ranking/domain/Ranking.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/AdminUserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/AdminUserController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/UserController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/UserController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/impl/UserServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/impl/UserServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/SqlMapperConfig.xml" afterPath="$PROJECT_DIR$/src/main/resources/SqlMapperConfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/springMVC.xml" afterPath="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/article-list.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/article-list.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/article.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/article.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/data-compare.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/data-compare.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/game-detail.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/game-detail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/main.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/user-info.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/user-info.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/admin/article.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/article.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/admin/club.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/club.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/admin/index.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/admin/match.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/match.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/admin/player.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/player.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/admin/user.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/admin/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/article-comment.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/article-comment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/forgetPwd.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/forgetPwd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/head.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/head.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/register.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/register.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/sendCheckCode.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/sendCheckCode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/setting-changePwd.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/setting-changePwd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/user-article.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/user-article.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/user-comment.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/user-comment.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/article-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/article-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/article-list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/article-list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/head-nav.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/head-nav.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/index-focus-game.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/index-focus-game.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-info-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-info-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-lineUp-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-lineUp-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-process.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-process.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-technology.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-technology.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/player-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/player-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/admin/user-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/admin/user-add.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/article.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/article.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/articleList.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/articleList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/club.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/club.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/data-compare.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/data-compare.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/data.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/data.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/forgetPwd.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/forgetPwd.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/game-detail.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/game-detail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/game-list.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/game-list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/head.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/head2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/head2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/index2.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/index2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/player.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/player.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/register.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/setting-bind.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/setting-bind.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/setting-changePwd.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/setting-changePwd.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/setting-profile.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/setting-profile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/user-article-add.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/user-article-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/user-article.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/user-article.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/user-center.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/user-center.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/user-comment.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/user-comment.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/jsp/user-info.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/user-info.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js" afterPath="$PROJECT_DIR$/src/main/webapp/ueditor/ueditor.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/SqlMapperConfig.xml" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/SqlMapperConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/dao/ArticleMapper.xml" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/dao/ArticleMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/club/dao/ClubMapper.xml" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/club/dao/ClubMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/player/dao/PlayerMapper.xml" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/player/dao/PlayerMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/dao/UserMapper.xml" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/user/dao/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/springMVC.xml" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/springMVC.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/article-list.css" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/article-list.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/article.css" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/article.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/data-compare.css" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/data-compare.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/game-detail.css" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/game-detail.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/main.css" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/user-info.css" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/css/user-info.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/article.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/article.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/club.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/club.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/index.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/match.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/match.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/player.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/player.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/user.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/admin/user.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/article-comment.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/article-comment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/forgetPwd.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/forgetPwd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/head.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/head.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/register.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/register.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/sendCheckCode.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/sendCheckCode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/setting-changePwd.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/setting-changePwd.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/user-article.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/user-article.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/user-comment.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/js/user-comment.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/article-add.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/article-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/article-list.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/article-list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/head-nav.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/head-nav.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/index-focus-game.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/index-focus-game.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/index.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/match-info-add.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/match-info-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/match-lineUp-add.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/match-lineUp-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/match-list.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/match-list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/match-process.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/match-process.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/match-technology.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/match-technology.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/player-add.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/player-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/user-add.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/admin/user-add.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/article.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/article.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/articleList.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/articleList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/club.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/club.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/data-compare.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/data-compare.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/data.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/data.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/forgetPwd.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/forgetPwd.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/game-detail.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/game-detail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/game-list.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/game-list.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/head.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/head.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/head2.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/head2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/index.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/index2.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/index2.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/player.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/player.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/register.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/setting-bind.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/setting-bind.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/setting-changePwd.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/setting-changePwd.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/setting-profile.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/setting-profile.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/user-article-add.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/user-article-add.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/user-article.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/user-article.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/user-center.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/user-center.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/user-comment.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/user-comment.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/user-info.jsp" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/jsp/user-info.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/ueditor.config.js" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/ueditor.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/SqlMapperConfig.xml" afterPath="$PROJECT_DIR$/target/classes/SqlMapperConfig.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/dao/ArticleMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/dao/ArticleMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/club/dao/ClubMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/club/dao/ClubMapper.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/player/dao/PlayerMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/player/dao/PlayerMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/dao/UserMapper.xml" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/user/dao/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/springMVC.xml" afterPath="$PROJECT_DIR$/target/classes/springMVC.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -518,22 +140,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="register.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/register.js">
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/domain/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="103" column="41" lean-forward="false" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="41" />
+            <state relative-caret-position="377">
+              <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/register.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="66" column="64" lean-forward="false" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="64" />
-              <folding />
+      <file leaf-file-name="tb_user" pinned="false" current-in-tab="true">
+        <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_user">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tb_match_lineup" pinned="false" current-in-tab="false">
+        <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_match_lineup">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tb_match_info" pinned="false" current-in-tab="false">
+        <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_match_info">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -554,25 +193,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>h1</find>
-      <find>a1</find>
-      <find>searchMatchLineUp</find>
-      <find>awayClubPlayerSubstitutes</find>
-      <find>/player/searchSelect2Player</find>
-      <find>searchSelect2Player</find>
-      <find>name like</find>
-      <find>&quot;%&quot;#{_parameter}&quot;%&quot;</find>
-      <find>PlayerMap2</find>
-      <find>js-data-example-ajax</find>
-      <find>&lt;if test</find>
-      <find>playerRIght</find>
-      <find>playerLeft</find>
-      <find>player</find>
-      <find>/compare</find>
-      <find>/user/login?role=0</find>
-      <find>/user/login</find>
-      <find>&lt;if test=&quot;</find>
-      <find>login</find>
       <find>loginBtn</find>
       <find>step2Code</find>
       <find>us</find>
@@ -582,8 +202,27 @@
       <find>forgetPwd</find>
       <find>updateUserPwd</find>
       <find>verifyNickname</find>
-      <find>nickname</find>
       <find>verifyNickName</find>
+      <find>/user/add</find>
+      <find>nickname</find>
+      <find>logou</find>
+      <find>modelAn</find>
+      <find>_pr</find>
+      <find>#{_par</find>
+      <find>/club/add</find>
+      <find>flotr2</find>
+      <find>_parameter</find>
+      <find>/article/loading</find>
+      <find>findAllByRequestDto</find>
+      <find>endTimeInput</find>
+      <find>/match/info/search</find>
+      <find>find</find>
+      <find>近期</find>
+      <find>info/{</find>
+      <find>recentMatchInfo</find>
+      <find>searchRecentMatchInfo</find>
+      <find>user</find>
+      <find>addc</find>
     </findStrings>
     <replaceStrings>
       <replace>articleTypeId=6</replace>
@@ -643,27 +282,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/dao/MatchProcessMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/service/MatchProcessService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/dao/MatchInfoMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/service/MatchInfoService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/service/impl/MatchInfoServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/articleList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/domain/MatchProcess.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/dao/MatchInfoMapper.xml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/289b638d-f9ef-413b-a158-2779b20d7251/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/service/impl/MatchProcessServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/data.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/index2.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/club.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/controller/matchLineUpController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/match-lineUp-add.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/domain/RequestMatchLineUp.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/admin/match.js" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/domain/MatchLineUp.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/game-detail.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/controller/MatchInfoController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/dao/MatchLineUpMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/dao/MatchLineUpMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/service/MatchLineUpService.java" />
@@ -675,13 +296,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/ClubService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/impl/ClubServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao/PlayerMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/controller/ClubController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/setting-profile.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/domain/PlayerExtend.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/domain/PlayerVo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/controller/PlayerController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/data-compare.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/dao/MatchProcessMapper.xml" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/289b638d-f9ef-413b-a158-2779b20d7251/console_7.sql" />
@@ -694,6 +311,28 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/forgetPwd.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/jquery.validate.min.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/register.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/AdminUserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStatistics.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchTechnologyStatistics/service/impl/MatchTechnologyServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao/PlayerMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/article-add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/article.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/dao/ArticleMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/articleList.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/service/impl/ArticleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/admin/match.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/dao/MatchInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/game-detail.jsp" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/289b638d-f9ef-413b-a158-2779b20d7251/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/controller/MatchInfoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/controller/ArticleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/domain/Comment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/club/controller/ClubController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/controller/PlayerController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/player/domain/Player.java" />
       </list>
     </option>
   </component>
@@ -723,10 +362,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1440" />
     <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="width" value="2559" />
+    <option name="height" value="1417" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -853,6 +493,100 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="ccsu" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccsu" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccsu" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccsu" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="article" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccsu" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="club" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccsu" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="club" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccsu" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccsu" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccsu" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -937,6 +671,23 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="ueditor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="ueditor" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -956,7 +707,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/jsp/admin" />
-    <property name="SearchEverywhereHistoryKey" value="register.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/register.jsp&#10;register&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/register.js&#10;usercon&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/controller/AdminUserController.java&#10;forget.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/forgetPwd.js&#10;user-co&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/user-comment.jsp&#10;user-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/user-add.jsp&#10;player.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/player.jsp&#10;playermapp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/player/dao/PlayerMapper.xml&#10;game&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/game-detail.jsp&#10;game-de&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/css/game-detail.css&#10;matchprocess&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/matchProcess/dao/MatchProcessMapper.xml&#10;user.&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/user-add.jsp&#10;matchli&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/match-lineUp-add.jsp&#10;match.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/match.js&#10;lineup&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/match-lineUp-add.jsp&#10;clubco&#9;PSI&#9;JAVA://com.ccsu.core.club.controller.ClubController&#10;gameli&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/game-list.jsp&#10;matchlist&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/match-list.jsp&#10;data.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/data.jsp&#10;match.&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/matchInfo/dao/MatchInfoMapper.xml&#10;article.&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/articleList.jsp&#10;articl.j&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/article.jsp&#10;user.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/user.js&#10;matchcon&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/matchInfo/controller/MatchInfoController.java&#10;articleMa&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/article/dao/ArticleMapper.xml&#10;technology\&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/match-technology.jsp&#10;matchlin&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/match-lineUp-add.jsp&#10;data&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/data-compare.jsp&#10;matchcontro&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/matchInfo/controller/MatchInfoController.java&#10;playercon&#9;PSI&#9;JAVA://com.ccsu.core.player.controller.PlayerController&#10;matchinfm&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/matchInfo/dao/MatchInfoMapper.xml&#10;searchMatchInfoByMatchDateForProcess&#9;PSI&#9;JAVA://com.ccsu.core.matchInfo.dao.MatchInfoMapper#searchMatchInfoByMatchDateForProcess&#10;playemapp&#9;PSI&#9;JAVA://com.ccsu.core.player.dao.PlayerMapper&#10;playerma&#9;PSI&#9;JAVA://com.ccsu.core.player.dao.PlayerMapper&#10;usermapp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/dao/UserMapper.xml&#10;clubcon&#9;PSI&#9;JAVA://com.ccsu.core.club.controller.ClubController&#10;admi&#9;PSI&#9;JAVA://com.ccsu.core.user.controller.AdminUserController&#10;compare&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/data-compare.jsp&#10;user-a&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/user-article-add.jsp&#10;article.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/article.js&#10;user-article-ad&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/user-article-add.jsp&#10;register.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/register.js&#10;articlelist&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/articleList.jsp&#10;article-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/article-add.jsp&#10;articlec&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/article/controller/ArticleController.java&#10;player-l&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/player-list.jsp&#10;user-ar&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/user-article.jsp&#10;commonc&#9;PSI&#9;JAVA://com.ccsu.core.common.controller.CommonController&#10;user-l&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/user-list.jsp&#10;match-li&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/match-list.jsp" />
+    <property name="SearchEverywhereHistoryKey" value="CLUB&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/club/domain/Club.java&#10;user&#9;PSI&#9;JAVA://com.ccsu.core.user.domain.User&#10;player&#9;PSI&#9;JAVA://com.ccsu.core.player.domain.Player&#10;playerCon&#9;PSI&#9;JAVA://com.ccsu.core.player.controller.PlayerController&#10;honer&#9;PSI&#9;JAVA://com.ccsu.core.honer.domain.Honer&#10;club.java&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/club/domain/Club.java&#10;clubc&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/club/controller/ClubController.java&#10;comment&#9;PSI&#9;JAVA://com.ccsu.core.comment.domain.Comment&#10;article&#9;PSI&#9;JAVA://com.ccsu.core.article.domain.Article&#10;articleco&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/article/controller/ArticleController.java&#10;matchinfo&#9;PSI&#9;JAVA://com.ccsu.core.matchInfo.domain.MatchInfo&#10;admiu&#9;PSI&#9;JAVA://com.ccsu.core.user.controller.AdminUserController&#10;matchinfomapp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/matchInfo/dao/MatchInfoMapper.xml&#10;matchinfom&#9;PSI&#9;JAVA://com.ccsu.core.matchInfo.dao.MatchInfoMapper&#10;matchinfoco&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/matchInfo/controller/MatchInfoController.java&#10;clubma&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/club/dao/ClubMapper.xml&#10;club.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/club.jsp&#10;game-detail&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/game-detail.jsp&#10;game-&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/css/game-detail.css&#10;game-lis&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/game-list.jsp&#10;articleList&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/articleList.jsp&#10;article-list&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/article-list.jsp&#10;articlm&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/article/dao/ArticleMapper.xml&#10;article.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/article.jsp&#10;article.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/article.js&#10;article-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/article-add.jsp&#10;club-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/club-add.jsp&#10;commonut&#9;PSI&#9;JAVA://com.ccsu.common.utils.CommonUtils&#10;commou&#9;RUN_CONFIGURATION&#9;CommonUtils&#10;playeMapper&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/player/dao/PlayerMapper.xml&#10;common&#9;PSI&#9;JAVA://com.ccsu.core.common.controller.CommonController&#10;commco&#9;PSI&#9;JAVA://com.ccsu.core.comment.controller.CommentController&#10;player.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/player.jsp&#10;match.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/match.js&#10;matchType&#9;PSI&#9;JAVA://com.ccsu.core.matchType.domain.MatchType&#10;matchTe&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/matchTechnologyStatistics/domain/MatchTechnologyStatistics.java&#10;matchin&#9;PSI&#9;JAVA://com.ccsu.core.matchInfo.domain.MatchInfo&#10;user.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/user.js&#10;register.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/register.jsp&#10;register&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/register.js&#10;usercon&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/controller/AdminUserController.java&#10;forget.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/forgetPwd.js&#10;user-co&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/user-comment.jsp&#10;user-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/user-add.jsp&#10;playermapp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/player/dao/PlayerMapper.xml&#10;game&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/game-detail.jsp&#10;game-de&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/css/game-detail.css&#10;matchprocess&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/matchProcess/dao/MatchProcessMapper.xml&#10;user.&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/user-add.jsp&#10;matchli&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/match-lineUp-add.jsp" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.xml" />
   </component>
   <component name="RecentsManager">
@@ -1205,8 +956,8 @@
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.MatchLineUpServiceImpl" />
-        <item index="1" class="java.lang.String" itemvalue="Application.CommonUtils" />
+        <item index="0" class="java.lang.String" itemvalue="Application.CommonUtils" />
+        <item index="1" class="java.lang.String" itemvalue="Application.MatchLineUpServiceImpl" />
       </list>
     </recent_temporary>
   </component>
@@ -1269,7 +1020,7 @@
       <workItem from="1524756949650" duration="61131000" />
       <workItem from="1524940423054" duration="74576000" />
       <workItem from="1525189038031" duration="1341000" />
-      <workItem from="1525190853652" duration="35579000" />
+      <workItem from="1525190853652" duration="69932000" />
     </task>
     <task id="LOCAL-00001" summary="更新iml">
       <created>1517580900056</created>
@@ -1345,7 +1096,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="783179000" />
+    <option name="totallyTimeSpent" value="817532000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1357,7 +1108,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="1440" y="23" width="2559" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1368,20 +1119,20 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31840795" sideWeight="0.52217454" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30972818" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49253732" sideWeight="0.47711015" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41647422" sideWeight="0.47711015" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57587063" sideWeight="0.48640916" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31094527" sideWeight="0.49713877" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71890545" sideWeight="0.48569384" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.619403" sideWeight="0.48569384" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30472636" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18884121" sideWeight="0.4744318" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06674612" sideWeight="0.4744318" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22532189" sideWeight="0.5074627" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29256082" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25188717" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38308457" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48258707" sideWeight="0.47782546" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32089552" sideWeight="0.47782546" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22174536" sideWeight="0.5255682" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1458,7 +1209,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="131" />
+      <option name="time" value="141" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1467,18 +1218,563 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/service/MatchLineUpService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/article/service/ArticleService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="23" column="18" lean-forward="false" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/service/impl/MatchLineUpServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/article/service/impl/ArticleServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="96" column="42" lean-forward="false" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="42" />
+        <state relative-caret-position="357">
+          <caret line="96" column="44" lean-forward="false" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.3.RELEASE/spring-web-4.1.3.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="129" column="7" lean-forward="true" selection-start-line="129" selection-start-column="7" selection-end-line="129" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/admin/match.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="66" column="70" lean-forward="false" selection-start-line="66" selection-start-column="70" selection-end-line="66" selection-end-column="70" />
+          <folding>
+            <marker date="1525504283555" expanded="true" signature="28366:28383" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_club">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/game-detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/game-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1665">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1525145586292" expanded="true" signature="5750:5769" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="63" lean-forward="false" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/club.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="206" column="23" lean-forward="true" selection-start-line="206" selection-start-column="23" selection-end-line="206" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_country">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/service/MatchInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="50" column="41" lean-forward="false" selection-start-line="50" selection-start-column="20" selection-end-line="50" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/dao/MatchInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="54" column="41" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/dao/MatchInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="428" column="32" lean-forward="true" selection-start-line="428" selection-start-column="32" selection-end-line="428" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/289b638d-f9ef-413b-a158-2779b20d7251/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="81" lean-forward="true" selection-start-line="15" selection-start-column="81" selection-end-line="15" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/ResponseDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/common/base/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-255">
+          <caret line="12" column="17" lean-forward="false" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_match_highlignts">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_match_state">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_match_process">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/game-detail.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="494" column="74" lean-forward="false" selection-start-line="494" selection-start-column="74" selection-end-line="494" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/controller/MatchInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7464">
+          <caret line="459" column="27" lean-forward="true" selection-start-line="459" selection-start-column="27" selection-end-line="459" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/domain/MatchInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="41" column="0" lean-forward="true" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/article/controller/ArticleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4687">
+          <caret line="13" column="37" lean-forward="false" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/controller/ClubController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3429">
+          <caret line="230" column="31" lean-forward="true" selection-start-line="230" selection-start-column="31" selection-end-line="230" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ccsu.core.club.controller.ClubController">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ccsu.core.club.controller.ClubController</OriginalElement>
+          <nodes>
+            <node x="-380.0" y="109.0">com.ccsu.core.club.controller.ClubController</node>
+            <node x="123.5" y="0.0">org.springframework.stereotype.Controller</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.ccsu.core.club.controller.ClubController" target="org.springframework.stereotype.Controller">
+              <point x="0.0" y="-257.0" />
+              <point x="0.0" y="25.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-156.5" y="354.0" />
+          <SelectedNodes>
+            <node>com.ccsu.core.club.controller.ClubController</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Methods</Category>
+            <Category>Constructors</Category>
+            <Category>Fields</Category>
+            <Category>Properties</Category>
+            <Category>Inner Classes</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/comment/domain/Comment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ccsu.core.club.domain.Club">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ccsu.core.club.domain.Club</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ccsu.core.club.domain.Club</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="53.5" y="255.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/honer/domain/Honer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ccsu.core.honer.domain.Honer">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ccsu.core.honer.domain.Honer</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ccsu.core.honer.domain.Honer</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="419.5" y="195.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ccsu.core.player.controller.PlayerController">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ccsu.core.player.controller.PlayerController</OriginalElement>
+          <nodes>
+            <node x="" y="">com.ccsu.core.player.controller.PlayerController</node>
+            <node x="" y="">org.springframework.stereotype.Controller</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="207.5" y="314.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Methods</Category>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/player/controller/PlayerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="144" column="31" lean-forward="true" selection-start-line="144" selection-start-column="31" selection-end-line="144" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ccsu.core.player.domain.Player">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ccsu.core.player.domain.Player</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">com.ccsu.core.player.domain.Player</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="40.0" y="99.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/AdminUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="360" column="14" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ccsu.core.user.service.UserService">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ccsu.core.user.service.UserService</OriginalElement>
+          <nodes>
+            <node x="0.0" y="189.0">com.ccsu.core.user.service.UserService</node>
+            <node x="55.0" y="0.0">com.ccsu.common.base.BaseService</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.ccsu.core.user.service.UserService" target="com.ccsu.common.base.BaseService">
+              <point x="0.0" y="-102.5" />
+              <point x="0.0" y="69.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="26.0" y="98.0" />
+          <SelectedNodes>
+            <node>com.ccsu.core.user.service.UserService</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ccsu.core.user.service.impl.UserServiceImpl">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ccsu.core.user.service.impl.UserServiceImpl</OriginalElement>
+          <nodes>
+            <node x="171.0" y="189.0">com.ccsu.core.user.service.UserService</node>
+            <node x="226.0" y="0.0">com.ccsu.common.base.BaseService</node>
+            <node x="44.75" y="444.0">com.ccsu.core.user.service.impl.UserServiceImpl</node>
+            <node x="0.0" y="266.0">org.springframework.stereotype.Service</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.ccsu.core.user.service.impl.UserServiceImpl" target="org.springframework.stereotype.Service">
+              <point x="-78.5" y="-157.5" />
+              <point x="123.25" y="419.0" />
+              <point x="75.5" y="419.0" />
+              <point x="0.0" y="25.5" />
+            </edge>
+            <edge source="com.ccsu.core.user.service.impl.UserServiceImpl" target="com.ccsu.core.user.service.UserService">
+              <point x="78.5" y="-157.5" />
+              <point x="280.25" y="419.0" />
+              <point x="328.0" y="419.0" />
+              <point x="0.0" y="102.5" />
+            </edge>
+            <edge source="com.ccsu.core.user.service.UserService" target="com.ccsu.common.base.BaseService">
+              <point x="0.0" y="-102.5" />
+              <point x="0.0" y="69.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-26.0" y="-346.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ccsu.core.user.controller.AdminUserController">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ccsu.core.user.controller.AdminUserController</OriginalElement>
+          <nodes>
+            <node x="" y="">org.springframework.web.bind.annotation.SessionAttributes</node>
+            <node x="" y="">org.springframework.stereotype.Controller</node>
+            <node x="" y="">com.ccsu.core.user.controller.AdminUserController</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="180.0" y="401.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Methods</Category>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ccsu.core.user.domain.User">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ccsu.core.user.domain.User</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">com.ccsu.core.user.domain.User</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="192.0" y="-121.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="52" column="7" lean-forward="true" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.ccsu.core.user.controller.UserController">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.ccsu.core.user.controller.UserController</OriginalElement>
+          <nodes>
+            <node x="0.0" y="101.0">com.ccsu.core.user.controller.UserController</node>
+            <node x="110.0" y="0.0">org.springframework.stereotype.Controller</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.ccsu.core.user.controller.UserController" target="org.springframework.stereotype.Controller">
+              <point x="0.0" y="-213.0" />
+              <point x="0.0" y="25.5" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="124.0" y="158.0" />
+          <SelectedNodes>
+            <node>com.ccsu.core.user.controller.UserController</node>
+          </SelectedNodes>
+          <Categories>
+            <Category>Constructors</Category>
+            <Category>Fields</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="27" column="9" lean-forward="false" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/articleList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1877">
+          <caret line="348" column="19" lean-forward="false" selection-start-line="348" selection-start-column="19" selection-end-line="348" selection-end-column="19" />
+          <folding>
+            <marker date="1525503212161" expanded="true" signature="18714:18744" ph="..." />
+            <marker date="1525503212161" expanded="true" signature="19964:19977" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/domain/Club.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/article/domain/Article.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/player/domain/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-305">
+          <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="49" column="8" lean-forward="true" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -1490,394 +1786,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/matchInfo/controller/MatchInfoController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="178" column="0" lean-forward="false" selection-start-line="178" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/matchLineUp/controller/MatchLineUpController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="55" column="43" lean-forward="false" selection-start-line="55" selection-start-column="43" selection-end-line="55" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/Select2ResponseDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/PageRequestDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/player/service/PlayerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/player/service/impl/PlayerServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="75" column="41" lean-forward="true" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao/PlayerMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/ClubService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/service/impl/ClubServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="87" column="13" lean-forward="true" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
-          <folding>
-            <element signature="e#2342#2343#0" expanded="false" />
-            <element signature="e#2399#2400#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/dao/ClubMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="166" column="24" lean-forward="true" selection-start-line="166" selection-start-column="24" selection-end-line="166" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/controller/ClubController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="133" column="5" lean-forward="true" selection-start-line="133" selection-start-column="5" selection-end-line="133" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/player/domain/PlayerVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-          <folding>
-            <element signature="e#501#502#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#606#607#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#671#672#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#880#881#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#989#990#0" expanded="true" />
-            <element signature="e#1036#1037#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
-            <element signature="e#1110#1111#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#1190#1191#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/player/dao/PlayerMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="164" column="38" lean-forward="false" selection-start-line="164" selection-start-column="38" selection-end-line="164" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_match_process">
+    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_match_info">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/player/domain/Player.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="852">
-          <caret line="91" column="9" lean-forward="false" selection-start-line="91" selection-start-column="9" selection-end-line="91" selection-end-column="9" />
-          <folding>
-            <element signature="e#1439#1440#0" expanded="false" />
-            <element signature="e#1467#1468#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/player/controller/PlayerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="108" column="16" lean-forward="false" selection-start-line="108" selection-start-column="16" selection-end-line="108" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/player.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="36" column="28" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/data-compare.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="276" column="29" lean-forward="false" selection-start-line="276" selection-start-column="29" selection-end-line="276" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/dao/MatchProcessMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="25" column="29" lean-forward="false" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/matchProcess/dao/MatchProcessMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="86" column="27" lean-forward="true" selection-start-line="72" selection-start-column="8" selection-end-line="86" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/289b638d-f9ef-413b-a158-2779b20d7251/console_7.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="19" lean-forward="true" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_match_event">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/common/controller/CommonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="110" column="24" lean-forward="true" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
-          <folding>
-            <element signature="e#4868#4869#0" expanded="true" />
-            <element signature="e#4913#4914#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="74" column="33" lean-forward="false" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_ranking">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/head-nav.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="32" lean-forward="false" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/user-add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="29" column="23" lean-forward="false" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/6f316d24/289b638d-f9ef-413b-a158-2779b20d7251/ALLFORFOOTBALL.tb_player">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/head2.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-711">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/head.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="119" column="74" lean-forward="false" selection-start-line="119" selection-start-column="66" selection-end-line="119" selection-end-column="74" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/user-comment.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="24" column="61" lean-forward="true" selection-start-line="24" selection-start-column="61" selection-end-line="24" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/forgetPwd.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="122" column="44" lean-forward="false" selection-start-line="122" selection-start-column="35" selection-end-line="122" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/AdminUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="237" column="31" lean-forward="true" selection-start-line="237" selection-start-column="31" selection-end-line="237" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/user-center.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/setting-profile.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4944">
-          <caret line="76" column="17" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="186" column="29" lean-forward="false" selection-start-line="186" selection-start-column="16" selection-end-line="186" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="23" column="19" lean-forward="false" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="168" column="29" lean-forward="false" selection-start-line="168" selection-start-column="16" selection-end-line="168" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="197" column="7" lean-forward="true" selection-start-line="197" selection-start-column="7" selection-end-line="197" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/setting-bind.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="257" column="42" lean-forward="false" selection-start-line="257" selection-start-column="25" selection-end-line="257" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/user-comment.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3590">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <marker date="1524793156489" expanded="true" signature="2009:2015" ph="&amp;nbsp;" />
-            <marker date="1524793156489" expanded="true" signature="2015:2021" ph="&amp;nbsp;" />
-            <marker date="1524793156489" expanded="true" signature="2021:2027" ph="&amp;nbsp;" />
-            <marker date="1524793156489" expanded="true" signature="4411:4417" ph="&amp;nbsp;" />
-            <marker date="1524793156489" expanded="true" signature="4417:4423" ph="&amp;nbsp;" />
-            <marker date="1524793156489" expanded="true" signature="4423:4429" ph="&amp;nbsp;" />
-            <marker date="1524793156489" expanded="true" signature="8763:8769" ph="&amp;nbsp;" />
-            <marker date="1524793156489" expanded="true" signature="8769:8775" ph="&amp;nbsp;" />
-            <marker date="1524793156489" expanded="true" signature="8775:8781" ph="&amp;nbsp;" />
-            <marker date="1524793156489" expanded="true" signature="11165:11171" ph="&amp;nbsp;" />
-            <marker date="1524793156489" expanded="true" signature="11171:11177" ph="&amp;nbsp;" />
-            <marker date="1524793156489" expanded="true" signature="11177:11183" ph="&amp;nbsp;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/head.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="41" column="9" lean-forward="true" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/forgetPwd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="183" column="53" lean-forward="false" selection-start-line="183" selection-start-column="53" selection-end-line="183" selection-end-column="53" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1885,32 +1797,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="66" column="64" lean-forward="false" selection-start-line="66" selection-start-column="56" selection-end-line="66" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/jquery.validate.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="3" column="1454" lean-forward="true" selection-start-line="3" selection-start-column="1454" selection-end-line="3" selection-end-column="1454" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="103" column="41" lean-forward="false" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>

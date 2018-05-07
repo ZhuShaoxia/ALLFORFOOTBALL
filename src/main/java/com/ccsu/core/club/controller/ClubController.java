@@ -128,6 +128,7 @@ public class ClubController {
         try {
             clubService.add(club);
         } catch (Exception e) {
+            responseDto.setCode(MessageCode.ERROR);
             e.printStackTrace();
         }
         return responseDto;
@@ -147,6 +148,7 @@ public class ClubController {
         try {
             clubService.delete(id);
         } catch (Exception e) {
+            responseDto.setCode(MessageCode.ERROR);
             e.printStackTrace();
         }
         return responseDto;

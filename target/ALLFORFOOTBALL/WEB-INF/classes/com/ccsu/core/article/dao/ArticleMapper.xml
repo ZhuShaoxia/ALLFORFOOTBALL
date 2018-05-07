@@ -118,7 +118,7 @@
                 AND str_to_date(a.gmt_create, '%Y-%m-%d') <![CDATA[ >= ]]> str_to_date(#{startTime}, '%Y-%m-%d')
             </if>
             <if test="endTime!= null">
-                AND str_to_date(a.gmt_create, '%Y-%m-%d') <![CDATA[ <= ]]> str_to_date(#{startTime}, '%Y-%m-%d')
+                AND str_to_date(a.gmt_create, '%Y-%m-%d') <![CDATA[ <= ]]> str_to_date(#{endTime}, '%Y-%m-%d')
             </if>
         </where>
     </select>

@@ -92,6 +92,8 @@ public class ArticleServiceImpl implements ArticleService {
         }
         if ("".equals(pageRequestDto.getStartTime())) {
             pageRequestDto.setStartTime(null);
+        }
+        if ("".equals(pageRequestDto.getEndTime())) {
             pageRequestDto.setEndTime(null);
         }
         if ("".equals(pageRequestDto.getArticleTypeId())) {

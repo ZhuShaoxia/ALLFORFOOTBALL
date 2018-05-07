@@ -11,7 +11,7 @@ $(function () {
             },
             nickname: {
                 required: true,
-                verifyNickname: true
+                vnickName: true
             },
             "register-pwd1": {
                 required: true,
@@ -36,7 +36,7 @@ $(function () {
             },
             nickname: {
                 required: "昵称不能为空",
-                verifyNickname: "昵称已存在,请重新输入"
+                vnickName: "昵称已存在,请重新输入"
             },
             "register-pwd1": {
                 required: "密码不能为空",
@@ -101,7 +101,7 @@ $(function () {
     }, "当前手机号已经存在，请重新输入");
 
     //验证昵称是否存在
-    $.validator.addMethod("verifyNickName", function (value, element) {
+    $.validator.addMethod("vnickName", function (value, element) {
         var flag = true;
         var resp = '';
         var nickname = value;
@@ -172,17 +172,23 @@ $("#checkCodeBtn").on('click', function () {
         var account = $("#register-account").val()
         var password = $("#register-pwd1").val()
         var phone = $("#register-mobileNumber").val()
+        var nickname = $("#register-nickname").val()
         $.ajax({
             data: {
+                nickname: nickname,
                 account: account,
                 password: password,
                 phone: phone,
                 role: 1
             },
             url: '/user/add',
-            success: function (data) {
-                alert('注册成功,请登录')
-                location.href = '/'
+            success: function (res) {
+                if (res.code != '-1') {
+                    alert('注册成功,请登录')
+                    location.href = '/'
+                }else {
+                    alert('后台请求出错')
+                }
             },
             error: function () {
                 alert('后台请求出错,请联系系统管理员')

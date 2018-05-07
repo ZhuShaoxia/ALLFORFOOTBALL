@@ -170,11 +170,11 @@ public class MatchTechnologyStatistics {
         this.createTime = createTime;
     }
 
-    public String getmodifiedTime() {
+    public String getModifiedTime() {
         return modifiedTime;
     }
 
-    public void setmodifiedTime(String modifiedTime) {
+    public void setModifiedTime(String modifiedTime) {
         this.modifiedTime = modifiedTime;
     }
 }

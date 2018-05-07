@@ -492,7 +492,7 @@
                     <c:forEach items="${recentMatchInfo}" var="recentMatch">
                         <tr>
                             <td>
-                                <a href="/match/info/${recentMatch.homeClub.id}">
+                                <a href="/club/info/${recentMatch.homeClub.id}">
                                     <p><img class="td-club-img"
                                             src="${recentMatch.homeClub.imgUrl}" alt="${recentMatch.homeClub.name}">
                                     </p>

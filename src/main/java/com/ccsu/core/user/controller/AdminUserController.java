@@ -95,6 +95,7 @@ public class AdminUserController {
     userLogout(HttpSession session, SessionStatus sessionStatus) {
         responseDto = new ResponseDto();
         session.removeAttribute("user");
+        session.invalidate();
         sessionStatus.setComplete();
         return responseDto;
     }

@@ -56,7 +56,7 @@ public class MatchTechnologyServiceImpl implements MatchTechnologyService {
         for (MatchTechnologyStatistics m : list) {
             m.setMatchInfo(requestMatchTechnologyStatistics.getMatchInfo());
             m.setCreateTime(currentDateTime);
-            m.setmodifiedTime(currentDateTime);
+            m.setModifiedTime(currentDateTime);
         }
         matchTechnologyMapper.insertMatchTechnology(list);
     }

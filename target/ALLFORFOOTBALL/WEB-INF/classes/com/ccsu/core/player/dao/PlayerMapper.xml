@@ -37,6 +37,7 @@
         <result column="position" property="playerPosition.position" jdbcType="VARCHAR"/>
         <result column="clubId" property="club.id" jdbcType="INTEGER"/>
         <result column="clubName" property="club.name" jdbcType="VARCHAR"/>
+        <result column="clubImgUrl" property="club.imgUrl" jdbcType="VARCHAR"/>
     </resultMap>
 
     <resultMap id="PlayerMap2" type="com.ccsu.core.common.domain.Select2ResponseDto">
@@ -97,7 +98,8 @@
 
     <!--根据id查询运动员-->
     <select id="findById" parameterType="Integer" resultMap="PlayerMap">
-        select A.id, A.name, A.otherName, A.imgUrl,c.id clubId, c.name clubName,c.countryId countryId
+        select A.id, A.name, A.otherName, A.imgUrl,c.id clubId, c.imgUrl clubImgUrl,c.name clubName,c.countryId
+        countryId
         ,A.country,B.position position,
         A.number,
         A.birthday, A.age,
@@ -128,13 +130,13 @@
     <!--根据比赛信息搜索双方球员-->
     <select id="getPlayerByMatchInfoId" parameterType="INTEGER" resultMap="PlayerMap1">
         SELECT
-        a.id       playerId,
-        a.name     playerName,
-        a.number   number,
-        b.id       positionId,
+        a.id playerId,
+        a.name playerName,
+        a.number number,
+        b.id positionId,
         b.position position,
-        a.clubId   clubId,
-        c.name     clubName
+        a.clubId clubId,
+        c.name clubName
         FROM tb_player a, tb_player_position b, tb_club c
         WHERE a.positionId = b.id AND a.clubId = c.id AND (a.clubId = (SELECT d.awayClubId
         FROM tb_match_info d
@@ -170,12 +172,12 @@
 
     <select id="searchMatchLineUp" resultMap="PlayerMap1">
         SELECT
-        a.id         playerId,
-        a.number     number,
+        a.id playerId,
+        a.number number,
         a.positionId positionId,
-        b.position   position,
-        a.name       playerName,
-        a.imgUrl     playerImgUrl
+        b.position position,
+        a.name playerName,
+        a.imgUrl playerImgUrl
         FROM tb_player a LEFT JOIN tb_player_position b
         ON a.positionId = b.id
         <where>

@@ -138,7 +138,7 @@ public class PlayerController {
      */
     @RequestMapping("/player/add")
     public @ResponseBody
-    ResponseDto addClub(Player player) {
+    ResponseDto addPlayer(Player player) {
         responseDto = new ResponseDto();
         try {
             playerService.add(player);
