@@ -1,7 +1,6 @@
 package com.ccsu.core.matchInfo.service.impl;
 
 import com.ccsu.common.utils.CommonUtils;
-import com.ccsu.core.club.domain.Club;
 import com.ccsu.core.common.domain.RequestDto;
 import com.ccsu.core.matchInfo.dao.MatchInfoMapper;
 import com.ccsu.core.matchInfo.domain.MatchInfo;
@@ -9,7 +8,7 @@ import com.ccsu.core.matchInfo.domain.RequestMatchInfo;
 import com.ccsu.core.matchInfo.service.MatchInfoService;
 import com.ccsu.core.matchState.domain.MatchState;
 import com.ccsu.core.matchType.domain.MatchType;
-import com.ccsu.core.ranking.domain.Ranking;
+import com.ccsu.core.ranking.domain.RankingDo;
 import com.ccsu.core.ranking.service.RankingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -223,34 +222,39 @@ public class MatchInfoServiceImpl implements MatchInfoService {
         Integer awayClubScore = requestMatchInfo.getAwayClubScore();
         String matchScore = homeClubScore + ":" + awayClubScore;
         Integer matchResult = compareScore(homeClubScore, awayClubScore);
+        Integer matchTypeId = requestMatchInfo.getMatchTypeId();
         matchInfo.setMatchScore(matchScore);
         matchInfo.setMatchResult(matchResult);
         requestMatchInfo.setMatchInfo(matchInfo);
         matchInfoMapper.updateMatchResult(requestMatchInfo);
-        //2、更新比赛积分表 查询俱乐部
-        // 存在   则添加
+        //2、更新比赛积分表 2.1查询俱乐部
+        // 不存在   则添加
         // 若存在 则更新
         //     根据比赛结果更新数据  1 平 2 主胜 3 客胜
 
         //主队
         Integer homeClubId = requestMatchInfo.getHomeClubId();
-        Ranking homeRanking = new Ranking();
-        Club homeClub = new Club();
-        homeClub.setId(homeClubId);
-        homeRanking.setClub(homeClub);
-        Integer homeCountClub = rankingService.countClubId(homeRanking);
-        if (homeCountClub == 0 || homeCountClub == null) {
+        RankingDo homeRanking = new RankingDo();
+        homeRanking.setMatchTypeId(matchTypeId);
+        homeRanking.setClubId(homeClubId);
+        Boolean homeIsExist = rankingService.isExist(homeRanking);
+        homeRanking.setGoals(homeClubScore);
+        homeRanking.setConceded(awayClubScore);
+        if (!homeIsExist) {
             if (matchResult == 1) {
+                //平 draw
                 homeRanking.setDraw(1);
+                homeRanking.setScore(1);
             } else if (matchResult == 2) {
+                //主胜 victory
                 homeRanking.setVictory(1);
+                homeRanking.setScore(3);
             } else if (matchResult == 3) {
+                //主负 negative
                 homeRanking.setNegative(1);
             }
             homeRanking.setMatchTimes(1);
-            homeRanking.setGoals(homeClubScore);
-            homeRanking.setConceded(awayClubScore);
-            homeRanking.setGoalDifference(Math.abs(homeClubScore - awayClubScore));
+
             rankingService.add(homeRanking);
         } else {
             if (matchResult == 1) {
@@ -263,31 +267,35 @@ public class MatchInfoServiceImpl implements MatchInfoService {
         }
         //客队:
         Integer awayClubId = requestMatchInfo.getAwayClubId();
-        Ranking awayRanking = new Ranking();
-        Club awayClub = new Club();
-        awayClub.setId(homeClubId);
-        awayRanking.setClub(homeClub);
-        Integer awayCountClub = rankingService.countClubId(awayRanking);
-        if (awayCountClub == 0 || awayCountClub == null) {
+        RankingDo awayRanking = new RankingDo();
+        awayRanking.setClubId(awayClubId);
+        awayRanking.setMatchTypeId(matchTypeId);
+        Boolean awayClubIsExist = rankingService.isExist(awayRanking);
+        awayRanking.setGoals(awayClubScore);
+        awayRanking.setConceded(homeClubScore);
+        if (!awayClubIsExist) {
             if (matchResult == 1) {
+                //平
                 awayRanking.setDraw(1);
+                awayRanking.setScore(1);
             } else if (matchResult == 2) {
-                awayRanking.setVictory(1);
-            } else if (matchResult == 3) {
+                //客负
                 awayRanking.setNegative(1);
+            } else if (matchResult == 3) {
+                //客胜
+                awayRanking.setVictory(1);
+                awayRanking.setScore(3);
             }
             awayRanking.setMatchTimes(1);
-            awayRanking.setGoals(homeClubScore);
-            awayRanking.setConceded(awayClubScore);
-            awayRanking.setGoalDifference(Math.abs(homeClubScore - awayClubScore));
+
             rankingService.add(awayRanking);
         } else {
             if (matchResult == 1) {
                 rankingService.updateRankingByDraw(awayRanking);
             } else if (matchResult == 2) {
-                rankingService.updateRankingByVictory(awayRanking);
-            } else if (matchResult == 3) {
                 rankingService.updateRankingByNegative(awayRanking);
+            } else if (matchResult == 3) {
+                rankingService.updateRankingByVictory(awayRanking);
             }
         }
     }
@@ -307,7 +315,7 @@ public class MatchInfoServiceImpl implements MatchInfoService {
         if (homeClubScore == null || awayClubScore == null) {
             return null;
         }
-        Integer matchResult = null;
+        Integer matchResult;
         if (homeClubScore == awayClubScore) {
             matchResult = 1;
         } else if (homeClubScore > awayClubScore) {

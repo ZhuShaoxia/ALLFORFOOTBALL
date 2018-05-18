@@ -31,6 +31,9 @@ public class UserServiceImpl implements UserService {
         user.setCreateTime(currentDateTime);
         user.setModifiedTime(currentDateTime);
         String otherClubName = user.getOtherClubName();
+        if(user.getImgUrl()==null){
+            user.setImgUrl("/img/head-img-icon.png");
+        }
 //        if ("".equals(otherClubName) || otherClubName != null) {
 //            otherClubName = null;
 //        } else {
@@ -68,6 +71,23 @@ public class UserServiceImpl implements UserService {
             user.setOtherClubName(null);
         }
         userMapper.update(user);
+    }
+
+    @Override
+    public void userUpdate(User user) throws Exception {
+        String imgUrl = CommonUtils.generateImg(user.getImgUrl());
+        user.setImgUrl(imgUrl);
+        String modifiedTime = CommonUtils.getCurrentDateTime();
+        user.setModifiedTime(modifiedTime);
+        user.setPassword(CommonUtils.MD5Encode(user.getPassword()));
+        userMapper.userUpdate(user);
+    }
+
+    @Override
+    public void updateUserEmail(User user) throws Exception {
+        String currentTime = CommonUtils.getCurrentDateTime();
+        user.setModifiedTime(currentTime);
+        userMapper.updateUserEmail(user);
     }
 
     @Override

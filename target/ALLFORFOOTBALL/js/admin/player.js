@@ -26,9 +26,12 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
                         return false;
                     } else {
                         layer.msg('数据添加成功,页面即将跳转')
-                        setTimeout(function () {
-                            window.location.href = "/admin/player/list"
-                        }, 2000)
+                        //TODO:修改页面跳转地址
+                        // setTimeout(function () {
+                        //     // window.location.href = "/admin/player/list"
+                        // }, 500)
+                        window.location.href = "/admin/player/add"
+
                     }
                 },
                 error: function () {
@@ -312,10 +315,12 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
             //如果上传失败
             if (res.code == -1) {
                 layer.close(index)
+            }else{
+                //上传成功
+                layer.msg('上传成功')
+                $('#uploadImg').attr('src', res.url);
             }
-            //上传成功
-            layer.msg('上传成功')
-            $('#uploadImg').attr('src', res.url);
+
         }
         , error: function () {
             //演示失败状态，并实现重传

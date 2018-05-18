@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zhuxiaolei
@@ -40,7 +41,7 @@
         <div class="col-md-2">
             <!--头像-->
             <div style="width: 150px;height: 150px;border: solid 1px beige">
-                <img id="finalImg" alt="请上传头像" src="${pageContext.request.contextPath}/img/head-img-icon.png" style="width: 150px;height: 150px">
+                <img id="finalImg" alt="请上传头像" src="${userInfo.imgUrl}" style="width: 150px;height: 150px">
             </div>
         </div>
         <div class="col-md-10">
@@ -59,7 +60,12 @@
                 <div class="userinfo-edit-item">
                     <span class="col-md-2">性别</span>
                     <div class="col-md-8 userinfo-edit-item-right">
-                        <span>${userInfo.sex}</span>
+                        <c:if test="${userInfo.sex==1}">
+                            <span>男</span>
+                        </c:if>
+                        <c:if test="${userInfo.sex==2}">
+                            <span>女</span>
+                        </c:if>
                     </div>
                 </div>
 

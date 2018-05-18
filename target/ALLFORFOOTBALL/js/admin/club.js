@@ -27,9 +27,11 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
                         return false;
                     } else {
                         layer.msg('数据添加成功,页面即将跳转')
-                        setTimeout(function () {
-                            window.location.href = "/admin/club/list"
-                        }, 2000)
+                        // setTimeout(function () {
+                        //     window.location.href = "/admin/club/list"
+                        // }, 2000)
+                        window.location.href = "/admin/club/add"
+
                     }
                 },
                 error: function () {

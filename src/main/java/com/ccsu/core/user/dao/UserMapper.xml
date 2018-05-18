@@ -16,6 +16,7 @@
         <result column="gmt_modified" property="modifiedTime" jdbcType="VARCHAR"/>
 
         <result column="clubId" property="club.id" jdbcType="INTEGER"/>
+        <result column="clubImgUrl" property="club.imgUrl" jdbcType="VARCHAR"/>
         <result column="countryId" property="club.country.id" jdbcType="INTEGER"/>
         <result column="clubName" property="club.name" jdbcType="VARCHAR"/>
         <result column="otherClubName" property="otherClubName" jdbcType="VARCHAR"/>
@@ -52,6 +53,7 @@
         a.email email,
         a.phone phone,
         b.id clubId,
+        b.imgUrl clubImgUrl,
         b.name clubName,
         b.countryId countryId,
         a.otherClubName otherClubName,
@@ -81,6 +83,17 @@
         clubId = #{club.id},
         otherClubName = #{otherClubName}
         WHERE id = #{id}
+    </update>
+
+    <update id="userUpdate" parameterType="User">
+        update tb_user
+        set name = #{name},
+            imgUrl = #{imgUrl},
+            sex = #{sex},
+            profile = #{profile},
+            clubId = #{club.id},
+            gmt_modified = #{modifiedTime}
+        where id = #{id}
     </update>
 
     <!--查询所有用户-->
@@ -163,6 +176,7 @@
         a.email email,
         a.phone phone,
         b.id clubId,
+        b.imgUrl clubImgUrl,
         b.name clubName,
         b.countryId countryId,
         a.otherClubName otherClubName,
@@ -203,6 +217,13 @@
     <update id="updateUserPhone" parameterType="User">
         update tb_user
         set phone = #{phone},
+        gmt_modified = #{modifiedTime}
+        where id = #{id}
+    </update>
+
+    <update id="updateUserEmail" parameterType="User">
+        update tb_user
+        set email = #{email},
         gmt_modified = #{modifiedTime}
         where id = #{id}
     </update>

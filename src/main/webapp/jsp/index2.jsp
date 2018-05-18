@@ -122,10 +122,10 @@
                         <a href="#type4" data-toggle="tab">中超</a>
                     </li>
                     <li>
-                        <a href="#type5" data-toggle="tab">英超</a>
+                        <a href="#type5" data-toggle="tab">西甲</a>
                     </li>
                     <li>
-                        <a href="#type6" data-toggle="tab">西甲</a>
+                        <a href="#type6" data-toggle="tab">英超</a>
                     </li>
                     <li>
                         <a href="#type7" data-toggle="tab">意甲</a>

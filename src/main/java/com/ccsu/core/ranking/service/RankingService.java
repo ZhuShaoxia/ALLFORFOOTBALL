@@ -2,6 +2,7 @@ package com.ccsu.core.ranking.service;
 
 import com.ccsu.common.base.BaseService;
 import com.ccsu.core.ranking.domain.Ranking;
+import com.ccsu.core.ranking.domain.RankingDo;
 
 import java.util.List;
 
@@ -14,13 +15,15 @@ import java.util.List;
  * Description:
  */
 public interface RankingService extends BaseService<Ranking> {
-    Integer countClubId(Ranking ranking);
+    Boolean isExist(RankingDo ranking);
+
+    void add(RankingDo rankingDo);
 
     List<Ranking> findAllByMatchTypeId(Integer matchTypeId);
 
-    void updateRankingByVictory(Ranking ranking);
+    void updateRankingByVictory(RankingDo ranking);
 
-    void updateRankingByDraw(Ranking ranking);
+    void updateRankingByDraw(RankingDo ranking);
 
-    void updateRankingByNegative(Ranking ranking);
+    void updateRankingByNegative(RankingDo ranking);
 }

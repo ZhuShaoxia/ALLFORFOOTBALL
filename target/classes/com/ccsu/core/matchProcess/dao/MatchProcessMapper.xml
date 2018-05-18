@@ -87,4 +87,10 @@
         ORDER BY count DESC
     </select>
 
+    <select id="searchCountEventByPlayer" resultType="java.lang.Integer">
+        SELECT
+        count(matchEventId) count
+        FROM tb_match_process
+        WHERE matchEventId = #{0} AND playerId = #{1}
+    </select>
 </mapper>

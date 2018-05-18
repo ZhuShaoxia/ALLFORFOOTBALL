@@ -90,4 +90,9 @@ public class MatchProcessServiceImpl implements MatchProcessService {
     public List<MatchProcess> searchPlayerEvent(Integer matchTypeId, Integer matchEventId) {
         return matchProcessMapper.searchPlayerEvent(matchTypeId,matchEventId);
     }
+
+    @Override
+    public Integer searchCountEventByPlayer(Integer matchEventId, Integer playerId) {
+        return matchProcessMapper.searchCountEventByPlayer(matchEventId,playerId);
+    }
 }

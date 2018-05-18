@@ -72,10 +72,10 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="/articles?articleTypeId=4">全部</a></li>
-                                <li><a href="/articles?articleTypeId=4&condition=广州恒大">广州恒大</a></li>
-                                <li><a href="/articles?articleTypeId=4&condition=上海上港">上海上港</a></li>
-                                <li><a href="/articles?articleTypeId=4&condition=山东鲁能">山东鲁能</a></li>
-                                <li><a href="/articles?articleTypeId=4&condition=北京国安">北京国安</a></li>
+                                <li><a href="/articles?articleTypeId=4&condition=恒大">广州恒大</a></li>
+                                <li><a href="/articles?articleTypeId=4&condition=上港">上海上港</a></li>
+                                <li><a href="/articles?articleTypeId=4&condition=鲁能">山东鲁能</a></li>
+                                <li><a href="/articles?articleTypeId=4&condition=国安">北京国安</a></li>
                             </ul>
                         </li>
                     </c:when>
@@ -85,10 +85,10 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="/articles?articleTypeId=4">全部</a></li>
-                                <li><a href="/articles?articleTypeId=4&condition=广州恒大">广州恒大</a></li>
-                                <li><a href="/articles?articleTypeId=4&condition=上海上港">上海上港</a></li>
-                                <li><a href="/articles?articleTypeId=4&condition=山东鲁能">山东鲁能</a></li>
-                                <li><a href="/articles?articleTypeId=4&condition=北京国安">北京国安</a></li>
+                                <li><a href="/articles?articleTypeId=4&condition=恒大">广州恒大</a></li>
+                                <li><a href="/articles?articleTypeId=4&condition=上港">上海上港</a></li>
+                                <li><a href="/articles?articleTypeId=4&condition=鲁能">山东鲁能</a></li>
+                                <li><a href="/articles?articleTypeId=4&condition=国安">北京国安</a></li>
                             </ul>
                         </li>
                     </c:otherwise>
@@ -133,7 +133,7 @@
                                 <li><a href="/articles?articleTypeId=6&condition=曼城">曼城</a></li>
                                 <li><a href="/articles?articleTypeId=6&condition=曼联">曼联</a></li>
                                 <li><a href="/articles?articleTypeId=6&condition=利物浦">利物浦</a></li>
-                                <li><a href="/articles?articleTypeId=6&condition=托特纳姆热刺">托特纳姆热刺</a></li>
+                                <li><a href="/articles?articleTypeId=6&condition=热刺">托特纳姆热刺</a></li>
                             </ul>
                         </li>
                     </c:when>
@@ -146,7 +146,7 @@
                                 <li><a href="/articles?articleTypeId=6&condition=曼城">曼城</a></li>
                                 <li><a href="/articles?articleTypeId=6&condition=曼联">曼联</a></li>
                                 <li><a href="/articles?articleTypeId=6&condition=利物浦">利物浦</a></li>
-                                <li><a href="/articles?articleTypeId=6&condition=托特纳姆热刺">托特纳姆热刺</a></li>
+                                <li><a href="/articles?articleTypeId=6&condition=热刺">托特纳姆热刺</a></li>
                             </ul>
                         </li>
                     </c:otherwise>
@@ -159,7 +159,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="/articles?articleTypeId=7">全部</a></li>
-                                <li><a href="/articles?articleTypeId=7&condition=尤文图斯">尤文图斯</a></li>
+                                <li><a href="/articles?articleTypeId=7&condition=尤文">尤文图斯</a></li>
                                 <li><a href="/articles?articleTypeId=7&condition=那不勒斯">那不勒斯</a></li>
                                 <li><a href="/articles?articleTypeId=7&condition=罗马">罗马</a></li>
                                 <li><a href="/articles?articleTypeId=7&condition=拉齐奥">拉齐奥</a></li>
@@ -173,7 +173,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="/articles?articleTypeId=7">全部</a></li>
-                                <li><a href="/articles?articleTypeId=7&condition=尤文图斯">尤文图斯</a></li>
+                                <li><a href="/articles?articleTypeId=7&condition=尤文">尤文图斯</a></li>
                                 <li><a href="/articles?articleTypeId=7&condition=那不勒斯">那不勒斯</a></li>
                                 <li><a href="/articles?articleTypeId=7&condition=罗马">罗马</a></li>
                                 <li><a href="/articles?articleTypeId=7&condition=拉齐奥">拉齐奥</a></li>
@@ -189,9 +189,9 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="/articles?articleTypeId=8">全部</a></li>
-                                <li><a href="/articles?articleTypeId=8&condition=拜仁慕尼黑">拜仁慕尼黑</a></li>
-                                <li><a href="/articles?articleTypeId=8&condition=沙尔克04">沙尔克04</a></li>
-                                <li><a href="/articles?articleTypeId=8&condition=多特蒙德">多特蒙德</a></li>
+                                <li><a href="/articles?articleTypeId=8&condition=拜仁">拜仁慕尼黑</a></li>
+                                <li><a href="/articles?articleTypeId=8&condition=沙尔克">沙尔克04</a></li>
+                                <li><a href="/articles?articleTypeId=8&condition=多特">多特蒙德</a></li>
                                 <li><a href="/articles?articleTypeId=8&condition=霍芬海姆">霍芬海姆</a></li>
                             </ul>
                         </li>
@@ -202,9 +202,9 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="/articles?articleTypeId=8">全部</a></li>
-                                <li><a href="/articles?articleTypeId=8&condition=拜仁慕尼黑">拜仁慕尼黑</a></li>
-                                <li><a href="/articles?articleTypeId=8&condition=沙尔克04">沙尔克04</a></li>
-                                <li><a href="/articles?articleTypeId=8&condition=多特蒙德">多特蒙德</a></li>
+                                <li><a href="/articles?articleTypeId=8&condition=拜仁">拜仁慕尼黑</a></li>
+                                <li><a href="/articles?articleTypeId=8&condition=沙尔克">沙尔克04</a></li>
+                                <li><a href="/articles?articleTypeId=8&condition=多特">多特蒙德</a></li>
                                 <li><a href="/articles?articleTypeId=8&condition=霍芬海姆">霍芬海姆</a></li>
                             </ul>
                         </li>
@@ -279,7 +279,7 @@
             </div>
         </div>
         <div class="col-md-4 article-list-body-right">
-            <span class="hot-comment-title">新闻热评</span>
+            <span class="hot-comment-title">最新评论</span>
             <div class="hot-comment-list">
                 <c:forEach items="${hotComment}" var="comment" varStatus="count">
                     <div class="hot-comment-item">
@@ -291,7 +291,8 @@
                         </div>
                         <a href="/article/info/${comment.article.id}">
                             <div class="col-md-9 hot-comment-item-content">
-                                <span>${comment.content}</span>
+                                <%--<span>${comment.content}</span>--%>
+                                ${comment.content}
                             </div>
                         </a>
                     </div>
@@ -317,7 +318,6 @@
         $(window).scroll(function () {
             if (($(this).scrollTop() + $(window).height()) >= $(document).height() && isBool == true) {
                 isBool = false
-                console.log("滚动条已经到达底部为" + $(document).scrollTop());
                 addHtml(page)
                 setTimeout(function () {
                     isBool = true

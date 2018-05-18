@@ -225,13 +225,15 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
             var homeClubScore = data.field.homeClubScore
             var awayClubScore = data.field.awayClubScore
             var awayClubId = $("input[name='awayClubName[" + matchInfoId + "]']").val()
+            var matchTypeId = $("input[name='matchTypeId[" + matchInfoId + "]']").val()
             $.ajax({
                 data: {
                     'matchInfo.id': matchInfoId,
                     homeClubScore: homeClubScore,
                     homeClubId: homeClubId,
                     awayClubScore: awayClubScore,
-                    awayClubId: awayClubId
+                    awayClubId: awayClubId,
+                    matchTypeId:matchTypeId
                 },
                 url: '/match/result/add',
                 success: function (res) {
@@ -243,7 +245,7 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
                         layer.msg('比赛结果录入成功')
                         setTimeout(function () {
                             location.reload()
-                        }, 500)
+                        }, 300)
                     }
                 }
             })
@@ -262,12 +264,14 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
         },
         verifyClubIdAndMatchTimes: function (value, item) {
             var matchTimes = $("#matchTimes").next().find("dd[class='layui-this']").attr('lay-value');
+            var matchTypeId = $("#matchTypeId").next().find('dd[class=layui-this]').attr('lay-value');
+
             if (matchTimes > 1) {
                 matchTimes = matchTimes - 1
                 var selectVal = value
                 $.ajax({
                     data: {
-                        'matchType.id': 1,
+                        'matchType.id':matchTypeId,
                         matchTimes: matchTimes,
                         'homeClub.id': selectVal
                     },
@@ -297,13 +301,14 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
      */
     form.on('select(matchClubSelect)', function (data) {
         var matchTimes = $("#matchTimes").next().find("dd[class='layui-this']").attr('lay-value');
+        var matchTypeId = $("#matchTypeId").next().find('dd[class=layui-this]').attr('lay-value')
 
         if (matchTimes > 1) {
             matchTimes = matchTimes - 1
             var selectVal = data.value
             $.ajax({
                 data: {
-                    'matchType.id': 1,
+                    'matchType.id': matchTypeId,
                     matchTimes: matchTimes,
                     'homeClub.id': selectVal
                 },
@@ -536,6 +541,7 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
         })
     })
 
+
     var matchListDate = ""
     /**
      * 比赛列表日期选择 match-list-date
@@ -668,7 +674,8 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
                     for (var i = 0; i < length; i++) {
                         html += "<option value='" + data[i].id + "'>" + data[i].homeClub.name + "VS" + data[i].awayClub.name + "</option>"
                         inputHtml += "<input type='hidden' name='homeClubName[" + data[i].id + "]' value='" + data[i].homeClub.id + "'/>" +
-                            "<input type='hidden' name='awayClubName[" + data[i].id + "]' value='" + data[i].awayClub.id + "'/>"
+                            "<input type='hidden' name='awayClubName[" + data[i].id + "]' value='" + data[i].awayClub.id + "'/>" +
+                            "<input type='hidden' name='matchTypeId[" + data[i].id + "]' value='" + data[i].matchType.id + "'>"
                     }
                     $("#matchInfoId").append(html).append(inputHtml)
                     form.render('select')
@@ -781,7 +788,7 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
             });
             form.render()
             /**
-             * 比赛状态修改 TODO:点击事件没有效果
+             * 比赛状态修改
              */
             var matchInfoId = data.id
             $("#match-list-matchState-btn").on('click', function () {

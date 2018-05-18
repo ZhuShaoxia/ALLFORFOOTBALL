@@ -38,7 +38,6 @@ $(function () {
 
 
 
-    //TODO:添加验证方法 验证原有密码是否输入正确
     $.validator.addMethod("verifyPwd", function (value, element) {
         var userId = $("#userId").val()
         var password = value;

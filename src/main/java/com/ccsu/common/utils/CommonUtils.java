@@ -4,8 +4,13 @@ import com.aliyuncs.dysmsapi.model.v20170525.SendSmsResponse;
 import com.ccsu.core.user.domain.User;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
+import javax.mail.MessagingException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -81,6 +86,7 @@ public class CommonUtils {
 
     /**
      * 获取当期系统日期指定+day
+     *
      * @param day
      * @return
      */
@@ -100,10 +106,10 @@ public class CommonUtils {
 
     /***
      * 生成六位位随机数
-     * 用于短信验证码
+     * 用于短信验证码、邮箱验证码
      * @return
      */
-    private static String getSMSCode() {
+    private static String generateCodeForCheck() {
         StringBuilder code = new StringBuilder();
         for (int i = 0; i < 6; i++) {
             int c = (int) (Math.random() * 10);
@@ -113,7 +119,7 @@ public class CommonUtils {
     }
 
     /**
-     * 发送六位位短信验证码
+     * 发送六位短信验证码
      *
      * @param user
      * @return
@@ -123,7 +129,7 @@ public class CommonUtils {
         if (user.getPhone() == null) {
             throw new NullPointerException("待发送手机号为空,发送失败");
         }
-        String code = getSMSCode();
+        String code = generateCodeForCheck();
         SendSmsResponse response = AaliSMSUtil.sendSms(user, code);
         LOGGER.debug("*************短信接口返回的数据 START*************");
         LOGGER.debug("Code=" + response.getCode());
@@ -131,6 +137,18 @@ public class CommonUtils {
         LOGGER.debug("RequestId=" + response.getRequestId());
         LOGGER.debug("BizId=" + response.getBizId());
         LOGGER.debug("*************短信接口返回的数据 END*************");
+        return code;
+    }
+
+    /**
+     * 发送六位邮箱验证码
+     * @param user
+     * @return
+     * @throws MessagingException
+     */
+    public static String sendMailCode(User user) throws MessagingException, UnsupportedEncodingException {
+        String code = generateCodeForCheck();
+        MailUtil.createEmail(user,code);
         return code;
     }
 
@@ -150,4 +168,43 @@ public class CommonUtils {
         age = currentYear - year + 1;
         return age;
     }
+
+    /**
+     * base64转图片 并写入数据库
+     *
+     * @param imgStr
+     * @return
+     */
+    public static String generateImg(String imgStr) {
+        if (imgStr == null) {
+            return null;
+        }
+        if (imgStr.contains("/uploadImg")) {
+            return imgStr;
+        }
+        int indexOf = imgStr.indexOf(",");
+        imgStr = imgStr.substring(indexOf + 1);
+        String imgUrl = UUIDGenerate();
+        BASE64Decoder decoder = new BASE64Decoder();
+        OutputStream out;
+        String realPath = "/Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALLUPLOAD/" + imgUrl + ".jpg";
+
+        try {
+            byte[] b = decoder.decodeBuffer(imgStr);
+            for (int i = 0; i < b.length; ++i) {
+                if (b[i] < 0) {
+                    b[i] += 256;
+                }
+            }
+            out = new FileOutputStream(realPath);
+            out.write(b);
+            out.flush();
+            out.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        imgUrl = "/uploadImg/" + imgUrl + ".jpg";
+        return imgUrl;
+    }
+
 }

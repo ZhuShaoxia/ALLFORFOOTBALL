@@ -30,4 +30,7 @@ public interface UserMapper extends BaseDao<User> {
 
 
     void updateUserPhone(User user);
+    void userUpdate(User user) throws Exception;
+
+    void updateUserEmail(User user);
 }

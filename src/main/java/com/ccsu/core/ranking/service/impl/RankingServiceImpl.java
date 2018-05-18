@@ -3,6 +3,7 @@ package com.ccsu.core.ranking.service.impl;
 import com.ccsu.common.utils.CommonUtils;
 import com.ccsu.core.ranking.dao.RankingMapper;
 import com.ccsu.core.ranking.domain.Ranking;
+import com.ccsu.core.ranking.domain.RankingDo;
 import com.ccsu.core.ranking.service.RankingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,9 +25,14 @@ public class RankingServiceImpl implements RankingService {
     private RankingMapper rankingMapper;
 
     @Override
-    public Integer countClubId(Ranking ranking) {
-        return rankingMapper.countClubId(ranking);
+    public Boolean isExist(RankingDo ranking) {
+        Integer count = rankingMapper.countClubId(ranking);
+        if (count == 0 || count == null) {
+            return false;
+        }
+        return true;
     }
+
 
     @Override
     public List<Ranking> findAllByMatchTypeId(Integer matchTypeId) {
@@ -34,21 +40,21 @@ public class RankingServiceImpl implements RankingService {
     }
 
     @Override
-    public void updateRankingByVictory(Ranking ranking) {
+    public void updateRankingByVictory(RankingDo ranking) {
         String currentTime = CommonUtils.getCurrentDateTime();
         ranking.setModifiedTime(currentTime);
         rankingMapper.updateRankingByVictory(ranking);
     }
 
     @Override
-    public void updateRankingByDraw(Ranking ranking) {
+    public void updateRankingByDraw(RankingDo ranking) {
         String currentTime = CommonUtils.getCurrentDateTime();
         ranking.setModifiedTime(currentTime);
         rankingMapper.updateRankingByDraw(ranking);
     }
 
     @Override
-    public void updateRankingByNegative(Ranking ranking) {
+    public void updateRankingByNegative(RankingDo ranking) {
         String currentTime = CommonUtils.getCurrentDateTime();
         ranking.setModifiedTime(currentTime);
         rankingMapper.updateRankingByNegative(ranking);
@@ -56,10 +62,18 @@ public class RankingServiceImpl implements RankingService {
 
     @Override
     public void add(Ranking ranking) throws Exception {
+//        String currentDateTime = CommonUtils.getCurrentDateTime();
+//        ranking.setCreateTime(currentDateTime);
+//        ranking.setModifiedTime(currentDateTime);
+//        rankingMapper.save(ranking);
+    }
+
+    @Override
+    public void add(RankingDo rankingDo) {
         String currentDateTime = CommonUtils.getCurrentDateTime();
-        ranking.setCreateTime(currentDateTime);
-        ranking.setModifiedTime(currentDateTime);
-        rankingMapper.save(ranking);
+        rankingDo.setCreateTime(currentDateTime);
+        rankingDo.setModifiedTime(currentDateTime);
+        rankingMapper.saveRankingDo(rankingDo);
     }
 
     @Override

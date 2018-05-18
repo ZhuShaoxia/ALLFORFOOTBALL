@@ -15,6 +15,15 @@ public class RequestMatchInfo {
     private Integer awayClubId;
     private Integer homeClubScore;
     private Integer awayClubScore;
+    private Integer matchTypeId;
+
+    public Integer getMatchTypeId() {
+        return matchTypeId;
+    }
+
+    public void setMatchTypeId(Integer matchTypeId) {
+        this.matchTypeId = matchTypeId;
+    }
 
     public MatchInfo getMatchInfo() {
         return matchInfo;

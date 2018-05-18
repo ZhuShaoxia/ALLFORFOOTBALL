@@ -30,7 +30,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.mail.MessagingException;
+import javax.servlet.http.HttpSession;
 import java.io.File;
+import java.io.UnsupportedEncodingException;
 import java.util.List;
 import java.util.Map;
 
@@ -112,7 +115,18 @@ public class CommonController {
     }
 
     /**
+     * 错误页面
+     *
+     * @return
+     */
+    @RequestMapping("/error")
+    public String errorJsp() {
+        return "error";
+    }
+
+    /**
      * 后台首页
+     *
      * @return
      */
     @RequestMapping("/admin")
@@ -210,7 +224,7 @@ public class CommonController {
         //射手榜
         List<MatchProcess> shooterList = matchProcessService.searchPlayerEvent(matchTypeId, 3);
         //助攻榜
-        List<MatchProcess> assistsList = matchProcessService.searchPlayerEvent(matchTypeId, 5);
+        List<MatchProcess> assistsList = matchProcessService.searchPlayerEvent(matchTypeId, 4);
         //赛程表
         List<MatchInfo> matchInfos = matchInfoService.searchMatchInfoByMatchTypeAndMatchTimes(matchTypeId, 1);
         MatchType matchType = null;
@@ -252,6 +266,7 @@ public class CommonController {
     @RequestMapping("/upload/img")
     public @ResponseBody
     ResponseDto uploadImg(MultipartFile file, String type) {
+        responseDto = new ResponseDto();
         String fileName = CommonUtils.UUIDGenerate();
         String originalFilename = file.getOriginalFilename();
         //文件扩展名
@@ -263,14 +278,12 @@ public class CommonController {
             //文件保存路径
             file.transferTo(f);
             url = "/uploadImg/" + fileName + "." + extension;
-
+            responseDto.setUrl(url);
         } catch (Exception e) {
             e.printStackTrace();
-            System.out.println("文件保存失败");
+            responseDto.setCode(MessageCode.ERROR);
+            return responseDto;
         }
-        ResponseDto responseDto = new ResponseDto();
-        responseDto.setCode(MessageCode.SUCCESS);
-        responseDto.setUrl(url);
         return responseDto;
     }
 
@@ -296,6 +309,29 @@ public class CommonController {
             return responseDto;
         }
         responseDto.setSMSCode(SMSCode);
+        return responseDto;
+    }
+
+    /**
+     * 发送邮箱验证码
+     * @param email
+     * @param session
+     * @return
+     */
+    @RequestMapping("/send/email/verificationCode")
+    public @ResponseBody
+    ResponseDto sendEmailCode(String email, HttpSession session) {
+        responseDto = new ResponseDto();
+        User user = (User) session.getAttribute("user");
+        user.setEmail(email);
+        try {
+            String code = CommonUtils.sendMailCode(user);
+            responseDto.setSMSCode(code);
+        } catch (MessagingException | UnsupportedEncodingException e) {
+            e.printStackTrace();
+            responseDto.setCode(MessageCode.ERROR);
+            return responseDto;
+        }
         return responseDto;
     }
 

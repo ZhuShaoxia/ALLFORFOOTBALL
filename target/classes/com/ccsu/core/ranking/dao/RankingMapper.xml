@@ -20,19 +20,19 @@
         <result column="gmt_modified" jdbcType="VARCHAR" property="modifiedTime"/>
     </resultMap>
 
-    <insert id="save" parameterType="Ranking">
-        INSERT INTO tb_ranking (id,matchTypeId,clubId, matchTimes,
+    <insert id="saveRankingDo" parameterType="RankingDo">
+        INSERT INTO tb_ranking (matchTypeId,clubId, matchTimes,
         victory, draw, negative,
         goals, conceded, goalDifference,
         score, season, gmt_create,
         gmt_modified)
-        VALUES (#{id}, #{matchType.id},#{club.id},
+        VALUES ( #{matchTypeId},#{clubId},
         #{matchTimes},
         #{victory}, #{draw}, #{negative},
         #{goals}, #{conceded},
-        #{goalDifference},
-        #{score}, #{season}, #{gmtCreate},
-        #{gmtModified})
+        #{goals}-#{conceded},
+        #{score}, #{season}, #{createTime},
+        #{modifiedTime})
     </insert>
 
     <!--根据id查询比赛类型信息-->
@@ -57,8 +57,8 @@
     </select>
 
     <!--判断当前俱乐部信息是否存在 TODO:赛季的处理-->
-    <select id="countClubId" parameterType="Ranking" resultType="Integer">
-        select count(*) from tb_ranking where clubId = #{club.id} AND season = #{season}
+    <select id="countClubId" parameterType="RankingDo" resultType="Integer">
+        select count(clubId) count from tb_ranking where clubId = #{clubId} AND season is #{season}
     </select>
 
 
@@ -102,35 +102,39 @@
         LEFT JOIN tb_club b
         ON a.clubId = b.id
         WHERE matchTypeId = #{matchTypeId}
+        order by a.score desc
     </select>
 
     <!--胜:修改积分榜-->
-    <update id="updateRankingByVictory" parameterType="Ranking">
+    <update id="updateRankingByVictory" parameterType="RankingDo">
         update tb_ranking
         set victory = (victory + 1),
-        goals = #{goals},
-        conceded = #{conceded},
+        matchTimes = (matchTimes+1),
+        goals = (goals + #{goals}),
+        conceded =(conceded + #{conceded}),
         score = (score + 3)
-        where matchTypeId = #{matchType.id} AND clubId = #{club.id} AND season = #{season}
+        where matchTypeId = #{matchTypeId} AND clubId = #{clubId} AND season is #{season}
     </update>
 
     <!--平:修改积分榜-->
-    <update id="updateRankingByDraw" parameterType="Ranking">
+    <update id="updateRankingByDraw" parameterType="RankingDo">
         update tb_ranking
         set draw = (draw + 1),
-        goals = #{goals},
-        conceded = #{conceded},
+        matchTimes = (matchTimes+1),
+        goals = (goals + #{goals}),
+        conceded =(conceded + #{conceded}),
         score = (score + 1)
-        where matchTypeId = #{matchType.id} AND clubId = #{club.id} AND season = #{season}
+        where matchTypeId = #{matchTypeId} AND clubId = #{clubId} AND season is #{season}
     </update>
 
     <!--负：修改积分榜-->
-    <update id="updateRankingByNegative" parameterType="Ranking">
+    <update id="updateRankingByNegative" parameterType="RankingDo">
         update tb_ranking
         set negative = (negative + 1),
-        goals = #{goals},
-        conceded = #{conceded}
-        where matchTypeId = #{matchType.id} AND clubId = #{club.id} AND season = #{season}
+        matchTimes = (matchTimes+1),
+        goals = (goals + #{goals}),
+        conceded =(conceded + #{conceded})
+        where matchTypeId = #{matchTypeId} AND clubId = #{clubId} AND season is #{season}
     </update>
 </mapper>
 

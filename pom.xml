@@ -246,6 +246,23 @@
             <artifactId>aliyun-java-sdk-dysmsapi</artifactId>
             <version>1.0.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
+        <!--邮件服务器-->
+        <dependency>
+            <groupId>javax.mail</groupId>
+            <artifactId>javax.mail-api</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+        <!--JavaMail API在Java SE 平台是可选的，
+            在Java EE 平台是自动包含的，
+            因此，需要手动导包。-->
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
     </dependencies>
     <build>
         <finalName>ALLFORFOOTBALL</finalName>

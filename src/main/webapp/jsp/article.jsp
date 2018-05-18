@@ -158,8 +158,8 @@
                 var replyUsername = $("#reply-username").text().trim()
                 replyFloor = parseInt(replyFloor);
                 var replyCommentContent = $("p[id='comments[" + replyFloor + "].comment']").text();
-                replyCommentContent = replyCommentContent.substr(0, 100);
                 if (replyCommentContent.length > 100) {
+                    replyCommentContent = replyCommentContent.substr(0, 100);
                     replyCommentContent += "[略略略...]";
                 }
                 commentHtml = commentHtml.concat("<blockquote>\n" +
@@ -203,8 +203,10 @@
                     replyContent: replyCon
                 },
                 url: '/comment/add',
-                success: function (data) {
-
+                success: function (res) {
+                    if (res.code == '-1') {
+                        alert('评论发表失败')
+                    }
                 },
                 error: function () {
                     alert('后台请求出错')

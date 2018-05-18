@@ -56,7 +56,7 @@
         </div>
     </div>
     <script type="text/html" id="match-list-table-bar">
-        <a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>
+        <%--<a class="layui-btn layui-btn-primary layui-btn-xs" lay-event="detail">查看</a>--%>
         <a class="layui-btn layui-btn-xs" lay-event="edit">编辑</a>
         <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
     </script>

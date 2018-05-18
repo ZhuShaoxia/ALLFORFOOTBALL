@@ -62,8 +62,9 @@
 .article-list-body .article-list-body-right .hot-comment-list .hot-comment-item {
     padding: 5px;
     background-color: #c4fec2;
-    height: 40px;
+    min-height: 40px;
     margin-bottom: 3px;
+    overflow: auto;
 }
 
 .article-list-body .article-list-body-right .hot-comment-list .hot-comment-item .hot-comment-item-img span{
@@ -78,4 +79,5 @@
 
 .article-list-body .article-list-body-right .hot-comment-list .hot-comment-item .hot-comment-item-content {
     padding: 5px;
+    word-break: break-all;
 }

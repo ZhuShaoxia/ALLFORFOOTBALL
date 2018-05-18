@@ -17,7 +17,8 @@
     <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/user-info.css"/>
 
     <script src="${pageContext.request.contextPath}/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="${pageContext.request.contextPath}/js/bootstrap.min.js" type="text/javascript"
+            charset="utf-8"></script>
     <script src="${pageContext.request.contextPath}/js/jquery.validate.min.js"></script>
 
     <meta charset="utf-8"/>
@@ -72,7 +73,12 @@
                     <div class="userinfo-edit-item">
                         <span class="col-md-2">性别</span>
                         <div class="col-md-8 userinfo-edit-item-right">
-                            <span>${user.sex}</span>
+                            <c:if test="${user.sex==1}">
+                                <span>男</span>
+                            </c:if>
+                            <c:if test="${user.sex==2}">
+                                <span>女</span>
+                            </c:if>
                         </div>
                     </div>
 
@@ -87,7 +93,9 @@
                     <div class="userinfo-edit-item">
                         <span class="col-md-2">主队</span>
                         <div class="col-md-8 userinfo-edit-item-right">
-                            <span><img src="${user.club.imgUrl}" style="margin-bottom: 3px">&nbsp;${user.club.name}</span>
+                            <c:if test="${user.club.name!=null}">
+                                <span><img src="${user.club.imgUrl}" style="margin-bottom: 3px">&nbsp;${user.club.name}</span>
+                            </c:if>
                         </div>
                     </div>
                     <div class="userinfo-edit-item">

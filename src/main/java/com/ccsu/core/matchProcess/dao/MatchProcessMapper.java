@@ -23,7 +23,10 @@ public interface MatchProcessMapper extends BaseDao<MatchProcess> {
     List<MatchProcess> findAllMatchProcessByInfoIdAndTime(MatchProcess matchProcess);
 
     List<MatchProcess> findAllByMatchInfoId(Integer matchInfoId);
-    List<MatchProcess> searchPlayerEvent(Integer matchTypeId,Integer matchEventId);
+
+    List<MatchProcess> searchPlayerEvent(Integer matchTypeId, Integer matchEventId);
 
     void insertMatchProcess(List<MatchProcess> matchProcesses);
+
+    Integer searchCountEventByPlayer(Integer matchEventId, Integer playerId);
 }

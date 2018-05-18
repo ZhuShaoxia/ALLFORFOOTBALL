@@ -714,26 +714,32 @@
     <column id="193" parent="37" name="victory">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
     <column id="194" parent="37" name="draw">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
     <column id="195" parent="37" name="negative">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
     <column id="196" parent="37" name="goals">
       <Position>8</Position>
       <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
     <column id="197" parent="37" name="conceded">
       <Position>9</Position>
       <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
     <column id="198" parent="37" name="goalDifference">
       <Position>10</Position>
       <DataType>int(11)|0</DataType>
+      <DefaultExpression>&apos;0&apos;</DefaultExpression>
     </column>
     <column id="199" parent="37" name="score">
       <Position>11</Position>

@@ -179,6 +179,25 @@ public class UserController {
         return responseDto;
     }
 
+    /**
+     * 账号绑定之修改绑定邮箱账号
+     * @param user
+     * @return
+     */
+    @RequestMapping("/user/changeEmail")
+    public @ResponseBody
+    ResponseDto userUpdateEmail(User user) {
+        responseDto = new ResponseDto();
+        try {
+            userService.updateUserEmail(user);
+        } catch (Exception e) {
+            responseDto.setCode(MessageCode.ERROR);
+            e.printStackTrace();
+            return responseDto;
+        }
+        return responseDto;
+    }
+
 
     /**
      * 页面:修改密码
@@ -204,6 +223,22 @@ public class UserController {
         responseDto = new ResponseDto();
         try {
             userService.updateUserPwd(user);
+        } catch (Exception e) {
+            responseDto.setCode(MessageCode.ERROR);
+            e.printStackTrace();
+            return responseDto;
+        }
+        return responseDto;
+    }
+
+    @RequestMapping("/user/updateUser")
+    public @ResponseBody
+    ResponseDto updateUser(User user, HttpSession session) {
+        responseDto = new ResponseDto();
+        try {
+            userService.userUpdate(user);
+            User load = userService.load(user.getId());
+            session.setAttribute("user", load);
         } catch (Exception e) {
             responseDto.setCode(MessageCode.ERROR);
             e.printStackTrace();

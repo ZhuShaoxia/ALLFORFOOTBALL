@@ -123,8 +123,8 @@
                         <td style="width: 15px">位置</td>
                         <td style="width: 15px">号码</td>
                         <td style="width: 25px">姓名</td>
-                        <td style="width: 15px">出场</td>
-                        <td style="width: 15px">进球</td>
+                        <%--<td style="width: 15px">出场</td>--%>
+                        <%--<td style="width: 15px">进球</td>--%>
                         <td style="width: 15px">国籍</td>
                         </thead>
                         <tbody>
@@ -133,14 +133,14 @@
                                 <td>${player.playerPosition.position}</td>
                                 <td>${player.number}</td>
                                 <td>
-                                    <a href="/user/info/${player.id}">
+                                    <a href="/player/info/${player.id}">
                                         <img class="td-icon-img" src="${player.imgUrl}"
                                              alt="${player.name}">${player.name}
                                     </a>
                                 </td>
                                     <%--TODO:出场次数--%>
-                                <td>20</td>
-                                <td>9</td>
+                                <%--<td>20</td>--%>
+                                <%--<td>9</td>--%>
                                 <td>${player.country}</td>
                             </tr>
                         </c:forEach>

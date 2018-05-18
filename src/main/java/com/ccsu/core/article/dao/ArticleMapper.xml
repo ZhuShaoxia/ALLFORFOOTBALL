@@ -87,6 +87,7 @@
                 "%"#{_parameter}"%" or c.type LIKE "%"#{_parameter}"%" )
             </if>
         </where>
+        ORDER BY a.id DESC
     </select>
 
 
@@ -121,6 +122,7 @@
                 AND str_to_date(a.gmt_create, '%Y-%m-%d') <![CDATA[ <= ]]> str_to_date(#{endTime}, '%Y-%m-%d')
             </if>
         </where>
+        ORDER BY a.id DESC
     </select>
 
     <!--查询用户发表的文章-->
@@ -137,7 +139,7 @@
         a.gmt_create createTime,
         a.gmt_modified modifiedTime
         FROM tb_article a, tb_user b, tb_article_type c
-        WHERE a.userId = b.id AND a.articleTypeId = c.id AND a.userId = #{id}
+        WHERE a.userId = b.id AND a.articleTypeId = c.id AND a.userId = #{id} ORDER BY a.id DESC
     </select>
 
     <!--所有的轮播文章-->
@@ -182,7 +184,7 @@
         FROM tb_article a, tb_user b, tb_article_type c
         where a.userId = b.id AND a.articleTypeId = c.id AND isCarousel = 0
         AND str_to_date(a.gmt_create, '%Y-%m-%d')
-        BETWEEN date_sub(curdate(), INTERVAL 2 DAY) AND curdate()
+        BETWEEN date_sub(curdate(), INTERVAL 2 DAY) AND curdate() ORDER BY a.id DESC
     </select>
 
     <select id="searchArticleForIndex" parameterType="Integer" resultMap="ArticleMap">

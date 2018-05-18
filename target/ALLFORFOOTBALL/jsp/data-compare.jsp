@@ -141,12 +141,12 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/head.js"></script>
 <script type="text/javascript">
     var node = [
-        5, "进球", 10,
-        20, "助攻", 25,
-        80, "点球", 75,
-        65, "黄牌", 73,
-        35, "红牌", 27,
-        88, "乌龙球", 72,
+        ${leftGoals}, "进球", ${rightGoals},
+        ${leftAssists}, "助攻", ${rightAssists},
+        ${leftPenalty}, "点球", ${rightPenalty},
+        ${leftYellowCard}, "黄牌", ${rightYellowCard},
+        ${leftRedCard}, "红牌", ${rightRedCard},
+        ${leftOwnGoals}, "乌龙球", ${rightOwnGoals},
         ${playerLeft.speed}, "速度", ${playerRight.speed},
         ${playerLeft.shooting}, "射门", ${playerRight.shooting},
         ${playerLeft.pass}, "传球", ${playerRight.pass},

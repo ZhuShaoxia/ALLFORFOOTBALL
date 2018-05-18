@@ -63,7 +63,7 @@
 <body>
 <!--导航栏-->
 <%@include file="head.jsp" %>
-<div class="container-fluid">
+<div class="container-fluid" style="min-height: 680px">
     <div class="col-md-9">
         <div class="player-info-head">
             <div class="col-md-9 player-info-head-left">
@@ -112,38 +112,38 @@
                 <img style="width: 130px;height:160px;" src="${player.imgUrl}" alt="${player.name}">
             </div>
         </div>
-        <%--比赛数据--%>
-        <div class=" match-data player-item">
-            <div class="match-data-head player-item-head">
-                <span>比赛数据</span>
-            </div>
-            <div class="match-data-body">
-                <table class="table table-striped">
-                    <thead>
-                    <td>赛季</td>
-                    <td>俱乐部</td>
-                    <td>上场</td>
-                    <td>首发</td>
-                    <td>进球</td>
-                    <td>助攻</td>
-                    <td>黄牌</td>
-                    <td>红牌</td>
-                    <td>替补</td>
-                    </thead>
-                    <tr>
-                        <td>2018</td>
-                        <td>广州恒大淘宝俱乐部</td>
-                        <td>20</td>
-                        <td>19</td>
-                        <td>10</td>
-                        <td>2</td>
-                        <td>0</td>
-                        <td>0</td>
-                        <td>1</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+        <%--比赛数据 TODO:以后实现--%>
+        <%--<div class=" match-data player-item">--%>
+            <%--<div class="match-data-head player-item-head">--%>
+                <%--<span>比赛数据</span>--%>
+            <%--</div>--%>
+            <%--<div class="match-data-body">--%>
+                <%--<table class="table table-striped">--%>
+                    <%--<thead>--%>
+                    <%--<td>赛季</td>--%>
+                    <%--<td>俱乐部</td>--%>
+                    <%--<td>上场</td>--%>
+                    <%--<td>首发</td>--%>
+                    <%--<td>进球</td>--%>
+                    <%--<td>助攻</td>--%>
+                    <%--<td>黄牌</td>--%>
+                    <%--<td>红牌</td>--%>
+                    <%--<td>替补</td>--%>
+                    <%--</thead>--%>
+                    <%--<tr>--%>
+                        <%--<td>2018</td>--%>
+                        <%--<td>广州恒大淘宝俱乐部</td>--%>
+                        <%--<td>20</td>--%>
+                        <%--<td>19</td>--%>
+                        <%--<td>10</td>--%>
+                        <%--<td>2</td>--%>
+                        <%--<td>0</td>--%>
+                        <%--<td>0</td>--%>
+                        <%--<td>1</td>--%>
+                    <%--</tr>--%>
+                <%--</table>--%>
+            <%--</div>--%>
+        <%--</div>--%>
         <%--荣誉记录--%>
         <div class=" player-honer player-item">
             <div class="player-honer-head player-item-head">
@@ -194,144 +194,143 @@
     </div>
     <div class="col-md-3">
         <%--综合能力--%>
-        <div id="container" class="row" style="height: 400px;background-color: RGB(247, 247, 247);margin-bottom: 5px">
-        </div>
-        <%--队员--%>
-        <div class="row">
-            <div class="players">
-                <div class="player-item-head">
-                    <span>广州恒大淘宝队员</span>
-                </div>
-                <div class="players-body">
-                    <table class="table">
-                        <thead>
-                        <tr class="success">
-                            <td style="width: 30%">前锋</td>
-                            <td style="width: 40%">进球</td>
-                            <td style="width: 30%">国籍</td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td><img class="td-icon-img"
-                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
-                            </td>
-                            <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
-                                     alt=""></td>
-                        </tr>
-                        <tr>
-                            <td><img class="td-icon-img"
-                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
-                            </td>
-                            <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
-                                     alt=""></td>
-                        </tr>
-                        <tr>
-                            <td><img class="td-icon-img"
-                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
-                            </td>
-                            <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
-                                     alt=""></td>
-                        </tr>
-                        <tr>
-                            <td><img class="td-icon-img"
-                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
-                            </td>
-                            <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
-                                     alt=""></td>
-                        </tr>
-                        </tbody>
-                        <thead>
-                        <tr class="success">
-                            <td>中场</td>
-                            <td>进球</td>
-                            <td>国籍</td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td><img class="td-icon-img"
-                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
-                            </td>
-                            <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
-                                     alt=""></td>
-                        </tr>
-                        </tbody>
-                        <thead class="success">
-                        <tr class="success">
-                            <td>后卫</td>
-                            <td>进球</td>
-                            <td>国籍</td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td><img class="td-icon-img"
-                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
-                            </td>
-                            <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
-                                     alt=""></td>
-                        </tr>
-                        <tr>
-                            <td><img class="td-icon-img"
-                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
-                            </td>
-                            <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
-                                     alt=""></td>
-                        </tr>
-                        <tr>
-                            <td><img class="td-icon-img"
-                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
-                            </td>
-                            <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
-                                     alt=""></td>
-                        </tr>
-                        </tbody>
-                        <thead>
-                        <tr class="success">
-                            <td>门将</td>
-                            <td>进球</td>
-                            <td>国籍</td>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td><img class="td-icon-img"
-                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
-                            </td>
-                            <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
-                                     alt=""></td>
-                        </tr>
-                        <tr>
-                            <td><img class="td-icon-img"
-                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
-                            </td>
-                            <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
-                                     alt=""></td>
-                        </tr>
-                        <tr>
-                            <td><img class="td-icon-img"
-                                     src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰
-                            </td>
-                            <td>2</td>
-                            <td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"
-                                     alt=""></td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
+        <div id="container" class="row" style="height: 400px;background-color: RGB(247, 247, 247);margin-bottom: 5px"></div>
+        <%--队员 TODO:同俱乐部其他队员 未实现--%>
+        <%--<div class="row">--%>
+            <%--<div class="players">--%>
+                <%--<div class="player-item-head">--%>
+                    <%--<span>广州恒大淘宝队员</span>--%>
+                <%--</div>--%>
+                <%--<div class="players-body">--%>
+                    <%--<table class="table">--%>
+                        <%--<thead>--%>
+                        <%--<tr class="success">--%>
+                            <%--<td style="width: 30%">前锋</td>--%>
+                            <%--<td style="width: 40%">进球</td>--%>
+                            <%--<td style="width: 30%">国籍</td>--%>
+                        <%--</tr>--%>
+                        <%--</thead>--%>
+                        <%--<tbody>--%>
+                        <%--<tr>--%>
+                            <%--<td><img class="td-icon-img"--%>
+                                     <%--src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰--%>
+                            <%--</td>--%>
+                            <%--<td>2</td>--%>
+                            <%--<td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"--%>
+                                     <%--alt=""></td>--%>
+                        <%--</tr>--%>
+                        <%--<tr>--%>
+                            <%--<td><img class="td-icon-img"--%>
+                                     <%--src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰--%>
+                            <%--</td>--%>
+                            <%--<td>2</td>--%>
+                            <%--<td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"--%>
+                                     <%--alt=""></td>--%>
+                        <%--</tr>--%>
+                        <%--<tr>--%>
+                            <%--<td><img class="td-icon-img"--%>
+                                     <%--src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰--%>
+                            <%--</td>--%>
+                            <%--<td>2</td>--%>
+                            <%--<td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"--%>
+                                     <%--alt=""></td>--%>
+                        <%--</tr>--%>
+                        <%--<tr>--%>
+                            <%--<td><img class="td-icon-img"--%>
+                                     <%--src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰--%>
+                            <%--</td>--%>
+                            <%--<td>2</td>--%>
+                            <%--<td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"--%>
+                                     <%--alt=""></td>--%>
+                        <%--</tr>--%>
+                        <%--</tbody>--%>
+                        <%--<thead>--%>
+                        <%--<tr class="success">--%>
+                            <%--<td>中场</td>--%>
+                            <%--<td>进球</td>--%>
+                            <%--<td>国籍</td>--%>
+                        <%--</tr>--%>
+                        <%--</thead>--%>
+                        <%--<tbody>--%>
+                        <%--<tr>--%>
+                            <%--<td><img class="td-icon-img"--%>
+                                     <%--src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰--%>
+                            <%--</td>--%>
+                            <%--<td>2</td>--%>
+                            <%--<td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"--%>
+                                     <%--alt=""></td>--%>
+                        <%--</tr>--%>
+                        <%--</tbody>--%>
+                        <%--<thead class="success">--%>
+                        <%--<tr class="success">--%>
+                            <%--<td>后卫</td>--%>
+                            <%--<td>进球</td>--%>
+                            <%--<td>国籍</td>--%>
+                        <%--</tr>--%>
+                        <%--</thead>--%>
+                        <%--<tbody>--%>
+                        <%--<tr>--%>
+                            <%--<td><img class="td-icon-img"--%>
+                                     <%--src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰--%>
+                            <%--</td>--%>
+                            <%--<td>2</td>--%>
+                            <%--<td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"--%>
+                                     <%--alt=""></td>--%>
+                        <%--</tr>--%>
+                        <%--<tr>--%>
+                            <%--<td><img class="td-icon-img"--%>
+                                     <%--src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰--%>
+                            <%--</td>--%>
+                            <%--<td>2</td>--%>
+                            <%--<td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"--%>
+                                     <%--alt=""></td>--%>
+                        <%--</tr>--%>
+                        <%--<tr>--%>
+                            <%--<td><img class="td-icon-img"--%>
+                                     <%--src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰--%>
+                            <%--</td>--%>
+                            <%--<td>2</td>--%>
+                            <%--<td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"--%>
+                                     <%--alt=""></td>--%>
+                        <%--</tr>--%>
+                        <%--</tbody>--%>
+                        <%--<thead>--%>
+                        <%--<tr class="success">--%>
+                            <%--<td>门将</td>--%>
+                            <%--<td>进球</td>--%>
+                            <%--<td>国籍</td>--%>
+                        <%--</tr>--%>
+                        <%--</thead>--%>
+                        <%--<tbody>--%>
+                        <%--<tr>--%>
+                            <%--<td><img class="td-icon-img"--%>
+                                     <%--src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰--%>
+                            <%--</td>--%>
+                            <%--<td>2</td>--%>
+                            <%--<td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"--%>
+                                     <%--alt=""></td>--%>
+                        <%--</tr>--%>
+                        <%--<tr>--%>
+                            <%--<td><img class="td-icon-img"--%>
+                                     <%--src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰--%>
+                            <%--</td>--%>
+                            <%--<td>2</td>--%>
+                            <%--<td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"--%>
+                                     <%--alt=""></td>--%>
+                        <%--</tr>--%>
+                        <%--<tr>--%>
+                            <%--<td><img class="td-icon-img"--%>
+                                     <%--src="${pageContext.request.contextPath}/img/club/china/p_alan.jpg" alt="">阿兰--%>
+                            <%--</td>--%>
+                            <%--<td>2</td>--%>
+                            <%--<td><img class="td-icon-img" src="${pageContext.request.contextPath}/img/country/china.png"--%>
+                                     <%--alt=""></td>--%>
+                        <%--</tr>--%>
+                        <%--</tbody>--%>
+                    <%--</table>--%>
+                <%--</div>--%>
+            <%--</div>--%>
+        <%--</div>--%>
     </div>
 </div>
 <!--底部-->

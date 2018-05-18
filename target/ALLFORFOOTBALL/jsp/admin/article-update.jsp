@@ -59,7 +59,7 @@
                         <label for="subtitle" class="layui-form-label">文章副标题</label>
                         <div class="layui-input-block">
                             <input value="${article.subtitle}" id="subtitle" type="text" name="subtitle"
-                                   lay-verify="required" placeholder="请输入"
+                                   lay-verify="" placeholder="请输入"
                                    autocomplete="off"
                                    class="layui-input">
                         </div>

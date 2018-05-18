@@ -171,6 +171,9 @@ public class ArticleController {
         Article article = null;
         try {
             article = articleService.load(id);
+            if (article == null) {
+                return "redirect:/error";
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

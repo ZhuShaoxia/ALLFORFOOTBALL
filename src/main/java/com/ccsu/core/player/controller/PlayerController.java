@@ -13,6 +13,7 @@ import com.ccsu.core.country.domain.Country;
 import com.ccsu.core.country.service.CountryService;
 import com.ccsu.core.honer.domain.Honer;
 import com.ccsu.core.honer.service.HonerService;
+import com.ccsu.core.matchProcess.service.MatchProcessService;
 import com.ccsu.core.player.domain.Player;
 import com.ccsu.core.player.service.PlayerService;
 import com.ccsu.core.playerPosition.domain.PlayerPosition;
@@ -52,6 +53,8 @@ public class PlayerController {
     private HonerService honerService;
     @Autowired
     private ArticleService articleService;
+    @Autowired
+    private MatchProcessService matchProcessService;
     private ResponseDto responseDto;
 
     /**
@@ -96,14 +99,42 @@ public class PlayerController {
         }
         Player playerLeft = null;
         Player playerRight = null;
+        Integer leftGoals = null, rightGoals = null,//进球
+                leftAssists = null, rightAssists = null,//助攻
+                leftPenalty = null, rightPenalty = null,//点球
+                leftYellowCard = null, rightYellowCard = null,//黄牌
+                leftRedCard = null, rightRedCard = null,//红牌
+                leftOwnGoals = null, rightOwnGoals = null;//乌龙球
         try {
             playerLeft = playerService.load(playerLeftId);
             playerRight = playerService.load(playerRightId);
-
+            leftGoals = matchProcessService.searchCountEventByPlayer(3, playerLeftId);
+            rightGoals = matchProcessService.searchCountEventByPlayer(3, playerRightId);
+            leftAssists = matchProcessService.searchCountEventByPlayer(4, playerLeftId);
+            rightAssists = matchProcessService.searchCountEventByPlayer(4, playerRightId);
+            leftPenalty = matchProcessService.searchCountEventByPlayer(5, playerLeftId);
+            rightPenalty = matchProcessService.searchCountEventByPlayer(5, playerRightId);
+            leftYellowCard = matchProcessService.searchCountEventByPlayer(7, playerLeftId);
+            rightYellowCard = matchProcessService.searchCountEventByPlayer(7, playerRightId);
+            leftRedCard = matchProcessService.searchCountEventByPlayer(8, playerLeftId);
+            rightRedCard = matchProcessService.searchCountEventByPlayer(8, playerRightId);
+            leftOwnGoals = matchProcessService.searchCountEventByPlayer(10, playerLeftId);
+            rightOwnGoals = matchProcessService.searchCountEventByPlayer(10, playerRightId);
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        model.addAttribute("leftGoals", leftGoals);
+        model.addAttribute("rightGoals", rightGoals);
+        model.addAttribute("leftAssists", leftAssists);
+        model.addAttribute("rightAssists", rightAssists);
+        model.addAttribute("leftPenalty", leftPenalty);
+        model.addAttribute("rightPenalty", rightPenalty);
+        model.addAttribute("leftYellowCard", leftYellowCard);
+        model.addAttribute("rightYellowCard", rightYellowCard);
+        model.addAttribute("leftRedCard", leftRedCard);
+        model.addAttribute("rightRedCard", rightRedCard);
+        model.addAttribute("leftOwnGoals", leftOwnGoals);
+        model.addAttribute("rightOwnGoals", rightOwnGoals);
         model.addAttribute("playerLeft", playerLeft);
         model.addAttribute("playerRight", playerRight);
         return "data-compare";
@@ -185,6 +216,9 @@ public class PlayerController {
         List<Article> articles = null;
         try {
             player = playerService.load(id);
+            if (player == null) {
+                return "redirect:/error";
+            }
             honers = honerService.findHonerByPlayerId(id);
             articles = articleService.findAll(player.getName());
         } catch (Exception e) {

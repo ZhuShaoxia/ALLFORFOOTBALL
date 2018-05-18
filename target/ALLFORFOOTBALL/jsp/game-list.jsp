@@ -54,8 +54,8 @@
             <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="125">
                 <li class="active"><a href="/matches?matchTypeId=1">中超</a></li>
                 <li><a href="/matches?matchTypeId=2">西甲</a></li>
-                <li><a href="/matches?matchTypeId=3">意甲</a></li>
-                <li><a href="/matches?matchTypeId=4">英超</a></li>
+                <li><a href="/matches?matchTypeId=3">英超</a></li>
+                <li><a href="/matches?matchTypeId=4">意甲</a></li>
                 <li><a href="/matches?matchTypeId=5">德甲</a></li>
                 <li><a href="/matches?matchTypeId=6">法甲</a></li>
             </ul>
@@ -85,12 +85,12 @@
                             <table class="table table-hover">
                                 <c:forEach items="${map.value}" var="item">
                                     <tr style="text-align: center ">
-                                        <td>${item.matchState.state}</td>
-                                        <td>${item.matchType.type}</td>
-                                        <td><a href="/club/info/${item.homeClub.id}">${item.homeClub.name}</a></td>
-                                        <td>${item.matchScore}</td>
-                                        <td><a href="/club/info/${item.awayClub.id}">${item.awayClub.name}</a></td>
-                                        <td><a href="/match/info/${item.id}">比赛信息</a></td>
+                                        <td style="width: 15%">${item.matchState.state}</td>
+                                        <td style="width: 15%">${item.matchType.type}</td>
+                                        <td style="width: 25%"><a href="/club/info/${item.homeClub.id}">${item.homeClub.name}</a></td>
+                                        <td style="width: 10%">${item.matchScore}</td>
+                                        <td style="width: 25%"><a href="/club/info/${item.awayClub.id}">${item.awayClub.name}</a></td>
+                                        <td style="width: 10%"><a href="/match/info/${item.id}">比赛信息</a></td>
                                     </tr>
                                 </c:forEach>
                             </table>

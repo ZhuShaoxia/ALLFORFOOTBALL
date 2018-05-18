@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zhuxiaolei
@@ -51,25 +52,19 @@
         </ul>
     </div>
 
-    <input type="hidden"  id="userId" value="${user.id}">
+    <input type="hidden" id="userId" value="${user.id}">
     <div class="row">
         <div class="setting-bind">
-            <p>绑定邮箱和手机。账号更安全。</p>
+            <p>绑定邮箱和手机,账号更安全。</p>
             <div class="item">
                 <span class="name">邮箱</span>
-                <%
-                    String email = user.getEmail();
-                    if (email == null) {
-                %>
-                <a class="changeBtn" id="bindEmailBtn" onclick="bindAccount('email')">绑定邮箱</a>
-                <%
-                } else {
-                %>
-                <span class="content">${user.email}</span>
-                <a class="changeBtn" onclick="bindAccount('email')">修改</a>
-                <%
-                    }
-                %>
+                <c:if test="${user.email==null}">
+                    <a class="changeBtn" id="bindEmailBtn" onclick="bindAccount('email')">绑定邮箱</a>
+                </c:if>
+                <c:if test="${user.email!=null}">
+                    <span class="content">${user.email}</span>
+                    <a class="changeBtn" onclick="bindAccount('email')">修改</a>
+                </c:if>
             </div>
             <div class="item">
                 <div>
@@ -197,37 +192,52 @@
         var SMSCode = ""
 
         $("#btnSendCode").on('click', function () {
-            var dealTypeStr = $("#bindInput").attr("placeholder").substring(3, 4)
-            if (dealTypeStr == null | dealTypeStr == "") {
-                return
-            }
             var account = $("#bindInput").val()
-            if (account == "") {
-                alert('输入不能为空 请输入')
-                return
-            }else if(account=='${user.phone}'){
-                alert('请输入非当前手机号')
-                return
-            }else {
-                var code =''
-                $.ajax({
-                    data:{phone:account},
-                    url:'/user/verify/phone',
-                    async:false,
-                    success:function (res) {
-                        code = res.code
-                    }
-                })
-                if(code=='-1'){
-                    alert('当前手机号已存在')
+            var dealType = getDealType()
+            if (dealType == 'phone') {
+                if (account == '') {
+                    alert('输入不能为空 请输入')
                     return
+                } else if (account == '${user.phone}') {
+                    alert('请输入非当前手机号')
+                    return
+                } else {
+                    var code = ''
+                    $.ajax({
+                        data: {phone: account},
+                        url: '/user/verify/phone',
+                        async: false,
+                        success: function (res) {
+                            code = res.code
+                        }
+                    })
+                    if (code == '-1') {
+                        alert('当前手机号已存在')
+                        return
+                    }
                 }
-            }
-            var dealType = ''
-            if (dealTypeStr == '手') {
-                dealType = 'phone'
-            } else if (dealTypeStr == '邮') {
-                dealType = 'email'
+            } else if (dealType == 'email') {
+                if (account == "") {
+                    alert('输入不能为空 请输入')
+                    return
+                } else if (account == '${user.phone}') {
+                    alert('请输入非当前邮箱账号')
+                    return
+                } else {
+                    var code = ''
+                    $.ajax({
+                        data: {email: account},
+                        url: '/user/verify/email',
+                        async: false,
+                        success: function (res) {
+                            code = res.code
+                        }
+                    })
+                    if (code == '-1') {
+                        alert('当前邮箱账号已存在')
+                        return
+                    }
+                }
             } else {
                 return
             }
@@ -236,33 +246,79 @@
 
         $("#checkCodeBtn2").on('click', function () {
             var account = $("#bindInput").val()
-            if (account == "") {
-                alert('输入不能为空 请输入')
-                return
-            }else if(account=='${user.phone}'){
-                alert('请输入非当前手机号')
-                return
-            }
-            console.log('SMSCode=' + SMSCode)
-            var textCode = $("#bindCode").val()
-            if (textCode == "" || textCode == null || textCode.length != 6) {
-                alert('请输入六位短信验证码')
-                return
-            } else if (SMSCode == textCode) {
-                var userId = $("#userId").val()
-                $.ajax({
-                    data:{
-                        id:userId,
-                        phone:account
-                    },
-                    url:'/user/changePhone',
-                    success:function (res) {
-                        alert('修改成功')
-                        location.href="/user/setting/bind"
-                    }
-                })
+            var dealType = getDealType()
+            if (dealType == 'phone') {
+                if (account == "") {
+                    alert('输入不能为空 请输入')
+                    return
+                } else if (account == '${user.phone}') {
+                    alert('请输入非当前手机号')
+                    return
+                }
+                var textCode = $("#bindCode").val()
+                if (textCode == "" || textCode == null || textCode.length != 6) {
+                    alert('请输入六位短信验证码')
+                    return
+                } else if (SMSCode == textCode) {
+                    var userId = $("#userId").val()
+                    $.ajax({
+                        data: {
+                            id: userId,
+                            phone: account
+                        },
+                        url: '/user/changePhone',
+                        success: function (res) {
+                            alert('修改成功')
+                            location.href = "/user/setting/bind"
+                        }
+                    })
+                }
+            } else if (dealType == 'email') {
+                if (account == "") {
+                    alert('输入不能为空 请输入')
+                    return
+                } else if (account == '${user.email}') {
+                    alert('请输入非当前邮箱')
+                    return
+                }
+                var textCode = $("#bindCode").val()
+                if (textCode == "" || textCode == null || textCode.length != 6) {
+                    alert('请输入六位邮箱验证码')
+                    return
+                } else if (SMSCode == textCode) {
+                    var userId = $("#userId").val()
+                    $.ajax({
+                        data: {
+                            id: userId,
+                            email: account
+                        },
+                        url: '/user/changeEmail',
+                        success: function (res) {
+                            if(res.code!='-1'){
+                                alert('修改成功')
+                                location.href = "/user/setting/bind"
+                            }else {
+                                alert('后台服务正忙。。。')
+                            }
+                        }
+                    })
+                }
             }
         })
 
     })
+
+    function getDealType() {
+        var dealTypeStr = $("#bindInput").attr("placeholder").substring(3, 4)
+        if (dealTypeStr == null | dealTypeStr == "") {
+            return
+        }
+        var dealType
+        if (dealTypeStr == '手') {
+            dealType = 'phone'
+        } else if (dealTypeStr == '邮') {
+            dealType = 'email'
+        }
+        return dealType;
+    }
 </script>

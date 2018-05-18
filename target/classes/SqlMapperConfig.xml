@@ -30,6 +30,7 @@
         <typeAlias type="com.ccsu.core.playerPosition.domain.PlayerPosition"/>
         <typeAlias type="com.ccsu.core.player.domain.Player"/>
         <typeAlias type="com.ccsu.core.ranking.domain.Ranking"/>
+        <typeAlias type="com.ccsu.core.ranking.domain.RankingDo"/>
         <typeAlias type="com.ccsu.core.user.domain.User"/>
 
         <typeAlias type="com.ccsu.core.common.domain.RequestDto"/>

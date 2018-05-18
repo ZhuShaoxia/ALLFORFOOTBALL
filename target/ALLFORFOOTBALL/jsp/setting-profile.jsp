@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: zhuxiaolei
@@ -52,7 +53,10 @@
 </style>
 <script>
     $(function () {
-        //    select2配置
+        /**
+         *
+         * select2 配置
+         */
         $(".js-data-example-ajax").select2({
             placeholder: '俱乐部选择',
 //            data: [{id: 0, text: 'story'},{id: 1, text: 'bug'},{id: 2, text: 'task'}],
@@ -66,7 +70,7 @@
                         page: params.page
                     };
                 },
-                delay:400,
+                delay: 400,
                 processResults: function (data, params) {
                     //返回的选项必须处理成以下格式
                     //var results =  [{ id: 0, text: 'enhancement' }, { id: 1, text: 'bug' }, { id: 2, text: 'duplicate' }, { id: 3, text: 'invalid' }, { id: 4, text: 'wontfix' }];
@@ -79,6 +83,22 @@
                 // Additional AJAX parameters go here; see the end of this chapter for the full code of this example
             }
         });
+
+        /**
+         * 表单验证
+         */
+        $('#settingProfileForm').validate({
+            rules: {
+                name: {
+                    rangelength: [0, 10]
+                }
+            },
+            messages: {
+                name: {
+                    rangelength: "请输入10位以内用户姓名"
+                }
+            }
+        })
     })
 
 
@@ -89,9 +109,37 @@
     }
 
     function saveBtn() {
-        var spans = $(".userinfo-edit-item-right").children("span")
-        spans.show()
-        $(".editing").hide()
+        if ($("#settingProfileForm").valid()) {
+            var spans = $(".userinfo-edit-item-right").children("span")
+            spans.show()
+            $(".editing").hide()
+            var imgUrl = $("#finalImg").attr("src")
+            var userId = '${user.id}'
+            var name = $("#name").val()
+            var sex = $("input[name=sex]:checked").val()
+            var clubId = $(".js-data-example-ajax").select2("val")
+            var profile = $("#profile").val()
+            $.ajax({
+                data: {
+                    id: userId,
+                    name: name,
+                    sex: sex,
+                    imgUrl:imgUrl,
+                    "club.id": clubId,
+                    profile: profile
+                },
+                type:"POST",
+                url: '/user/updateUser',
+                success: function (res) {
+                    if(res.code==-1){
+                        alert('后台请求出错')
+                    }else {
+                        window.location.href="/user/setting/info"
+                    }
+
+                }
+            })
+        }
     }
 </script>
 
@@ -107,104 +155,106 @@
         </ul>
     </div>
     <div class="row">
-        <div class="col-md-2">
-            <!--头像-->
-            <div style="width: 150px;height: 150px;border: solid 1px beige">
-                <img id="finalImg" alt="请上传头像" src="${user.imgUrl}" style="width: 150px;height: 150px">
+        <form method="post" name="settingProfileForm" id="settingProfileForm">
+            <div class="col-md-2">
+                <!--头像-->
+                <div style="width: 150px;height: 150px;border: solid 1px beige">
+                    <img id="finalImg" alt="请上传头像" src="${user.imgUrl}" style="width: 150px;height: 150px">
+                </div>
+                <div class="editing">
+                    <button class="l-btn" style="margin-left: 33px;margin-top: 5px" id="replaceImg">更换头像</button>
+                </div>
             </div>
-            <div class="editing">
-                <button class="l-btn" style="margin-left: 33px;margin-top: 5px" id="replaceImg">更换头像</button>
-            </div>
-        </div>
-        <div class="col-md-10">
-            <div class="userinfo-head">
-                <!--昵称-->
-                <h1>${user.nickname}</h1>
-            </div>
-            <div class="userinfo-edit-fileds">
-                <div class="userinfo-edit-item">
-                    <span class="col-md-2">姓名</span>
-                    <div class="col-md-8 userinfo-edit-item-right">
-                        <!--姓名-->
-                        <span>${user.name}</span>
-                        <div class="editing">
-                            <input type="text" class="form-control" id="" placeholder="请输入姓名"
-                                   value="${user.name}">
+            <div class="col-md-10">
+                <div class="userinfo-head">
+                    <!--昵称-->
+                    <h1>${user.nickname}</h1>
+                </div>
+                <div class="userinfo-edit-fileds">
+                    <div class="userinfo-edit-item">
+                        <span class="col-md-2">姓名</span>
+                        <div class="col-md-8 userinfo-edit-item-right">
+                            <!--姓名-->
+                            <span>${user.name}</span>
+                            <div class="editing">
+                                <input id="name" name="name" type="text" class="form-control" placeholder="请输入姓名"
+                                       value="${user.name}">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="userinfo-edit-item">
-                    <span class="col-md-2">性别</span>
-                    <div class="col-md-8 userinfo-edit-item-right">
-                        <%
-                            if (user.getSex() == 1) {
-                        %>
-                        <span>男</span>
-                        <%
-                        } else if (user.getSex() == 2) {
-                        %>
-                        <span>女</span>
-                        <%
-                            }
-                        %>
-                        <div class="editing">
-                            <%
-                                if (user.getSex() == 1) {
-                            %>
-                            <label class="radio-inline">
-                                <input type="radio" name="sex" value="1" checked><span>男</span>
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="sex" value="2"><span>女</span>
-                            </label>
-                            <%
-                            } else if (user.getSex() == 2) {
-                            %>
-                            <label class="radio-inline">
-                                <input type="radio" name="sex" value="1"><span>男</span>
-                            </label>
-                            <label class="radio-inline">
-                                <input type="radio" name="sex" value="2" checked><span>女</span>
-                            </label>
-                            <%
-                                }
-                            %>
+                    <div class="userinfo-edit-item">
+                        <span class="col-md-2">性别</span>
+                        <div class="col-md-8 userinfo-edit-item-right">
+                            <c:if test="${user.sex==1}">
+                                <span>男</span>
+                            </c:if>
+                            <c:if test="${user.sex==2}">
+                                <span>女</span>
+                            </c:if>
+                            <div class="editing">
+                                <c:if test="${user.sex==null}">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="sex" value="1"><span>男</span>
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="sex" value="2"><span>女</span>
+                                    </label>
+                                </c:if>
+                                <c:if test="${user.sex==1}">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="sex" value="1" checked><span>男</span>
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="sex" value="2"><span>女</span>
+                                    </label>
+                                </c:if>
+                                <c:if test="${user.sex==2}">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="sex" value="1"><span>男</span>
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="sex" value="2" checked><span>女</span>
+                                    </label>
+                                </c:if>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="userinfo-edit-item">
+                        <span class="col-md-2">主队</span>
+                        <div class="col-md-8 userinfo-edit-item-right">
+                            <c:if test="${user.club.name!=null}">
+                                <span>
+                                    <img src="${user.club.imgUrl}" style="margin-bottom: 3px">&nbsp;${user.club.name}
+                                </span>
+                            </c:if>
+                            <div class="editing">
+                                <select name="clubId" class="js-data-example-ajax">
+                                    <option value="${user.club.id}">${user.club.name}</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="userinfo-edit-item">
-                    <span class="col-md-2">主队</span>
-                    <div class="col-md-8 userinfo-edit-item-right">
-                        <span><img src="${user.club.imgUrl}"
-                                   style="margin-bottom: 3px">&nbsp;${user.club.name}</span>
-                        <div class="editing">
-                            <select class="js-data-example-ajax">
-                                <option value="">${user.club.name}</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="userinfo-edit-item">
-                    <span class="col-md-2">简介</span>
-                    <div class="col-md-8 userinfo-edit-item-right">
-                        <span>${user.profile}</span>
-                        <div class="editing">
-                            <textarea name="" cols="30" rows="3" class="form-control"
+                    <div class="userinfo-edit-item">
+                        <span class="col-md-2">简介</span>
+                        <div class="col-md-8 userinfo-edit-item-right">
+                            <span>${user.profile}</span>
+                            <div class="editing">
+                            <textarea id="profile" name="profile" cols="30" rows="3" class="form-control"
                                       style="resize: none;">${user.profile}</textarea>
-                        </div>
+                            </div>
 
+                        </div>
                     </div>
-                </div>
-                <div class="userinfo-edit-item">
-                    <span class="col-md-2">注册时间</span>
-                    <div class="col-md-8 userinfo-edit-item-right">
-                        <p style="font-size: 18px;color: #ff3b59;">${user.createTime}</p>
+                    <div class="userinfo-edit-item">
+                        <span class="col-md-2">注册时间</span>
+                        <div class="col-md-8 userinfo-edit-item-right">
+                            <p style="font-size: 18px;color: #ff3b59;">${user.createTime}</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
     <div class="row">
         <div class="col-md-12" style="margin-top: 10px;">
@@ -246,7 +296,6 @@
 </div>
 <!--图片裁剪框 end-->
 <script>
-
     //弹出框水平垂直居中
     (window.onresize = function () {
         var win_height = $(window).height();
@@ -267,6 +316,7 @@
     //弹出图片裁剪框
     $("#replaceImg").on("click", function () {
         $(".tailoring-container").toggle();
+        return false;
     });
 
     //图像上传

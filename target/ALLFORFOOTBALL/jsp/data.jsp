@@ -50,7 +50,7 @@
 
 <body>
 <%@include file="head.jsp" %>
-<div class="container" style="min-height: 668px">
+<div class="container" style="min-height: 638px">
     <div class="row">
 
         <div class="col-md-2">
@@ -73,18 +73,18 @@
                 </c:choose>
                 <c:choose>
                     <c:when test="${matchTypeId==3}">
-                        <li class="active"><a href="/data?matchTypeId=3">意甲</a></li>
+                        <li class="active"><a href="/data?matchTypeId=3">英超</a></li>
                     </c:when>
                     <c:otherwise>
-                        <li><a href="/data?matchTypeId=3">意甲</a></li>
+                        <li><a href="/data?matchTypeId=3">英超</a></li>
                     </c:otherwise>
                 </c:choose>
                 <c:choose>
                     <c:when test="${matchTypeId==4}">
-                        <li class="active"><a href="/data?matchTypeId=4">英超</a></li>
+                        <li class="active"><a href="/data?matchTypeId=4">意甲</a></li>
                     </c:when>
                     <c:otherwise>
-                        <li><a href="/data?matchTypeId=4">英超</a></li>
+                        <li><a href="/data?matchTypeId=4">意甲</a></li>
                     </c:otherwise>
                 </c:choose>
                 <c:choose>
@@ -153,7 +153,7 @@
                                     <td>${ranking.negative}</td>
                                     <td>${ranking.goals}</td>
                                     <td>${ranking.conceded}</td>
-                                    <td>${ranking.goalDifference}</td>
+                                    <td>${ranking.goals-ranking.conceded}</td>
                                     <td>${ranking.score}</td>
                                 </tr>
                             </c:if>
@@ -170,7 +170,7 @@
                                     <td>${ranking.negative}</td>
                                     <td>${ranking.goals}</td>
                                     <td>${ranking.conceded}</td>
-                                    <td>${ranking.goalDifference}</td>
+                                    <td>${ranking.goals-ranking.conceded}</td>
                                     <td>${ranking.score}</td>
                                 </tr>
                             </c:if>
@@ -186,7 +186,7 @@
                                     <td>${ranking.negative}</td>
                                     <td>${ranking.goals}</td>
                                     <td>${ranking.conceded}</td>
-                                    <td>${ranking.goalDifference}</td>
+                                    <td>${ranking.goals-ranking.conceded}</td>
                                     <td>${ranking.score}</td>
                                 </tr>
                             </c:if>
@@ -202,7 +202,7 @@
                                     <td>${ranking.negative}</td>
                                     <td>${ranking.goals}</td>
                                     <td>${ranking.conceded}</td>
-                                    <td>${ranking.goalDifference}</td>
+                                    <td>${ranking.goals-ranking.conceded}</td>
                                     <td>${ranking.score}</td>
                                 </tr>
                             </c:if>
@@ -359,11 +359,11 @@
                         <c:forEach items="${matchInfos}" var="matchInfo">
                             <tr class="success">
                                 <td>${matchInfo.matchDate}&nbsp;${matchInfo.matchTime}</td>
-                                <td><a href="/club/info/${matchInfo.id}"><img class="data-table-clubImg"
+                                <td><a href="/club/info/${matchInfo.homeClub.id}"><img class="data-table-clubImg"
                                                                               src="${matchInfo.homeClub.imgUrl}">${matchInfo.homeClub.name}
                                 </a></td>
                                 <td>${matchInfo.matchScore}</td>
-                                <td><a href="/club/info/${matchInfo.id}"><img class="data-table-clubImg"
+                                <td><a href="/club/info/${matchInfo.awayClub.id}"><img class="data-table-clubImg"
                                                                               src="${matchInfo.awayClub.imgUrl}">${matchInfo.awayClub.name}
                                 </a></td>
                             </tr>
@@ -435,11 +435,11 @@
                     }
                     html += "<tr class=\"success\">\n" +
                         "    <td>" + data[i].matchDate + "&nbsp;" + data[i].matchTime + "</td>\n" +
-                        "    <td><a href=\"/club/info/" + data[i].id + "\"><img class=\"data-table-clubImg\"\n" +
+                        "    <td><a href=\"/club/info/" + data[i].homeClub.id + "\"><img class=\"data-table-clubImg\"\n" +
                         "                                                  src=\"" + data[i].homeClub.imgUrl + "\">" + data[i].homeClub.name + "\n" +
                         "    </a></td>\n" +
                         "    <td>" + matchScore + "</td>\n" +
-                        "    <td><a href=\"/club/info/" + data[i].id + "\"><img class=\"data-table-clubImg\"\n" +
+                        "    <td><a href=\"/club/info/" + data[i].awayClub.id + "\"><img class=\"data-table-clubImg\"\n" +
                         "                                                  src=\"" + data[i].awayClub.imgUrl + "\">" + data[i].awayClub.name + "\n" +
                         "    </a></td>\n" +
                         "</tr>\n"

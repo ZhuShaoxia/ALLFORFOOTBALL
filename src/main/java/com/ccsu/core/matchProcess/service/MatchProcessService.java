@@ -21,6 +21,8 @@ public interface MatchProcessService extends BaseService<MatchProcess> {
     List<MatchProcess> findAllByMatchInfoId(Integer matchInfoId);
 
     void insertMatchProcess(RequestMatchProcessDto requestMatchProcessDto) throws Exception;
-    List<MatchProcess> searchPlayerEvent(Integer matchTypeId,Integer matchEventId);
 
+    List<MatchProcess> searchPlayerEvent(Integer matchTypeId, Integer matchEventId);
+
+    Integer searchCountEventByPlayer(Integer matchEventId, Integer playerId);
 }

@@ -40,7 +40,7 @@
                     <div class="layui-inline">
                         <label for="title" class="layui-form-label">文章标题</label>
                         <div class="layui-input-block">
-                            <input id="title" type="text" name="title" lay-verify="111111111" placeholder="请输入"
+                            <input id="title" type="text" name="title" lay-verify="required" placeholder="请输入"
                                    autocomplete="off"
                                    class="layui-input">
                         </div>
@@ -50,7 +50,7 @@
                     <div class="layui-inline">
                         <label for="subtitle" class="layui-form-label">文章副标题</label>
                         <div class="layui-input-block">
-                            <input id="subtitle" type="text" name="subtitle" lay-verify="111111111" placeholder="请输入"
+                            <input id="subtitle" type="text" name="subtitle" lay-verify="" placeholder="请输入"
                                    autocomplete="off"
                                    class="layui-input">
                         </div>
@@ -149,9 +149,10 @@
                                 return false;
                             } else {
                                 layer.msg('数据添加成功,页面即将跳转')
-                                setTimeout(function () {
-                                    window.location.href = "/admin/article/list"
-                                }, 2000)
+//                                setTimeout(function () {
+//                                    window.location.href = "/admin/article/list"
+//                                }, 2000)
+                                window.location.href = "/admin/article/add"
                             }
                         },
                         error: function () {

@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author: Xiaolei Zhu
  * @Date: 2018/4/15
  * @Time: 21:17
- * Description:
+ * Description:拦截非登录用户访问后台系统，及前台用户个人中心页面。
  */
 public class CommonHandler implements HandlerInterceptor {
 
@@ -23,7 +23,8 @@ public class CommonHandler implements HandlerInterceptor {
 
     private final static String[] LOGIN_IGNORE_URI = {"/admin/login", "/user/login"};
 
-    private final static String[] INTERCEPTOR_URI = {"/user/center/", "/user/article/", "/user/comment/", "/user/setting/"};
+//    private final static String[] INTERCEPTOR_URI = {"/user/center", "/user/center/", "/user/article", "/user/article/", "/user/comment", "/user/comment/", "/user/setting", "/user/setting/", "/user/setting/info", "/user/setting/info/", "/setting/modifyPwd", "/setting/modifyPwd/", "/setting/bind"};
+    private final static String[] INTERCEPTOR_URI = {"/user/center", "/user/center/", "/user/article", "/user/article/", "/user/comment", "/user/comment/"};
 
     /**
      * 在业务处理器处理请求之前被调用
@@ -41,22 +42,26 @@ public class CommonHandler implements HandlerInterceptor {
 
         Boolean flag = false;
         String uri = request.getRequestURI();
-        System.out.println("====================");
-        System.out.println("request.getRequestURI():" + uri);
-        System.out.println("====================");
+        User user = (User) request.getSession().getAttribute("user");
+
         if (uri.contains("admin")) {
             if (!uri.equals("/admin/login")) {
-                User user = (User) request.getSession().getAttribute("user");
                 if (user == null) {
-                    request.getRequestDispatcher("/admin/login").forward(request, response);
+                    response.sendRedirect("/admin/login");
                 }
             }
             return !flag;
         } else {
-            for (String u : INTERCEPTOR_URI) {
-                if (uri.equals(u)) {
+            if (uri.contains("/setting/")) {
+                if (user == null) {
                     flag = true;
-                    break;
+                }
+            } else {
+                for (String u : INTERCEPTOR_URI) {
+                    if (uri.equals(u) && user == null) {
+                        flag = true;
+                        break;
+                    }
                 }
             }
         }

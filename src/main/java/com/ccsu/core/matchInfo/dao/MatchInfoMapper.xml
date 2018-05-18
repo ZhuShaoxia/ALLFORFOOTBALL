@@ -157,6 +157,7 @@
                 AND a.matchTypeId = #{matchTypeId}
             </if>
         </where>
+        order by a.id desc
     </select>
 
 
@@ -293,16 +294,18 @@
     <!--根据日期 比赛状态 查找比赛信息-->
     <select id="searchMatchInfoByMatchDateAndMatchState" parameterType="MatchInfo" resultMap="MatchInfoMap">
         SELECT
-        a.id id,
-        b.id homeClubId,
+        a.id   id,
+        b.id   homeClubId,
         b.name homeClub,
-        e.id awayClubId,
-        e.name awayClub
+        e.id   awayClubId,
+        e.name awayClub,
+        a.matchTypeId matchTypeId
         FROM tb_match_info a, tb_club b, tb_club e
         WHERE a.homeClubId = b.id
         AND a.awayClubId = e.id
         AND a.matchDate = #{matchDate}
-        AND a.matchStateId <![CDATA[ <> ]]> 5
+        AND a.matchStateId = 5
+        AND (a.matchScore IS NULL OR a.matchResult IS NULL)
     </select>
 
     <!--查询比赛焦点信息  用于焦点比赛管理-->
@@ -335,7 +338,7 @@
         AND a.isFocus = 1
         AND str_to_date(a.matchDate, '%Y-%m-%d')
         BETWEEN curdate()
-        AND date_add(str_to_date(a.matchDate, '%Y-%m-%d'), INTERVAL 2 DAY)
+        AND date_add(str_to_date(curdate(), '%Y-%m-%d'), INTERVAL 2 DAY)
         limit 2
     </select>
 
@@ -374,7 +377,7 @@
         AND a.isFocus = 0
         AND str_to_date(a.matchDate, '%Y-%m-%d')
         BETWEEN curdate()
-        AND date_add(str_to_date(a.matchDate, '%Y-%m-%d'), INTERVAL 2 DAY)
+        AND date_add(str_to_date(curdate(), '%Y-%m-%d'), INTERVAL 2 DAY)
     </select>
 
     <!--更新比赛结果-->
@@ -430,7 +433,8 @@
         AND a.matchStateId = d.id
         AND str_to_date(a.matchDate, '%Y-%m-%d')
         BETWEEN curdate()
-        AND date_add(str_to_date(a.matchDate, '%Y-%m-%d'), INTERVAL 14 DAY)
+        AND date_add(str_to_date(
+        curdate(), '%Y-%m-%d'), INTERVAL 14 DAY)
         AND (#{id} = homeClubId OR #{id} = awayClubId)
     </select>
 
@@ -455,7 +459,7 @@
         AND a.matchTypeId = c.id
         AND str_to_date(a.matchDate, '%Y-%m-%d')
         BETWEEN curdate()
-        AND date_add(str_to_date(a.matchDate, '%Y-%m-%d'), INTERVAL 14 DAY)
+        AND date_add(str_to_date(curdate(), '%Y-%m-%d'), INTERVAL 14 DAY)
         limit 5
     </select>
 

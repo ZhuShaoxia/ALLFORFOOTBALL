@@ -183,6 +183,9 @@ public class AdminUserController {
         User user = null;
         try {
             user = userService.load(id);
+            if (user == null) {
+                return "redirect:/error";
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -234,7 +237,7 @@ public class AdminUserController {
     ResponseDto updateUser(User user) {
         responseDto = new ResponseDto();
         if (user.getId() == null) {
-            responseDto.setCode("-1");
+            responseDto.setCode(MessageCode.ERROR);
             responseDto.setMsg("用户id为空");
             return responseDto;
         }

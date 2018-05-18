@@ -159,6 +159,9 @@ public class MatchInfoController {
         List<Player> awayClubPlayerSubstitutes = null;
         try {
             matchInfo = matchInfoService.load(id);
+            if (matchInfo == null) {
+                return "redirect:/error";
+            }
             Club homeClub = matchInfo.getHomeClub();
             Club awayClub = matchInfo.getAwayClub();
             List<Article> homeClubList = articleService.findAll(homeClub.getName());
@@ -175,8 +178,8 @@ public class MatchInfoController {
             recentMatchInfo = matchInfoService.searchRecentMatchInfo();
             matchProcesses = matchProcessService.findAllMapByMatchInfoId(id);
             homeClubPlayerFirstStart = playerService.searchMatchLineUp(id, homeClub.getId(), 1);
-            awayClubPlayerFirstStart = playerService.searchMatchLineUp(id, homeClub.getId(), 2);
-            homeClubPlayerSubstitutes = playerService.searchMatchLineUp(id, awayClub.getId(), 1);
+            awayClubPlayerFirstStart = playerService.searchMatchLineUp(id, awayClub.getId(), 1);
+            homeClubPlayerSubstitutes = playerService.searchMatchLineUp(id, homeClub.getId(), 2);
             awayClubPlayerSubstitutes = playerService.searchMatchLineUp(id, awayClub.getId(), 2);
 
         } catch (Exception e) {

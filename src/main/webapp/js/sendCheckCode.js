@@ -5,16 +5,11 @@ var code = ""; //验证码
 var codeLength = 6;//验证码长度
 function sendMessage(account, dealType) {
     curCount = count;
-    var dealType; //验证方式
-    if ($("#phone").attr("checked") == true) {
-        dealType = "phone";
-    }
-    else {
-        dealType = "email";
-    }
-    // //产生验证码
-    // for (var i = 0; i < codeLength; i++) {
-    //     code += parseInt(Math.random() * 9).toString();
+    // if ($("#phone").attr("checked") == true) {
+    //     dealType = "phone";
+    // }
+    // else {
+    //     dealType = "email";
     // }
     //设置button效果，开始计时
     $("#btnSendCode").attr("disabled", "true");
@@ -22,20 +17,31 @@ function sendMessage(account, dealType) {
     InterValObj = window.setInterval(SetRemainTime, 1000); //启动计时器，1秒执行一次
 
     var resp = ""
-    //TODO:测试
-    $.ajax({
-        data: {phone: account},
-        url: '/send/sms/verificationCode',
-        async: false,
-        success: function (res) {
-            resp = res
-        }
-    })
+    if(dealType=='phone'){
+        $.ajax({
+            data: {phone: account},
+            url: '/send/sms/verificationCode',
+            async: false,
+            success: function (res) {
+                resp = res
+            }
+        })
+    }else if(dealType=='email'){
+        $.ajax({
+            data: {email: account},
+            url: '/send/email/verificationCode',
+            async: false,
+            success: function (res) {
+                resp = res
+            }
+        })
+    }
     if (resp.code != '-1') {
         return resp.smscode
-        // return '111111'
+    }else {
+        return false;
     }
-    // return '111111';
+
 }
 
 //timer处理函数

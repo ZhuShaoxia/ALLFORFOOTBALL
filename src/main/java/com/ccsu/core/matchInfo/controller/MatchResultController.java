@@ -52,6 +52,12 @@ public class MatchResultController {
         return "/admin/match-result";
     }
 
+    /**
+     * 比赛结果录入
+     *
+     * @param requestMatchInfo
+     * @return
+     */
     @RequestMapping("/match/result/add")
     public @ResponseBody
     ResponseDto
@@ -65,7 +71,6 @@ public class MatchResultController {
             e.printStackTrace();
             return responseDto;
         }
-
         return responseDto;
     }
 }

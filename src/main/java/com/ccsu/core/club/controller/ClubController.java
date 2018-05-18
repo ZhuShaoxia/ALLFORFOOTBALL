@@ -171,6 +171,9 @@ public class ClubController {
         List<Ranking> rankings = null;
         try {
             club = clubService.load(id);
+            if (club == null) {
+                return "redirect:/error";
+            }
             honers = honerService.findHonerByClubId(id);
             players = playerService.searchPlayerByClubId(id);
             matchInfos = matchInfoService.searchMatchInfoForClub(id);
