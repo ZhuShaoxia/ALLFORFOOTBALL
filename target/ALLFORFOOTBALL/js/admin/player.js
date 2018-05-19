@@ -27,10 +27,10 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
                     } else {
                         layer.msg('数据添加成功,页面即将跳转')
                         //TODO:修改页面跳转地址
-                        // setTimeout(function () {
-                        //     // window.location.href = "/admin/player/list"
-                        // }, 500)
-                        window.location.href = "/admin/player/add"
+                        setTimeout(function () {
+                            // window.location.href = "/admin/player/list"
+                        }, 500)
+                        // window.location.href = "/admin/player/add"
 
                     }
                 },

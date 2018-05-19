@@ -135,8 +135,15 @@
         var articleId = "${article.id}"
         var userId = "${user.id}"
 
+        var userName = '${user.name}'
+
         $("#commentBtn").on('click', function () {
             var commentContent = $("#comment-textarea").val()
+            if(userName==''){
+                alert('请先补全用户信息')
+                window.location.href="/user/setting/info"
+                return;
+            }
             if (!validate(commentContent.trim())) {
                 alert("请输入评论内容")
                 return;

@@ -228,9 +228,9 @@
                             <c:if test="${shooterStatus.first}">
                                 <tr class="danger">
                                     <td>${shooterStatus.count}</td>
-                                    <td><a href="#"><img class="data-table-playerImg"
+                                    <td><a href="/player/info/${shooter.player.id}"><img class="data-table-playerImg"
                                                          src="${shooter.player.imgUrl}">${shooter.player.name}</a></td>
-                                    <td><a href="#"><img class="data-table-clubImg"
+                                    <td><a href="/club/info/${shooter.club.id}"><img class="data-table-clubImg"
                                                          src="${shooter.club.imgUrl}">${shooter.club.name}</a>
                                     </td>
                                     <td>${shooter.count}</td>
@@ -239,20 +239,20 @@
                             <c:if test="${shooterStatus.count==2}">
                                 <tr class="success">
                                     <td>${shooterStatus.count}</td>
-                                    <td><a href="#"><img class="data-table-playerImg"
+                                    <td><a href="/player/info/${shooter.player.id}"><img class="data-table-playerImg"
                                                          src="${shooter.player.imgUrl}">${shooter.player.name}</a></td>
-                                    <td><a href="#"><img class="data-table-clubImg"
+                                    <td><a href="/club/info/${shooter.club.id}"><img class="data-table-clubImg"
                                                          src="${shooter.club.imgUrl}">${shooter.club.name}</a>
                                     </td>
                                     <td>${shooter.count}</td>
                                 </tr>
                             </c:if>
-                            <c:if test="${shooterStatus.count==2}">
+                            <c:if test="${shooterStatus.count==3}">
                                 <tr class="warning">
                                     <td>${shooterStatus.count}</td>
-                                    <td><a href="#"><img class="data-table-playerImg"
+                                    <td><a href="/player/info/${shooter.player.id}"><img class="data-table-playerImg"
                                                          src="${shooter.player.imgUrl}">${shooter.player.name}</a></td>
-                                    <td><a href="#"><img class="data-table-clubImg"
+                                    <td><a href="/club/info/${shooter.club.id}"><img class="data-table-clubImg"
                                                          src="${shooter.club.imgUrl}">${shooter.club.name}</a>
                                     </td>
                                     <td>${shooter.count}</td>
@@ -261,9 +261,9 @@
                             <c:if test="${shooterStatus.count>3}">
                                 <tr class="active">
                                     <td>${shooterStatus.count}</td>
-                                    <td><a href="#"><img class="data-table-playerImg"
+                                    <td><a href="/player/info/${shooter.player.id}"><img class="data-table-playerImg"
                                                          src="${shooter.player.imgUrl}">${shooter.player.name}</a></td>
-                                    <td><a href="#"><img class="data-table-clubImg"
+                                    <td><a href="/club/info/${shooter.club.id}"><img class="data-table-clubImg"
                                                          src="${shooter.club.imgUrl}">${shooter.club.name}</a>
                                     </td>
                                     <td>${shooter.count}</td>
@@ -291,9 +291,9 @@
                             <c:if test="${assistStatus.first}">
                                 <tr class="danger">
                                     <td>${assistStatus.count}</td>
-                                    <td><a href="#"><img class="data-table-playerImg"
+                                    <td><a href="/player/info/${assist.player.id}"><img class="data-table-playerImg"
                                                          src="${assist.player.imgUrl}">${assist.player.name}</a></td>
-                                    <td><a href="#"><img class="data-table-clubImg"
+                                    <td><a href="/club/info/${assist.club.id}"><img class="data-table-clubImg"
                                                          src="${assist.club.imgUrl}">${assist.club.name}</a>
                                     </td>
                                     <td>${assist.count}</td>
@@ -302,9 +302,9 @@
                             <c:if test="${assistStatus.count==2}">
                                 <tr class="success">
                                     <td>${assistStatus.count}</td>
-                                    <td><a href="#"><img class="data-table-playerImg"
+                                    <td><a href="/player/info/${assist.player.id}"><img class="data-table-playerImg"
                                                          src="${assist.player.imgUrl}">${assist.player.name}</a></td>
-                                    <td><a href="#"><img class="data-table-clubImg"
+                                    <td><a href="/club/info/${assist.club.id}"><img class="data-table-clubImg"
                                                          src="${assist.club.imgUrl}">${assist.club.name}</a>
                                     </td>
                                     <td>${assist.count}</td>
@@ -313,9 +313,9 @@
                             <c:if test="${assistStatus.count==3}">
                                 <tr class="warning">
                                     <td>${assistStatus.count}</td>
-                                    <td><a href="#"><img class="data-table-playerImg"
+                                    <td><a href="/player/info/${assist.player.id}"><img class="data-table-playerImg"
                                                          src="${assist.player.imgUrl}">${assist.player.name}</a></td>
-                                    <td><a href="#"><img class="data-table-clubImg"
+                                    <td><a href="/club/info/${assist.club.id}"><img class="data-table-clubImg"
                                                          src="${assist.club.imgUrl}">${assist.club.name}</a>
                                     </td>
                                     <td>${assist.count}</td>
@@ -324,9 +324,9 @@
                             <c:if test="${assistStatus.count>3}">
                                 <tr class="active">
                                     <td>${assistStatus.count}</td>
-                                    <td><a href="#"><img class="data-table-playerImg"
+                                    <td><a href="/player/info/${assist.player.id}"><img class="data-table-playerImg"
                                                          src="${assist.player.imgUrl}">${assist.player.name}</a></td>
-                                    <td><a href="#"><img class="data-table-clubImg"
+                                    <td><a href="/club/info/${assist.club.id}"><img class="data-table-clubImg"
                                                          src="${assist.club.imgUrl}">${assist.club.name}</a>
                                     </td>
                                     <td>${assist.count}</td>

@@ -169,18 +169,18 @@ $(function () {
                             "                            </div>\n" +
                             "                        </div>\n" +
                             "                    </div>\n" +
-                            "                    <div class=\"comment-item-bottom row \">\n" +
-                            "                        <button id=\"reply-btn\" type=\"button\" class=\"btn btn-danger btn-block\" data-toggle=\"collapse\" data-target=\"#demo\">回复这个回复你的人</button>\n" +
-                            "                    </div>\n" +
-                            "                    <div id=\"demo\" class=\"collapse out row comment-item-bottom-reply\">\n" +
-                            "                        <div class=\"col-md-1 comment-item-bottom-reply-left\">\n" +
-                            "                            <img src=\"" + data[i].replyUser.imgUrl + "\" alt=\"" + data[i].replyUser.nickname + "\">\n" +
-                            "                        </div>\n" +
-                            "                        <div class=\"col-md-11 comment-item-bottom-reply-right\">\n" +
-                            "                            <input data-content=\"评论内容不能为空，请输入评论\" id=\"reply-content-input\" type=\"text\" placeholder=\"回复@" + data[i].user.nickname + ":\">\n" +
-                            "                            <button id=\"reply-content-btn\" class=\"btn btn-danger\">评论</button>\n" +
-                            "                        </div>\n" +
-                            "                    </div>\n" +
+                            // "                    <div class=\"comment-item-bottom row \">\n" +
+                            // "                        <button id=\"reply-btn\" type=\"button\" class=\"btn btn-danger btn-block\" data-toggle=\"collapse\" data-target=\"#demo\">回复这个回复你的人</button>\n" +
+                            // "                    </div>\n" +
+                            // "                    <div id=\"demo\" class=\"collapse out row comment-item-bottom-reply\">\n" +
+                            // "                        <div class=\"col-md-1 comment-item-bottom-reply-left\">\n" +
+                            // "                            <img src=\"" + data[i].replyUser.imgUrl + "\" alt=\"" + data[i].replyUser.nickname + "\">\n" +
+                            // "                        </div>\n" +
+                            // "                        <div class=\"col-md-11 comment-item-bottom-reply-right\">\n" +
+                            // "                            <input data-content=\"评论内容不能为空，请输入评论\" id=\"reply-content-input\" type=\"text\" placeholder=\"回复@" + data[i].user.nickname + ":\">\n" +
+                            // "                            <button id=\"reply-content-btn\" class=\"btn btn-danger\">评论</button>\n" +
+                            // "                        </div>\n" +
+                            // "                    </div>\n" +
                             "                </div>"
                     }
                 }

@@ -61,10 +61,10 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
                         return false;
                     } else {
                         layer.msg('数据添加成功,页面即将跳转')
-                        // setTimeout(function () {
-                        //     window.location.href = "/admin/match/list"
-                        // }, 2000)
-                        window.location.href = "/admin/match/info/add"
+                        setTimeout(function () {
+                            window.location.href = "/admin/match/list"
+                        }, 300)
+                        // window.location.href = "/admin/match/info/add"
                     }
                 },
                 error: function () {
@@ -136,8 +136,12 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
                     } else if (res.code == -1) {
                         layer.msg('后台请求出错,请联系系统管理员')
                         return false;
+                    }else {
+                        layer.msg('数据添加成功,页面即将跳转')
+                        setTimeout(function () {
+                            window.location.href = "/admin/match/list"
+                        }, 300)
                     }
-                    layer.msg('123')
                 },
                 error: function () {
                     layer.msg('后台请求出错,请联系系统管理员')
@@ -258,7 +262,7 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
      */
     form.verify({
         maxLength: function (value, item) {
-            if (value > 100 || value <= 0) {
+            if (value > 100 || value < 0) {
                 return '请输入0-100之间数值'
             }
         },
@@ -692,8 +696,8 @@ layui.use(['element', 'upload', 'form', 'table', 'laydate'], function () {
     laydate.render({
         elem: "#match-technology-date",
         type: "date",
-        max: 3,
-        min: -2,
+        max: 0,
+        // min: ,
         done: function (value, date) {
             $("#matchInfoId").empty()
             var html = "<option value=''></option>"

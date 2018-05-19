@@ -54,7 +54,7 @@
                     <div class="layui-inline">
                         <label class="layui-form-label">外文名</label>
                         <div class="layui-input-inline">
-                            <input type="text" name="otherName" lay-verify="11111111" autocomplete="off" placeholder=""
+                            <input type="text" name="otherName" lay-verify="required" autocomplete="off" placeholder=""
                                    class="layui-input">
                         </div>
                     </div>
@@ -93,7 +93,7 @@
                     <div class="layui-inline">
                         <label for="number" class="layui-form-label">号码</label>
                         <div class="layui-input-inline">
-                            <input id="number" type="number" name="number" lay-verify="11111111" autocomplete="off"
+                            <input id="number" type="number" name="number" lay-verify="required" autocomplete="off"
                                    class="layui-input">
                         </div>
                     </div>
@@ -102,14 +102,14 @@
                     <div class="layui-inline">
                         <label for="country" class="layui-form-label">国籍</label>
                         <div class="layui-input-inline">
-                            <input id="country" type="text" name="country" lay-verify="11111111" autocomplete="off"
+                            <input id="country" type="text" name="country" lay-verify="required" autocomplete="off"
                                    class="layui-input" placeholder="请输入">
                         </div>
                     </div>
                     <div class="layui-inline">
                         <label for="birthday" class="layui-form-label">生日</label>
                         <div class="layui-input-inline">
-                            <input name="birthday" type="text" class="layui-input" id="birthday" lay-verify="11111111">
+                            <input name="birthday" type="text" class="layui-input" id="birthday" lay-verify="required">
                         </div>
                     </div>
                     <div class="layui-inline">
@@ -125,7 +125,7 @@
                     <div class="layui-inline">
                         <label for="height" class="layui-form-label">身高</label>
                         <div class="layui-input-inline">
-                            <input id="height" type="number" name="height" lay-verify="11111111" autocomplete="off"
+                            <input id="height" type="number" name="height" lay-verify="required" autocomplete="off"
                                    class="layui-input" placeholder="请输入(单位cm)">
                         </div>
 
@@ -133,7 +133,7 @@
                     <div class="layui-inline">
                         <label for="weight" class="layui-form-label">体重</label>
                         <div class="layui-input-inline">
-                            <input id="weight" type="number" name="weight" lay-verify="11111111" autocomplete="off"
+                            <input id="weight" type="number" name="weight" lay-verify="required" autocomplete="off"
                                    class="layui-input" placeholder="请输入(单位kg)">
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                     <div class="layui-inline">
                         <label for="power" class="layui-form-label">力量</label>
                         <div class="layui-input-inline">
-                            <input id="power" type="number" name="power" lay-verify="11111111|maxLength111"
+                            <input id="power" type="number" name="power" lay-verify="required|maxLength111"
                                    autocomplete="off"
                                    class="layui-input" placeholder="请输入(最大100)">
                         </div>
@@ -160,7 +160,7 @@
                     <div class="layui-inline">
                         <label for="speed" class="layui-form-label">速度</label>
                         <div class="layui-input-inline">
-                            <input id="speed" type="number" name="speed" lay-verify="11111111|maxLength111"
+                            <input id="speed" type="number" name="speed" lay-verify="required|maxLength111"
                                    autocomplete="off"
                                    class="layui-input" placeholder="请输入(最大100)">
                         </div>
@@ -168,7 +168,7 @@
                     <div class="layui-inline">
                         <label for="shooting" class="layui-form-label">射门</label>
                         <div class="layui-input-inline">
-                            <input id="shooting" type="number" name="shooting" lay-verify="11111111|maxLength111"
+                            <input id="shooting" type="number" name="shooting" lay-verify="required|maxLength111"
                                    autocomplete="off"
                                    class="layui-input" placeholder="请输入(最大100)">
                         </div>
@@ -178,7 +178,7 @@
                     <div class="layui-inline">
                         <label for="pass" class="layui-form-label">传球</label>
                         <div class="layui-input-inline">
-                            <input id="pass" type="number" name="pass" lay-verify="11111111|maxLength111"
+                            <input id="pass" type="number" name="pass" lay-verify="required|maxLength111"
                                    autocomplete="off"
                                    class="layui-input" placeholder="请输入(最大100)">
                         </div>
@@ -187,7 +187,7 @@
                     <div class="layui-inline">
                         <label for="dribbling" class="layui-form-label">盘带</label>
                         <div class="layui-input-inline">
-                            <input id="dribbling" type="number" name="dribbling" lay-verify="11111111|maxLength111"
+                            <input id="dribbling" type="number" name="dribbling" lay-verify="required|maxLength111"
                                    autocomplete="off"
                                    class="layui-input" placeholder="请输入(最大100)">
                         </div>
@@ -195,7 +195,7 @@
                     <div class="layui-inline">
                         <label for="defensive" class="layui-form-label">防守</label>
                         <div class="layui-input-inline">
-                            <input id="defensive" type="number" name="defensive" lay-verify="11111111|maxLength111"
+                            <input id="defensive" type="number" name="defensive" lay-verify="required|maxLength111"
                                    autocomplete="off"
                                    class="layui-input" placeholder="请输入(最大100)">
                         </div>

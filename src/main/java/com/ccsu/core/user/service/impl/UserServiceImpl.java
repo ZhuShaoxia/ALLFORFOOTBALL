@@ -79,7 +79,9 @@ public class UserServiceImpl implements UserService {
         user.setImgUrl(imgUrl);
         String modifiedTime = CommonUtils.getCurrentDateTime();
         user.setModifiedTime(modifiedTime);
-        user.setPassword(CommonUtils.MD5Encode(user.getPassword()));
+        if(user.getPassword()!=null){
+            user.setPassword(CommonUtils.MD5Encode(user.getPassword()));
+        }
         userMapper.userUpdate(user);
     }
 

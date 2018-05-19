@@ -47,7 +47,7 @@
                     <div class="layui-inline">
                         <label for="nickname" class="layui-form-label">俱乐部名称</label>
                         <div class="layui-input-block">
-                            <input id="nickname" type="text" name="name" lay-verify="1111111|verifyNameIsExist"
+                            <input id="nickname" type="text" name="name" lay-verify="required|verifyNameIsExist"
                                    placeholder="请输入"
                                    autocomplete="off"
                                    class="layui-input">
@@ -59,7 +59,7 @@
                     <div class="layui-inline">
                         <label for="otherName" class="layui-form-label">外文名</label>
                         <div class="layui-input-block">
-                            <input id="otherName" type="text" name="otherName" lay-verify="1111111" placeholder="请输入"
+                            <input id="otherName" type="text" name="otherName" lay-verify="required" placeholder="请输入"
                                    autocomplete="off"
                                    class="layui-input">
                         </div>
@@ -71,7 +71,7 @@
                         <label for="established" class="layui-form-label">成立时间</label>
                         <div class="layui-input-inline">
                             <input name="established" type="text" class="layui-input" id="established"
-                                   placeholder="yyyy-MM" lay-verify="1111111">
+                                   placeholder="yyyy-MM" lay-verify="required">
                         </div>
                     </div>
                     <div class="layui-inline">
@@ -88,7 +88,7 @@
                     <div class="layui-inline">
                         <label for="city" class="layui-form-label">城市</label>
                         <div class="layui-input-inline">
-                            <input id="city" type="text" name="city" lay-verify="1111111" placeholder="请输入"
+                            <input id="city" type="text" name="city" lay-verify="required" placeholder="请输入"
                                    autocomplete="off"
                                    class="layui-input">
                         </div>
@@ -99,7 +99,7 @@
                     <div class="layui-inline">
                         <label for="phone" class="layui-form-label">电话</label>
                         <div class="layui-input-block">
-                            <input id="phone" type="text" name="phone" lay-verify="1111111" placeholder="请输入"
+                            <input id="phone" type="text" name="phone" lay-verify="required" placeholder="请输入"
                                    autocomplete="off"
                                    class="layui-input">
                         </div>
@@ -107,7 +107,7 @@
                     <div class="layui-inline">
                         <label for="email" class="layui-form-label">邮箱</label>
                         <div class="layui-input-block">
-                            <input id="email" type="email" name="email" lay-verify="1111111|55555555" placeholder="请输入"
+                            <input id="email" type="email" name="email" lay-verify="required|55555555" placeholder="请输入"
                                    autocomplete="off"
                                    class="layui-input">
                         </div>
@@ -118,7 +118,7 @@
                     <div class="layui-inline">
                         <label for="homeField" class="layui-form-label">主场</label>
                         <div class="layui-input-block">
-                            <input id="homeField" type="text" name="homeField" lay-verify="1111111" placeholder="请输入"
+                            <input id="homeField" type="text" name="homeField" lay-verify="required" placeholder="请输入"
                                    autocomplete="off"
                                    class="layui-input">
                         </div>
@@ -129,7 +129,7 @@
                     <div class="layui-block">
                         <label for="address" class="layui-form-label">地址</label>
                         <div class="layui-input-block">
-                            <input id="address" type="text" name="address" lay-verify="1111111" placeholder="请输入详细地址"
+                            <input id="address" type="text" name="address" lay-verify="required" placeholder="请输入详细地址"
                                    autocomplete="off"
                                    class="layui-input">
                         </div>

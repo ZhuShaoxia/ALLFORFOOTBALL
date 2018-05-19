@@ -60,14 +60,14 @@
         <div class="col-md-10">
             <div class="row article-head">
                 <button class="btn btn-success" onclick="newArticle()">新增文章</button>
-                <select name="article-type" id="article-type">
-                    <option value="0">全部</option>
-                    <c:forEach items="${articleTypes}" var="articleType">
-                        <option value="${articleType.id}">${articleType.type}</option>
-                    </c:forEach>
-                </select>
-                <input type="text" placeholder="查找文章">
-                <a href="#"><img src="${pageContext.request.contextPath}/img/search-icon.png"></a>
+                <%--<select name="article-type" id="article-type">--%>
+                    <%--<option value="0">全部</option>--%>
+                    <%--<c:forEach items="${articleTypes}" var="articleType">--%>
+                        <%--<option value="${articleType.id}">${articleType.type}</option>--%>
+                    <%--</c:forEach>--%>
+                <%--</select>--%>
+                <%--<input type="text" placeholder="查找文章">--%>
+                <%--<a href="#"><img src="${pageContext.request.contextPath}/img/search-icon.png"></a>--%>
             </div>
             <div class="row article-body">
                 <c:forEach items="${articles}" var="article">
