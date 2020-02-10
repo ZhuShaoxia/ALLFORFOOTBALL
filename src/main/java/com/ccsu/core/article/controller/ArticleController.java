@@ -115,7 +115,7 @@ public class ArticleController {
      * @return
      */
     @RequestMapping("/article/userAdd")
-    public String AddArticle(MultipartFile file, Article article, HttpSession session) {
+    public String addArticle(MultipartFile file, Article article, HttpSession session) {
         responseDto = new ResponseDto();
         String fileName = CommonUtils.UUIDGenerate();
         String originalFilename = file.getOriginalFilename();

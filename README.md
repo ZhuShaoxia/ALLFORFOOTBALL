@@ -6,7 +6,7 @@
 ## 二、开发环境及配置
 1.编译器:IntelliJ Idea
 
-2.开发环境:macOS、jdk 1.8、tomcat 8.0 、mysql 5.6
+2.开发环境:macOS、jdk 1.8、tomcat 8.5、mysql 5.6
 
 3.前端UI框架:[BootStrap](http://www.bootcss.com/)、[layui](http://www.layui.com)
 

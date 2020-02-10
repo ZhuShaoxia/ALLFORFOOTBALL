@@ -1,6 +1,7 @@
 package com.ccsu.core.article.service.impl;
 
 import com.ccsu.common.utils.CommonUtils;
+import com.ccsu.common.utils.ListUtils;
 import com.ccsu.core.article.dao.ArticleMapper;
 import com.ccsu.core.article.domain.Article;
 import com.ccsu.core.article.service.ArticleService;
@@ -8,6 +9,7 @@ import com.ccsu.core.common.domain.PageRequestDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.Collections;
 import java.util.List;
 
 /**
@@ -57,7 +59,11 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public List<Article> findAll(String condition) throws Exception {
-        return articleMapper.findAll(condition);
+        List<Article> all = articleMapper.findAll(condition);
+        if (ListUtils.isEmpty(all)) {
+            return Collections.emptyList();
+        }
+        return all;
     }
 
     @Override

@@ -43,7 +43,6 @@ public class CommonHandler implements HandlerInterceptor {
         Boolean flag = false;
         String uri = request.getRequestURI();
         User user = (User) request.getSession().getAttribute("user");
-
         if (uri.contains("admin")) {
             if (!uri.equals("/admin/login")) {
                 if (user == null) {

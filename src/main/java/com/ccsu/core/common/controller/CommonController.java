@@ -27,6 +27,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -81,24 +82,10 @@ public class CommonController {
         List<MatchInfo> currentFocusMatchInfos = matchInfoService.searchMatchInfoForIndex();
         model.addAttribute("currentFocusMatchInfos", currentFocusMatchInfos);
         //各个文章类型文章
-        List<Article> articlesByType1 = articleService.searchArticleForIndex(1);
-        List<Article> articlesByType2 = articleService.searchArticleForIndex(2);
-        List<Article> articlesByType3 = articleService.searchArticleForIndex(3);
-        List<Article> articlesByType4 = articleService.searchArticleForIndex(4);
-        List<Article> articlesByType5 = articleService.searchArticleForIndex(5);
-        List<Article> articlesByType6 = articleService.searchArticleForIndex(6);
-        List<Article> articlesByType7 = articleService.searchArticleForIndex(7);
-        List<Article> articlesByType8 = articleService.searchArticleForIndex(8);
-        List<Article> articlesByType9 = articleService.searchArticleForIndex(9);
-        model.addAttribute("articlesByType1", articlesByType1);
-        model.addAttribute("articlesByType2", articlesByType2);
-        model.addAttribute("articlesByType3", articlesByType3);
-        model.addAttribute("articlesByType4", articlesByType4);
-        model.addAttribute("articlesByType5", articlesByType5);
-        model.addAttribute("articlesByType6", articlesByType6);
-        model.addAttribute("articlesByType7", articlesByType7);
-        model.addAttribute("articlesByType8", articlesByType8);
-        model.addAttribute("articlesByType9", articlesByType9);
+        for (int i = 1; i < 10; i++) {
+            List<Article> articles = articleService.searchArticleForIndex(i);
+            model.addAttribute("articlesByType" + i, articles);
+        }
         //比赛积分表
         List<Ranking> zcRanking = rankingService.findAllByMatchTypeId(1);
         List<Ranking> xjRanking = rankingService.findAllByMatchTypeId(2);
@@ -265,13 +252,16 @@ public class CommonController {
      */
     @RequestMapping("/upload/img")
     public @ResponseBody
-    ResponseDto uploadImg(MultipartFile file, String type) {
+    ResponseDto uploadImg(MultipartFile file, String type, HttpSession session) {
         responseDto = new ResponseDto();
         String fileName = CommonUtils.UUIDGenerate();
         String originalFilename = file.getOriginalFilename();
         //文件扩展名
         String extension = FilenameUtils.getExtension(originalFilename);
         String realPath = "/Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALLUPLOAD/" + fileName + "." + extension;
+        //TODO:如何根据虚拟目录获得实际目录
+//        String realPath = session.getServletContext().getRealPath("/uploadImg/");
+//        String imgFileName = fileName + "." + extension;
         File f = new File(realPath);
         String url = null;
         try {
@@ -314,6 +304,7 @@ public class CommonController {
 
     /**
      * 发送邮箱验证码
+     *
      * @param email
      * @param session
      * @return
@@ -335,4 +326,17 @@ public class CommonController {
         return responseDto;
     }
 
+    @RequestMapping("/testsss")
+    public @ResponseBody
+    ResponseDto test(@RequestParam(value = "a", required = false) String a, @RequestParam(value = "b", required = false) String b) {
+        responseDto = new ResponseDto();
+//        String realPath = request.getSession().getServletContext().getRealPath("/uploadImg");
+//        String contextPath = request.getContextPath();
+//        String requestURI = request.getRequestURI();
+//        String servletPath = request.getServletPath();
+//        String remoteUser = request.getRemoteUser();
+        responseDto.setSMSCode("223123123");
+        return responseDto;
+
+    }
 }

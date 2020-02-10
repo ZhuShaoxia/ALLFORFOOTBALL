@@ -14,8 +14,12 @@ import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.Date;
+import java.util.Random;
 import java.util.UUID;
 
 /**
@@ -28,9 +32,9 @@ import java.util.UUID;
  */
 public class CommonUtils {
 
-    public static final DateTimeFormatter DEFAULT_DATETIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-    public static final DateTimeFormatter DEFAULT_DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-    public static final DateTimeFormatter DEFAULT_TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");
+    private static final DateTimeFormatter DEFAULT_DATETIME_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    private static final DateTimeFormatter DEFAULT_DATE_FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+    private static final DateTimeFormatter DEFAULT_TIME_FORMATTER = DateTimeFormatter.ofPattern("HH:mm:ss");
 
     private static final Log LOGGER = LogFactory.getLog(CommonUtils.class);
 
@@ -38,10 +42,15 @@ public class CommonUtils {
      * MD5字符串加密
      * 长度24位
      *
-     * @param password
+     * @param str
      * @return
+     *
+     * commons-codec 用来编码和解码的，包括Base64，URL，DES、SHA1、MD5、Soundx等等
+     * DigestUtils.md5(str); 底层代码还是采用的MessageDigest
+     *
+     *
      */
-    public static String MD5Encode(String password) {
+    public static String MD5Encode(String str) {
         MessageDigest md5 = null;
         try {
             md5 = MessageDigest.getInstance("MD5");
@@ -50,11 +59,11 @@ public class CommonUtils {
         }
         BASE64Encoder base64en = new BASE64Encoder();
         try {
-            password = base64en.encode(md5.digest(password.getBytes("utf-8")));
+            str = base64en.encode(md5.digest(str.getBytes("utf-8")));
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
         }
-        return password;
+        return str;
     }
 
     /**
@@ -109,10 +118,11 @@ public class CommonUtils {
      * 用于短信验证码、邮箱验证码
      * @return
      */
-    private static String generateCodeForCheck() {
+    private static String generateCheckCode() {
         StringBuilder code = new StringBuilder();
         for (int i = 0; i < 6; i++) {
-            int c = (int) (Math.random() * 10);
+            //int c = (int) (Math.random() * 10);
+            int c  = new Random().nextInt(10);
             code.append(c);
         }
         return code.toString();
@@ -129,7 +139,7 @@ public class CommonUtils {
         if (user.getPhone() == null) {
             throw new NullPointerException("待发送手机号为空,发送失败");
         }
-        String code = generateCodeForCheck();
+        String code = generateCheckCode();
         SendSmsResponse response = AaliSMSUtil.sendSms(user, code);
         LOGGER.debug("*************短信接口返回的数据 START*************");
         LOGGER.debug("Code=" + response.getCode());
@@ -147,7 +157,7 @@ public class CommonUtils {
      * @throws MessagingException
      */
     public static String sendMailCode(User user) throws MessagingException, UnsupportedEncodingException {
-        String code = generateCodeForCheck();
+        String code = generateCheckCode();
         MailUtil.createEmail(user,code);
         return code;
     }
@@ -159,7 +169,7 @@ public class CommonUtils {
      * @return
      */
     public static Integer calculateAge(String birthday) {
-        if (birthday == null && "".equals(birthday)) {
+        if (birthday == null || "".equals(birthday)) {
             throw new RuntimeException("输入参数值为空");
         }
         Integer age = null;
@@ -205,6 +215,17 @@ public class CommonUtils {
         }
         imgUrl = "/uploadImg/" + imgUrl + ".jpg";
         return imgUrl;
+    }
+
+    public static void main(String[] args) {
+        Long timestamp = new Date().getTime();
+        System.out.println(timestamp);
+        Long timestamp2 = new Date().getTime();
+
+        System.out.println(timestamp2);
+        DateFormat dateFormat = new SimpleDateFormat("yyyy:MM:dd HH:mm:ss");
+        String format = dateFormat.format(new Date(timestamp));
+        System.out.println(format);
     }
 
 }

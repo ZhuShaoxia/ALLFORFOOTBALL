@@ -15,5 +15,4 @@ public interface BaseController<T> {
     String update(T entity);
     T findById(Integer id);
     List<T> findAll();
-
 }
