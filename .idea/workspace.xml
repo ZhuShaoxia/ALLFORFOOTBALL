@@ -9,253 +9,23 @@
     <bookmark url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30-sources.jar!/org/slf4j/Logger.java" description="info(" line="367" />
   </component>
   <component name="ChangeListManager">
-    <list id="ead1075f-3c79-41aa-aafc-66ef2c416153" name="370211" comment="123123123">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/work/springBase/demo1/MainTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501524968065590.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501525069014088.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501575499020370.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501623818007539.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501624068059278.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501624226047360.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/target/classes/log4j.properties" />
-    </list>
     <list default="true" id="9a840ee2-1358-4619-8878-95773affa77b" name="Default" comment="更新用户信息">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/bigDecimal/Arith.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/bigDecimal/BigDecimalTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/compare/UserComparable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/ColorEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/DayEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/EnumTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/EnumUtils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/OperationEnum.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/IMessageFormat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/IUserCredential.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/LambdaTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/LambdaTest2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/MessageFormatImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/StreamList.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/UserCredential.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/study/OptionTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/study/UserInfoService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/work/springBase/demo1/DiConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/work/springBase/demo1/FunctionService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/work/springBase/demo1/UseFunctionService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/work/springBase/demo2/FunctionService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/work/springBase/demo2/JavaConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/work/springBase/demo2/MainTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/work/springBase/demo2/UseFunctionService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/com/ccsu/work/JunitSampleTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/utils/testThread.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500666393035548.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500688512059264.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500760203012199.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500760330047237.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500760504056763.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500760591029067.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500760709008453.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500760801095978.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500760891063127.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500760973064873.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500761051000975.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500761147043756.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500761208099724.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500912484013134.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500912606027677.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500912765063029.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500912846014869.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500912966068329.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500913046007761.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500913168081388.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500913246023154.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500913328070094.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500913425030378.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500913528032078.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500993399007315.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500993730071300.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500993895035437.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525500993992031923.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501083999021819.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501084150046234.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501084390061933.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501084491068287.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501175464086052.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501175649033008.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501175711064221.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501175783001721.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501175847080005.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501175929029339.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501176022021592.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501176109015921.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501176229080351.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501176286085860.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501176353091562.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501235982071659.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501312653099791.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501411355066070.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501467905082260.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501467987046303.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501468048017577.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501524699067093.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501524820044301.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501624386016430.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501694108013097.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501694356097320.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501694508034449.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501694638022881.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501879059016040.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501915063088203.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525501980952025535.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502037509089758.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502086715059122.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502086856046097.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502086975083636.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502087111061375.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502087183042955.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502159433058440.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502159559007845.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502159624038816.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502159702043020.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502159770010619.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502160031062960.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502160103062206.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502240873048900.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180505/1525502299895049371.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526480915130036601.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526480985525041425.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526481126934081965.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526481439413006219.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526481478879064153.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526481515838060441.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526481675350067299.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526481728994003067.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526481903050058044.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526481962275021999.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526482010302020950.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526482090903039519.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526482123050058276.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526482170155009047.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526482211744083614.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526482269433074227.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526482554793018434.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526482576753033375.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526482714211074534.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526483188566036622.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526483225310026534.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180516/1526483269830003902.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526629853918002774.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526629854061017947.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526629854143010275.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526629940354087106.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526629940581040160.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526629940661048819.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526629940741039046.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526629940827055857.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526629940889080681.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526631213538008645.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526631213684064877.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526631213750048707.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526631213807035684.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526631213870070729.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526631292085052659.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526632253177037355.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526632292617090990.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526632292898068011.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526634278838003716.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526634590892025898.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526634715386052490.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526634762764045743.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526634762906002028.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526634763013028991.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526634763093077852.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526634763172082807.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526634763283006907.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526652773679094619.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526652783986096291.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526654412490014861.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526654461546056609.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526654510365067177.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526654547273043367.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526654566685017537.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526654904472072303.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526654958515011572.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656735813035019.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656735907057461.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656736056089279.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656736151005307.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656736279069582.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656736442022925.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656736626093830.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656736826099957.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656737140076938.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656737345037341.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656738014070819.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656738265093778.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656738414016762.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656738860045342.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656738986067230.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656739106007901.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656739216088856.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656739347078316.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656739426041361.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656739852034873.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656739912038118.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656739967206107.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656740082033273.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656787882009167.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656787993047605.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656788086048186.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656788209040718.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656788331019209.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656788941060703.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656789415069404.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656789537054054.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656789745070679.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656789950098421.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656790105069534.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656790456028675.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656790492035852.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656790545062824.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656790652026917.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656790732098447.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656790786048748.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656790852042620.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656790905040651.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656790982058702.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656791057030851.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656791159061915.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526656791212011203.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526658744763072263.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526658745225057168.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/ueditor/jsp/upload/image/20180518/1526658745387038162.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/common/utils/testThread.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/testThread.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/thread/testThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/filter/CommonHandler.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/filter/CommonHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/utils/CommonUtils.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/utils/CommonUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/controller/ArticleController.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/controller/ArticleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/service/impl/ArticleServiceImpl.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/article/service/impl/ArticleServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/common/controller/CommonController.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/core/common/controller/CommonController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/common/filter/CommonHandler.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/common/filter/CommonHandler.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/common/utils/CommonUtils.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/common/utils/CommonUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/controller/ArticleController.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/controller/ArticleController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/service/impl/ArticleServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/article/service/impl/ArticleServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/core/common/controller/CommonController.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/core/common/controller/CommonController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/annotaions/AnnotationTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/annotaions/Check.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/equalsAndHashCode/BigCar.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/equalsAndHashCode/Car.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/fina/FinalClass.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/fina/UserInfo.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/mdToFile/MD2FileUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/string/StringTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/utils/StringUtils.class" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/classes/com/ccsu/common/utils/StringUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/afterleaveschool/enums/DayEnum.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/afterleaveschool/enums/DayEnum.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/ccsu/afterleaveschool/enums/EnumTest.class" afterPath="$PROJECT_DIR$/target/classes/com/ccsu/afterleaveschool/enums/EnumTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ALLFORFOOTBALL_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ALLFORFOOTBALL_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/aliyun_java_sdk_core_3_3_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/aliyun_java_sdk_core_3_3_1.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ALLFORFOOTBALL.iml" afterPath="$PROJECT_DIR$/ALLFORFOOTBALL.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/common/base/BaseController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/base/BaseController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/common/filter/CommonHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/filter/CommonHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/CommonUtils.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/CommonUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/controller/ArticleController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/controller/ArticleController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/service/impl/ArticleServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/article/service/impl/ArticleServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/controller/CommonController.java" afterPath="$PROJECT_DIR$/src/main/java/com/ccsu/core/common/controller/CommonController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/ALLFORFOOTBALL/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -336,21 +106,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EnumTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/EnumTest.java">
+      <file leaf-file-name="MD2FileUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/mdToFile/MD2FileUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EnumUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/EnumUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1127">
-              <caret line="53" column="12" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+            <state relative-caret-position="274">
+              <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -358,96 +118,105 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EnumSet.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/EnumSet.java">
+      <file leaf-file-name="article-add.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/article-add.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="101" column="6" lean-forward="true" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
-              <folding>
-                <element signature="docComment;field#elementType#0;class#EnumSet#0" expanded="false" />
-                <element signature="e#15159#15189#0" expanded="true" />
-                <element signature="e#17261#17291#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Function.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Function.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+            <state relative-caret-position="506">
+              <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Class.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Class.java">
+      <file leaf-file-name="head-nav.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/head-nav.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75785">
-              <caret line="3295" column="15" lean-forward="false" selection-start-line="3295" selection-start-column="15" selection-end-line="3295" selection-end-column="15" />
+            <state relative-caret-position="1610">
+              <caret line="70" column="37" lean-forward="false" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ColorEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/ColorEnum.java">
+      <file leaf-file-name="article-list.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/article-list.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="230">
+              <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OperationEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/OperationEnum.java">
+      <file leaf-file-name="ClubController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/controller/ClubController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding>
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#287#288#0" expanded="true" />
-                <element signature="e#363#364#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#475#476#0" expanded="true" />
-                <element signature="e#511#512#0" expanded="true" />
-                <element signature="e#585#586#0" expanded="true" />
-                <element signature="e#621#622#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-335">
+              <caret line="144" column="12" lean-forward="false" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DayEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/DayEnum.java">
+      <file leaf-file-name="ResponseDto.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/ResponseDto.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="874">
-              <caret line="45" column="1" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#685#686#0" expanded="true" />
-                <element signature="e#713#714#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
-                <element signature="e#776#777#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Enum.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Enum.java">
+      <file leaf-file-name="HttpServletRequest.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/javax/servlet/http/HttpServletRequest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3312">
-              <caret line="181" column="5" lean-forward="false" selection-start-line="174" selection-start-column="4" selection-end-line="181" selection-end-column="5" />
-              <folding>
-                <element signature="e#2979#2980#0" expanded="true" />
-                <element signature="e#3009#3010#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="251">
+              <caret line="361" column="18" lean-forward="false" selection-start-line="361" selection-start-column="18" selection-end-line="361" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/article.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-369">
+              <caret line="16" column="94" lean-forward="false" selection-start-line="16" selection-start-column="94" selection-end-line="16" selection-end-column="94" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="article.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/article.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="309" column="27" lean-forward="false" selection-start-line="309" selection-start-column="27" selection-end-line="309" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -472,13 +241,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>newproxyinstance</find>
-      <find>articleTypeService</find>
-      <find>driverclass</find>
-      <find>driverclassname</find>
-      <find>driverClassName</find>
-      <find>rabel</find>
-      <find>aop</find>
       <find>aspectjw</find>
       <find>aspect</find>
       <find>IllegalArgumentException</find>
@@ -502,6 +264,13 @@
       <find>values</find>
       <find>CoinEnum</find>
       <find>enumSet</find>
+      <find>getlo</find>
+      <find>println</find>
+      <find>hashcode</find>
+      <find>removeDuplicateByList</find>
+      <find>commentTime</find>
+      <find>properties</find>
+      <find>saxReader</find>
     </findStrings>
     <replaceStrings>
       <replace>==4</replace>
@@ -563,18 +332,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/thread/testThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/thread/ThreadTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/resolveXml/ResolveXML.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/common/study/OptionTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/file/testLoopOutAllFileName.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/file/thinkJava/DirFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/file/thinkJava/FilterInputStream.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/file/thinkJava/FilterInputStreamTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/properties/ReadPropertiesMain.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/common/base/BaseController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/springMVC.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/work/springBase/FunctionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/work/springBase/UseFunctionService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/work/springBase/DiConfi.java" />
@@ -600,7 +357,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/UserCredential.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/MessageFormatImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/LambdaTest.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/LambdaTest2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/StreamList.java" />
@@ -614,6 +370,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/DayEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/EnumUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/EnumTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/annoations/Check.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/annoations/AnnotationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/annotaions/Check.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/annotaions/AnnotationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/fina/FinalClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/string/StringTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/fina/UserInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/equalsAndHashCode/BigCar.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/equalsAndHashCode/Car.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/mdToFile/MD2FileUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/admin/index.jsp" />
       </list>
     </option>
   </component>
@@ -653,11 +422,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-586" />
-    <option name="y" value="-1417" />
-    <option name="width" value="2560" />
-    <option name="height" value="1417" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -710,6 +477,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -760,7 +529,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="ccsu" type="462c0819:PsiDirectoryNode" />
-              <item name="afterleaveschool" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
@@ -770,20 +539,168 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="ccsu" type="462c0819:PsiDirectoryNode" />
-              <item name="afterleaveschool" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="club" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="ccsu" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="club" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="springBase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ALLFORFOOTBALL" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.youbenzi:MD2File:1.0.2" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.youbenzi:MD2File:1.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="MD2File-1.0.2.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.youbenzi:MD2File:1.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="MD2File-1.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.youbenzi:MD2File:1.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="MD2File-1.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="youbenzi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.youbenzi:MD2File:1.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="MD2File-1.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="youbenzi" type="462c0819:PsiDirectoryNode" />
+              <item name="md2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.youbenzi:MD2File:1.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="MD2File-1.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="youbenzi" type="462c0819:PsiDirectoryNode" />
+              <item name="md2" type="462c0819:PsiDirectoryNode" />
+              <item name="export" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.youbenzi:MD2File:1.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="MD2File-1.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="youbenzi" type="462c0819:PsiDirectoryNode" />
+              <item name="md2" type="462c0819:PsiDirectoryNode" />
+              <item name="markdown" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.youbenzi:MD2File:1.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="MD2File-1.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="youbenzi" type="462c0819:PsiDirectoryNode" />
+              <item name="md2" type="462c0819:PsiDirectoryNode" />
+              <item name="markdown" type="462c0819:PsiDirectoryNode" />
+              <item name="builder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ALLFORFOOTBALL" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: com.youbenzi:MD2File:1.0.2" type="70bed36:NamedLibraryElementNode" />
+              <item name="MD2File-1.0.2.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="youbenzi" type="462c0819:PsiDirectoryNode" />
+              <item name="md2" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.25207755" />
@@ -793,10 +710,11 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/jsp/admin" />
-    <property name="SearchEverywhereHistoryKey" value="enumset&#9;PSI&#9;JAVA://java.util.EnumSet&#10;TimeUnit&#9;PSI&#9;JAVA://java.util.concurrent.TimeUnit&#10;BinaryOperator&#9;PSI&#9;JAVA://java.util.function.BinaryOperator&#10;UnaryOperator&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/UnaryOperator.java&#10;Supplier&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java&#10;Function&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Function.java&#10;consumer&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java&#10;Predicate&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Predicate.java&#10;arraylist&#9;PSI&#9;JAVA://java.util.ArrayList&#10;Runnable.&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Runnable.java&#10;test&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/Test.java&#10;comparator&#9;PSI&#9;JAVA://java.util.Comparator&#10;compara&#9;PSI&#9;JAVA://java.lang.Comparable&#10;string&#9;PSI&#9;JAVA://com.ccsu.common.utils.StringUtils&#10;pom.xml&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/pom.xml&#10;util&#9;PSI&#9;JAVA://com.ccsu.common.utils.CommonUtils&#10;*interceptor&#9;FILE&#9;jar:///Users/zhuxiaolei/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/org/aopalliance/intercept/Interceptor.class&#10;applicationcontextaw&#9;PSI&#9;JAVA://org.springframework.context.ApplicationContextAware&#10;sqlsessionfa&#9;PSI&#9;JAVA://org.apache.ibatis.session.SqlSessionFactory&#10;PageHelper&#9;PSI&#9;JAVA://com.github.pagehelper.PageHelper&#10;Proxy&#9;PSI&#9;JAVA://net.sf.cglib.proxy.Proxy&#10;web.xml&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/WEB-INF/web.xml&#10;*.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/article.jsp&#10;spring*.xml&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/resources/springMVC.xml&#10;web.&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/WEB-INF/web.xml&#10;pom.x&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/pom.xml&#10;Stringutils&#9;FILE&#9;jar:///Users/zhuxiaolei/.m2/repository/org/springframework/spring-core/4.1.3.RELEASE/spring-core-4.1.3.RELEASE.jar!/org/springframework/util/StringUtils.class&#10;Stringut&#9;FILE&#9;jar:///Users/zhuxiaolei/.m2/repository/com/github/pagehelper/pagehelper/5.0.0/pagehelper-5.0.0-sources.jar!/com/github/pagehelper/util/StringUtil.java&#10;fileut&#9;FILE&#9;jar:///Users/zhuxiaolei/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2-sources.jar!/org/apache/commons/io/FilenameUtils.java&#10;data.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/data.jsp&#10;article.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/article.jsp&#10;register.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/register.jsp&#10;user&#9;PSI&#9;JAVA://com.ccsu.core.user.domain.User&#10;commonc&#9;PSI&#9;JAVA://com.ccsu.core.common.controller.CommonController&#10;match-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/match-info-add.jsp&#10;club-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/club-add.jsp&#10;player.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/player.js&#10;user.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/user.js&#10;article-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/article-add.jsp&#10;article.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/article.js&#10;clubcon&#9;PSI&#9;JAVA://com.ccsu.core.club.controller.ClubController&#10;articleCon&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/article/controller/ArticleController.java&#10;player-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/player-add.jsp&#10;match-list&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/match-list.jsp&#10;club.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/club.jsp&#10;data&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/data.jsp&#10;match.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/match.js&#10;article&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/article-list.jsp&#10;club.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/club.js&#10;articlec&#9;PSI&#9;JAVA://com.ccsu.core.article.controller.ArticleController" />
+    <property name="SearchEverywhereHistoryKey" value="obje&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Object.java&#10;userinfo&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/afterleaveschool/fina/UserInfo.java&#10;String.jva&#9;null&#9;null&#10;defaultConnectTimeout&#9;PSI&#9;JAVA://sun.net.NetworkClient#defaultConnectTimeout&#10;enumset&#9;PSI&#9;JAVA://java.util.EnumSet&#10;TimeUnit&#9;PSI&#9;JAVA://java.util.concurrent.TimeUnit&#10;BinaryOperator&#9;PSI&#9;JAVA://java.util.function.BinaryOperator&#10;UnaryOperator&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/UnaryOperator.java&#10;Supplier&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java&#10;Function&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Function.java&#10;consumer&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java&#10;Predicate&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Predicate.java&#10;arraylist&#9;PSI&#9;JAVA://java.util.ArrayList&#10;Runnable.&#9;FILE&#9;jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Runnable.java&#10;test&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/user/Test.java&#10;comparator&#9;PSI&#9;JAVA://java.util.Comparator&#10;compara&#9;PSI&#9;JAVA://java.lang.Comparable&#10;string&#9;PSI&#9;JAVA://com.ccsu.common.utils.StringUtils&#10;pom.xml&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/pom.xml&#10;util&#9;PSI&#9;JAVA://com.ccsu.common.utils.CommonUtils&#10;*interceptor&#9;FILE&#9;jar:///Users/zhuxiaolei/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar!/org/aopalliance/intercept/Interceptor.class&#10;applicationcontextaw&#9;PSI&#9;JAVA://org.springframework.context.ApplicationContextAware&#10;sqlsessionfa&#9;PSI&#9;JAVA://org.apache.ibatis.session.SqlSessionFactory&#10;PageHelper&#9;PSI&#9;JAVA://com.github.pagehelper.PageHelper&#10;Proxy&#9;PSI&#9;JAVA://net.sf.cglib.proxy.Proxy&#10;web.xml&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/WEB-INF/web.xml&#10;*.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/article.jsp&#10;spring*.xml&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/resources/springMVC.xml&#10;web.&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/WEB-INF/web.xml&#10;pom.x&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/pom.xml&#10;Stringutils&#9;FILE&#9;jar:///Users/zhuxiaolei/.m2/repository/org/springframework/spring-core/4.1.3.RELEASE/spring-core-4.1.3.RELEASE.jar!/org/springframework/util/StringUtils.class&#10;Stringut&#9;FILE&#9;jar:///Users/zhuxiaolei/.m2/repository/com/github/pagehelper/pagehelper/5.0.0/pagehelper-5.0.0-sources.jar!/com/github/pagehelper/util/StringUtil.java&#10;fileut&#9;FILE&#9;jar:///Users/zhuxiaolei/.m2/repository/commons-io/commons-io/2.2/commons-io-2.2-sources.jar!/org/apache/commons/io/FilenameUtils.java&#10;data.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/data.jsp&#10;article.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/article.jsp&#10;register.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/register.jsp&#10;user&#9;PSI&#9;JAVA://com.ccsu.core.user.domain.User&#10;commonc&#9;PSI&#9;JAVA://com.ccsu.core.common.controller.CommonController&#10;match-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/match-info-add.jsp&#10;club-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/club-add.jsp&#10;player.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/player.js&#10;user.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/user.js&#10;article-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/article-add.jsp&#10;article.js&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/js/admin/article.js&#10;clubcon&#9;PSI&#9;JAVA://com.ccsu.core.club.controller.ClubController&#10;articleCon&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/java/com/ccsu/core/article/controller/ArticleController.java&#10;player-add&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/player-add.jsp&#10;match-list&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/admin/match-list.jsp&#10;club.jsp&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/club.jsp&#10;data&#9;FILE&#9;file:///Users/zhuxiaolei/IdeaProjects/ALLFORFOOTBALL/src/main/webapp/jsp/data.jsp" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.xml" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="AngularJS" />
     <property name="full.screen.before.presentation.mode" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -842,15 +760,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EnumTest">
-    <configuration name="BigDecimalTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MD2FileUtils">
+    <configuration name="AaliSMSUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ccsu.afterleaveschool.bigDecimal.*" />
+          <option name="PATTERN" value="com.ccsu.common.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ccsu.afterleaveschool.bigDecimal.BigDecimalTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ccsu.common.utils.AaliSMSUtil" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -862,14 +780,14 @@
       <module name="ALLFORFOOTBALL" />
       <envs />
     </configuration>
-    <configuration name="EnumTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Car" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ccsu.afterleaveschool.enums.*" />
+          <option name="PATTERN" value="com.ccsu.afterleaveschool.equalsAndHashCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ccsu.afterleaveschool.enums.EnumTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ccsu.afterleaveschool.equalsAndHashCode.Car" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -881,14 +799,14 @@
       <module name="ALLFORFOOTBALL" />
       <envs />
     </configuration>
-    <configuration name="MainTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MD2FileUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.work.springBase.demo2.*" />
+          <option name="PATTERN" value="com.ccsu.afterleaveschool.mdToFile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.work.springBase.demo2.MainTest" />
+      <option name="MAIN_CLASS_NAME" value="com.ccsu.afterleaveschool.mdToFile.MD2FileUtils" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -900,14 +818,14 @@
       <module name="ALLFORFOOTBALL" />
       <envs />
     </configuration>
-    <configuration name="StreamList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="StringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ccsu.afterleaveschool.lambda.*" />
+          <option name="PATTERN" value="com.ccsu.afterleaveschool.string.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ccsu.afterleaveschool.lambda.StreamList" />
+      <option name="MAIN_CLASS_NAME" value="com.ccsu.afterleaveschool.string.StringTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -938,14 +856,14 @@
       <module name="ALLFORFOOTBALL" />
       <envs />
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="UserInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.ccsu.*" />
+          <option name="PATTERN" value="com.ccsu.afterleaveschool.fina.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.ccsu.Test" />
+      <option name="MAIN_CLASS_NAME" value="com.ccsu.afterleaveschool.fina.UserInfo" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1149,18 +1067,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.tomcat" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MainTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="3" class="java.lang.String" itemvalue="Application.StreamList" />
-      <item index="4" class="java.lang.String" itemvalue="Application.BigDecimalTest" />
-      <item index="5" class="java.lang.String" itemvalue="Application.EnumTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.AaliSMSUtil" />
+      <item index="2" class="java.lang.String" itemvalue="Application.StringTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.UserInfo" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Car" />
+      <item index="5" class="java.lang.String" itemvalue="Application.MD2FileUtils" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.EnumTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.BigDecimalTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="3" class="java.lang.String" itemvalue="Application.StreamList" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.MD2FileUtils" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Car" />
+        <item index="2" class="java.lang.String" itemvalue="Application.UserInfo" />
+        <item index="3" class="java.lang.String" itemvalue="Application.StringTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.AaliSMSUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -1178,7 +1097,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="9a840ee2-1358-4619-8878-95773affa77b" name="Default" comment="" />
-      <changelist id="ead1075f-3c79-41aa-aafc-66ef2c416153" name="370211" comment="123123123" />
+      <changelist id="" name="370211" comment="123123123" />
       <created>1517564806674</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -1258,6 +1177,8 @@
       <workItem from="1580353236491" duration="1323000" />
       <workItem from="1580814552335" duration="35463000" />
       <workItem from="1581259493862" duration="943000" />
+      <workItem from="1581324706900" duration="10552000" />
+      <workItem from="1581688063282" duration="8375000" />
     </task>
     <task id="LOCAL-00001" summary="更新iml">
       <created>1517580900056</created>
@@ -1387,7 +1308,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1075905000" />
+    <option name="totallyTimeSpent" value="1094832000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1399,8 +1320,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-586" y="-1417" width="2560" height="1417" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35945272" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1410,35 +1330,35 @@
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43905473" sideWeight="0.49713877" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.50500715" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18189038" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32474965" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34747022" sideWeight="0.47496423" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Codota" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962668" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30059522" sideWeight="0.49427754" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42028984" sideWeight="0.48640916" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21130952" sideWeight="0.46852645" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41915423" sideWeight="0.48640916" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27985075" sideWeight="0.46852645" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41293532" sideWeight="0.49427754" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.579602" sideWeight="0.48569384" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel remote servers log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43905473" sideWeight="0.5028612" order="14" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22200158" sideWeight="0.47014925" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2446352" sideWeight="0.47014925" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21101573" sideWeight="0.5298507" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20958512" sideWeight="0.52860695" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38244048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19170243" sideWeight="0.5210643" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4170243" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Dynamic Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30059522" sideWeight="0.49427754" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="Codota" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962668" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" x="100" y="100" width="1240" height="700" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8942786" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38244048" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1492,6 +1412,32 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -1527,7 +1473,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="236" />
+      <option name="time" value="239" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1536,164 +1482,299 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/String.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/final/UserInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/OperationEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="1155" column="26" lean-forward="false" selection-start-line="1155" selection-start-column="23" selection-end-line="1155" selection-end-column="26" />
+        <state relative-caret-position="138">
+          <caret line="6" column="18" lean-forward="false" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/StringUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/fina/FinalClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="463">
-          <caret line="78" column="7" lean-forward="false" selection-start-line="73" selection-start-column="6" selection-end-line="78" selection-end-column="7" />
+        <state relative-caret-position="241">
+          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/System.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/jre/lib/rt.jar!/sun/net/NetworkClient.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="109" column="33" lean-forward="true" selection-start-line="109" selection-start-column="33" selection-end-line="109" selection-end-column="33" />
+        <state relative-caret-position="-474">
+          <caret line="31" column="25" lean-forward="false" selection-start-line="31" selection-start-column="25" selection-end-line="31" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/io/Flushable.java">
+    <entry file="jar://$USER_HOME$/.ideaLibSources/aliyun-java-sdk-core-3.3.1-sources.jar!/com/aliyuncs/profile/DefaultProfile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="-11">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/io/OutputStream.java">
+    <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/aliyun-java-sdk-core-3.3.1.jar!/com/aliyuncs/profile/DefaultProfile.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="45" column="61" lean-forward="false" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="61" />
+        <state relative-caret-position="102">
+          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/io/FilterOutputStream.java">
+    <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/aliyun-java-sdk-dysmsapi-1.0.0.jar!/com/aliyuncs/dysmsapi/model/v20170525/SendSmsRequest.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="44" column="39" lean-forward="false" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
+        <state relative-caret-position="-98">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/AaliSMSUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="131" column="50" lean-forward="true" selection-start-line="131" selection-start-column="50" selection-end-line="131" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/aliyun-java-sdk-dysmsapi-1.0.0.jar!/com/aliyuncs/dysmsapi/model/v20170525/SendSmsResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Locale.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="860" column="26" lean-forward="false" selection-start-line="860" selection-start-column="26" selection-end-line="860" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="252" column="21" lean-forward="true" selection-start-line="252" selection-start-column="21" selection-end-line="252" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/io/PrintStream.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="173" column="5" lean-forward="true" selection-start-line="173" selection-start-column="5" selection-end-line="173" selection-end-column="5" />
+        <state relative-caret-position="-203">
+          <caret line="962" column="23" lean-forward="false" selection-start-line="962" selection-start-column="23" selection-end-line="962" selection-end-column="23" />
+          <folding>
+            <element signature="e#24380#24381#0" expanded="false" />
+            <element signature="e#24405#24406#0" expanded="false" />
+            <element signature="e#29974#29975#0" expanded="false" />
+            <element signature="e#30017#30018#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/Callable.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/String.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="56" column="20" lean-forward="true" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+        <state relative-caret-position="676">
+          <caret line="3165" column="7" lean-forward="true" selection-start-line="3165" selection-start-column="7" selection-end-line="3165" selection-end-column="7" />
+          <folding>
+            <element signature="e#4677#4678#0" expanded="false" />
+            <element signature="e#4714#4715#0" expanded="false" />
+            <element signature="e#5687#5688#0" expanded="false" />
+            <element signature="e#5750#5751#0" expanded="false" />
+            <element signature="e#111196#111197#0" expanded="false" />
+            <element signature="e#111251#111252#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Objects.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/AbstractStringBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5037">
-          <caret line="242" column="34" lean-forward="false" selection-start-line="242" selection-start-column="34" selection-end-line="242" selection-end-column="34" />
+        <state relative-caret-position="153">
+          <caret line="821" column="33" lean-forward="false" selection-start-line="821" selection-start-column="33" selection-end-line="821" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/compare/UserComparable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="641">
-          <caret line="50" column="8" lean-forward="false" selection-start-line="50" selection-start-column="8" selection-end-line="50" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="1241" column="21" lean-forward="false" selection-start-line="1241" selection-start-column="21" selection-end-line="1241" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Runnable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/string/StringTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
-          <caret line="54" column="15" lean-forward="false" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/FunctionalInterface.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/fina/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="46" column="48" lean-forward="false" selection-start-line="46" selection-start-column="48" selection-end-line="46" selection-end-column="48" />
+        <state relative-caret-position="1587">
+          <caret line="81" column="42" lean-forward="false" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/UserCredential.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="8" lean-forward="false" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/MessageFormatImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/IMessageFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="5" lean-forward="false" selection-start-line="21" selection-start-column="4" selection-end-line="26" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/LambdaTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/BiConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="39" column="2" lean-forward="false" selection-start-line="39" selection-start-column="2" selection-end-line="39" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Supplier.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/UnaryOperator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="46" column="50" lean-forward="false" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/BinaryOperator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/equalsAndHashCode/BigCar.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
-          <caret line="67" column="36" lean-forward="false" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
+          <caret line="30" column="30" lean-forward="false" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="30" />
+          <folding>
+            <element signature="e#257#258#0" expanded="false" />
+            <element signature="e#285#286#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Predicate.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="43" column="6" lean-forward="false" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
+        <state relative-caret-position="1748">
+          <caret line="99" column="22" lean-forward="false" selection-start-line="99" selection-start-column="22" selection-end-line="99" selection-end-column="22" />
+          <folding>
+            <element signature="e#5748#5749#0" expanded="false" />
+            <element signature="e#5784#5785#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/IUserCredential.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/equalsAndHashCode/Car.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        <state relative-caret-position="156">
+          <caret line="26" column="5" lean-forward="false" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/youbenzi/MD2File/1.0.2/MD2File-1.0.2.jar!/com/youbenzi/md2/util/ImgHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="16" column="22" lean-forward="false" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/youbenzi/MD2File/1.0.2/MD2File-1.0.2.jar!/com/youbenzi/md2/markdown/MDAnalyzer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="29" column="30" lean-forward="false" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/youbenzi/MD2File/1.0.2/MD2File-1.0.2.jar!/com/youbenzi/md2/util/MD2FileUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="15" column="55" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/youbenzi/MD2File/1.0.2/MD2File-1.0.2.jar!/com/youbenzi/md2/util/MDUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="51" column="25" lean-forward="false" selection-start-line="51" selection-start-column="25" selection-end-line="51" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/youbenzi/MD2File/1.0.2/MD2File-1.0.2.jar!/META-INF/maven/com.youbenzi/MD2File/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/youbenzi/MD2File/1.0.2/MD2File-1.0.2.jar!/com/youbenzi/md2/export/FileFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$MAVEN_REPOSITORY$/com/youbenzi/MD2File/1.0.2/MD2File-1.0.2.pom">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/youbenzi/MD2File/1.0.2/MD2File-1.0.2.jar!/com/youbenzi/md2/markdown/builder/BlockBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/youbenzi/MD2File/1.0.2/MD2File-1.0.2.jar!/com/youbenzi/md2/markdown/builder/CodeBuilder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/youbenzi/MD2File/1.0.2/MD2File-1.0.2.jar!/com/youbenzi/md2/markdown/ValuePart.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <element signature="e#668#669#0" expanded="true" />
+            <element signature="e#701#702#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/youbenzi/MD2File/1.0.2/MD2File-1.0.2.jar!/com/youbenzi/md2/markdown/BlockType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-130">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/jsp/controller.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ueditor/jsp/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/common/utils/CommonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="82" column="25" lean-forward="false" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
+          <folding>
+            <element signature="e#2309#2310#0" expanded="false" />
+            <element signature="e#2386#2387#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/dao/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="34" column="9" lean-forward="false" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/user/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="82" column="71" lean-forward="false" selection-start-line="82" selection-start-column="71" selection-end-line="82" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1702,230 +1783,122 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="317" column="31" lean-forward="false" selection-start-line="317" selection-start-column="31" selection-end-line="317" selection-end-column="31" />
+        <state relative-caret-position="177">
+          <caret line="309" column="27" lean-forward="false" selection-start-line="309" selection-start-column="27" selection-end-line="309" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/LambdaTest2.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/sql/ALLFORFOOTBALL.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="736">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="30" lean-forward="true" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/stream/Stream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="806" column="13" lean-forward="false" selection-start-line="806" selection-start-column="13" selection-end-line="806" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/lambda/StreamList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="41" column="17" lean-forward="false" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Iterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="17" selection-end-line="71" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Collections.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="174" column="14" lean-forward="true" selection-start-line="174" selection-start-column="14" selection-end-line="174" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="48" column="47" lean-forward="false" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1581158771434" expanded="true" signature="322:398" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Comparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="480" column="36" lean-forward="false" selection-start-line="480" selection-start-column="36" selection-end-line="480" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/bigDecimal/Arith.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Comparable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="829">
-          <caret line="135" column="24" lean-forward="false" selection-start-line="135" selection-start-column="15" selection-end-line="135" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="2281" column="28" lean-forward="false" selection-start-line="2281" selection-start-column="28" selection-end-line="2281" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="237" column="12" lean-forward="false" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/bigDecimal/BigDecimalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="70" column="44" lean-forward="true" selection-start-line="70" selection-start-column="44" selection-end-line="70" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5642">
-          <caret line="3814" column="0" lean-forward="true" selection-start-line="3814" selection-start-column="0" selection-end-line="3814" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="78" column="7" lean-forward="true" selection-start-line="78" selection-start-column="7" selection-end-line="78" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enum/ColorEnum.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Enum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3312">
-          <caret line="181" column="5" lean-forward="false" selection-start-line="174" selection-start-column="4" selection-end-line="181" selection-end-column="5" />
-          <folding>
-            <element signature="e#2979#2980#0" expanded="true" />
-            <element signature="e#3009#3010#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/OperationEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding>
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#399#400#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-            <element signature="e#511#512#0" expanded="true" />
-            <element signature="e#585#586#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/concurrent/TimeUnit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="778">
-          <caret line="190" column="7" lean-forward="true" selection-start-line="190" selection-start-column="7" selection-end-line="190" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/ColorEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="-4">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/DayEnum.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="45" column="1" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="45" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#685#686#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#776#777#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75785">
-          <caret line="3295" column="15" lean-forward="false" selection-start-line="3295" selection-start-column="15" selection-end-line="3295" selection-end-column="15" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/function/Function.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/properties/ReadPropertiesMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="40" column="17" lean-forward="false" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        <state relative-caret-position="356">
+          <caret line="26" column="36" lean-forward="false" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/EnumUtils.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/resolveXml/ResolveXML.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1127">
-          <caret line="53" column="12" lean-forward="false" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="12" />
+        <state relative-caret-position="1518">
+          <caret line="77" column="50" lean-forward="false" selection-start-line="77" selection-start-column="50" selection-end-line="77" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/mdToFile/MD2FileUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_111.jdk/Contents/Home/src.zip!/java/util/EnumSet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="101" column="6" lean-forward="true" selection-start-line="101" selection-start-column="6" selection-end-line="101" selection-end-column="6" />
-          <folding>
-            <element signature="docComment;field#elementType#0;class#EnumSet#0" expanded="false" />
-            <element signature="e#15159#15189#0" expanded="true" />
-            <element signature="e#17261#17291#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="138">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/afterleaveschool/enums/EnumTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/article.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="33" column="8" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/article.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-369">
+          <caret line="16" column="94" lean-forward="false" selection-start-line="16" selection-start-column="94" selection-end-line="16" selection-end-column="94" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/article-add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/head-nav.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1610">
+          <caret line="70" column="37" lean-forward="false" selection-start-line="70" selection-start-column="37" selection-end-line="70" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar!/javax/servlet/http/HttpServletRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="361" column="18" lean-forward="false" selection-start-line="361" selection-start-column="18" selection-end-line="361" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/admin/article-list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/common/domain/ResponseDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/ccsu/core/club/controller/ClubController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-335">
+          <caret line="144" column="12" lean-forward="false" selection-start-line="144" selection-start-column="12" selection-end-line="144" selection-end-column="12" />
           <folding />
         </state>
       </provider>
