@@ -81,7 +81,7 @@ public class AaliSMSUtil {
         //必填:待发送手机号
         request.setPhoneNumbers(user.getPhone());
         //必填:短信签名-可在短信控制台中找到
-        request.setSignName("朱晓磊");
+        request.setSignName("**");
         //必填:短信模板-可在短信控制台中找到
         request.setTemplateCode("SMS_133830004");
         //可选:模板中的变量替换JSON串,如模板内容为"亲爱的${name},您的验证码为${code}"时,此处的值为
@@ -107,7 +107,7 @@ public class AaliSMSUtil {
         //组装请求对象
         QuerySendDetailsRequest request = new QuerySendDetailsRequest();
         //必填-号码
-        request.setPhoneNumber("15211054977");
+        request.setPhoneNumber("**");
         //可选-流水号
         request.setBizId(bizId);
         //必填-发送日期 支持30天内记录查询，格式yyyyMMdd
