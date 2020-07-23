@@ -297,16 +297,18 @@
             <version>1.6</version>
         </dependency>
 
-        <dependency>
-            <groupId></groupId>
-            <artifactId></artifactId>
-            <version></version>
-        </dependency>
-
+        <!---->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <!--<version>1.16.8</version>-->
+        </dependency>
+
+        <!--markdown 文档导出工具类-->
+        <dependency>
+            <groupId>com.youbenzi</groupId>
+            <artifactId>MD2File</artifactId>
+            <version>1.0.2</version>
         </dependency>
     </dependencies>
     <build>
