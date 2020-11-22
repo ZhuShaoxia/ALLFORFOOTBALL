@@ -1,9 +1,9 @@
 package com.ccsu;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.Arrays;
 import java.util.List;
+import java.util.StringJoiner;
+import java.util.stream.Collectors;
 
 /**
  * Created by IntelliJ IDEA.
@@ -36,17 +36,36 @@ public class Test {
         //    System.out.println(a);
         //});
 
-        List<Integer> list = new ArrayList<>();
-        list.add(3);
-        list.add(1);
-        list.add(5);
-        list.add(3);
-        list.add(2);
-        list.add(9);
-        list.add(7);
-        list.add(8);
-        list.add(4);
-        Collections.sort(list, Comparator.comparingInt(o -> o));
-        list.forEach(System.out::println);
+        //List<Integer> list = new ArrayList<>();
+        //list.add(3);
+        //list.add(1);
+        //list.add(5);
+        //list.add(3);
+        //list.add(2);
+        //list.add(9);
+        //list.add(7);
+        //list.add(8);
+        //list.add(4);
+        //Collections.sort(list, Comparator.comparingInt(o -> o));
+        //list.forEach(System.out::println);
+
+        //String[] strs = {"3", "4", "5", "1", "6", "9", "10"};
+        Integer[] strs = {3, 4, 5, 1, 6, 9, 10};
+        //String join = String.join("','", strs);
+        StringJoiner joiner = new StringJoiner("','", "'", "'");
+        //for (String s : strs) {
+        //    joiner.add(s);
+        //}
+        System.out.println(joiner);
+
+        List<Integer> collect = Arrays.stream(strs)
+                //.filter((c) -> Integer.parseInt(c) > 4)
+                //.limit(2).collect(Collectors.toList())
+                //.sorted((s1, s2) -> s2 - s1)  //从大到小
+                .sorted() // 从小到大
+                .collect(Collectors.toList());
+        Arrays.sort(strs);
+
+        System.out.println(collect);
     }
 }
