@@ -235,11 +235,11 @@
             <version>1.9</version>
         </dependency>
 
-        <dependency>
-            <groupId>com.baidu.ueditor</groupId>
-            <artifactId>ueditor</artifactId>
-            <version>1.1.2</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.baidu.ueditor</groupId>-->
+<!--            <artifactId>ueditor</artifactId>-->
+<!--            <version>1.1.2</version>-->
+<!--        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/com.github.pagehelper/pagehelper -->
         <dependency>
@@ -301,7 +301,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <!--<version>1.16.8</version>-->
+            <version>1.16.8</version>
         </dependency>
 
         <!--markdown 文档导出工具类-->
@@ -310,6 +310,15 @@
             <artifactId>MD2File</artifactId>
             <version>1.0.2</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>28.2-jre</version>
+        </dependency>
+
+
     </dependencies>
     <build>
         <finalName>ALLFORFOOTBALL</finalName>
