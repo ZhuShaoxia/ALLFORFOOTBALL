@@ -13,4 +13,9 @@
       <module name="ALLFORFOOTBALL" target="1.8" />
     </bytecodeTargetLevel>
   </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ALLFORFOOTBALL" options="-extdirs src/main/webapp/WEB-INF/lib" />
+    </option>
+  </component>
 </project>

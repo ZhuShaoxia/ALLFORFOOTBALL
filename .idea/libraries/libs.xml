@@ -2,6 +2,7 @@
   <library name="libs">
     <CLASSES>
       <root url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
+      <root url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/libs" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
